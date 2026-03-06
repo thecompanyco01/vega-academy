@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advisory Readiness Quiz — Are You Ready to Offer Advisory Services? | Vega Academy</title>
+    <meta name="description" content="Take this free 2-minute quiz to find out if you're ready to transition from bookkeeping to advisory services. Get a personalized readiness score and action plan.">
+    <meta name="keywords" content="advisory services quiz, bookkeeper to advisory, fractional CFO readiness, advisory readiness assessment">
+    <link rel="canonical" href="https://vega-academy.vercel.app/tools/advisory-readiness-quiz/">
+    <meta property="og:title" content="Advisory Readiness Quiz — Are You Ready for Advisory?">
+    <meta property="og:description" content="Free 2-minute quiz for bookkeepers. Get your personalized advisory readiness score and action plan.">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Advisory Readiness Quiz",
+      "description": "Assess your readiness to transition from bookkeeping to advisory services",
+      "applicationCategory": "BusinessApplication",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --bg: #0a0a0f; --surface: #12121a; --surface-2: #1a1a26; --border: #2a2a3a; --text: #e8e8f0; --text-muted: #8888a0; --accent: #6c5ce7; --accent-light: #a29bfe; --gold: #f0c040; --success: #00d2a0; --danger: #ff6b6b; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh; }
+        nav { background: rgba(10,10,15,0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; background: linear-gradient(135deg, var(--accent-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .nav-links { display: flex; gap: 16px; align-items: center; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-cta { background: var(--accent); color: white !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
+
+        .quiz-container { max-width: 680px; margin: 60px auto; padding: 0 24px; }
+        .quiz-header { text-align: center; margin-bottom: 48px; }
+        .quiz-header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 12px; }
+        .quiz-header p { color: var(--text-muted); font-size: 1.05rem; }
+
+        .progress-bar { background: var(--surface-2); border-radius: 10px; height: 8px; margin-bottom: 40px; overflow: hidden; }
+        .progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--gold)); border-radius: 10px; transition: width 0.4s ease; }
+        .progress-text { text-align: center; font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+
+        .question-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 36px; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .question-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; }
+        .question-card .question-subtitle { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 24px; }
+
+        .options { display: flex; flex-direction: column; gap: 12px; }
+        .option { background: var(--surface-2); border: 2px solid var(--border); border-radius: 12px; padding: 16px 20px; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 12px; }
+        .option:hover { border-color: var(--accent); background: rgba(108,92,231,0.08); }
+        .option.selected { border-color: var(--accent); background: rgba(108,92,231,0.15); }
+        .option-letter { background: var(--border); width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+        .option.selected .option-letter { background: var(--accent); }
+        .option-text { font-size: 0.95rem; }
+
+        .nav-buttons { display: flex; justify-content: space-between; margin-top: 32px; }
+        .btn { padding: 12px 28px; border-radius: 10px; font-weight: 600; font-size: 15px; cursor: pointer; border: none; transition: all 0.2s; }
+        .btn-back { background: var(--surface-2); color: var(--text-muted); border: 1px solid var(--border); }
+        .btn-next { background: var(--accent); color: white; }
+        .btn-next:disabled { opacity: 0.4; cursor: not-allowed; }
+        .btn:hover:not(:disabled) { transform: translateY(-1px); }
+
+        /* Results */
+        .results { text-align: center; }
+        .score-circle { width: 160px; height: 160px; border-radius: 50%; margin: 0 auto 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; position: relative; }
+        .score-number { font-size: 3rem; font-weight: 800; }
+        .score-label { font-size: 13px; color: var(--text-muted); }
+        .score-low { background: linear-gradient(135deg, rgba(255,107,107,0.2), rgba(255,107,107,0.05)); border: 3px solid var(--danger); }
+        .score-mid { background: linear-gradient(135deg, rgba(240,192,64,0.2), rgba(240,192,64,0.05)); border: 3px solid var(--gold); }
+        .score-high { background: linear-gradient(135deg, rgba(0,210,160,0.2), rgba(0,210,160,0.05)); border: 3px solid var(--success); }
+        .results h2 { font-size: 1.6rem; margin-bottom: 8px; }
+        .results .result-desc { color: var(--text-muted); max-width: 500px; margin: 0 auto 32px; }
+
+        .action-plan { text-align: left; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin: 32px 0; }
+        .action-plan h3 { font-size: 1.15rem; margin-bottom: 16px; color: var(--gold); }
+        .action-plan ol { padding-left: 20px; }
+        .action-plan li { margin-bottom: 12px; font-size: 0.95rem; }
+
+        .email-capture { background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(240,192,64,0.1)); border: 1px solid var(--accent); border-radius: 16px; padding: 32px; margin: 32px 0; text-align: center; }
+        .email-capture h3 { font-size: 1.2rem; margin-bottom: 8px; color: var(--gold); }
+        .email-capture p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px; }
+        .email-form { display: flex; gap: 10px; max-width: 440px; margin: 0 auto; }
+        .email-form input { flex: 1; padding: 12px 16px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 15px; }
+        .email-form button { padding: 12px 24px; border-radius: 8px; background: var(--accent); color: white; border: none; font-weight: 700; cursor: pointer; font-size: 15px; white-space: nowrap; }
+        .email-form button:hover { background: #5b4bd5; }
+        .success-msg { color: var(--success); font-weight: 600; margin-top: 12px; display: none; }
+
+        .related-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 32px 0; }
+        .related-tool { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; text-decoration: none; color: var(--text); transition: all 0.2s; }
+        .related-tool:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .related-tool h4 { font-size: 0.95rem; margin-bottom: 6px; }
+        .related-tool p { font-size: 0.8rem; color: var(--text-muted); }
+
+        footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; color: var(--text-muted); font-size: 13px; margin-top: 60px; }
+        footer a { color: var(--accent-light); text-decoration: none; }
+        @media (max-width: 600px) { .email-form { flex-direction: column; } .related-tools { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="logo">⭐ Vega Academy</a>
+            <div class="nav-links">
+                <a href="/blog/">Blog</a>
+                <a href="/starter-kit/">Free Starter Kit</a>
+                <a href="/tools/advisory-revenue-calculator/">Calculator</a>
+                <a href="/course/module-1/" class="nav-cta">Start Free Module →</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1>🎯 Advisory Readiness Quiz</h1>
+            <p>Answer 8 questions to get your personalized readiness score and action plan</p>
+        </div>
+
+        <div id="quiz">
+            <div class="progress-text" id="progressText">Question 1 of 8</div>
+            <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:12.5%"></div></div>
+
+            <div class="question-card" id="questionCard"></div>
+
+            <div class="nav-buttons">
+                <button class="btn btn-back" id="backBtn" onclick="prevQuestion()" style="visibility:hidden">← Back</button>
+                <button class="btn btn-next" id="nextBtn" onclick="nextQuestion()" disabled>Next →</button>
+            </div>
+        </div>
+
+        <div id="results" style="display:none" class="results"></div>
+    </div>
+
+    <footer>
+        <div>
+            <p>© 2026 Vega Academy. Helping bookkeepers build advisory practices.</p>
+            <p style="margin-top:8px">
+                <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a> · <a href="/course/module-1/">Free Module</a>
+            </p>
+        </div>
+    </footer>
+
+    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
+    <script>
+    const questions = [
+      {
+        q: "How many years of bookkeeping/accounting experience do you have?",
+        sub: "Technical experience is your foundation.",
+        options: [
+          { text: "Less than 2 years", score: 1 },
+          { text: "2-5 years", score: 2 },
+          { text: "5-10 years", score: 3 },
+          { text: "10+ years", score: 4 }
+        ]
+      },
+      {
+        q: "Do you currently offer any services beyond basic bookkeeping?",
+        sub: "Advisory builds on existing client relationships.",
+        options: [
+          { text: "No, just bookkeeping (data entry, reconciliation, reporting)", score: 1 },
+          { text: "Some tax prep or payroll", score: 2 },
+          { text: "Occasional financial analysis or budgeting help", score: 3 },
+          { text: "Yes, I already offer some advisory/consulting services", score: 4 }
+        ]
+      },
+      {
+        q: "How comfortable are you creating cash flow forecasts?",
+        sub: "Cash flow forecasting is the #1 advisory deliverable.",
+        options: [
+          { text: "I've never created one", score: 1 },
+          { text: "I understand the concept but haven't built one for a client", score: 2 },
+          { text: "I've created basic forecasts", score: 3 },
+          { text: "I regularly build and maintain cash flow forecasts", score: 4 }
+        ]
+      },
+      {
+        q: "How many bookkeeping clients do you currently serve?",
+        sub: "Your existing client base is your advisory sales pipeline.",
+        options: [
+          { text: "0 (I'm employed, not freelance)", score: 1 },
+          { text: "1-5 clients", score: 2 },
+          { text: "6-15 clients", score: 3 },
+          { text: "15+ clients", score: 4 }
+        ]
+      },
+      {
+        q: "Do you use KPI dashboards or financial reporting tools?",
+        sub: "Polished deliverables justify premium advisory fees.",
+        options: [
+          { text: "No, I mostly use QuickBooks/Xero standard reports", score: 1 },
+          { text: "I create custom reports in Excel/Sheets", score: 2 },
+          { text: "I use tools like Fathom, Reach, or Power BI occasionally", score: 3 },
+          { text: "I regularly deliver custom KPI dashboards to clients", score: 4 }
+        ]
+      },
+      {
+        q: "How do you currently price your services?",
+        sub: "Pricing model reveals business maturity.",
+        options: [
+          { text: "Hourly billing", score: 1 },
+          { text: "Flat monthly fee for bookkeeping", score: 2 },
+          { text: "Tiered packages (basic, standard, premium)", score: 3 },
+          { text: "Value-based pricing tied to client outcomes", score: 4 }
+        ]
+      },
+      {
+        q: "How often do your clients ask you strategic financial questions?",
+        sub: "Client demand signals advisory opportunity.",
+        options: [
+          { text: "Rarely — they just want the books done", score: 1 },
+          { text: "Occasionally — 'should I hire?' 'can I afford this?'", score: 2 },
+          { text: "Regularly — I'm their go-to for financial decisions", score: 3 },
+          { text: "Constantly — I'm basically their part-time CFO already", score: 4 }
+        ]
+      },
+      {
+        q: "What's your biggest hesitation about offering advisory services?",
+        sub: "Understanding your blockers helps us create your action plan.",
+        options: [
+          { text: "I don't feel qualified enough", score: 1 },
+          { text: "I don't know how to price or package advisory", score: 2 },
+          { text: "I'm too busy with current bookkeeping work", score: 3 },
+          { text: "I'm ready — I just need a push to start", score: 4 }
+        ]
+      }
+    ];
+
+    let current = 0;
+    let answers = new Array(questions.length).fill(-1);
+
+    function renderQuestion() {
+      const q = questions[current];
+      let html = '<h2>' + q.q + '</h2>';
+      html += '<p class="question-subtitle">' + q.sub + '</p>';
+      html += '<div class="options">';
+      const letters = ['A','B','C','D'];
+      q.options.forEach((opt, i) => {
+        const sel = answers[current] === i ? ' selected' : '';
+        html += '<div class="option' + sel + '" onclick="selectOption(' + i + ')">';
+        html += '<span class="option-letter">' + letters[i] + '</span>';
+        html += '<span class="option-text">' + opt.text + '</span>';
+        html += '</div>';
+      });
+      html += '</div>';
+      document.getElementById('questionCard').innerHTML = html;
+
+      document.getElementById('progressText').textContent = 'Question ' + (current + 1) + ' of ' + questions.length;
+      document.getElementById('progressFill').style.width = ((current + 1) / questions.length * 100) + '%';
+      document.getElementById('backBtn').style.visibility = current === 0 ? 'hidden' : 'visible';
+      document.getElementById('nextBtn').disabled = answers[current] === -1;
+      document.getElementById('nextBtn').textContent = current === questions.length - 1 ? 'See Results →' : 'Next →';
+    }
+
+    function selectOption(idx) {
+      answers[current] = idx;
+      renderQuestion();
+    }
+
+    function nextQuestion() {
+      if (answers[current] === -1) return;
+      if (current < questions.length - 1) {
+        current++;
+        renderQuestion();
+      } else {
+        showResults();
+      }
+    }
+
+    function prevQuestion() {
+      if (current > 0) {
+        current--;
+        renderQuestion();
+      }
+    }
+
+    function showResults() {
+      document.getElementById('quiz').style.display = 'none';
+      const total = answers.reduce((sum, a, i) => sum + questions[i].options[a].score, 0);
+      const maxScore = questions.length * 4;
+      const pct = Math.round((total / maxScore) * 100);
+
+      let level, cls, title, desc, plan;
+      if (pct < 40) {
+        level = 'Building Foundation';
+        cls = 'score-low';
+        title = 'You\'re Building Your Foundation';
+        desc = 'You have solid bookkeeping skills but need to develop advisory capabilities before transitioning. The good news: you\'re closer than you think.';
+        plan = [
+          'Complete our free Module 1 on advisory fundamentals — <a href="/course/module-1/">start here</a>',
+          'Build your first cash flow forecast using our template in the <a href="/starter-kit/">Advisory Starter Kit</a>',
+          'Pick 1-2 existing clients and start asking strategic questions during your regular meetings',
+          'Study for the QuickBooks ProAdvisor certification (free) to build credibility',
+          'Read our guide: <a href="/blog/bookkeeper-to-advisory-complete-guide/">How to Transition from Bookkeeper to Advisory</a>'
+        ];
+      } else if (pct < 70) {
+        level = 'Almost Ready';
+        cls = 'score-mid';
+        title = 'You\'re Almost Ready — Time to Level Up';
+        desc = 'You have the experience and some advisory skills. With the right frameworks and positioning, you could start offering advisory services within weeks.';
+        plan = [
+          'Download the <a href="/starter-kit/">Advisory Starter Kit</a> — use the pricing calculator to set your advisory rates',
+          'Identify your 3 best clients and schedule "strategic review" meetings this month',
+          'Build a KPI dashboard template you can customize per client',
+          'Practice your advisory pitch: "I\'ve been reviewing your numbers and see opportunities..."',
+          'Set a launch date: 2 weeks from now, you\'ll have your first advisory client'
+        ];
+      } else {
+        level = 'Ready to Launch';
+        cls = 'score-high';
+        title = 'You\'re Ready — Stop Waiting and Launch';
+        desc = 'You have the skills, the clients, and the demand. The only thing between you and 2-3x revenue is pulling the trigger. Let\'s go.';
+        plan = [
+          'This week: Use the <a href="/starter-kit/">Starter Kit proposal template</a> to create your advisory packages',
+          'Next week: Present advisory packages to your top 3 clients',
+          'Use our <a href="/tools/advisory-revenue-calculator/">Revenue Calculator</a> to model your income at different client counts',
+          'Consider the CMA certification to boost credibility as you raise rates',
+          'Goal: First advisory client signed within 14 days. You\'re ready. Go.'
+        ];
+      }
+
+      let html = '<div class="score-circle ' + cls + '">';
+      html += '<span class="score-number">' + pct + '</span>';
+      html += '<span class="score-label">out of 100</span>';
+      html += '</div>';
+      html += '<h2>' + title + '</h2>';
+      html += '<p class="result-desc">' + desc + '</p>';
+
+      html += '<div class="action-plan"><h3>📋 Your Personalized Action Plan</h3><ol>';
+      plan.forEach(function(step) { html += '<li>' + step + '</li>'; });
+      html += '</ol></div>';
+
+      html += '<div class="email-capture">';
+      html += '<h3>Get Your Full Advisory Transition Guide</h3>';
+      html += '<p>Enter your email for the complete 30-day advisory launch plan + free templates</p>';
+      html += '<div class="email-form">';
+      html += '<input type="email" id="quizEmail" placeholder="your@email.com">';
+      html += '<button onclick="submitEmail()">Get the Guide</button>';
+      html += '</div>';
+      html += '<p class="success-msg" id="successMsg">✅ Check your inbox! (Guide coming soon)</p>';
+      html += '</div>';
+
+      html += '<div class="related-tools">';
+      html += '<a href="/tools/advisory-revenue-calculator/" class="related-tool"><h4>💰 Revenue Calculator</h4><p>Model your advisory income at different price points and client counts</p></a>';
+      html += '<a href="/starter-kit/" class="related-tool"><h4>📦 Advisory Starter Kit</h4><p>Free templates: pricing, proposals, KPI dashboard, and more</p></a>';
+      html += '</div>';
+
+      document.getElementById('results').innerHTML = html;
+      document.getElementById('results').style.display = 'block';
+    }
+
+    function submitEmail() {
+      const email = document.getElementById('quizEmail').value;
+      if (!email || !email.includes('@')) return;
+      fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email, source: 'advisory-readiness-quiz' })
+      }).then(function() {
+        document.getElementById('successMsg').style.display = 'block';
+        document.getElementById('quizEmail').disabled = true;
+      }).catch(function() {
+        document.getElementById('successMsg').style.display = 'block';
+      });
+    }
+
+    renderQuestion();
+    </script>
+</body>
+</html>
