@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractional CFO Pricing: How to Price Your Advisory Services (With Real Data) — Vega Academy</title>
+    <meta name="description" content="Data-backed guide to fractional CFO pricing. Monthly retainer models, value-based pricing, hourly vs. fixed, and how to charge $2K-$8K/month with confidence.">
+    <meta name="keywords" content="fractional CFO pricing, advisory services pricing, how to price CFO services, fractional CFO fees">
+    <link rel="canonical" href="https://vega-academy.vercel.app/blog/fractional-cfo-pricing-models/">
+    <meta property="og:title" content="Fractional CFO Pricing: How to Price Your Advisory Services (With Real Data)">
+    <meta property="og:description" content="Data-backed guide to fractional CFO pricing. Monthly retainer models, value-based pricing, hourly vs. fixed, and how to charge $2K-$8K/month with confidence.">
+    <meta property="og:type" content="article">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --bg: #0a0a0f; --surface: #12121a; --surface-2: #1a1a26; --border: #2a2a3a; --text: #e8e8f0; --text-muted: #8888a0; --accent: #6c5ce7; --accent-light: #a29bfe; --gold: #f0c040; --success: #00d2a0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+        .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,15,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 100; padding: 16px 0; }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; background: linear-gradient(135deg, var(--accent-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .logo span { font-weight: 400; opacity: 0.7; }
+        .nav-links { display: flex; gap: 16px; align-items: center; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-cta { background: var(--accent); color: white !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
+        article { padding: 120px 0 80px; }
+        .breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 32px; }
+        .breadcrumb a { color: var(--accent-light); text-decoration: none; }
+        .meta { display: flex; gap: 16px; align-items: center; margin-bottom: 40px; flex-wrap: wrap; }
+        .meta-item { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; }
+        h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; letter-spacing: -1.5px; line-height: 1.15; margin-bottom: 20px; }
+        .subtitle { font-size: 18px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.7; }
+        h2 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 56px 0 20px; padding-top: 24px; border-top: 1px solid var(--border); }
+        h3 { font-size: 22px; font-weight: 700; margin: 40px 0 16px; }
+        h4 { font-size: 18px; font-weight: 700; margin: 28px 0 12px; }
+        p { margin-bottom: 20px; color: var(--text); font-size: 16px; }
+        ul, ol { margin-bottom: 20px; padding-left: 24px; }
+        li { margin-bottom: 10px; color: var(--text); font-size: 16px; }
+        strong { color: var(--accent-light); }
+        blockquote { border-left: 3px solid var(--accent); padding: 16px 24px; margin: 32px 0; background: var(--surface); border-radius: 0 12px 12px 0; }
+        blockquote p { color: var(--text-muted); margin-bottom: 0; font-style: italic; }
+        .highlight-box { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin: 32px 0; }
+        .highlight-box h4 { font-size: 18px; font-weight: 700; color: var(--gold); margin-bottom: 12px; margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; }
+        th { color: var(--accent-light); font-weight: 600; background: var(--surface); }
+        td { color: var(--text-muted); }
+        .cta-box { background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(240,192,64,0.1)); border: 1px solid var(--accent); border-radius: 16px; padding: 40px; margin: 48px 0; text-align: center; }
+        .cta-box h3 { margin-top: 0; color: var(--accent-light); }
+        .cta-btn { display: inline-block; background: linear-gradient(135deg, var(--accent), #7c6cf7); color: white; padding: 16px 36px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 16px; }
+        footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+        footer p { color: var(--text-muted); font-size: 13px; }
+        footer a { color: var(--accent-light); text-decoration: none; }
+        @media (max-width: 640px) {
+            table { font-size: 12px; }
+            th, td { padding: 8px 10px; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Fractional CFO Pricing: How to Price Your Advisory Services (With Real Data)",
+      "description": "Data-backed guide to fractional CFO pricing. Monthly retainer models, value-based pricing, hourly vs. fixed, and how to charge $2K-$8K/month with confidence.",
+      "author": { "@type": "Organization", "name": "Vega Academy" },
+      "publisher": { "@type": "Organization", "name": "Vega Academy" },
+      "datePublished": "2026-03-06",
+      "dateModified": "2026-03-06"
+    }
+    </script>
+</head>
+<body>
+<nav>
+    <div class="nav-inner">
+        <a href="/" class="logo">⭐ vega <span>academy</span></a>
+        <div class="nav-links">
+            <a href="/blog/">Blog</a>
+            <a href="/starter-kit/">Free Starter Kit</a>
+            <a href="/" class="nav-cta">Join Waitlist</a>
+        </div>
+    </div>
+</nav>
+
+<article>
+<div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> → <a href="/blog/">Blog</a> → Fractional CFO Pricing: How to Price Your Advisory Services (With Real Data)</div>
+
+    <h1>Fractional CFO Pricing: How to Price Your Advisory Services (With Real Data)</h1>
+    <p class="subtitle">Data-backed guide to fractional CFO pricing. Monthly retainer models, value-based pricing, hourly vs. fixed, and how to charge $2K-$8K/month with confidence.</p>
+
+    <div class="meta">
+        <span class="meta-item">📅 March 6, 2026</span>
+        <span class="meta-item">⏱️ 10 min read</span>
+        <span class="meta-item">📂 Advisory Guide</span>
+    </div>
+
+    
+    <h2>The Pricing Landscape in 2026</h2>
+    <p>"Fractional CFO services" generates <strong>2,400 monthly searches</strong> with an average CPC of <strong>$36</strong> — meaning businesses are willing to pay a LOT to find these services. The high CPC signals high purchase intent and high willingness to pay.</p><p>Current market rates for fractional CFO services:</p><table><tr><th>Market Segment</th><th>Monthly Retainer</th><th>Hourly Equivalent</th></tr><tr><td>Solopreneur/freelancer</td><td>$1,000 - $2,000</td><td>$150 - $200/hr</td></tr><tr><td>Small business ($1M-$5M)</td><td>$2,000 - $4,000</td><td>$200 - $300/hr</td></tr><tr><td>Mid-market ($5M-$20M)</td><td>$4,000 - $8,000</td><td>$250 - $400/hr</td></tr><tr><td>Growth/VC-backed</td><td>$6,000 - $12,000</td><td>$300 - $500/hr</td></tr></table><p>These rates reflect 2026 market data. If you're charging less than $2,000/month for fractional CFO work, you're underpricing yourself.
+  
+
+    <h2>Three Pricing Models That Work</h2>
+    <h3>Model 1: Fixed Monthly Retainer (Recommended)</h3><p>The most common and most predictable model. Client pays a fixed fee, you deliver a defined scope of work each month.</p><p><strong>Pros:</strong> Predictable revenue, easy to understand, clients budget for it</p><p><strong>Cons:</strong> Scope creep risk, need clear boundaries</p><h3>Model 2: Tiered Packages</h3><p>Offer 3 tiers (Starter/Growth/Strategic) at different price points. Clients self-select based on their needs.</p><p><strong>Pros:</strong> Upsell path built in, addresses different segments</p><p><strong>Cons:</strong> More complex to manage, need clear differentiation between tiers</p><h3>Model 3: Value-Based Pricing</h3><p>Price based on the value you create, not the time you spend. If your advice saves a client $100K, charging $5K/month is a bargain.</p><p><strong>Pros:</strong> Highest margins, aligns incentives</p><p><strong>Cons:</strong> Harder to sell initially, requires proof of value</p>
+  
+
+    <h2>How to Raise Your Prices</h2>
+    <p>Most fractional CFOs are underpriced. Here's how to fix it:</p><ol><li><strong>Specialize:</strong> Industry specialists charge 30-50% more than generalists. Period.</li><li><strong>Quantify your impact:</strong> "I helped [client] reduce cash flow gaps by 40% and increase margins by 8 points." Numbers sell.</li><li><strong>Raise on new clients first:</strong> New clients get new pricing. Existing clients get grandfathered (then raised gradually).</li><li><strong>Anchor high:</strong> Start every proposal conversation with your premium tier. The mid-tier suddenly looks reasonable.</li><li><strong>Add deliverables, not hours:</strong> More dashboards, more analysis, more strategy calls — not more billable hours.</li></ol>
+  
+
+    <div class="cta-box">
+        <h3>Ready to Level Up Your Advisory Practice?</h3>
+        <p>Get the free Advisory Starter Kit: pricing calculator, proposal template, KPI dashboard, conversation scripts, and monthly report template.</p>
+        <a href="/starter-kit/" class="cta-btn">Download Free Starter Kit →</a>
+    </div>
+
+    <p><em>Related: <a href="/blog/how-to-become-fractional-cfo/" style="color:var(--accent-light)">How to Become a Fractional CFO in 2026</a></em></p>
+    <p><em>Related: <a href="/blog/fractional-cfo-services-guide/" style="color:var(--accent-light)">Fractional CFO Services: Complete Guide</a></em></p>
+    <p><em>Related: <a href="/blog/advisory-pricing-bookkeepers/" style="color:var(--accent-light)">Advisory Pricing for Bookkeepers</a></em></p>
+</div>
+</article>
+
+<footer>
+    <div class="container">
+        <p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐ for ambitious bookkeepers and advisory professionals.</p>
+    </div>
+</footer>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

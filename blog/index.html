@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Vega Academy</title>
-    <meta name="description" content="Practical guides for bookkeepers and accountants transitioning to advisory and fractional CFO services.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Blog — Vega Academy | Advisory & Fractional CFO Guides</title>
+    <meta name="description" content="Practical guides for bookkeepers and accountants transitioning to advisory and fractional CFO services. 26+ in-depth articles with real data.">
+    <link rel="canonical" href="https://vega-academy.vercel.app/blog/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,143 +13,291 @@
         body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
         .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
         nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,15,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 100; padding: 16px 0; }
-        nav .container { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; }
-        .logo { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; text-decoration: none; }
-        .logo-star { background: linear-gradient(135deg, var(--accent-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .logo span { font-weight: 400; opacity: 0.7; color: var(--text); }
-        .nav-cta { background: var(--accent); color: white; border: none; padding: 10px 24px; border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none; }
-
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; background: linear-gradient(135deg, var(--accent-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .logo span { font-weight: 400; opacity: 0.7; }
+        .nav-links { display: flex; gap: 16px; align-items: center; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-cta { background: var(--accent); color: white !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
         .page-header { padding: 140px 0 60px; text-align: center; border-bottom: 1px solid var(--border); }
         .page-header h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; letter-spacing: -2px; margin-bottom: 12px; }
         .page-header p { color: var(--text-muted); font-size: 18px; }
-
+        .page-header .count { color: var(--gold); font-weight: 700; }
         .posts { padding: 48px 0; }
         .post-card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin-bottom: 20px; text-decoration: none; color: inherit; transition: all 0.2s; }
         .post-card:hover { border-color: var(--accent); transform: translateY(-2px); }
         .post-meta { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; display: flex; gap: 16px; }
-        .post-meta .tag { background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px; padding: 2px 10px; color: var(--accent-light); font-weight: 600; }
-        .post-card h2 { font-size: 22px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.5px; }
-        .post-card p { color: var(--text-muted); font-size: 15px; line-height: 1.7; }
-        .read-more { display: inline-block; margin-top: 16px; color: var(--accent-light); font-weight: 600; font-size: 14px; }
-
-        footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 13px; }
+        .post-title { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; color: var(--text); }
+        .post-excerpt { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+        footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+        footer p { color: var(--text-muted); font-size: 13px; }
         footer a { color: var(--accent-light); text-decoration: none; }
     </style>
 </head>
 <body>
-
 <nav>
-    <div class="container">
-        <a href="/" class="logo"><span class="logo-star">⭐ vega</span> <span>academy</span></a>
-        <a href="/starter-kit/" class="nav-cta">Free Starter Kit</a>
+    <div class="nav-inner">
+        <a href="/" class="logo">⭐ vega <span>academy</span></a>
+        <div class="nav-links">
+            <a href="/blog/">Blog</a>
+            <a href="/starter-kit/">Free Starter Kit</a>
+            <a href="/fractional-cfo/">By Industry</a>
+            <a href="/" class="nav-cta">Join Waitlist</a>
+        </div>
     </div>
 </nav>
 
 <section class="page-header">
     <div class="container">
-        <h1>The Vega Blog</h1>
-        <p>Practical guides for bookkeepers building advisory practices</p>
+        <h1>The Vega Academy Blog</h1>
+        <p><span class="count">26 articles</span> — Practical guides for bookkeepers building advisory practices and fractional CFO businesses. All backed by real data.</p>
     </div>
 </section>
 
 <section class="posts">
     <div class="container">
-        <a href="/blog/how-to-become-fractional-cfo/" class="post-card">
-            <div class="post-meta">
-                <span>March 6, 2026</span>
-                <span class="tag">Career</span>
-                <span>15 min read</span>
-            </div>
-            <h2>How to Become a Fractional CFO in 2026: The Complete Roadmap</h2>
-            <p>You don't need a CPA, an MBA, or 20 years at a Big 4 firm. Here's the realistic path from where you are now to running a profitable fractional CFO practice — with actual numbers, pricing frameworks, and client acquisition strategies.</p>
-            <span class="read-more">Read article →</span>
-        </a>
 
-        <a href="/blog/fractional-cfo-services-guide/" class="post-card">
+        <a href="/blog/accounting-consulting-business-guide/" class="post-card">
             <div class="post-meta">
-                <span>March 6, 2026</span>
-                <span class="tag">Guide</span>
-                <span>12 min read</span>
+                <span>📅 March 2026</span>
+                <span>⏱️ 12 min read</span>
             </div>
-            <h2>Fractional CFO Services: What They Include, What They Cost, and Who Needs Them</h2>
-            <p>The definitive guide to fractional CFO services. Detailed breakdown of deliverables, pricing at every tier ($1,500-$8,000/mo), and how to evaluate providers — whether you're hiring or becoming one.</p>
-            <span class="read-more">Read article →</span>
-        </a>
-
-        <a href="/blog/cash-flow-forecasting-small-business/" class="post-card">
-            <div class="post-meta">
-                <span>March 6, 2026</span>
-                <span class="tag">Tools</span>
-                <span>10 min read</span>
-            </div>
-            <h2>Cash Flow Forecasting for Small Business: The 13-Week Model (Free Template)</h2>
-            <p>82% of small businesses fail because of cash flow problems. Here's the exact 13-week forecasting framework that fractional CFOs use — with a step-by-step walkthrough and free template.</p>
-            <span class="read-more">Read article →</span>
-        </a>
-
-        <a href="/blog/client-advisory-services-cas-guide/" class="post-card">
-            <div class="post-meta">
-                <span>March 6, 2026</span>
-                <span class="tag">CAS</span>
-                <span>14 min read</span>
-            </div>
-            <h2>Client Advisory Services (CAS): The Complete Guide for Accounting Firms in 2026</h2>
-            <p>CAS is the fastest-growing service line in accounting — growing 20-30% annually. How to design, price, and deliver Client Advisory Services that transform your firm's economics.</p>
-            <span class="read-more">Read article →</span>
-        </a>
-
-        <a href="/blog/outsourced-cfo-services-vs-full-time/" class="post-card">
-            <div class="post-meta">
-                <span>March 6, 2026</span>
-                <span class="tag">Comparison</span>
-                <span>9 min read</span>
-            </div>
-            <h2>Outsourced CFO Services vs. Full-Time CFO: Cost, Value, and When to Choose Each</h2>
-            <p>The real cost comparison: full-time CFO ($338K-$665K/year) vs. outsourced ($24K-$96K/year). Complete analysis with decision framework for businesses doing $1M-$30M revenue.</p>
-            <span class="read-more">Read article →</span>
-        </a>
-
-        <a href="/blog/bookkeeper-to-advisory-complete-guide/" class="post-card">
-            <div class="post-meta">
-                <span>March 6, 2026</span>
-                <span class="tag">Guide</span>
-                <span>12 min read</span>
-            </div>
-            <h2>How to Transition from Bookkeeper to Advisory: The Complete 2026 Guide</h2>
-            <p>73% of bookkeepers say they want to add advisory services, but most don't know where to start. This step-by-step guide covers everything: the mindset shift, packaging, pricing, and how to pitch your first advisory client without feeling salesy.</p>
-            <span class="read-more">Read article →</span>
+            <h2 class="post-title">How to Start an Accounting Consulting Business in 2026</h2>
+            <p class="post-excerpt">Step-by-step guide to starting an accounting consulting business. Pricing, finding clients, positioning, and scaling from $0 to $10K/month — with real...</p>
         </a>
 
         <a href="/blog/advisory-pricing-bookkeepers/" class="post-card">
             <div class="post-meta">
-                <span>March 6, 2026</span>
-                <span class="tag">Pricing</span>
-                <span>8 min read</span>
+                <span>📅 March 2026</span>
+                <span>⏱️ 8 min read</span>
             </div>
-            <h2>Advisory Pricing for Bookkeepers: How to Charge $2K–$5K/Month (With Examples)</h2>
-            <p>Stop undercharging. Learn the exact framework to price your advisory services based on client value, not your time. Includes real pricing tiers, proposal language, and the psychology behind premium pricing.</p>
-            <span class="read-more">Read article →</span>
+            <h2 class="post-title">Advisory Pricing for Bookkeepers: How to Charge $2K–$5K/Month</h2>
+            <p class="post-excerpt">Learn the exact framework to price advisory services as a bookkeeper. Includes real pricing tiers, value-based pricing formulas, and proposal tips....</p>
+        </a>
+
+        <a href="/blog/advisory-services-vs-bookkeeping/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 11 min read</span>
+            </div>
+            <h2 class="post-title">Advisory Services vs Bookkeeping: Why the Shift Is Inevitable (2026)</h2>
+            <p class="post-excerpt">Why bookkeepers who don't add advisory services will lose clients to AI and automation. Data on the bookkeeping-to-advisory shift, pricing differences...</p>
+        </a>
+
+        <a href="/blog/best-accounting-software-advisory-services/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 9 min read</span>
+            </div>
+            <h2 class="post-title">Best Accounting Software for Advisory Services in 2026</h2>
+            <p class="post-excerpt">Detailed comparison of accounting software for advisory-focused firms. QuickBooks Online Advanced, Xero, FreshBooks, and specialized tools for dashboa...</p>
+        </a>
+
+        <a href="/blog/best-tools-fractional-cfo/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 10 min read</span>
+            </div>
+            <h2 class="post-title">Best Tools for Fractional CFOs in 2026: Complete Tech Stack Guide</h2>
+            <p class="post-excerpt">The essential technology stack for fractional CFOs. Accounting software, dashboards, forecasting tools, client portals, and automation tools reviewed ...</p>
+        </a>
+
+        <a href="/blog/bookkeeper-to-advisory-complete-guide/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 8 min read</span>
+            </div>
+            <h2 class="post-title">How to Transition from Bookkeeper to Advisory: The Complete 2026 Guide</h2>
+            <p class="post-excerpt">Step-by-step guide for bookkeepers transitioning to advisory services. Learn how to package, price, and sell advisory & fractional CFO services to you...</p>
+        </a>
+
+        <a href="/blog/bookkeeper-to-cfo-skills-gap/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 12 min read</span>
+            </div>
+            <h2 class="post-title">7 Skills That Separate a $50/hr Bookkeeper from a $300/hr Fractional CFO</h2>
+            <p class="post-excerpt">The exact skills gap between bookkeepers and fractional CFOs — and how to close it in 90 days. Cash flow forecasting, strategic advising, financial mo...</p>
+        </a>
+
+        <a href="/blog/bookkeeping-business-plan-2026/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 11 min read</span>
+            </div>
+            <h2 class="post-title">Bookkeeping Business Plan for 2026: The Advisory-First Approach</h2>
+            <p class="post-excerpt">Modern bookkeeping business plan template for 2026. Why pure bookkeeping is dying, how to build advisory into your model from day one, and the pricing...</p>
+        </a>
+
+        <a href="/blog/cash-flow-forecasting-small-business/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 10 min read</span>
+            </div>
+            <h2 class="post-title">Cash Flow Forecasting for Small Business: The 13-Week Model (Free Template)</h2>
+            <p class="post-excerpt">Learn how to build a 13-week cash flow forecast for your small business or your clients. Includes free template, step-by-step walkthrough, and common ...</p>
+        </a>
+
+        <a href="/blog/cash-flow-management-small-business/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 10 min read</span>
+            </div>
+            <h2 class="post-title">Cash Flow Management for Small Business: The 13-Week Forecast Method</h2>
+            <p class="post-excerpt">Practical guide to small business cash flow management. The 13-week forecast method, common cash flow killers, and how to never get surprised by a cas...</p>
+        </a>
+
+        <a href="/blog/client-advisory-services-cas-guide/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 14 min read</span>
+            </div>
+            <h2 class="post-title">Client Advisory Services (CAS): The Complete Guide for Accounting Firms in 2026</h2>
+            <p class="post-excerpt">What are Client Advisory Services (CAS)? This guide covers how accounting firms and bookkeepers can build a CAS practice, pricing models, tech stack, ...</p>
+        </a>
+
+        <a href="/blog/financial-analysis-for-small-business-owners/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 11 min read</span>
+            </div>
+            <h2 class="post-title">Financial Analysis for Small Business Owners: Read Your Numbers Like a CFO</h2>
+            <p class="post-excerpt">Learn to analyze your business finances like a CFO. Ratio analysis, trend analysis, benchmarking, and the 5 reports every owner should review monthly....</p>
+        </a>
+
+        <a href="/blog/fractional-cfo-contract-template/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 9 min read</span>
+            </div>
+            <h2 class="post-title">Fractional CFO Contract Template: What to Include (2026 Guide)</h2>
+            <p class="post-excerpt">Free fractional CFO contract template and engagement letter guide. Scope of work, pricing structure, deliverables, termination clauses, and liability ...</p>
+        </a>
+
+        <a href="/blog/fractional-cfo-for-startups/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 9 min read</span>
+            </div>
+            <h2 class="post-title">Fractional CFO for Startups: When to Hire One (And What to Expect)</h2>
+            <p class="post-excerpt">When startups need a fractional CFO, what they cost ($3K-$10K/mo), and what they deliver. Fundraising support, burn rate management, financial modelin...</p>
+        </a>
+
+        <a href="/blog/fractional-cfo-pricing-models/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 10 min read</span>
+            </div>
+            <h2 class="post-title">Fractional CFO Pricing: How to Price Your Advisory Services (With Real Data)</h2>
+            <p class="post-excerpt">Data-backed guide to fractional CFO pricing. Monthly retainer models, value-based pricing, hourly vs. fixed, and how to charge $2K-$8K/month with conf...</p>
+        </a>
+
+        <a href="/blog/fractional-cfo-salary-guide/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 10 min read</span>
+            </div>
+            <h2 class="post-title">Fractional CFO Salary in 2026: What You Can Really Earn ($150-$500/hr)</h2>
+            <p class="post-excerpt">Real fractional CFO salary data for 2026. Hourly rates ($150-$500), monthly retainers ($3K-$15K), and annual earnings ($150K-$500K+). Based on market ...</p>
+        </a>
+
+        <a href="/blog/fractional-cfo-services-guide/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 12 min read</span>
+            </div>
+            <h2 class="post-title">Fractional CFO Services: What They Include, What They Cost, and Who Needs Them</h2>
+            <p class="post-excerpt">Everything you need to know about fractional CFO services: what's included, pricing ($1,500-$8,000/mo), who they're for, and how to choose or become o...</p>
+        </a>
+
+        <a href="/blog/fractional-cfo-vs-full-time-cfo-comparison/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 9 min read</span>
+            </div>
+            <h2 class="post-title">Fractional CFO vs. Full-Time CFO: The Complete Cost-Benefit Analysis</h2>
+            <p class="post-excerpt">Detailed comparison of fractional CFO vs full-time CFO. Cost analysis ($24K-$96K/yr vs $250K-$400K/yr), when to choose each, real-world scenarios, and...</p>
+        </a>
+
+        <a href="/blog/how-to-become-fractional-cfo/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 18 min read</span>
+            </div>
+            <h2 class="post-title">How to Become a Fractional CFO in 2026: The Complete Roadmap (With Real Data)</h2>
+            <p class="post-excerpt">Data-driven guide to becoming a fractional CFO. Real salary data ($150-$500/hr), market analysis (12,100 monthly searches), pricing frameworks, and st...</p>
+        </a>
+
+        <a href="/blog/how-to-sell-advisory-services/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 11 min read</span>
+            </div>
+            <h2 class="post-title">How to Sell Advisory Services: The Bookkeeper's Playbook for Landing $3K-$5K/Month Clients</h2>
+            <p class="post-excerpt">Step-by-step guide to selling advisory and fractional CFO services. Conversation scripts, objection handling, proposal templates, and the exact sales ...</p>
+        </a>
+
+        <a href="/blog/how-to-sell-advisory-services-to-bookkeeping-clients/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 8 min read</span>
+            </div>
+            <h2 class="post-title">How to Upsell Advisory Services to Your Existing Bookkeeping Clients</h2>
+            <p class="post-excerpt">Practical scripts and frameworks for transitioning bookkeeping clients to advisory. The conversation framework, pricing transition, and how to double ...</p>
+        </a>
+
+        <a href="/blog/kpi-dashboard-small-business/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 9 min read</span>
+            </div>
+            <h2 class="post-title">KPI Dashboard for Small Business: What to Track and Why</h2>
+            <p class="post-excerpt">Build a KPI dashboard that actually drives decisions. The 7 metrics every small business should track, industry-specific KPIs, and how to use dashboar...</p>
+        </a>
+
+        <a href="/blog/monthly-financial-review-template/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 8 min read</span>
+            </div>
+            <h2 class="post-title">Monthly Financial Review Template for Advisory Clients (Free Download)</h2>
+            <p class="post-excerpt">Run a professional monthly financial review meeting with your advisory clients. Includes agenda template, KPI reporting framework, and CFO commentary ...</p>
+        </a>
+
+        <a href="/blog/outsourced-cfo-services-vs-full-time/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 9 min read</span>
+            </div>
+            <h2 class="post-title">Outsourced CFO Services vs. Full-Time CFO: Cost, Value, and When to Choose Each</h2>
+            <p class="post-excerpt">Compare outsourced CFO services vs. hiring a full-time CFO. Detailed cost analysis, pros/cons, and decision framework for small businesses doing $1M-$...</p>
+        </a>
+
+        <a href="/blog/virtual-cfo-services-guide/" class="post-card">
+            <div class="post-meta">
+                <span>📅 March 2026</span>
+                <span>⏱️ 10 min read</span>
+            </div>
+            <h2 class="post-title">Virtual CFO Services: What They Are, Who Needs Them, and What They Cost</h2>
+            <p class="post-excerpt">Complete guide to virtual CFO services. Pricing ($1,500-$8,000/mo), deliverables, who qualifies, and how to choose the right provider for your busines...</p>
         </a>
 
         <a href="/blog/what-is-fractional-cfo/" class="post-card">
             <div class="post-meta">
-                <span>March 6, 2026</span>
-                <span class="tag">Basics</span>
-                <span>6 min read</span>
+                <span>📅 March 2026</span>
+                <span>⏱️ 8 min read</span>
             </div>
-            <h2>What Is a Fractional CFO? (And Can a Bookkeeper Become One?)</h2>
-            <p>Fractional CFO is the hottest role in accounting — and yes, experienced bookkeepers can absolutely make the leap. Here's what the role actually involves, what clients expect, and how to position yourself.</p>
-            <span class="read-more">Read article →</span>
+            <h2 class="post-title">What Is a Fractional CFO? (And Can a Bookkeeper Become One?)</h2>
+            <p class="post-excerpt">Fractional CFO explained: what the role involves, what clients expect, how much you can charge, and how bookkeepers can make the transition....</p>
         </a>
     </div>
 </section>
 
 <footer>
     <div class="container">
-        <p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐ by an AI that means business.</p>
+        <p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐ for ambitious bookkeepers and advisory professionals.</p>
     </div>
 </footer>
-
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

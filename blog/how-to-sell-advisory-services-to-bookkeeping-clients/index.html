@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Upsell Advisory Services to Your Existing Bookkeeping Clients — Vega Academy</title>
+    <meta name="description" content="Practical scripts and frameworks for transitioning bookkeeping clients to advisory. The conversation framework, pricing transition, and how to double your revenue from existing clients.">
+    <meta name="keywords" content="sell advisory services, upsell bookkeeping clients, bookkeeper to advisory, advisory services bookkeeper">
+    <link rel="canonical" href="https://vega-academy.vercel.app/blog/how-to-sell-advisory-services-to-bookkeeping-clients/">
+    <meta property="og:title" content="How to Upsell Advisory Services to Your Existing Bookkeeping Clients">
+    <meta property="og:description" content="Practical scripts and frameworks for transitioning bookkeeping clients to advisory. The conversation framework, pricing transition, and how to double your revenue from existing clients.">
+    <meta property="og:type" content="article">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --bg: #0a0a0f; --surface: #12121a; --surface-2: #1a1a26; --border: #2a2a3a; --text: #e8e8f0; --text-muted: #8888a0; --accent: #6c5ce7; --accent-light: #a29bfe; --gold: #f0c040; --success: #00d2a0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+        .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,15,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 100; padding: 16px 0; }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; background: linear-gradient(135deg, var(--accent-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .logo span { font-weight: 400; opacity: 0.7; }
+        .nav-links { display: flex; gap: 16px; align-items: center; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-cta { background: var(--accent); color: white !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
+        article { padding: 120px 0 80px; }
+        .breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 32px; }
+        .breadcrumb a { color: var(--accent-light); text-decoration: none; }
+        .meta { display: flex; gap: 16px; align-items: center; margin-bottom: 40px; flex-wrap: wrap; }
+        .meta-item { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; }
+        h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; letter-spacing: -1.5px; line-height: 1.15; margin-bottom: 20px; }
+        .subtitle { font-size: 18px; color: var(--text-muted); margin-bottom: 16px; line-height: 1.7; }
+        h2 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 56px 0 20px; padding-top: 24px; border-top: 1px solid var(--border); }
+        h3 { font-size: 22px; font-weight: 700; margin: 40px 0 16px; }
+        h4 { font-size: 18px; font-weight: 700; margin: 28px 0 12px; }
+        p { margin-bottom: 20px; color: var(--text); font-size: 16px; }
+        ul, ol { margin-bottom: 20px; padding-left: 24px; }
+        li { margin-bottom: 10px; color: var(--text); font-size: 16px; }
+        strong { color: var(--accent-light); }
+        blockquote { border-left: 3px solid var(--accent); padding: 16px 24px; margin: 32px 0; background: var(--surface); border-radius: 0 12px 12px 0; }
+        blockquote p { color: var(--text-muted); margin-bottom: 0; font-style: italic; }
+        .highlight-box { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin: 32px 0; }
+        .highlight-box h4 { font-size: 18px; font-weight: 700; color: var(--gold); margin-bottom: 12px; margin-top: 0; }
+        table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; }
+        th { color: var(--accent-light); font-weight: 600; background: var(--surface); }
+        td { color: var(--text-muted); }
+        .cta-box { background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(240,192,64,0.1)); border: 1px solid var(--accent); border-radius: 16px; padding: 40px; margin: 48px 0; text-align: center; }
+        .cta-box h3 { margin-top: 0; color: var(--accent-light); }
+        .cta-btn { display: inline-block; background: linear-gradient(135deg, var(--accent), #7c6cf7); color: white; padding: 16px 36px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 16px; }
+        footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
+        footer p { color: var(--text-muted); font-size: 13px; }
+        footer a { color: var(--accent-light); text-decoration: none; }
+        @media (max-width: 640px) {
+            table { font-size: 12px; }
+            th, td { padding: 8px 10px; }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Upsell Advisory Services to Your Existing Bookkeeping Clients",
+      "description": "Practical scripts and frameworks for transitioning bookkeeping clients to advisory. The conversation framework, pricing transition, and how to double your revenue from existing clients.",
+      "author": { "@type": "Organization", "name": "Vega Academy" },
+      "publisher": { "@type": "Organization", "name": "Vega Academy" },
+      "datePublished": "2026-03-06",
+      "dateModified": "2026-03-06"
+    }
+    </script>
+</head>
+<body>
+<nav>
+    <div class="nav-inner">
+        <a href="/" class="logo">⭐ vega <span>academy</span></a>
+        <div class="nav-links">
+            <a href="/blog/">Blog</a>
+            <a href="/starter-kit/">Free Starter Kit</a>
+            <a href="/" class="nav-cta">Join Waitlist</a>
+        </div>
+    </div>
+</nav>
+
+<article>
+<div class="container">
+    <div class="breadcrumb"><a href="/">Home</a> → <a href="/blog/">Blog</a> → How to Upsell Advisory Services to Your Existing Bookkeeping Clients</div>
+
+    <h1>How to Upsell Advisory Services to Your Existing Bookkeeping Clients</h1>
+    <p class="subtitle">Practical scripts and frameworks for transitioning bookkeeping clients to advisory. The conversation framework, pricing transition, and how to double your revenue from existing clients.</p>
+
+    <div class="meta">
+        <span class="meta-item">📅 March 6, 2026</span>
+        <span class="meta-item">⏱️ 8 min read</span>
+        <span class="meta-item">📂 Advisory Guide</span>
+    </div>
+
+    
+    <h2>Your Existing Clients Are Your Best Prospects</h2>
+    <p>The hardest part of selling advisory services isn't the service itself — it's finding qualified prospects who trust you enough to pay premium fees.</p><p>Good news: <strong>you already have them.</strong> Your bookkeeping clients already trust you with their financial data. They already know you're competent. They already pay you monthly. The upgrade from $500/month bookkeeping to $2,000/month advisory is a much easier sell than cold outreach.</p><p>Research shows it costs <strong>5-7x more to acquire a new customer</strong> than to upsell an existing one. Start here.
+  
+
+    <h2>The Quarterly Business Review Method</h2>
+    <p>The best way to introduce advisory is the <strong>Quarterly Business Review (QBR)</strong>. Here's the framework:</p><ol><li><strong>Schedule the meeting:</strong> "I want to show you something I noticed in your financials. Can we set aside 30 minutes this week?"</li><li><strong>Present 3 insights:</strong> Find 3 things in their data that they don't know about. Examples:<ul><li>"Your gross margin dropped from 42% to 37% last quarter. Here's why."</li><li>"You have $45K in receivables over 60 days. That's cash trapped in your AR."</li><li>"Your labor costs increased 12% but revenue only grew 4%. Here's what that means."</li></ul></li><li><strong>Show the gap:</strong> "I noticed these patterns because I was looking at your data from an advisory perspective. This is the kind of analysis I can do for you every month."</li><li><strong>Present the offer:</strong> "I'm launching advisory packages that include a monthly dashboard, cash flow forecast, and a strategy call. Want me to walk you through what that looks like for your business?"</li></ol>
+  
+
+    <h2>Pricing the Transition</h2>
+    <p>Don't shock your clients with a massive price jump. Phase it in:</p><h3>Option A: Add-On Pricing</h3><p>Keep their bookkeeping fee the same. Add advisory as a separate line item. "Your bookkeeping stays at $800/month. The advisory package is an additional $1,200/month. Total: $2,000/month."</p><h3>Option B: Bundled Upgrade</h3><p>"I'm upgrading your service to our Advisory tier, which includes everything you get now PLUS monthly dashboard, cash flow forecast, and strategy call. The new monthly fee is $2,000."</p><h3>Option C: Gradual Phase-In</h3><p>Month 1: Add dashboard (free — show the value). Month 2: Add cash flow forecast ($300 add-on). Month 3: Add monthly strategy call ($400 add-on). By month 3, they're paying for full advisory without a single big price increase.
+  
+
+    <div class="cta-box">
+        <h3>Ready to Level Up Your Advisory Practice?</h3>
+        <p>Get the free Advisory Starter Kit: pricing calculator, proposal template, KPI dashboard, conversation scripts, and monthly report template.</p>
+        <a href="/starter-kit/" class="cta-btn">Download Free Starter Kit →</a>
+    </div>
+
+    <p><em>Related: <a href="/blog/how-to-become-fractional-cfo/" style="color:var(--accent-light)">How to Become a Fractional CFO in 2026</a></em></p>
+    <p><em>Related: <a href="/blog/fractional-cfo-services-guide/" style="color:var(--accent-light)">Fractional CFO Services: Complete Guide</a></em></p>
+    <p><em>Related: <a href="/blog/advisory-pricing-bookkeepers/" style="color:var(--accent-light)">Advisory Pricing for Bookkeepers</a></em></p>
+</div>
+</article>
+
+<footer>
+    <div class="container">
+        <p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐ for ambitious bookkeepers and advisory professionals.</p>
+    </div>
+</footer>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
