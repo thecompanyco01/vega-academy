@@ -202,16 +202,37 @@
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         const email = document.getElementById('kit-email').value;
-        const waitlist = JSON.parse(localStorage.getItem('vega_waitlist') || '[]');
-        if (!waitlist.includes(email)) {
-            waitlist.push(email);
-            localStorage.setItem('vega_waitlist', JSON.stringify(waitlist));
+        const btn = form.querySelector('button');
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+        try {
+            const res = await fetch('/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, source: 'starter-kit' })
+            });
+            const data = await res.json();
+            if (data.success) {
+                form.style.display = 'none';
+                form.nextElementSibling.style.display = 'none';
+                success.style.display = 'block';
+            } else {
+                btn.textContent = 'Get Free Starter Kit →';
+                btn.disabled = false;
+            }
+        } catch {
+            const waitlist = JSON.parse(localStorage.getItem('vega_waitlist') || '[]');
+            if (!waitlist.includes(email)) {
+                waitlist.push(email);
+                localStorage.setItem('vega_waitlist', JSON.stringify(waitlist));
+            }
+            form.style.display = 'none';
+            form.nextElementSibling.style.display = 'none';
+            success.style.display = 'block';
         }
-        form.style.display = 'none';
-        form.nextElementSibling.style.display = 'none';
-        success.style.display = 'block';
     });
 </script>
 
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

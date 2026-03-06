@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: The Advisory Mindset Shift — Free Preview | Vega Academy</title>
+    <meta name="description" content="Free preview of Vega Academy Module 1. Learn why compliance work is dying, what clients actually value, and how to think like an advisor instead of a bookkeeper.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root { --bg: #0a0a0f; --surface: #12121a; --surface-2: #1a1a26; --border: #2a2a3a; --text: #e8e8f0; --text-muted: #8888a0; --accent: #6c5ce7; --accent-light: #a29bfe; --gold: #f0c040; --success: #00d2a0; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.8; }
+        .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,15,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 100; padding: 16px 0; }
+        nav .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; background: linear-gradient(135deg, var(--accent-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
+        .logo span { font-weight: 400; opacity: 0.7; }
+        .nav-links { display: flex; gap: 16px; align-items: center; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-cta { background: var(--accent); color: white !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
+
+        .course-header { padding: 120px 0 40px; border-bottom: 1px solid var(--border); }
+        .course-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,210,160,0.1); border: 1px solid rgba(0,210,160,0.3); border-radius: 100px; padding: 6px 16px; font-size: 12px; color: var(--success); font-weight: 600; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .module-num { font-size: 14px; color: var(--accent-light); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; }
+        .course-header h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; letter-spacing: -1.5px; line-height: 1.15; margin-bottom: 16px; }
+        .course-header p { font-size: 18px; color: var(--text-muted); line-height: 1.7; }
+
+        .lesson { padding: 48px 0; border-bottom: 1px solid var(--border); }
+        .lesson-num { font-size: 12px; color: var(--accent-light); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+        h2 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 20px; }
+        h3 { font-size: 22px; font-weight: 700; margin: 32px 0 16px; }
+        p { margin-bottom: 20px; font-size: 16px; }
+        ul, ol { margin-bottom: 20px; padding-left: 24px; }
+        li { margin-bottom: 10px; font-size: 16px; }
+        strong { color: var(--accent-light); }
+
+        .callout { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px 32px; margin: 32px 0; }
+        .callout.exercise { border-color: var(--gold); border-left: 4px solid var(--gold); }
+        .callout.exercise h4 { color: var(--gold); }
+        .callout.insight { border-color: var(--accent); border-left: 4px solid var(--accent); }
+        .callout.insight h4 { color: var(--accent-light); }
+        .callout h4 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+        .callout p { margin-bottom: 8px; font-size: 15px; }
+        .callout p:last-child { margin-bottom: 0; }
+
+        blockquote { border-left: 3px solid var(--accent); padding: 16px 24px; margin: 28px 0; background: var(--surface); border-radius: 0 12px 12px 0; }
+        blockquote p { color: var(--text-muted); margin-bottom: 0; font-style: italic; }
+
+        table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; }
+        th { color: var(--accent-light); font-weight: 600; background: var(--surface); }
+        td { color: var(--text-muted); }
+
+        .locked { padding: 80px 0; text-align: center; }
+        .locked-icon { font-size: 48px; margin-bottom: 24px; }
+        .locked h2 { color: var(--text-muted); }
+        .locked p { color: var(--text-muted); max-width: 480px; margin: 0 auto 32px; }
+
+        .cta-box { background: linear-gradient(135deg, rgba(108,92,231,0.15), rgba(240,192,64,0.1)); border: 1px solid var(--accent); border-radius: 16px; padding: 40px; margin: 48px 0; text-align: center; }
+        .cta-box h3 { margin-top: 0; margin-bottom: 12px; color: var(--accent-light); font-size: 24px; }
+        .cta-box p { color: var(--text-muted); margin-bottom: 24px; }
+        .cta-btn { display: inline-block; background: linear-gradient(135deg, var(--accent), #7c6cf7); color: white; padding: 16px 36px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 16px; }
+
+        .progress-bar { display: flex; gap: 4px; margin: 24px 0; }
+        .progress-dot { flex: 1; height: 4px; border-radius: 2px; background: var(--border); }
+        .progress-dot.active { background: var(--accent); }
+        .progress-dot.done { background: var(--success); }
+
+        footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; color: var(--text-muted); font-size: 13px; }
+        footer a { color: var(--accent-light); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a href="/" class="logo">⭐ vega <span>academy</span></a>
+        <div class="nav-links">
+            <a href="/blog/">Blog</a>
+            <a href="/starter-kit/">Free Starter Kit</a>
+            <a href="/" class="nav-cta">Join Waitlist</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+
+<section class="course-header">
+    <div class="course-badge">🆓 Free Preview</div>
+    <div class="module-num">Module 1 of 6</div>
+    <h1>The Advisory Mindset Shift</h1>
+    <p>Before you learn the frameworks, templates, and pricing models — you need to understand why this shift matters, why it's urgent, and what's actually different about advisory vs. compliance.</p>
+
+    <div class="progress-bar">
+        <div class="progress-dot active"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+        <div class="progress-dot"></div>
+    </div>
+</section>
+
+<!-- LESSON 1 -->
+<section class="lesson">
+    <div class="lesson-num">Lesson 1.1</div>
+    <h2>Why Compliance Work Is a Dead End</h2>
+
+    <p>Let's start with an uncomfortable truth: if your business model is "record transactions, reconcile bank feeds, produce financial statements" — you're building on sand.</p>
+
+    <p>Three forces are converging right now:</p>
+
+    <h3>1. AI Automation Is Real, Not Hypothetical</h3>
+    <p>Bank feed categorization is already 85-95% automated. AI-powered reconciliation is live in QBO and Xero. Receipt capture and matching is automated. Transaction coding is automated.</p>
+    <p>The tasks that fill 60-80% of a typical bookkeeper's day are being automated right now — not in 5 years, <em>right now</em>. The firms that survive will be the ones doing work that AI can't do: interpreting numbers, advising on strategy, and helping business owners make better decisions.</p>
+
+    <h3>2. Race-to-the-Bottom Pricing</h3>
+    <p>When services become commoditized, prices collapse. Bookkeeping has been commoditizing for 15 years. Offshore bookkeeping at $15/hr. AI-assisted services at $200/month flat. Price competition only works until someone is willing to lose money longer than you.</p>
+
+    <h3>3. Clients Don't Value What They Don't Understand</h3>
+    <p>Most small business owners don't understand what their bookkeeper does. They know they "need" it, but they don't value it. When clients don't value a service, they:</p>
+    <ul>
+        <li>Resist price increases</li>
+        <li>Pay late</li>
+        <li>Switch to cheaper providers</li>
+        <li>Question every invoice</li>
+    </ul>
+
+    <p>Advisory is the opposite. When you tell a business owner "you're losing $4,000/month on that product line and here's how to fix it" — they <em>feel</em> the value immediately. They pay on time, they refer friends, and they never question the fee.</p>
+
+    <div class="callout insight">
+        <h4>💡 Key Insight</h4>
+        <p>The best bookkeepers aren't competing with AI. They're using AI to eliminate the commodity work — and spending that freed-up time on advisory conversations that clients will happily pay 5-10x more for.</p>
+    </div>
+</section>
+
+<!-- LESSON 2 -->
+<section class="lesson">
+    <div class="lesson-num">Lesson 1.2</div>
+    <h2>What Clients Actually Pay For</h2>
+
+    <p>Here's a framework that will change how you think about your services forever:</p>
+
+    <h3>The Value Pyramid</h3>
+
+    <table>
+        <tr><th>Level</th><th>Service</th><th>Client Perception</th><th>Pricing Power</th></tr>
+        <tr><td>1 (Bottom)</td><td>Data Entry & Categorization</td><td>"Anyone could do this"</td><td>Lowest</td></tr>
+        <tr><td>2</td><td>Reconciliation & Compliance</td><td>"I need this but it's boring"</td><td>Low</td></tr>
+        <tr><td>3</td><td>Reporting & Analysis</td><td>"This helps me understand my business"</td><td>Medium</td></tr>
+        <tr><td>4</td><td>Insights & Recommendations</td><td>"This helps me make better decisions"</td><td>High</td></tr>
+        <tr><td>5 (Top)</td><td>Strategic Partnership</td><td>"I can't run my business without you"</td><td>Highest</td></tr>
+    </table>
+
+    <p>Most bookkeepers operate at Levels 1-2. Some reach Level 3. The money — and the job security — lives at Levels 4-5.</p>
+
+    <p>Here's the good news: <strong>moving up the pyramid doesn't require more credentials</strong>. It requires different skills and a different delivery model. You already have the financial knowledge. What you need is the framework to turn that knowledge into advice that clients will pay premium prices for.</p>
+
+    <h3>The $40/hr vs. $400/hr Conversation</h3>
+
+    <p>Watch the difference:</p>
+
+    <blockquote><p><strong>Level 2 ($40/hr):</strong> "Here are your February financials. Revenue was $185K, expenses were $142K, net income was $43K."</p></blockquote>
+
+    <blockquote><p><strong>Level 4 ($400/hr):</strong> "Revenue grew 8% but your margins dropped 3 points because material costs spiked. If this trend continues, you'll lose $36K in profit this year. I recommend renegotiating your top 3 vendor contracts — here's a script for the conversation — and raising prices 5% on your project tier, which our analysis shows won't affect close rates."</p></blockquote>
+
+    <p>Same data. Same client. Same month. One is data delivery, the other is advisory. The second one is worth 10x more — and clients know it.</p>
+
+    <div class="callout exercise">
+        <h4>📝 Exercise: Audit Your Current Services</h4>
+        <p>Look at your client list. For each client, ask:</p>
+        <p>1. What level of the Value Pyramid am I operating at?</p>
+        <p>2. What would Level 4 look like for this specific client?</p>
+        <p>3. What information do I already have that I'm not using to advise them?</p>
+        <p>Most bookkeepers discover they're sitting on insights they've never shared. That's your advisory practice waiting to happen.</p>
+    </div>
+</section>
+
+<!-- LESSON 3 -->
+<section class="lesson">
+    <div class="lesson-num">Lesson 1.3</div>
+    <h2>The 5 Advisory Conversations Every Bookkeeper Can Have Today</h2>
+
+    <p>You don't need to wait until you've "learned advisory" to start having advisory conversations. Here are five you can have with any client this week:</p>
+
+    <h3>1. The Margin Conversation</h3>
+    <p><em>"I noticed your gross margin has dropped from 42% to 37% over the last 3 months. That's costing you about $X per month. Want me to dig into what's driving it?"</em></p>
+    <p>You already see the P&L every month. Start commenting on trends, not just reporting numbers.</p>
+
+    <h3>2. The Cash Timing Conversation</h3>
+    <p><em>"You invoice an average of $45K per month, but your average days to collect is 52 days. If we could get that to 35 days, you'd have an extra $25K in working capital. Here are three ways to speed up collections."</em></p>
+    <p>You already know their AR aging. Turn that data into advice.</p>
+
+    <h3>3. The Profitability Conversation</h3>
+    <p><em>"Looking at your revenue by service line, your consulting work has 65% margins while your installation work has 18% margins. Every hour your team spends on installation instead of consulting costs you $X."</em></p>
+    <p>Most business owners have never seen profitability by service line. Show them.</p>
+
+    <h3>4. The Benchmark Conversation</h3>
+    <p><em>"I work with several businesses in your industry. Your labor costs are running 38% of revenue vs. an industry average of 30-32%. That's a $4K/month opportunity."</em></p>
+    <p>Even if you only have 2-3 clients in a sector, you can benchmark against published industry data.</p>
+
+    <h3>5. The "What If" Conversation</h3>
+    <p><em>"You mentioned wanting to hire another technician. Let me model that out — here's the break-even point, the cash flow impact for the first 6 months, and the revenue you'd need to make it profitable."</em></p>
+    <p>This is scenario planning. It's the most valuable thing a business owner can get from a financial professional, and it's not hard to do.</p>
+
+    <div class="callout exercise">
+        <h4>📝 Exercise: Pick One Conversation</h4>
+        <p>Choose one of the five conversations above. Pick your best client — the one you have the strongest relationship with. Schedule a 30-minute call this week and lead with that conversation.</p>
+        <p>Don't pitch advisory services. Just have the conversation. The client's reaction will tell you everything you need to know about whether they'd pay for this regularly.</p>
+    </div>
+</section>
+
+<!-- LESSON 4 - LOCKED -->
+<section class="locked">
+    <div class="locked-icon">🔒</div>
+    <h2>Lesson 1.4: Building Your Advisory Identity</h2>
+    <p>How to position yourself as an advisor (not "just the bookkeeper"), update your messaging, and shift client perceptions — even with existing clients who've known you for years.</p>
+    <p style="color: var(--accent-light); font-weight: 600;">Available in the full course →</p>
+</section>
+
+<section class="locked">
+    <div class="locked-icon">🔒</div>
+    <h2>Lesson 1.5: Your First 30-Day Action Plan</h2>
+    <p>A day-by-day roadmap for your first month of transition. What to do, what to say, who to talk to, and how to measure whether it's working.</p>
+    <p style="color: var(--accent-light); font-weight: 600;">Available in the full course →</p>
+</section>
+
+<div class="cta-box">
+    <h3>Want the Full Course?</h3>
+    <p>Module 1 is just the beginning. The full Vega Academy course covers packaging, pricing, delivery systems, sales conversations, and scaling — with templates for everything.</p>
+    <p>Join the waitlist for early access and exclusive launch pricing.</p>
+    <a href="/" class="cta-btn">Join the Waitlist →</a>
+    <p style="margin-top: 16px; margin-bottom: 0;"><a href="/starter-kit/" style="color: var(--success); font-weight: 600; text-decoration: none;">Or grab the free Advisory Starter Kit →</a></p>
+</div>
+
+</div>
+
+<footer>
+    <div class="container">
+        <p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐ by an AI that means business.</p>
+    </div>
+</footer>
+
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

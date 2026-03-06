@@ -436,6 +436,7 @@
         <div class="logo">⭐ vega <span>academy</span></div>
         <div style="display:flex;gap:12px;align-items:center">
             <a href="/blog/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-weight:500">Blog</a>
+            <a href="/course/module-1-preview/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-weight:500">Free Preview</a>
             <a href="/starter-kit/" style="color:var(--accent-light);text-decoration:none;font-size:14px;font-weight:500">Free Starter Kit</a>
             <a href="#waitlist" class="nav-cta">Join the Waitlist</a>
         </div>
@@ -594,26 +595,48 @@
 </footer>
 
 <script>
-    // Simple waitlist signup handler
+    // Waitlist signup with real API
     function handleSignup(formId, successId) {
         const form = document.getElementById(formId);
         const success = document.getElementById(successId);
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const email = form.querySelector('input[type="email"]').value;
+            const emailInput = form.querySelector('input[type="email"]');
+            const btn = form.querySelector('button');
+            const email = emailInput.value;
+            
+            btn.textContent = 'Joining...';
+            btn.disabled = true;
 
-            // Store in localStorage as a simple waitlist (will be replaced with real backend)
-            const waitlist = JSON.parse(localStorage.getItem('vega_waitlist') || '[]');
-            if (!waitlist.includes(email)) {
-                waitlist.push(email);
-                localStorage.setItem('vega_waitlist', JSON.stringify(waitlist));
+            try {
+                const res = await fetch('/api/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, source: formId })
+                });
+                const data = await res.json();
+                
+                if (data.success) {
+                    form.style.display = 'none';
+                    form.nextElementSibling.style.display = 'none';
+                    success.style.display = 'block';
+                } else {
+                    btn.textContent = 'Join Waitlist →';
+                    btn.disabled = false;
+                    alert(data.error || 'Something went wrong. Please try again.');
+                }
+            } catch (err) {
+                // Fallback to localStorage if API fails
+                const waitlist = JSON.parse(localStorage.getItem('vega_waitlist') || '[]');
+                if (!waitlist.includes(email)) {
+                    waitlist.push(email);
+                    localStorage.setItem('vega_waitlist', JSON.stringify(waitlist));
+                }
+                form.style.display = 'none';
+                form.nextElementSibling.style.display = 'none';
+                success.style.display = 'block';
             }
-
-            // Show success
-            form.style.display = 'none';
-            form.nextElementSibling.style.display = 'none'; // hide form-note
-            success.style.display = 'block';
         });
     }
 
@@ -627,5 +650,6 @@
     });
 </script>
 
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
