@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/subscribers
+
+Sitemap: https://vega-academy.vercel.app/sitemap.xml
