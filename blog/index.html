@@ -3,301 +3,820 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Vega Academy | Advisory & Fractional CFO Guides</title>
-    <meta name="description" content="Practical guides for bookkeepers and accountants transitioning to advisory and fractional CFO services. 26+ in-depth articles with real data.">
+    <title>Blog — Vega Academy | Fractional CFO & Advisory Resources</title>
+    <meta name="description" content="Expert articles on fractional CFO services, advisory pricing, cash flow forecasting, and transitioning from bookkeeping to advisory. 68+ in-depth guides.">
     <link rel="canonical" href="https://vega-academy.vercel.app/blog/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root { --bg: #0a0a0f; --surface: #12121a; --surface-2: #1a1a26; --border: #2a2a3a; --text: #e8e8f0; --text-muted: #8888a0; --accent: #6c5ce7; --accent-light: #a29bfe; --gold: #f0c040; --success: #00d2a0; }
-        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
-        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,15,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 100; padding: 16px 0; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,15,0.9); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 100; padding: 16px 0; }
         nav .nav-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
         .logo { font-size: 20px; font-weight: 800; background: linear-gradient(135deg, var(--accent-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
-        .logo span { font-weight: 400; opacity: 0.7; }
         .nav-links { display: flex; gap: 16px; align-items: center; }
         .nav-links a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
         .nav-cta { background: var(--accent); color: white !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; }
-        .page-header { padding: 140px 0 60px; text-align: center; border-bottom: 1px solid var(--border); }
-        .page-header h1 { font-size: clamp(32px, 5vw, 48px); font-weight: 800; letter-spacing: -2px; margin-bottom: 12px; }
-        .page-header p { color: var(--text-muted); font-size: 18px; }
-        .page-header .count { color: var(--gold); font-weight: 700; }
-        .posts { padding: 48px 0; }
-        .post-card { display: block; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin-bottom: 20px; text-decoration: none; color: inherit; transition: all 0.2s; }
-        .post-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-        .post-meta { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; display: flex; gap: 16px; }
-        .post-title { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; color: var(--text); }
-        .post-excerpt { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
-        footer { padding: 40px 0; border-top: 1px solid var(--border); text-align: center; }
-        footer p { color: var(--text-muted); font-size: 13px; }
+        .hero { padding: 140px 0 60px; text-align: center; }
+        .hero h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
+        .hero p { color: var(--text-muted); font-size: 18px; max-width: 600px; margin: 0 auto; }
+        .hero .count { display: inline-block; background: var(--surface-2); border: 1px solid var(--border); padding: 6px 16px; border-radius: 20px; font-size: 14px; color: var(--gold); margin-top: 16px; }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+        .articles { display: grid; gap: 20px; padding-bottom: 80px; }
+        .article-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; transition: border-color 0.2s, transform 0.2s; }
+        .article-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .article-card a { text-decoration: none; color: inherit; }
+        .article-card h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; color: var(--text); }
+        .article-card p { font-size: 14px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.6; }
+        .article-meta { display: flex; gap: 12px; font-size: 12px; color: var(--text-muted); }
+        .article-meta span { display: flex; align-items: center; gap: 4px; }
+        footer { border-top: 1px solid var(--border); padding: 40px 0; text-align: center; color: var(--text-muted); font-size: 13px; }
         footer a { color: var(--accent-light); text-decoration: none; }
+        @media (max-width: 768px) { .hero h1 { font-size: 1.8rem; } }
     </style>
 </head>
 <body>
-<nav>
-    <div class="nav-inner">
-        <a href="/" class="logo">⭐ vega <span>academy</span></a>
-        <div class="nav-links">
-            <a href="/blog/">Blog</a>
-            <a href="/starter-kit/">Free Starter Kit</a>
-            <a href="/fractional-cfo/">By Industry</a>
-            <a href="/" class="nav-cta">Join Waitlist</a>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="logo">⭐ Vega Academy</a>
+            <div class="nav-links">
+                <a href="/blog/">Blog</a>
+                <a href="/starter-kit/">Free Starter Kit</a>
+                <a href="/tools/advisory-revenue-calculator/">Calculator</a>
+                <a href="/course/module-1/" class="nav-cta">Start Free Module →</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h1>Vega Academy Blog</h1>
+            <p>In-depth guides on fractional CFO services, advisory pricing, cash flow management, and building a profitable advisory practice.</p>
+            <div class="count">📚 68 articles — all backed by real search data</div>
         </div>
     </div>
-</nav>
 
-<section class="page-header">
     <div class="container">
-        <h1>The Vega Academy Blog</h1>
-        <p><span class="count">26 articles</span> — Practical guides for bookkeepers building advisory practices and fractional CFO businesses. All backed by real data.</p>
+        <div class="articles">
+            
+            <div class="article-card">
+                <a href="/blog/business-cash-flow-problems-solutions/">
+                    <h2>12 Cash Flow Problems That Kill Small Businesses (And How to Fix Them)</h2>
+                    <p>The most common cash flow problems small businesses face and proven solutions for each. Practical advice from financial advisors. 260 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        <span>📊 260/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/accounting-firm-growth-strategies/">
+                    <h2>7 Accounting Firm Growth Strategies That Work in 2026 | Vega Academy</h2>
+                    <p>Proven strategies to grow your accounting firm in 2026. From adding advisory services to niche specialization and leveraging AI — actionable tactics for firm owners.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/bookkeeper-to-cfo-skills-gap/">
+                    <h2>7 Skills That Separate a $50/hr Bookkeeper from a $300/hr Fractional CFO</h2>
+                    <p>The exact skills gap between bookkeepers and fractional CFOs — and how to close it in 90 days. Cash flow forecasting, strategic advising, financial modeling, and more.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 12 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/accounts-receivable-management-guide/">
+                    <h2>Accounts Receivable Management: Get Paid Faster (Complete Guide)</h2>
+                    <p>Master AR management: reduce DSO, automate collections, and improve cash flow. Templates and scripts included. 880 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        <span>📊 880/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/advisory-pricing-bookkeepers/">
+                    <h2>Advisory Pricing for Bookkeepers: How to Charge $2K–$5K/Month — Vega Academy</h2>
+                    <p>Learn the exact framework to price advisory services as a bookkeeper. Includes real pricing tiers, value-based pricing formulas, and proposal tips.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/advisory-services-vs-bookkeeping/">
+                    <h2>Advisory Services vs Bookkeeping: Why the Shift Is Inevitable (2026)</h2>
+                    <p>Why bookkeepers who don't add advisory services will lose clients to AI and automation. Data on the bookkeeping-to-advisory shift, pricing differences, and how to transition.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 11 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/best-accounting-software-advisory-services/">
+                    <h2>Best Accounting Software for Advisory Services in 2026 — Vega Academy</h2>
+                    <p>Detailed comparison of accounting software for advisory-focused firms. QuickBooks Online Advanced, Xero, FreshBooks, and specialized tools for dashboards, forecasting, and client reporting.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/best-tools-fractional-cfo/">
+                    <h2>Best Tools for Fractional CFOs in 2026: Complete Tech Stack Guide</h2>
+                    <p>The essential technology stack for fractional CFOs. Accounting software, dashboards, forecasting tools, client portals, and automation tools reviewed with pricing.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/bookkeeping-automation-guide/">
+                    <h2>Bookkeeping Automation in 2026: What to Automate (and What Not To) | Vega Academy</h2>
+                    <p>The complete guide to bookkeeping automation in 2026. Which tasks to automate, best tools, and how to transition to higher-value advisory work.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/bookkeeping-business-plan-2026/">
+                    <h2>Bookkeeping Business Plan for 2026: The Advisory-First Approach — Vega Academy</h2>
+                    <p>Modern bookkeeping business plan template for 2026. Why pure bookkeeping is dying, how to build advisory into your model from day one, and the pricing/positioning that leads to $200K+ revenue.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 11 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/bookkeeping-to-accounting-career-path/">
+                    <h2>Bookkeeping to Accounting: Career Path, Skills & Salary Guide (2026)</h2>
+                    <p>Complete guide to transitioning from bookkeeping to accounting. Skills needed, certifications, salary expectations, and career timeline. 2,900 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 11 min read</span>
+                        <span>📊 2,900/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/break-even-analysis-small-business/">
+                    <h2>Break-Even Analysis for Small Business: How to Calculate Your Break-Even Point | Vega Academy</h2>
+                    <p>Learn how to perform a break-even analysis for your small business. Includes formulas, examples, templates, and tips for using break-even in pricing decisions.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/budget-variance-analysis-guide/">
+                    <h2>Budget Variance Analysis: How to Spot Problems Before They Cost You | Vega Academy</h2>
+                    <p>Master budget variance analysis for your business. Learn how to compare actual vs. budgeted performance and take corrective action early.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/business-financial-advisor-guide/">
+                    <h2>Business Financial Advisor: What They Do, Cost & When You Need One</h2>
+                    <p>Everything about business financial advisors: services, costs ($150-$500/hr), qualifications, and how to choose the right one. 1,300 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        <span>📊 1,300/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/business-valuation-methods-guide/">
+                    <h2>Business Valuation Methods: 5 Approaches Every Advisory Pro Must Know</h2>
+                    <p>Master the 5 core business valuation methods: DCF, multiples, asset-based, market approach, and rule of thumb. With examples and calculations. 880 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 11 min read</span>
+                        <span>📊 880/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/cash-flow-forecasting-small-business/">
+                    <h2>Cash Flow Forecasting for Small Business: The 13-Week Model (Free Template)</h2>
+                    <p>Learn how to build a 13-week cash flow forecast for your small business or your clients. Includes free template, step-by-step walkthrough, and common mistakes to avoid.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/cash-flow-management-small-business/">
+                    <h2>Cash Flow Management for Small Business: The 13-Week Forecast Method — Vega Academy</h2>
+                    <p>Practical guide to small business cash flow management. The 13-week forecast method, common cash flow killers, and how to never get surprised by a cash crunch again.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/cfo-advisory-services-guide/">
+                    <h2>CFO Advisory Services: What They Include, Who Needs Them & Pricing</h2>
+                    <p>Complete guide to CFO advisory services: service tiers, pricing models, ideal clients, and how to build an advisory practice. 320 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        <span>📊 320/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/cfo-as-a-service-explained/">
+                    <h2>CFO as a Service (CFOaaS): The Complete Guide for Growing Businesses</h2>
+                    <p>CFO as a Service explained: what it is, pricing models, what to expect, and how it compares to hiring full-time. 140 monthly searches, growing trend.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 7 min read</span>
+                        <span>📊 140/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/client-advisory-services-pricing/">
+                    <h2>Client Advisory Services (CAS) Pricing: How to Charge What You're Worth | Vega Academy</h2>
+                    <p>How to price client advisory services (CAS) for your accounting firm. Includes pricing models, tier examples, and strategies to maximize value.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/client-advisory-services-cas-guide/">
+                    <h2>Client Advisory Services (CAS): The Complete Guide for Accounting Firms in 2026</h2>
+                    <p>What are Client Advisory Services (CAS)? This guide covers how accounting firms and bookkeepers can build a CAS practice, pricing models, tech stack, and implementation roadmap.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 14 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/construction-financial-management-guide/">
+                    <h2>Construction Financial Management: Job Costing, WIP & Cash Flow Guide</h2>
+                    <p>Master construction financial management: job costing, WIP reporting, percentage-of-completion, retainage, and cash flow. 210 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        <span>📊 210/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/controller-vs-cfo-difference/">
+                    <h2>Controller vs CFO: Key Differences, Roles & When You Need Each</h2>
+                    <p>Understand the real difference between a controller and CFO. Controllers manage the past (reporting), CFOs manage the future (strategy). 720 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 8 min read</span>
+                        <span>📊 720/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/expense-management-best-practices/">
+                    <h2>Expense Management for Small Business: Systems, Tools & Best Practices</h2>
+                    <p>Build an expense management system that saves time and money. Covers policies, approval workflows, tools, and common mistakes. 1,000 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 8 min read</span>
+                        <span>📊 1,000/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/financial-accounting-advisory-services-guide/">
+                    <h2>Financial Accounting Advisory Services (FAAS): Complete Guide for 2026 | Vega Academy</h2>
+                    <p>Everything you need to know about financial accounting advisory services (FAAS) — what they are, who provides them, and how to break into this growing field.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/financial-analysis-for-small-business-owners/">
+                    <h2>Financial Analysis for Small Business Owners: Read Your Numbers Like a CFO — Vega Academy</h2>
+                    <p>Learn to analyze your business finances like a CFO. Ratio analysis, trend analysis, benchmarking, and the 5 reports every owner should review monthly.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 11 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/financial-dashboard-guide/">
+                    <h2>Financial Dashboard Guide: KPIs, Tools & Templates for Small Business</h2>
+                    <p>Build a financial dashboard that drives decisions. Covers key KPIs, best tools (Fathom, LiveFlow, Google Sheets), and free templates. 1,300 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 11 min read</span>
+                        <span>📊 1,300/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/financial-forecasting-template-guide/">
+                    <h2>Financial Forecasting Template: Build Accurate Projections (Free Download)</h2>
+                    <p>Create accurate financial forecasts with our proven template. Revenue projections, expense modeling, and scenario analysis. 880 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        <span>📊 880/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/financial-health-check-template/">
+                    <h2>Financial Health Check: Free Assessment Template for Small Business</h2>
+                    <p>Use our financial health check template to assess any business in 30 minutes. Score 10 key areas and identify improvement priorities. 170 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 7 min read</span>
+                        <span>📊 170/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/financial-statements-explained/">
+                    <h2>Financial Statements Explained: P&L, Balance Sheet, Cash Flow for Non-Accountants | Vega Academy</h2>
+                    <p>Financial statements explained in plain English. Learn to read and interpret income statements, balance sheets, and cash flow statements — no accounting degree required.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-consulting-guide/">
+                    <h2>Fractional CFO Consulting: How to Build a $250K Practice | Vega Academy</h2>
+                    <p>Learn how to build a profitable fractional CFO consulting practice from scratch. Step-by-step guide covering positioning, pricing, client acquisition, and scaling.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-contract-template/">
+                    <h2>Fractional CFO Contract Template: What to Include (2026 Guide)</h2>
+                    <p>Free fractional CFO contract template and engagement letter guide. Scope of work, pricing structure, deliverables, termination clauses, and liability protection.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-cost-guide/">
+                    <h2>Fractional CFO Cost: What to Expect in 2026 (With Real Pricing Data) | Vega Academy</h2>
+                    <p>How much does a fractional CFO cost? Complete 2026 pricing guide with real data on hourly rates, monthly retainers, and factors that affect pricing.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-for-startups/">
+                    <h2>Fractional CFO for Startups: When to Hire One (And What to Expect)</h2>
+                    <p>When startups need a fractional CFO, what they cost ($3K-$10K/mo), and what they deliver. Fundraising support, burn rate management, financial modeling, and board reporting.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-hourly-rate/">
+                    <h2>Fractional CFO Hourly Rate: 2026 Benchmarks by Experience & Industry | Vega Academy</h2>
+                    <p>What is the typical fractional CFO hourly rate? See 2026 benchmarks broken down by experience level, industry, and company size.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-jobs-career-guide/">
+                    <h2>Fractional CFO Jobs: How to Find Clients and Build a Career in 2026 | Vega Academy</h2>
+                    <p>Looking for fractional CFO jobs? This guide covers how to find clients, whether to go independent or join a firm, and what to expect salary-wise.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-meaning-explained/">
+                    <h2>Fractional CFO Meaning: What It Is, Who Needs One, and How It Works | Vega Academy</h2>
+                    <p>Fractional CFO meaning explained in plain English. Learn what a fractional CFO does, how they differ from full-time CFOs, and whether your business needs one.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-pricing-models/">
+                    <h2>Fractional CFO Pricing: How to Price Your Advisory Services (With Real Data) — Vega Academy</h2>
+                    <p>Data-backed guide to fractional CFO pricing. Monthly retainer models, value-based pricing, hourly vs. fixed, and how to charge $2K-$8K/month with confidence.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-salary-guide/">
+                    <h2>Fractional CFO Salary in 2026: What You Can Really Earn ($150-$500/hr)</h2>
+                    <p>Real fractional CFO salary data for 2026. Hourly rates ($150-$500), monthly retainers ($3K-$15K), and annual earnings ($150K-$500K+). Based on market data from 12,100 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-services-guide/">
+                    <h2>Fractional CFO Services: What They Include, What They Cost, and Who Needs Them</h2>
+                    <p>Everything you need to know about fractional CFO services: what's included, pricing ($1,500-$8,000/mo), who they're for, and how to choose or become one.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 12 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-vs-full-time-cfo-comparison/">
+                    <h2>Fractional CFO vs. Full-Time CFO: The Complete Cost-Benefit Analysis — Vega Academy</h2>
+                    <p>Detailed comparison of fractional CFO vs full-time CFO. Cost analysis ($24K-$96K/yr vs $250K-$400K/yr), when to choose each, real-world scenarios, and the breakeven point.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/healthcare-financial-management-guide/">
+                    <h2>Healthcare Financial Management: A Guide for Advisory Professionals</h2>
+                    <p>Navigate healthcare financial management: revenue cycle, compliance, reimbursement, and strategic planning for medical practices. 260 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        <span>📊 260/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/how-to-become-fractional-cfo/">
+                    <h2>How to Become a Fractional CFO in 2026: The Complete Roadmap (With Real Data)</h2>
+                    <p>Data-driven guide to becoming a fractional CFO. Real salary data ($150-$500/hr), market analysis (12,100 monthly searches), pricing frameworks, and step-by-step career path — whether you're a bookkeep...</p>
+                    <div class="article-meta">
+                        <span>⏱️ 18 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/fractional-cfo-near-me/">
+                    <h2>How to Find a Fractional CFO Near You (Or Go Remote) | Vega Academy</h2>
+                    <p>Looking for a fractional CFO near you? Learn how to find, evaluate, and hire the right fractional CFO for your business — locally or remotely.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/monthly-financial-review-meeting-guide/">
+                    <h2>How to Run a Monthly Financial Review Meeting (Template + Agenda) | Vega Academy</h2>
+                    <p>Learn how to run an effective monthly financial review meeting. Includes agenda template, talking points, and tips for advisory professionals.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/how-to-sell-advisory-services/">
+                    <h2>How to Sell Advisory Services: The Bookkeeper's Playbook for Landing $3K-$5K/Month Clients</h2>
+                    <p>Step-by-step guide to selling advisory and fractional CFO services. Conversation scripts, objection handling, proposal templates, and the exact sales process that works.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 11 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/accounting-consulting-business-guide/">
+                    <h2>How to Start an Accounting Consulting Business in 2026 — Vega Academy</h2>
+                    <p>Step-by-step guide to starting an accounting consulting business. Pricing, finding clients, positioning, and scaling from $0 to $10K/month — with real search data and market analysis.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 12 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/bookkeeper-to-advisory-complete-guide/">
+                    <h2>How to Transition from Bookkeeper to Advisory: The Complete 2026 Guide — Vega Academy</h2>
+                    <p>Step-by-step guide for bookkeepers transitioning to advisory services. Learn how to package, price, and sell advisory & fractional CFO services to your existing clients.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/how-to-sell-advisory-services-to-bookkeeping-clients/">
+                    <h2>How to Upsell Advisory Services to Your Existing Bookkeeping Clients — Vega Academy</h2>
+                    <p>Practical scripts and frameworks for transitioning bookkeeping clients to advisory. The conversation framework, pricing transition, and how to double your revenue from existing clients.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 8 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/interim-cfo-services-guide/">
+                    <h2>Interim CFO Services: When & Why to Hire One (Complete 2026 Guide)</h2>
+                    <p>Interim CFO services explained: when companies need them, what they cost ($250-$500/hr), and how they differ from fractional CFOs. 260 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 8 min read</span>
+                        <span>📊 260/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/kpi-dashboard-small-business/">
+                    <h2>KPI Dashboard for Small Business: What to Track and Why — Vega Academy</h2>
+                    <p>Build a KPI dashboard that actually drives decisions. The 7 metrics every small business should track, industry-specific KPIs, and how to use dashboards to grow revenue.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/management-accounting-guide/">
+                    <h2>Management Accounting: The Complete Guide for Advisory Professionals</h2>
+                    <p>Master management accounting: cost analysis, budgeting, performance measurement, and decision support. The backbone of advisory services. 1,900 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 13 min read</span>
+                        <span>📊 1,900/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/management-reporting-best-practices/">
+                    <h2>Management Reporting: How to Create Reports That Drive Decisions</h2>
+                    <p>Build management reports that executives actually read and act on. Templates, best practices, and examples for advisory professionals. 720 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 8 min read</span>
+                        <span>📊 720/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/monthly-financial-review-template/">
+                    <h2>Monthly Financial Review Template for Advisory Clients (Free Download)</h2>
+                    <p>Run a professional monthly financial review meeting with your advisory clients. Includes agenda template, KPI reporting framework, and CFO commentary structure.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 8 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/nonprofit-cfo-services-guide/">
+                    <h2>Nonprofit CFO Services: Financial Leadership for Mission-Driven Organizations</h2>
+                    <p>Fractional CFO services for nonprofits: fund accounting, grant compliance, board reporting, and financial sustainability. 260 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        <span>📊 260/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/outsourced-cfo-services-vs-full-time/">
+                    <h2>Outsourced CFO Services vs. Full-Time CFO: Cost, Value, and When to Choose Each</h2>
+                    <p>Compare outsourced CFO services vs. hiring a full-time CFO. Detailed cost analysis, pros/cons, and decision framework for small businesses doing $1M-$30M revenue.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 9 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/part-time-cfo-services-guide/">
+                    <h2>Part-Time CFO Services: Complete Guide for Small Businesses (2026)</h2>
+                    <p>Everything about part-time CFO services: what they include, costs ($3K-$10K/month), when to hire, and how bookkeepers can offer them. 1,000 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        <span>📊 1,000/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/profit-and-loss-analysis-guide/">
+                    <h2>Profit and Loss Analysis: How to Read, Analyze & Use Your P&L Statement</h2>
+                    <p>Master P&L analysis: read income statements like a CFO, identify profit leaks, and make data-driven decisions. With templates and examples. 480 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        <span>📊 480/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/profit-margin-analysis-guide/">
+                    <h2>Profit Margin Analysis: How to Identify Where Your Business Leaks Money | Vega Academy</h2>
+                    <p>Learn how to perform a profit margin analysis for your business. Covers gross, operating, and net margins with benchmarks and improvement strategies.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/revenue-forecasting-methods/">
+                    <h2>Revenue Forecasting Methods: 5 Approaches for Small Business | Vega Academy</h2>
+                    <p>Learn 5 proven revenue forecasting methods for small business. From simple historical trending to multi-driver models — with examples and templates.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/saas-cfo-services-guide/">
+                    <h2>SaaS CFO Services: Financial Strategy for Software Companies</h2>
+                    <p>Specialized fractional CFO services for SaaS companies. Metrics (MRR, churn, LTV/CAC), financial models, and fundraising support. 260 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        <span>📊 260/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/small-business-bookkeeping-guide/">
+                    <h2>Small Business Bookkeeping: The Complete 2026 Guide | Vega Academy</h2>
+                    <p>Everything small business owners need to know about bookkeeping — from DIY basics to when you need professional help and how to transition to advisory.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/strategic-financial-planning-guide/">
+                    <h2>Strategic Financial Planning for Small Business: A Complete Framework</h2>
+                    <p>Learn strategic financial planning: frameworks, processes, and templates. Build 3-year financial plans that drive real business decisions. 590 monthly searches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 12 min read</span>
+                        <span>📊 590/mo searches</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/bookkeeping-to-advisory-services-transition/">
+                    <h2>The Bookkeeping to Advisory Services Transition: A Step-by-Step Playbook | Vega Academy</h2>
+                    <p>How to transition your bookkeeping practice from compliance to advisory services. Includes pricing, positioning, client conversations, and service design.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/virtual-cfo-services-guide/">
+                    <h2>Virtual CFO Services: What They Are, Who Needs Them, and What They Cost — Vega Academy</h2>
+                    <p>Complete guide to virtual CFO services. Pricing ($1,500-$8,000/mo), deliverables, who qualifies, and how to choose the right provider for your business.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 10 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/what-does-a-fractional-cfo-do/">
+                    <h2>What Does a Fractional CFO Do? (Day-to-Day Breakdown) | Vega Academy</h2>
+                    <p>Discover exactly what a fractional CFO does day-to-day, including their core responsibilities, typical deliverables, and how they add value to small businesses.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/what-is-fractional-cfo/">
+                    <h2>What Is a Fractional CFO? (And Can a Bookkeeper Become One?) — Vega Academy</h2>
+                    <p>Fractional CFO explained: what the role involves, what clients expect, how much you can charge, and how bookkeepers can make the transition.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+
+            <div class="article-card">
+                <a href="/blog/working-capital-management-guide/">
+                    <h2>Working Capital Management: How to Keep Your Business Cash-Healthy | Vega Academy</h2>
+                    <p>Master working capital management for small business. Learn how to optimize cash conversion cycles, manage receivables, and avoid cash crunches.</p>
+                    <div class="article-meta">
+                        <span>⏱️ 5 min read</span>
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
-</section>
 
-<section class="posts">
-    <div class="container">
-
-        <a href="/blog/accounting-consulting-business-guide/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 12 min read</span>
-            </div>
-            <h2 class="post-title">How to Start an Accounting Consulting Business in 2026</h2>
-            <p class="post-excerpt">Step-by-step guide to starting an accounting consulting business. Pricing, finding clients, positioning, and scaling from $0 to $10K/month — with real...</p>
-        </a>
-
-        <a href="/blog/advisory-pricing-bookkeepers/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 8 min read</span>
-            </div>
-            <h2 class="post-title">Advisory Pricing for Bookkeepers: How to Charge $2K–$5K/Month</h2>
-            <p class="post-excerpt">Learn the exact framework to price advisory services as a bookkeeper. Includes real pricing tiers, value-based pricing formulas, and proposal tips....</p>
-        </a>
-
-        <a href="/blog/advisory-services-vs-bookkeeping/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 11 min read</span>
-            </div>
-            <h2 class="post-title">Advisory Services vs Bookkeeping: Why the Shift Is Inevitable (2026)</h2>
-            <p class="post-excerpt">Why bookkeepers who don't add advisory services will lose clients to AI and automation. Data on the bookkeeping-to-advisory shift, pricing differences...</p>
-        </a>
-
-        <a href="/blog/best-accounting-software-advisory-services/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 9 min read</span>
-            </div>
-            <h2 class="post-title">Best Accounting Software for Advisory Services in 2026</h2>
-            <p class="post-excerpt">Detailed comparison of accounting software for advisory-focused firms. QuickBooks Online Advanced, Xero, FreshBooks, and specialized tools for dashboa...</p>
-        </a>
-
-        <a href="/blog/best-tools-fractional-cfo/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 10 min read</span>
-            </div>
-            <h2 class="post-title">Best Tools for Fractional CFOs in 2026: Complete Tech Stack Guide</h2>
-            <p class="post-excerpt">The essential technology stack for fractional CFOs. Accounting software, dashboards, forecasting tools, client portals, and automation tools reviewed ...</p>
-        </a>
-
-        <a href="/blog/bookkeeper-to-advisory-complete-guide/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 8 min read</span>
-            </div>
-            <h2 class="post-title">How to Transition from Bookkeeper to Advisory: The Complete 2026 Guide</h2>
-            <p class="post-excerpt">Step-by-step guide for bookkeepers transitioning to advisory services. Learn how to package, price, and sell advisory & fractional CFO services to you...</p>
-        </a>
-
-        <a href="/blog/bookkeeper-to-cfo-skills-gap/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 12 min read</span>
-            </div>
-            <h2 class="post-title">7 Skills That Separate a $50/hr Bookkeeper from a $300/hr Fractional CFO</h2>
-            <p class="post-excerpt">The exact skills gap between bookkeepers and fractional CFOs — and how to close it in 90 days. Cash flow forecasting, strategic advising, financial mo...</p>
-        </a>
-
-        <a href="/blog/bookkeeping-business-plan-2026/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 11 min read</span>
-            </div>
-            <h2 class="post-title">Bookkeeping Business Plan for 2026: The Advisory-First Approach</h2>
-            <p class="post-excerpt">Modern bookkeeping business plan template for 2026. Why pure bookkeeping is dying, how to build advisory into your model from day one, and the pricing...</p>
-        </a>
-
-        <a href="/blog/cash-flow-forecasting-small-business/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 10 min read</span>
-            </div>
-            <h2 class="post-title">Cash Flow Forecasting for Small Business: The 13-Week Model (Free Template)</h2>
-            <p class="post-excerpt">Learn how to build a 13-week cash flow forecast for your small business or your clients. Includes free template, step-by-step walkthrough, and common ...</p>
-        </a>
-
-        <a href="/blog/cash-flow-management-small-business/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 10 min read</span>
-            </div>
-            <h2 class="post-title">Cash Flow Management for Small Business: The 13-Week Forecast Method</h2>
-            <p class="post-excerpt">Practical guide to small business cash flow management. The 13-week forecast method, common cash flow killers, and how to never get surprised by a cas...</p>
-        </a>
-
-        <a href="/blog/client-advisory-services-cas-guide/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 14 min read</span>
-            </div>
-            <h2 class="post-title">Client Advisory Services (CAS): The Complete Guide for Accounting Firms in 2026</h2>
-            <p class="post-excerpt">What are Client Advisory Services (CAS)? This guide covers how accounting firms and bookkeepers can build a CAS practice, pricing models, tech stack, ...</p>
-        </a>
-
-        <a href="/blog/financial-analysis-for-small-business-owners/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 11 min read</span>
-            </div>
-            <h2 class="post-title">Financial Analysis for Small Business Owners: Read Your Numbers Like a CFO</h2>
-            <p class="post-excerpt">Learn to analyze your business finances like a CFO. Ratio analysis, trend analysis, benchmarking, and the 5 reports every owner should review monthly....</p>
-        </a>
-
-        <a href="/blog/fractional-cfo-contract-template/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 9 min read</span>
-            </div>
-            <h2 class="post-title">Fractional CFO Contract Template: What to Include (2026 Guide)</h2>
-            <p class="post-excerpt">Free fractional CFO contract template and engagement letter guide. Scope of work, pricing structure, deliverables, termination clauses, and liability ...</p>
-        </a>
-
-        <a href="/blog/fractional-cfo-for-startups/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 9 min read</span>
-            </div>
-            <h2 class="post-title">Fractional CFO for Startups: When to Hire One (And What to Expect)</h2>
-            <p class="post-excerpt">When startups need a fractional CFO, what they cost ($3K-$10K/mo), and what they deliver. Fundraising support, burn rate management, financial modelin...</p>
-        </a>
-
-        <a href="/blog/fractional-cfo-pricing-models/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 10 min read</span>
-            </div>
-            <h2 class="post-title">Fractional CFO Pricing: How to Price Your Advisory Services (With Real Data)</h2>
-            <p class="post-excerpt">Data-backed guide to fractional CFO pricing. Monthly retainer models, value-based pricing, hourly vs. fixed, and how to charge $2K-$8K/month with conf...</p>
-        </a>
-
-        <a href="/blog/fractional-cfo-salary-guide/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 10 min read</span>
-            </div>
-            <h2 class="post-title">Fractional CFO Salary in 2026: What You Can Really Earn ($150-$500/hr)</h2>
-            <p class="post-excerpt">Real fractional CFO salary data for 2026. Hourly rates ($150-$500), monthly retainers ($3K-$15K), and annual earnings ($150K-$500K+). Based on market ...</p>
-        </a>
-
-        <a href="/blog/fractional-cfo-services-guide/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 12 min read</span>
-            </div>
-            <h2 class="post-title">Fractional CFO Services: What They Include, What They Cost, and Who Needs Them</h2>
-            <p class="post-excerpt">Everything you need to know about fractional CFO services: what's included, pricing ($1,500-$8,000/mo), who they're for, and how to choose or become o...</p>
-        </a>
-
-        <a href="/blog/fractional-cfo-vs-full-time-cfo-comparison/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 9 min read</span>
-            </div>
-            <h2 class="post-title">Fractional CFO vs. Full-Time CFO: The Complete Cost-Benefit Analysis</h2>
-            <p class="post-excerpt">Detailed comparison of fractional CFO vs full-time CFO. Cost analysis ($24K-$96K/yr vs $250K-$400K/yr), when to choose each, real-world scenarios, and...</p>
-        </a>
-
-        <a href="/blog/how-to-become-fractional-cfo/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 18 min read</span>
-            </div>
-            <h2 class="post-title">How to Become a Fractional CFO in 2026: The Complete Roadmap (With Real Data)</h2>
-            <p class="post-excerpt">Data-driven guide to becoming a fractional CFO. Real salary data ($150-$500/hr), market analysis (12,100 monthly searches), pricing frameworks, and st...</p>
-        </a>
-
-        <a href="/blog/how-to-sell-advisory-services/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 11 min read</span>
-            </div>
-            <h2 class="post-title">How to Sell Advisory Services: The Bookkeeper's Playbook for Landing $3K-$5K/Month Clients</h2>
-            <p class="post-excerpt">Step-by-step guide to selling advisory and fractional CFO services. Conversation scripts, objection handling, proposal templates, and the exact sales ...</p>
-        </a>
-
-        <a href="/blog/how-to-sell-advisory-services-to-bookkeeping-clients/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 8 min read</span>
-            </div>
-            <h2 class="post-title">How to Upsell Advisory Services to Your Existing Bookkeeping Clients</h2>
-            <p class="post-excerpt">Practical scripts and frameworks for transitioning bookkeeping clients to advisory. The conversation framework, pricing transition, and how to double ...</p>
-        </a>
-
-        <a href="/blog/kpi-dashboard-small-business/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 9 min read</span>
-            </div>
-            <h2 class="post-title">KPI Dashboard for Small Business: What to Track and Why</h2>
-            <p class="post-excerpt">Build a KPI dashboard that actually drives decisions. The 7 metrics every small business should track, industry-specific KPIs, and how to use dashboar...</p>
-        </a>
-
-        <a href="/blog/monthly-financial-review-template/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 8 min read</span>
-            </div>
-            <h2 class="post-title">Monthly Financial Review Template for Advisory Clients (Free Download)</h2>
-            <p class="post-excerpt">Run a professional monthly financial review meeting with your advisory clients. Includes agenda template, KPI reporting framework, and CFO commentary ...</p>
-        </a>
-
-        <a href="/blog/outsourced-cfo-services-vs-full-time/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 9 min read</span>
-            </div>
-            <h2 class="post-title">Outsourced CFO Services vs. Full-Time CFO: Cost, Value, and When to Choose Each</h2>
-            <p class="post-excerpt">Compare outsourced CFO services vs. hiring a full-time CFO. Detailed cost analysis, pros/cons, and decision framework for small businesses doing $1M-$...</p>
-        </a>
-
-        <a href="/blog/virtual-cfo-services-guide/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 10 min read</span>
-            </div>
-            <h2 class="post-title">Virtual CFO Services: What They Are, Who Needs Them, and What They Cost</h2>
-            <p class="post-excerpt">Complete guide to virtual CFO services. Pricing ($1,500-$8,000/mo), deliverables, who qualifies, and how to choose the right provider for your busines...</p>
-        </a>
-
-        <a href="/blog/what-is-fractional-cfo/" class="post-card">
-            <div class="post-meta">
-                <span>📅 March 2026</span>
-                <span>⏱️ 8 min read</span>
-            </div>
-            <h2 class="post-title">What Is a Fractional CFO? (And Can a Bookkeeper Become One?)</h2>
-            <p class="post-excerpt">Fractional CFO explained: what the role involves, what clients expect, how much you can charge, and how bookkeepers can make the transition....</p>
-        </a>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐ for ambitious bookkeepers and advisory professionals.</p>
-    </div>
-</footer>
-<script defer src="/_vercel/insights/script.js"></script>
+    <footer>
+        <div class="container">
+            <p>© 2026 Vega Academy. Helping bookkeepers build advisory practices.</p>
+            <p style="margin-top: 8px;">
+                <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a> · <a href="/course/module-1/">Free Module</a>
+            </p>
+        </div>
+    </footer>
+    <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>
 </html>
