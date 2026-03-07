@@ -1,0 +1,68 @@
+import { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Management Reporting: Complete Guide to Financial Reports That Drive Decisions | Vega Academy',
+  description: 'Learn how to build management reports that drive business decisions. KPIs, dashboards, report templates, and how to offer reporting as a service.',
+  keywords: ['management reporting', 'fractional CFO', 'advisory services', 'bookkeeper to CFO', 'Vega Academy'],
+  openGraph: {
+    title: 'Management Reporting: Complete Guide to Financial Reports That Drive Decisions',
+    description: 'Learn how to build management reports that drive business decisions. KPIs, dashboards, report templates, and how to offer reporting as a service.',
+    type: 'article',
+  },
+}
+
+export default function Article() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <nav className="bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 py-4">
+          <Link href="/" className="text-indigo-600 font-bold text-xl">⭐ Vega Academy</Link>
+          <span className="text-gray-400 mx-2">/</span>
+          <Link href="/blog" className="text-gray-600 hover:text-indigo-600">Blog</Link>
+        </div>
+      </nav>
+      
+      <article className="max-w-4xl mx-auto px-4 py-12">
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Management Reporting: Complete Guide to Financial Reports That Drive Decisions</h1>
+          <p className="text-xl text-gray-600">Learn how to build management reports that drive business decisions. KPIs, dashboards, report templates, and how to offer reporting as a service.</p>
+          <div className="mt-4 text-sm text-gray-500">
+            <span>Published by Vega Academy</span>
+            <span className="mx-2">•</span>
+            <span>2 min read</span>
+          </div>
+        </header>
+        
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">What Is Management Reporting?</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Management reporting creates internal financial and operational reports for business leaders. Unlike statutory or tax reporting designed for compliance, management reports are designed for decision-making. They are flexible in format, produced monthly or weekly, forward-looking, and granular by department or product.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Essential Management Reports</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Executive Dashboard: A one-page overview with revenue vs target, gross margin trends, cash position, top 5 KPIs, and key wins and risks. P&L by Department/Product: Revenue and direct costs per revenue stream, contribution margin by segment, overhead allocation. Cash Flow Report: 13-week cash forecast, AR and AP aging summaries, working capital metrics like DSO, DPO, and inventory turns.</p>
+          <p className="text-gray-700 leading-relaxed my-4">KPI Scorecard: Revenue growth rate, customer acquisition cost, lifetime value, churn rate, employee productivity, pipeline conversion rates. Budget vs Actual Report: Revenue and expense actual vs budget, variance analysis with dollar and percentage, year-end forecast based on current run rate.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Building Effective Management Reports</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Start with the audience — design backward from the decisions they make. Lead with insights, not data. Use visual hierarchy with KPIs at top, trend charts in middle, detailed tables for drill-down. Be consistent in format. Always include context: comparison to prior period, budget, trend direction, and industry benchmarks.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Offering Management Reporting Services</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Tier 1 at $1,500-$3,000/month: Monthly P&L with variance, cash flow report, KPI scorecard, 30-minute review meeting. Tier 2 at $3,000-$6,000/month adds department-level P&L, 13-week cash forecast, custom dashboards, weekly flash report. Tier 3 at $6,000-$12,000/month adds board-ready packages, scenario modeling, strategic recommendations, unlimited analysis.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Management Reporting Best Practices</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Automate data collection through direct integrations with accounting software, bank feeds, CRM, and HR systems. Establish a reporting calendar: days 1-5 month end close, days 6-7 report prep, day 8 delivery, days 9-10 management review. Evolve reports based on client needs — start simple. Train your audience to read and use the reports. Management reporting is where bookkeepers transform into trusted advisors.</p>
+
+        </div>
+        
+        <div className="mt-16 bg-indigo-50 rounded-2xl p-8">
+          <h2 className="text-2xl font-bold text-indigo-900 mb-4">Ready to Offer Advisory Services?</h2>
+          <p className="text-indigo-700 mb-6">Vega Academy teaches bookkeepers and accountants how to transition into high-value fractional CFO and advisory roles. Learn the skills that command premium rates.</p>
+          <Link href="/course" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+            Start Your Advisory Journey →
+          </Link>
+        </div>
+      </article>
+      
+      <footer className="bg-gray-900 text-gray-400 py-12 mt-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p>© 2026 Vega Academy. Helping bookkeepers become fractional CFOs.</p>
+        </div>
+      </footer>
+    </div>
+  )
+}

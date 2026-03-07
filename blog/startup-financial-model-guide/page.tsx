@@ -1,0 +1,71 @@
+import { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Startup Financial Model: How to Build One That Investors Actually Want | Vega Academy',
+  description: 'Build a startup financial model that impresses investors. Revenue projections, cost modeling, unit economics, and best practices.',
+  keywords: ['startup financial model', 'fractional CFO', 'advisory services', 'bookkeeper to CFO', 'Vega Academy'],
+  openGraph: {
+    title: 'Startup Financial Model: How to Build One That Investors Actually Want',
+    description: 'Build a startup financial model that impresses investors. Revenue projections, cost modeling, unit economics, and best practices.',
+    type: 'article',
+  },
+}
+
+export default function Article() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <nav className="bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 py-4">
+          <Link href="/" className="text-indigo-600 font-bold text-xl">⭐ Vega Academy</Link>
+          <span className="text-gray-400 mx-2">/</span>
+          <Link href="/blog" className="text-gray-600 hover:text-indigo-600">Blog</Link>
+        </div>
+      </nav>
+      
+      <article className="max-w-4xl mx-auto px-4 py-12">
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Startup Financial Model: How to Build One That Investors Actually Want</h1>
+          <p className="text-xl text-gray-600">Build a startup financial model that impresses investors. Revenue projections, cost modeling, unit economics, and best practices.</p>
+          <div className="mt-4 text-sm text-gray-500">
+            <span>Published by Vega Academy</span>
+            <span className="mx-2">•</span>
+            <span>2 min read</span>
+          </div>
+        </header>
+        
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">What Is a Startup Financial Model?</h2>
+          <p className="text-gray-700 leading-relaxed my-4">A startup financial model is a spreadsheet-based tool projecting financial performance over 3-5 years. It includes revenue projections, cost estimates, cash flow forecasts, and key assumptions. Needed for fundraising, planning, cash management, decision-making, and board reporting.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Building Your Financial Model</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Structure with these tabs: Assumptions (all key inputs), Revenue Model (bottom-up projections), Cost Model (detailed expenses), P&L monthly and annual, Cash Flow Statement, Balance Sheet, KPIs and Metrics, Scenarios (base/bear/bull), and optional Cap Table.</p>
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">Revenue Modeling</h3>
+          <p className="text-gray-700 leading-relaxed my-4">For SaaS: visitors to trials (conversion rate) to paid customers times ARPU equals MRR, apply churn, add expansion revenue. For marketplaces: sellers times listings, buyer visits times conversion times GMV times take rate. For services: clients times revenue per client times average engagement length times utilization rate. Always validate bottom-up projections with top-down TAM analysis.</p>
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">Cost Modeling</h3>
+          <p className="text-gray-700 leading-relaxed my-4">People costs typically 60-80% of startup costs: current team plus hiring plan plus benefits burden of 20-30%. Operating expenses: office, software, cloud infrastructure, insurance, legal. Marketing and sales: CAC by channel, budget as percentage of revenue, sales compensation. COGS: hosting, APIs, payment processing, support.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Unit Economics</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Customer Acquisition Cost (CAC) equals total sales and marketing divided by new customers. LTV equals ARPU times gross margin times average lifespan. Target LTV:CAC ratio above 3:1. Payback period equals CAC divided by monthly ARPU times gross margin, targeting under 12 months.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Financial Model Best Practices</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Keep it driver-based — build from drivers not hard-coded numbers. Use three scenarios with different assumptions. Separate assumptions from calculations. Use monthly granularity for years 1-2. Show your path to profitability with monthly breakeven point and cash flow breakeven. Common mistakes: hockey stick with no explanation, ignoring churn, underestimating hiring costs, no sensitivity analysis, overcomplicating.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Fractional CFO Financial Modeling Services</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Model building from scratch: $5,000-$15,000. Monthly update and reforecast: $1,000-$3,000. Fundraising financial package: $7,500-$20,000. Model audit and optimization: $3,000-$7,500. Vega Academy teaches financial modeling as a core skill for aspiring fractional CFOs with templates and real-world exercises.</p>
+
+        </div>
+        
+        <div className="mt-16 bg-indigo-50 rounded-2xl p-8">
+          <h2 className="text-2xl font-bold text-indigo-900 mb-4">Ready to Offer Advisory Services?</h2>
+          <p className="text-indigo-700 mb-6">Vega Academy teaches bookkeepers and accountants how to transition into high-value fractional CFO and advisory roles. Learn the skills that command premium rates.</p>
+          <Link href="/course" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+            Start Your Advisory Journey →
+          </Link>
+        </div>
+      </article>
+      
+      <footer className="bg-gray-900 text-gray-400 py-12 mt-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p>© 2026 Vega Academy. Helping bookkeepers become fractional CFOs.</p>
+        </div>
+      </footer>
+    </div>
+  )
+}

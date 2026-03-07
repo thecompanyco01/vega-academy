@@ -1,0 +1,68 @@
+import { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Board Reporting: How to Create Board Packages That Impress | Vega Academy',
+  description: 'Create professional board reporting packages. Templates, metrics, best practices, and board reporting as a fractional CFO service.',
+  keywords: ['board reporting', 'fractional CFO', 'advisory services', 'bookkeeper to CFO', 'Vega Academy'],
+  openGraph: {
+    title: 'Board Reporting: How to Create Board Packages That Impress',
+    description: 'Create professional board reporting packages. Templates, metrics, best practices, and board reporting as a fractional CFO service.',
+    type: 'article',
+  },
+}
+
+export default function Article() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <nav className="bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 py-4">
+          <Link href="/" className="text-indigo-600 font-bold text-xl">⭐ Vega Academy</Link>
+          <span className="text-gray-400 mx-2">/</span>
+          <Link href="/blog" className="text-gray-600 hover:text-indigo-600">Blog</Link>
+        </div>
+      </nav>
+      
+      <article className="max-w-4xl mx-auto px-4 py-12">
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Board Reporting: How to Create Board Packages That Impress</h1>
+          <p className="text-xl text-gray-600">Create professional board reporting packages. Templates, metrics, best practices, and board reporting as a fractional CFO service.</p>
+          <div className="mt-4 text-sm text-gray-500">
+            <span>Published by Vega Academy</span>
+            <span className="mx-2">•</span>
+            <span>2 min read</span>
+          </div>
+        </header>
+        
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">What Is Board Reporting?</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Board reporting prepares and presents financial and operational information to a company's board of directors. These reports inform governance decisions, strategic direction, and management oversight. Needed by venture-backed startups, PE portfolio companies, companies with advisory boards, family businesses, and nonprofits.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">The Essential Board Package</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Executive Summary (1 page): 3-5 key highlights and lowlights, critical decisions needed, overall health assessment. Financial Overview (2-3 pages): income statement with budget comparison, revenue breakdown, gross margin analysis, cash position and runway, key financial KPIs. Operational Metrics (1-2 pages): customer metrics, product metrics, sales pipeline, marketing metrics, team metrics.</p>
+          <p className="text-gray-700 leading-relaxed my-4">Strategic Initiatives Update (1 page): status of major projects, milestones achieved vs planned, risks and mitigation. Cash Flow and Forecast (1 page): 13-week cash forecast, revenue forecast vs target, upcoming major expenses, fundraising timeline. Appendix: detailed financials, customer list changes, competitive landscape, legal updates.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Board Reporting Best Practices</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Design for skimmability with headlines, traffic light indicators, and concise commentary. Tell a story — narrate the quarter instead of just presenting numbers. Be transparent about problems; boards hate surprises, so deliver bad news early with your plan. Maintain consistent format for comparison. Prepare for follow-up questions on every metric presented.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Board Reporting as a Service</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Monthly board package at $1,500-$3,000/month includes compiling, formatting, writing commentary, preparing management, and attending the meeting. Quarterly deep-dive at $3,000-$5,000/quarter adds strategic analysis and annual forecast updates. Annual setup and template design runs $5,000-$10,000. Individual board meeting CFO representation is $500-$1,500/meeting.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">The Board Meeting</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Rehearse with the CEO to align on narrative. Start with the headline. Spend 80% on forward-looking discussion rather than reviewing history. Document action items and follow-ups. Send the package 48 hours before the meeting. Board reporting is where fractional CFOs prove their strategic value — it is not about the numbers, it is about insight and communication.</p>
+
+        </div>
+        
+        <div className="mt-16 bg-indigo-50 rounded-2xl p-8">
+          <h2 className="text-2xl font-bold text-indigo-900 mb-4">Ready to Offer Advisory Services?</h2>
+          <p className="text-indigo-700 mb-6">Vega Academy teaches bookkeepers and accountants how to transition into high-value fractional CFO and advisory roles. Learn the skills that command premium rates.</p>
+          <Link href="/course" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+            Start Your Advisory Journey →
+          </Link>
+        </div>
+      </article>
+      
+      <footer className="bg-gray-900 text-gray-400 py-12 mt-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p>© 2026 Vega Academy. Helping bookkeepers become fractional CFOs.</p>
+        </div>
+      </footer>
+    </div>
+  )
+}
