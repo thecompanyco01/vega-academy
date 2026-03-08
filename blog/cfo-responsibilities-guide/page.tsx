@@ -1,0 +1,93 @@
+export const metadata = {
+  title: 'CFO Responsibilities: What a Chief Financial Officer Actually Does (2026) | Vega Academy',
+  description: 'Complete breakdown of CFO responsibilities, daily tasks, and strategic functions. Learn what CFOs do and how fractional CFOs deliver the same value at a fraction of the cost.',
+  keywords: 'CFO responsibilities, chief financial officer duties, what does a CFO do',
+  openGraph: {
+    title: 'CFO Responsibilities: What a Chief Financial Officer Actually Does (2026)',
+    description: 'Complete breakdown of CFO responsibilities, daily tasks, and strategic functions. Learn what CFOs do and how fractional CFOs deliver the same value at a fraction of the cost.',
+    type: 'article',
+    publishedTime: '2026-03-07',
+    authors: ['Vega Academy'],
+  },
+};
+
+export default function Page() {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: `
+<article style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;line-height:1.8">
+<nav style="margin-bottom:20px;font-size:14px"><a href="/" style="color:#6c63ff;text-decoration:none">Home</a> → <a href="/blog/" style="color:#6c63ff;text-decoration:none">Blog</a> → CFO Responsibilities</nav>
+<h1 style="font-size:2.5rem;line-height:1.2;margin-bottom:10px">CFO Responsibilities: What a Chief Financial Officer Actually Does</h1>
+<p style="color:#666;font-size:14px">Updated March 2026 · 10 min read · <strong>880 monthly searches</strong></p>
+
+<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:25px 30px;border-radius:12px;margin:30px 0">
+<strong>In Brief:</strong> A CFO's core responsibilities span three areas: financial strategy, operational finance, and risk management. For small businesses that can't afford a full-time CFO ($200K-$400K/year), a <a href="/blog/what-is-fractional-cfo/" style="color:#fff;text-decoration:underline">fractional CFO</a> delivers the same strategic value at 70-80% less cost.
+</div>
+
+<h2 style="color:#1a1a2e;margin-top:40px">The 3 Pillars of CFO Responsibility</h2>
+
+<h3>1. Financial Strategy &amp; Planning</h3>
+<ul style="padding-left:20px">
+<li><strong>Long-term financial planning</strong> — 3-5 year financial roadmaps aligned with business goals</li>
+<li><strong>Capital allocation</strong> — Deciding where to invest company resources for maximum ROI</li>
+<li><strong>Fundraising &amp; financing</strong> — Evaluating debt vs equity, managing banking relationships, securing capital</li>
+<li><strong>M&amp;A evaluation</strong> — Analyzing potential acquisitions, mergers, and strategic partnerships</li>
+<li><strong>Scenario modeling</strong> — "What if" analysis for major business decisions</li>
+</ul>
+
+<h3>2. Operational Finance</h3>
+<ul style="padding-left:20px">
+<li><strong>Cash flow management</strong> — Ensuring the business never runs out of cash (the #1 killer of small businesses)</li>
+<li><strong>Budgeting &amp; forecasting</strong> — Creating and maintaining budgets, tracking actual vs projected performance</li>
+<li><strong>Financial reporting</strong> — Producing accurate, timely financial statements for stakeholders</li>
+<li><strong>KPI monitoring</strong> — Tracking <a href="/blog/financial-kpis-every-business-needs/" style="color:#6c63ff">key financial KPIs</a> and flagging issues early</li>
+<li><strong>Process optimization</strong> — Streamlining financial operations, reducing waste, improving margins</li>
+</ul>
+
+<h3>3. Risk Management &amp; Compliance</h3>
+<ul style="padding-left:20px">
+<li><strong>Internal controls</strong> — Preventing fraud, errors, and financial mismanagement</li>
+<li><strong>Tax strategy</strong> — Minimizing tax liability through legal strategies and structure optimization</li>
+<li><strong>Regulatory compliance</strong> — Ensuring adherence to financial regulations and reporting requirements</li>
+<li><strong>Insurance &amp; liability</strong> — Evaluating and managing business risks</li>
+<li><strong>Audit management</strong> — Coordinating with external auditors and maintaining audit readiness</li>
+</ul>
+
+<h2 style="color:#1a1a2e;margin-top:40px">CFO vs Controller vs Bookkeeper</h2>
+<table style="width:100%;border-collapse:collapse;margin:30px 0;font-size:15px">
+<tr style="background:#f0f0ff"><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Role</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Focus</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Salary</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Perspective</th></tr>
+<tr><td style="padding:12px;border-bottom:1px solid #eee"><strong>Bookkeeper</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Recording transactions</td><td style="padding:12px;border-bottom:1px solid #eee">$38K-$52K</td><td style="padding:12px;border-bottom:1px solid #eee">Past (what happened)</td></tr>
+<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee"><strong>Controller</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Financial reporting &amp; compliance</td><td style="padding:12px;border-bottom:1px solid #eee">$85K-$130K</td><td style="padding:12px;border-bottom:1px solid #eee">Present (what is)</td></tr>
+<tr><td style="padding:12px"><strong>CFO</strong></td><td style="padding:12px">Strategy &amp; growth</td><td style="padding:12px">$200K-$400K+</td><td style="padding:12px">Future (what could be)</td></tr>
+</table>
+
+<h2 style="color:#1a1a2e;margin-top:40px">The Fractional CFO Alternative</h2>
+<p>Most businesses under $10M revenue don't need — and can't afford — a full-time CFO. But they desperately need CFO-level thinking. That's where <a href="/blog/fractional-cfo-services-guide/" style="color:#6c63ff">fractional CFO services</a> come in.</p>
+<p>A fractional CFO delivers the same strategic value — cash flow forecasting, KPI dashboards, growth planning, financial strategy — on a part-time basis. Typical costs:</p>
+<ul style="padding-left:20px">
+<li><strong>$2,000-$5,000/month</strong> for small businesses ($1M-$5M revenue)</li>
+<li><strong>$5,000-$10,000/month</strong> for mid-size businesses ($5M-$20M revenue)</li>
+<li><strong>Compare to:</strong> $200K-$400K/year for a full-time CFO + benefits</li>
+</ul>
+
+<h2 style="color:#1a1a2e;margin-top:40px">How Bookkeepers Can Deliver CFO-Level Value</h2>
+<p>If you're a bookkeeper reading this and thinking "I could do some of this" — you're right. The operational finance pillar (cash flow, budgeting, KPIs, reporting) is absolutely within reach for experienced bookkeepers who invest in advisory skills.</p>
+<p>You don't need a CPA or MBA. You need:</p>
+<ol style="padding-left:20px">
+<li>Deep understanding of <a href="/blog/cash-flow-forecasting-guide/" style="color:#6c63ff">cash flow forecasting</a></li>
+<li>Ability to build and present <a href="/blog/cfo-dashboard-guide/" style="color:#6c63ff">CFO dashboards</a></li>
+<li>Confidence to have strategic conversations with business owners</li>
+<li>A framework for <a href="/blog/advisory-pricing-bookkeepers/" style="color:#6c63ff">pricing advisory services</a></li>
+</ol>
+
+<div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
+<h3 style="margin:0 0 10px">Become a Fractional CFO</h3>
+<p style="margin:0 0 20px;opacity:0.95">Vega Academy teaches bookkeepers the exact skills needed to deliver CFO-level advisory services.</p>
+<a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"CFO Responsibilities: What a Chief Financial Officer Actually Does","description":"Complete breakdown of CFO responsibilities and how fractional CFOs deliver the same value.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+</script>
+</article>` }} />
+  );
+}

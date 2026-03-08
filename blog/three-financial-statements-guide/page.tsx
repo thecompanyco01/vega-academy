@@ -1,0 +1,105 @@
+import { Metadata } from 'next'
+import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'The Three Financial Statements: How They Connect & Why It Matters | Vega Academy',
+  description: 'Understand how the income statement, balance sheet, and cash flow statement work together. Essential knowledge for bookkeepers becoming fractional CFOs.',
+  keywords: ['three financial statements', 'financial statements', 'income statement', 'balance sheet', 'cash flow statement', 'financial analysis', 'fractional CFO', 'Vega Academy'],
+  openGraph: {
+    title: 'The Three Financial Statements: How They Connect & Why It Matters',
+    description: 'How the income statement, balance sheet, and cash flow statement connect — essential knowledge for advisory professionals.',
+    type: 'article',
+  },
+}
+
+export default function Article() {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <nav className="bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 py-4">
+          <Link href="/" className="text-indigo-600 font-bold text-xl">⭐ Vega Academy</Link>
+          <span className="text-gray-400 mx-2">/</span>
+          <Link href="/blog" className="text-gray-600 hover:text-indigo-600">Blog</Link>
+        </div>
+      </nav>
+      
+      <article className="max-w-4xl mx-auto px-4 py-12">
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">The Three Financial Statements: How They Connect and Why Every Advisor Must Master Them</h1>
+          <p className="text-xl text-gray-600">The income statement, balance sheet, and cash flow statement form the foundation of every financial analysis. Learn how they interlink and how fractional CFOs use all three together to advise clients.</p>
+          <div className="mt-4 text-sm text-gray-500">
+            <span>Published by Vega Academy</span>
+            <span className="mx-2">•</span>
+            <span>10 min read</span>
+          </div>
+        </header>
+        
+        <div className="prose prose-lg max-w-none">
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Why All Three Statements Matter</h2>
+          <p className="text-gray-700 leading-relaxed my-4">Many small business owners — and even some accountants — focus on just one financial statement. They track the P&L to see if they are profitable, glance at the bank balance, and call it financial management. But each statement tells only part of the story. The income statement shows profitability but can hide cash problems. The balance sheet shows financial position but not how you got there. The cash flow statement shows liquidity but not profitability. Only by reading all three together can you see the complete financial picture.</p>
+          <p className="text-gray-700 leading-relaxed my-4">This is precisely why understanding the three financial statements separates bookkeepers from advisory professionals. A bookkeeper prepares these statements. A fractional CFO reads them together, identifies patterns, and translates them into business strategy.</p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Statement 1: The Income Statement (Profit & Loss)</h2>
+          <p className="text-gray-700 leading-relaxed my-4">The income statement answers one question: <strong>is the business profitable?</strong> It summarizes revenue earned and expenses incurred over a period — monthly, quarterly, or annually. Revenue minus expenses equals net income (profit) or net loss.</p>
+          <p className="text-gray-700 leading-relaxed my-4">Key sections include revenue (sales), cost of goods sold (direct costs), gross profit, operating expenses (indirect costs), operating income, other income and expenses, and net income. The most critical metrics derived from the income statement are gross margin, operating margin, and net profit margin — each revealing efficiency at a different level of the business.</p>
+          <p className="text-gray-700 leading-relaxed my-4">The income statement's limitation: it uses accrual accounting, recording revenue when earned and expenses when incurred, regardless of when cash actually changes hands. A company can show $100,000 in profit while its bank account is empty because that profit is sitting in unpaid invoices.</p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Statement 2: The Balance Sheet</h2>
+          <p className="text-gray-700 leading-relaxed my-4">The balance sheet answers: <strong>what does the business own and owe?</strong> It is a snapshot at a single point in time — not a period like the income statement. The fundamental equation is Assets = Liabilities + Equity.</p>
+          <p className="text-gray-700 leading-relaxed my-4">Assets are divided into current (convertible to cash within a year — cash, accounts receivable, inventory) and non-current (long-term — property, equipment, intangibles). Liabilities follow the same split: current (due within a year — accounts payable, short-term debt, accrued expenses) and non-current (long-term debt, lease obligations). Equity represents the owners' residual interest — contributed capital plus retained earnings minus distributions.</p>
+          <p className="text-gray-700 leading-relaxed my-4">Key metrics from the balance sheet include the current ratio (liquidity), debt-to-equity ratio (leverage), working capital (operational flexibility), and return on assets (efficiency). The balance sheet reveals whether a business is building wealth or slowly eroding its financial foundation.</p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Statement 3: The Cash Flow Statement</h2>
+          <p className="text-gray-700 leading-relaxed my-4">The cash flow statement answers: <strong>where did the cash come from and where did it go?</strong> It reconciles the difference between net income (from the income statement) and the actual change in cash (from the balance sheet).</p>
+          <p className="text-gray-700 leading-relaxed my-4">The three sections are operating activities (cash from core business operations), investing activities (cash for buying or selling long-term assets), and financing activities (cash from debt and equity transactions). The most important metric is free cash flow — operating cash flow minus capital expenditures — which represents the cash truly available for distributions, debt repayment, or reinvestment.</p>
+          <p className="text-gray-700 leading-relaxed my-4">The cash flow statement is arguably the most important of the three for advisory work because cash is what pays bills, funds growth, and keeps businesses alive. Companies can survive losses; they cannot survive running out of cash.</p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">How the Three Statements Connect</h2>
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">Income Statement → Balance Sheet</h3>
+          <p className="text-gray-700 leading-relaxed my-4">Net income from the income statement flows directly into retained earnings on the balance sheet. When the business earns a profit, equity increases. When it incurs a loss, equity decreases. Owner distributions also reduce retained earnings. This connection means every dollar of revenue, every expense, and every distribution ultimately affects the balance sheet.</p>
+
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">Balance Sheet → Cash Flow Statement</h3>
+          <p className="text-gray-700 leading-relaxed my-4">Changes in balance sheet accounts drive the cash flow statement. When accounts receivable increases (balance sheet), it appears as a cash outflow in operations (cash flow statement) — the business earned revenue but has not collected the cash yet. When accounts payable increases, it appears as a cash inflow — the business received goods but has not paid yet. Every working capital change on the balance sheet has a corresponding effect on operating cash flow.</p>
+
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">Cash Flow Statement → Balance Sheet</h3>
+          <p className="text-gray-700 leading-relaxed my-4">The ending cash balance from the cash flow statement equals the cash line on the balance sheet. The total change in cash plus the beginning balance must match the balance sheet's cash figure. This is the ultimate check: if these numbers do not match, something is wrong.</p>
+
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">The Circular Connection</h3>
+          <p className="text-gray-700 leading-relaxed my-4">All three statements form a closed loop: the income statement feeds retained earnings on the balance sheet, balance sheet changes drive the cash flow statement, and the cash flow statement's ending balance feeds back to the balance sheet. Understanding this loop is essential for building financial models, preparing forecasts, and advising clients on the downstream effects of business decisions.</p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Real-World Examples: Reading All Three Together</h2>
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">Scenario: The Profitable Cash Crisis</h3>
+          <p className="text-gray-700 leading-relaxed my-4">A construction company shows $500,000 net income on its P&L — a great year. But the balance sheet reveals accounts receivable jumped from $200,000 to $800,000, and the cash flow statement shows negative operating cash flow of -$150,000. The company is profitable but bleeding cash because clients are not paying. Without reading all three statements together, you would congratulate the owner on a great year. With all three, you sound the alarm on collections.</p>
+
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">Scenario: The Losing Winner</h3>
+          <p className="text-gray-700 leading-relaxed my-4">A SaaS company shows a $300,000 net loss on its income statement — concerning at first glance. But the balance sheet shows $2 million in cash and no debt. The cash flow statement reveals operating cash flow of $200,000 (the losses are driven by non-cash stock compensation and amortization of development costs). This business is actually generating cash despite accounting losses. The income statement alone would have caused panic; all three tell the real story.</p>
+
+          <h3 className="text-2xl font-semibold text-gray-800 mt-8 mb-3">Scenario: The Hidden Debt Bomb</h3>
+          <p className="text-gray-700 leading-relaxed my-4">A retail business shows modest profits and adequate cash. Everything looks fine on the P&L and cash flow statement. But the balance sheet reveals that long-term debt has doubled in 18 months, and the debt-to-equity ratio has gone from 1.5 to 4.0. The business is funding its growth entirely with debt. The financing section of the cash flow statement confirms it — large loan proceeds each quarter. Without the balance sheet, you would miss the growing risk until it becomes a crisis.</p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Building a Three-Statement Financial Model</h2>
+          <p className="text-gray-700 leading-relaxed my-4">One of the highest-value skills for advisory professionals is building integrated three-statement financial models. These models project all three statements forward, maintaining the connections between them. Changes to revenue assumptions flow through the income statement, affect the balance sheet through working capital, and update the cash flow statement automatically.</p>
+          <p className="text-gray-700 leading-relaxed my-4">A three-statement model allows you to answer questions like: if revenue grows 20%, how much additional working capital is needed? Can the business fund growth internally, or will it need financing? What happens to cash flow if gross margins decline by 3 points? How does taking on $500,000 in debt affect interest expense, net income, and cash flow? This is the kind of analysis that transforms a bookkeeper into a fractional CFO and justifies advisory rates of $150-$300 per hour.</p>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Your Advisory Toolkit: Mastering All Three</h2>
+          <p className="text-gray-700 leading-relaxed my-4">To become an effective advisory professional, develop expertise in all three statements. Start by mastering the income statement — most bookkeepers already have strong P&L skills. Then build your balance sheet fluency, focusing on working capital analysis and key ratios. Finally, learn to prepare and analyze cash flow statements, with special attention to free cash flow and the cash conversion cycle.</p>
+          <p className="text-gray-700 leading-relaxed my-4">The advisory professional who can walk a client through all three statements in a monthly review meeting — explaining not just what happened, but why it happened and what to do about it — provides value that justifies premium advisory fees and creates long-term client relationships.</p>
+        </div>
+        
+        <div className="mt-16 bg-indigo-50 rounded-2xl p-8">
+          <h2 className="text-2xl font-bold text-indigo-900 mb-4">Master All Three Financial Statements</h2>
+          <p className="text-indigo-700 mb-6">Vega Academy's advisory training covers income statement analysis, balance sheet interpretation, cash flow management, and integrated three-statement modeling — everything you need to advise clients like a fractional CFO.</p>
+          <Link href="/course" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+            Start Your Advisory Journey →
+          </Link>
+        </div>
+      </article>
+      
+      <footer className="bg-gray-900 text-gray-400 py-12 mt-16">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <p>© 2026 Vega Academy. Helping bookkeepers become fractional CFOs.</p>
+        </div>
+      </footer>
+    </div>
+  )
+}

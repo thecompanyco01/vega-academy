@@ -1,0 +1,104 @@
+export const metadata = {
+  title: 'Profit First Accounting: How to Implement the Profit First Method (2026) | Vega Academy',
+  description: 'Complete guide to Profit First accounting by Mike Michalowicz. Step-by-step implementation, bank account setup, allocation percentages, and how bookkeepers can offer Profit First as an advisory service.',
+  keywords: 'profit first accounting, profit first method, profit first bookkeeper',
+  openGraph: {
+    title: 'Profit First Accounting: How to Implement the Profit First Method (2026)',
+    description: 'Complete guide to Profit First accounting by Mike Michalowicz. Step-by-step implementation, bank account setup, allocation percentages, and how bookkeepers can offer Profit First as an advisory service.',
+    type: 'article',
+    publishedTime: '2026-03-07',
+    authors: ['Vega Academy'],
+  },
+};
+
+export default function Page() {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: `
+<article style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;line-height:1.8">
+<nav style="margin-bottom:20px;font-size:14px"><a href="/" style="color:#6c63ff;text-decoration:none">Home</a> → <a href="/blog/" style="color:#6c63ff;text-decoration:none">Blog</a> → Profit First Accounting</nav>
+<h1 style="font-size:2.5rem;line-height:1.2;margin-bottom:10px">Profit First Accounting: How to Implement the Profit First Method</h1>
+<p style="color:#666;font-size:14px">Updated March 2026 · 13 min read · <strong>320 monthly searches, KD 22</strong></p>
+
+<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:25px 30px;border-radius:12px;margin:30px 0">
+<strong>The Big Idea:</strong> Traditional accounting says Sales - Expenses = Profit. Profit First flips it: <strong>Sales - Profit = Expenses.</strong> By taking profit FIRST and operating on what's left, businesses are forced to run leaner and more profitably.
+</div>
+
+<h2 style="color:#1a1a2e;margin-top:40px">What Is the Profit First Method?</h2>
+<p>Created by Mike Michalowicz in his 2014 book <em>Profit First</em>, this cash management system uses multiple bank accounts to ensure business owners always take profit — not just whatever's left over (which is usually nothing).</p>
+<p>The core principle: <strong>pay yourself first, then figure out how to run the business on what remains.</strong> It's the "envelope system" for businesses.</p>
+
+<h2 style="color:#1a1a2e;margin-top:40px">The 5 Profit First Bank Accounts</h2>
+<table style="width:100%;border-collapse:collapse;margin:30px 0;font-size:15px">
+<tr style="background:#f0f0ff"><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Account</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Purpose</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Target % (Revenue &lt;$250K)</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Target % (Revenue $250K-$500K)</th></tr>
+<tr><td style="padding:12px;border-bottom:1px solid #eee"><strong>Income</strong></td><td style="padding:12px;border-bottom:1px solid #eee">All revenue deposits here first</td><td style="padding:12px;border-bottom:1px solid #eee">100%</td><td style="padding:12px;border-bottom:1px solid #eee">100%</td></tr>
+<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee"><strong>Profit</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Owner's profit distributions</td><td style="padding:12px;border-bottom:1px solid #eee">5%</td><td style="padding:12px;border-bottom:1px solid #eee">10%</td></tr>
+<tr><td style="padding:12px;border-bottom:1px solid #eee"><strong>Owner's Comp</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Your salary/draw</td><td style="padding:12px;border-bottom:1px solid #eee">50%</td><td style="padding:12px;border-bottom:1px solid #eee">35%</td></tr>
+<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee"><strong>Tax</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Tax reserves</td><td style="padding:12px;border-bottom:1px solid #eee">15%</td><td style="padding:12px;border-bottom:1px solid #eee">15%</td></tr>
+<tr><td style="padding:12px"><strong>OpEx</strong></td><td style="padding:12px">Operating expenses</td><td style="padding:12px">30%</td><td style="padding:12px">40%</td></tr>
+</table>
+
+<h2 style="color:#1a1a2e;margin-top:40px">How to Implement Profit First (Step by Step)</h2>
+<ol style="padding-left:20px">
+<li><strong>Open 5 bank accounts</strong> — Most banks allow free checking accounts. Label them: Income, Profit, Owner's Comp, Tax, OpEx.</li>
+<li><strong>Calculate your Current Allocation Percentages (CAPs)</strong> — Look at last 12 months: what % went to profit, owner's comp, tax, and expenses?</li>
+<li><strong>Set your Target Allocation Percentages (TAPs)</strong> — Use the table above as a guide, adjusted for your industry.</li>
+<li><strong>Start with small shifts</strong> — Don't jump to target percentages immediately. Move 1-2% per quarter toward your TAPs.</li>
+<li><strong>Allocate twice monthly</strong> — On the 10th and 25th, transfer money from Income to the other four accounts based on your percentages.</li>
+<li><strong>Take quarterly profit distributions</strong> — Every quarter, take 50% of the Profit account as a distribution. Leave 50% as a cash reserve.</li>
+</ol>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Profit First by Industry</h2>
+<p>Target percentages vary significantly by industry. Here are benchmarks:</p>
+
+<table style="width:100%;border-collapse:collapse;margin:30px 0;font-size:14px">
+<tr style="background:#f0f0ff"><th style="padding:10px;text-align:left;border-bottom:2px solid #6c63ff">Industry</th><th style="padding:10px;text-align:center;border-bottom:2px solid #6c63ff">Profit</th><th style="padding:10px;text-align:center;border-bottom:2px solid #6c63ff">Owner's Comp</th><th style="padding:10px;text-align:center;border-bottom:2px solid #6c63ff">Tax</th><th style="padding:10px;text-align:center;border-bottom:2px solid #6c63ff">OpEx</th></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">Professional Services</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">10-15%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">35-45%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">15%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">30-35%</td></tr>
+<tr style="background:#fafafe"><td style="padding:10px;border-bottom:1px solid #eee">Construction</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">5-10%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">20-25%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">15%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">50-55%</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">E-Commerce</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">5-10%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">15-20%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">15%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">55-65%</td></tr>
+<tr style="background:#fafafe"><td style="padding:10px;border-bottom:1px solid #eee">Restaurant</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">5-8%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">15-20%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">15%</td><td style="padding:10px;text-align:center;border-bottom:1px solid #eee">55-65%</td></tr>
+<tr><td style="padding:10px">SaaS / Software</td><td style="padding:10px;text-align:center">15-20%</td><td style="padding:10px;text-align:center">25-30%</td><td style="padding:10px;text-align:center">15%</td><td style="padding:10px;text-align:center">35-40%</td></tr>
+</table>
+
+<h2 style="color:#1a1a2e;margin-top:40px">The Bookkeeper's Role in Profit First</h2>
+<p>Profit First implementation is one of the highest-value advisory services a bookkeeper can offer. Here's why:</p>
+<ul style="padding-left:20px">
+<li><strong>Clients see immediate results</strong> — Profit in their account within 30 days</li>
+<li><strong>It requires ongoing management</strong> — Twice-monthly allocations, quarterly reviews, percentage adjustments = recurring revenue for you</li>
+<li><strong>It's tangible</strong> — Unlike abstract "financial strategy," clients can see the money in their Profit account</li>
+<li><strong>It creates stickiness</strong> — Once a client is on Profit First, they don't want to go back</li>
+</ul>
+
+<div style="background:#f0f8ff;border-left:4px solid #6c63ff;padding:20px 25px;margin:30px 0;border-radius:0 8px 8px 0">
+<strong>Advisory Service Idea:</strong> Offer a "Profit First Setup" package for $1,500-$3,000 (one-time) that includes bank account setup, CAP/TAP analysis, custom allocation plan, and 90 days of allocation management. Then transition to ongoing advisory at $500-$1,000/month.
+</div>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Common Profit First Mistakes</h2>
+<ol style="padding-left:20px">
+<li><strong>Jumping to target percentages too fast</strong> — A business running at 0% profit can't suddenly allocate 15%. Start at 1% and increase quarterly.</li>
+<li><strong>Raiding the Profit account</strong> — The Profit account is sacred. Put it at a different bank to add friction.</li>
+<li><strong>Ignoring the Tax account</strong> — Tax season surprises kill businesses. Allocate for taxes EVERY deposit.</li>
+<li><strong>Not adjusting for seasonality</strong> — A landscaping company needs different percentages in winter vs summer.</li>
+<li><strong>Skipping allocation days</strong> — The system only works with discipline. Set calendar reminders for the 10th and 25th.</li>
+</ol>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Profit First + Advisory: The Perfect Combination</h2>
+<p>Profit First isn't just a cash management system — it's a gateway to <a href="/blog/bookkeeper-to-advisory-complete-guide/" style="color:#6c63ff">full advisory services</a>. Once you're managing a client's allocations, you naturally see opportunities for:</p>
+<ul style="padding-left:20px">
+<li>Cost reduction (OpEx too high? Let's find cuts)</li>
+<li><a href="/blog/cash-flow-forecasting-guide/" style="color:#6c63ff">Cash flow forecasting</a> (predict when allocations need adjusting)</li>
+<li><a href="/blog/advisory-pricing-bookkeepers/" style="color:#6c63ff">Pricing strategy</a> (are they charging enough to hit target margins?)</li>
+<li><a href="/blog/profit-margin-analysis-guide/" style="color:#6c63ff">Profitability analysis</a> (which services/products drive the most profit?)</li>
+</ul>
+
+<div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
+<h3 style="margin:0 0 10px">Become a Profit First Advisor</h3>
+<p style="margin:0 0 20px;opacity:0.95">Learn how to implement Profit First for clients and build a high-value advisory practice.</p>
+<a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Profit First Accounting: How to Implement the Profit First Method","description":"Complete guide to Profit First accounting with step-by-step implementation and advisory service opportunities.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+</script>
+</article>` }} />
+  );
+}

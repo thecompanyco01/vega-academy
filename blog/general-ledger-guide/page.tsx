@@ -1,0 +1,99 @@
+export const metadata = {
+  title: 'General Ledger: What It Is &amp; How It Works (Complete 2026 Guide) | Vega Academy',
+  description: 'Everything you need to know about the general ledger — what it is, how it works, GL account types, journal entries, and how modern bookkeepers use it for advisory insights.',
+  keywords: 'general ledger, general ledger accounting, GL accounts',
+  openGraph: {
+    title: 'General Ledger: What It Is &amp; How It Works (Complete 2026 Guide)',
+    description: 'Everything you need to know about the general ledger — what it is, how it works, GL account types, journal entries, and how modern bookkeepers use it for advisory insights.',
+    type: 'article',
+    publishedTime: '2026-03-07',
+    authors: ['Vega Academy'],
+  },
+};
+
+export default function Page() {
+  return (
+    <div dangerouslySetInnerHTML={{ __html: `
+<article style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;line-height:1.8">
+<nav style="margin-bottom:20px;font-size:14px"><a href="/" style="color:#6c63ff;text-decoration:none">Home</a> → <a href="/blog/" style="color:#6c63ff;text-decoration:none">Blog</a> → General Ledger</nav>
+<h1 style="font-size:2.5rem;line-height:1.2;margin-bottom:10px">General Ledger: What It Is &amp; How It Works (Complete Guide)</h1>
+<p style="color:#666;font-size:14px">Updated March 2026 · 12 min read · <strong>12,100 monthly searches</strong></p>
+
+<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:25px 30px;border-radius:12px;margin:30px 0">
+<strong>Definition:</strong> The general ledger (GL) is the master record of all financial transactions in a business. Every debit and credit, every dollar in and out, passes through the GL. It's the single source of truth for your entire financial picture.
+</div>
+
+<h2 style="color:#1a1a2e;margin-top:40px">How the General Ledger Works</h2>
+<p>Think of the general ledger as a comprehensive database of every financial event in your business. Here's the flow:</p>
+<ol style="padding-left:20px">
+<li><strong>A transaction occurs</strong> — You make a sale, pay a bill, receive inventory</li>
+<li><strong>It's recorded as a journal entry</strong> — Every entry has at least one debit and one credit (double-entry accounting)</li>
+<li><strong>The entry posts to GL accounts</strong> — Each side of the entry goes to the appropriate account in the <a href="/blog/chart-of-accounts-guide/" style="color:#6c63ff">chart of accounts</a></li>
+<li><strong>Accounts update</strong> — Account balances change to reflect the transaction</li>
+<li><strong>Reports generated</strong> — Financial statements (P&amp;L, Balance Sheet, Cash Flow) pull directly from GL data</li>
+</ol>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Journal Entry Example</h2>
+<p>You sell $5,000 of consulting services and the client pays by check:</p>
+<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:15px">
+<tr style="background:#f0f0ff"><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Account</th><th style="padding:12px;text-align:right;border-bottom:2px solid #6c63ff">Debit</th><th style="padding:12px;text-align:right;border-bottom:2px solid #6c63ff">Credit</th></tr>
+<tr><td style="padding:12px;border-bottom:1px solid #eee">1000 - Cash</td><td style="padding:12px;text-align:right;border-bottom:1px solid #eee">$5,000</td><td style="padding:12px;text-align:right;border-bottom:1px solid #eee">—</td></tr>
+<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee">4000 - Service Revenue</td><td style="padding:12px;text-align:right;border-bottom:1px solid #eee">—</td><td style="padding:12px;text-align:right;border-bottom:1px solid #eee">$5,000</td></tr>
+</table>
+<p><strong>Result:</strong> Cash (asset) increases by $5,000. Revenue increases by $5,000. Debits = Credits. The GL stays balanced.</p>
+
+<h2 style="color:#1a1a2e;margin-top:40px">The 5 Types of GL Accounts</h2>
+<table style="width:100%;border-collapse:collapse;margin:30px 0;font-size:15px">
+<tr style="background:#f0f0ff"><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Account Type</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Goes On</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Normal Balance</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Increases With</th></tr>
+<tr><td style="padding:12px;border-bottom:1px solid #eee"><strong>Assets</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Balance Sheet</td><td style="padding:12px;border-bottom:1px solid #eee">Debit</td><td style="padding:12px;border-bottom:1px solid #eee">Debit</td></tr>
+<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee"><strong>Liabilities</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Balance Sheet</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td></tr>
+<tr><td style="padding:12px;border-bottom:1px solid #eee"><strong>Equity</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Balance Sheet</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td></tr>
+<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee"><strong>Revenue</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Income Statement</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td></tr>
+<tr><td style="padding:12px"><strong>Expenses</strong></td><td style="padding:12px">Income Statement</td><td style="padding:12px">Debit</td><td style="padding:12px">Debit</td></tr>
+</table>
+
+<h2 style="color:#1a1a2e;margin-top:40px">General Ledger in Modern Cloud Accounting</h2>
+<p>In QuickBooks Online, Xero, and other cloud platforms, you rarely interact with the GL directly. Instead:</p>
+<ul style="padding-left:20px">
+<li>You categorize bank transactions → the software creates GL entries automatically</li>
+<li>You create invoices → the software debits AR and credits Revenue</li>
+<li>You record bills → the software debits Expense and credits AP</li>
+</ul>
+<p>But understanding the GL is still essential for:</p>
+<ul style="padding-left:20px">
+<li><strong>Troubleshooting</strong> — When numbers don't look right, the GL tells you exactly what happened</li>
+<li><strong>Journal entries</strong> — Adjustments, accruals, and corrections still require manual GL entries</li>
+<li><strong>Advisory work</strong> — You can't advise on finances if you don't understand how the ledger works</li>
+<li><strong>Month-end close</strong> — A proper <a href="/blog/month-end-close-process-guide/" style="color:#6c63ff">month-end close</a> involves reviewing GL activity</li>
+</ul>
+
+<h2 style="color:#1a1a2e;margin-top:40px">GL Reconciliation Process</h2>
+<ol style="padding-left:20px">
+<li><strong>Pull GL reports</strong> — Run a trial balance and detailed GL transaction report</li>
+<li><strong>Match to source documents</strong> — Every GL entry should tie to a bank statement, invoice, or receipt</li>
+<li><strong>Identify discrepancies</strong> — Unmatched entries, unusual amounts, missing transactions</li>
+<li><strong>Make adjusting entries</strong> — Correct errors, record accruals, adjust prepaid expenses</li>
+<li><strong>Verify balance</strong> — Total debits must equal total credits. If not, there's an error to find.</li>
+</ol>
+
+<h2 style="color:#1a1a2e;margin-top:40px">From GL Knowledge to Advisory Value</h2>
+<p>Mastering the general ledger isn't just about being a better bookkeeper — it's about unlocking advisory opportunities. When you truly understand the GL, you can:</p>
+<ul style="padding-left:20px">
+<li>Spot financial trends before they become problems</li>
+<li>Build custom <a href="/blog/financial-kpis-every-business-needs/" style="color:#6c63ff">KPI dashboards</a> from GL data</li>
+<li>Create <a href="/blog/cash-flow-forecasting-guide/" style="color:#6c63ff">cash flow forecasts</a> based on historical GL patterns</li>
+<li>Provide <a href="/blog/profit-margin-analysis-guide/" style="color:#6c63ff">profitability analysis</a> by department, product, or service line</li>
+</ul>
+
+<div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
+<h3 style="margin:0 0 10px">Master the Financial Fundamentals</h3>
+<p style="margin:0 0 20px;opacity:0.95">Vega Academy builds your foundation from GL mastery to fractional CFO-level advisory.</p>
+<a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
+</div>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"General Ledger: What It Is & How It Works (Complete Guide)","description":"Everything about the general ledger — how it works, GL account types, journal entries, and modern bookkeeping applications.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+</script>
+</article>` }} />
+  );
+}
