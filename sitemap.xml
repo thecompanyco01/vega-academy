@@ -3324,4 +3324,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+<url><loc>https://vega-academy.vercel.app/blog/accrual-vs-cash-accounting/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://vega-academy.vercel.app/blog/accrual-accounting-guide/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://vega-academy.vercel.app/blog/double-entry-bookkeeping-guide/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://vega-academy.vercel.app/blog/bank-reconciliation-guide/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://vega-academy.vercel.app/blog/1099-contractor-guide/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://vega-academy.vercel.app/blog/cash-conversion-cycle-guide/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://vega-academy.vercel.app/blog/payroll-processing-guide/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://vega-academy.vercel.app/blog/bookkeeper-vs-accountant/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://vega-academy.vercel.app/blog/financial-controller-salary-guide/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
