@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profit Margin Calculator: How to Calculate Gross, Operating & Net Margins | Vega Academy</title>
+<meta name="description" content="Free profit margin calculator with formulas for gross, operating, and net profit margin. Step-by-step calculation examples plus industry benchmarks for 2026.">
+<meta name="keywords" content="profit margin calculator, how to calculate profit margin, gross profit margin calculator, net profit margin calculator, profit margin formula">
+<meta property="og:title" content="Profit Margin Calculator: Calculate Gross, Operating & Net Margins">
+<meta property="og:description" content="Calculate any profit margin instantly. Includes formulas, examples, and industry benchmarks for advisory professionals.">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://vega-academy.vercel.app/blog/profit-margin-calculator-guide/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you calculate profit margin?","acceptedAnswer":{"@type":"Answer","text":"Profit Margin = (Profit ÷ Revenue) × 100. The specific type depends on which 'profit' you use: Gross Profit Margin uses (Revenue − COGS), Operating Margin uses Operating Income, and Net Profit Margin uses Net Income."}},{"@type":"Question","name":"What is a good profit margin for a small business?","acceptedAnswer":{"@type":"Answer","text":"It depends on the industry. Generally, a net profit margin of 10-20% is good for most small businesses. Service businesses often achieve 15-25% net margins, while retail and restaurants operate on 3-9%. Always compare against your specific industry benchmarks."}}]}
+</script>
+</head>
+<body style="margin:0;padding:0;background:#fff">
+<article style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;line-height:1.8">
+<nav style="margin-bottom:20px;font-size:14px"><a href="/" style="color:#6c63ff;text-decoration:none">Home</a> → <a href="/blog/" style="color:#6c63ff;text-decoration:none">Blog</a> → Profit Margin Calculator Guide</nav>
+<h1 style="font-size:2.5rem;line-height:1.2;margin-bottom:10px">Profit Margin Calculator: Every Formula You Need</h1>
+<p style="color:#666;font-size:14px">Updated March 2026 · 15 min read · <strong>22,200 monthly searches</strong></p>
+
+<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:25px 30px;border-radius:12px;margin:30px 0">
+<strong>Quick Reference:</strong> There are three profit margins every business professional needs to know. <strong>Gross margin</strong> = (Revenue − COGS) ÷ Revenue. <strong>Operating margin</strong> = Operating Income ÷ Revenue. <strong>Net margin</strong> = Net Income ÷ Revenue. Each tells a different story about business health.
+</div>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Interactive Profit Margin Calculator</h2>
+<div style="background:#f8f9ff;border:2px solid #667eea;padding:30px;border-radius:12px;margin:20px 0">
+<p style="text-align:center;margin:0 0 20px 0"><strong>Enter your numbers below:</strong></p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;max-width:500px;margin:0 auto">
+<div>
+<label style="font-size:14px;font-weight:600;display:block;margin-bottom:4px">Revenue ($)</label>
+<input type="number" id="calc-revenue" placeholder="e.g., 500000" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:16px;box-sizing:border-box" oninput="calcMargins()">
+</div>
+<div>
+<label style="font-size:14px;font-weight:600;display:block;margin-bottom:4px">COGS ($)</label>
+<input type="number" id="calc-cogs" placeholder="e.g., 200000" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:16px;box-sizing:border-box" oninput="calcMargins()">
+</div>
+<div>
+<label style="font-size:14px;font-weight:600;display:block;margin-bottom:4px">Operating Expenses ($)</label>
+<input type="number" id="calc-opex" placeholder="e.g., 150000" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:16px;box-sizing:border-box" oninput="calcMargins()">
+</div>
+<div>
+<label style="font-size:14px;font-weight:600;display:block;margin-bottom:4px">Interest + Taxes ($)</label>
+<input type="number" id="calc-other" placeholder="e.g., 50000" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:6px;font-size:16px;box-sizing:border-box" oninput="calcMargins()">
+</div>
+</div>
+<div id="calc-results" style="margin-top:25px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;text-align:center">
+<div style="background:white;padding:15px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)">
+<p style="font-size:12px;color:#666;margin:0">GROSS MARGIN</p>
+<p id="gross-result" style="font-size:2rem;font-weight:bold;color:#667eea;margin:5px 0">—</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)">
+<p style="font-size:12px;color:#666;margin:0">OPERATING MARGIN</p>
+<p id="op-result" style="font-size:2rem;font-weight:bold;color:#764ba2;margin:5px 0">—</p>
+</div>
+<div style="background:white;padding:15px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)">
+<p style="font-size:12px;color:#666;margin:0">NET MARGIN</p>
+<p id="net-result" style="font-size:2rem;font-weight:bold;color:#2d3436;margin:5px 0">—</p>
+</div>
+</div>
+</div>
+<script>
+function calcMargins(){var r=parseFloat(document.getElementById('calc-revenue').value)||0;var c=parseFloat(document.getElementById('calc-cogs').value)||0;var o=parseFloat(document.getElementById('calc-opex').value)||0;var t=parseFloat(document.getElementById('calc-other').value)||0;if(r>0){document.getElementById('gross-result').textContent=((r-c)/r*100).toFixed(1)+'%';document.getElementById('op-result').textContent=((r-c-o)/r*100).toFixed(1)+'%';document.getElementById('net-result').textContent=((r-c-o-t)/r*100).toFixed(1)+'%';}else{document.getElementById('gross-result').textContent='—';document.getElementById('op-result').textContent='—';document.getElementById('net-result').textContent='—';}}
+</script>
+
+<h2 style="color:#1a1a2e;margin-top:40px">The Three Profit Margin Formulas</h2>
+
+<h3>1. Gross Profit Margin</h3>
+<div style="background:#f8f9ff;padding:15px;border-radius:8px;margin:10px 0;text-align:center;font-size:1.1rem">
+<strong>Gross Profit Margin = (Revenue − COGS) ÷ Revenue × 100</strong>
+</div>
+<p>Measures production/delivery efficiency. How much remains after the direct cost of creating your product or service. <a href="/blog/gross-profit-margin-guide/" style="color:#6c63ff">Full gross margin guide →</a></p>
+
+<h3>2. Operating Profit Margin</h3>
+<div style="background:#f8f9ff;padding:15px;border-radius:8px;margin:10px 0;text-align:center;font-size:1.1rem">
+<strong>Operating Margin = Operating Income ÷ Revenue × 100</strong>
+</div>
+<p>Measures core business profitability. How much remains after COGS AND operating expenses (rent, salaries, marketing, etc.), but before interest and taxes.</p>
+
+<h3>3. Net Profit Margin</h3>
+<div style="background:#f8f9ff;padding:15px;border-radius:8px;margin:10px 0;text-align:center;font-size:1.1rem">
+<strong>Net Profit Margin = Net Income ÷ Revenue × 100</strong>
+</div>
+<p>The ultimate profitability measure. What's left after every single expense — COGS, operating expenses, interest, and taxes. <a href="/blog/net-profit-margin-guide/" style="color:#6c63ff">Full net margin guide →</a></p>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Complete Calculation Example</h2>
+<div style="background:#f8f9ff;padding:20px;border-radius:8px;margin:20px 0">
+<p><strong>Example: Dental Practice</strong></p>
+<table style="width:100%;border-collapse:collapse">
+<tr><td style="padding:5px 0">Revenue</td><td style="text-align:right">$1,800,000</td></tr>
+<tr><td style="padding:5px 0">COGS (lab fees, supplies, direct staff)</td><td style="text-align:right">($540,000)</td></tr>
+<tr style="border-top:1px solid #ddd"><td style="padding:5px 0"><strong>Gross Profit</strong></td><td style="text-align:right"><strong>$1,260,000</strong></td></tr>
+<tr><td style="padding:5px 0">Operating expenses (rent, admin, marketing)</td><td style="text-align:right">($810,000)</td></tr>
+<tr style="border-top:1px solid #ddd"><td style="padding:5px 0"><strong>Operating Income</strong></td><td style="text-align:right"><strong>$450,000</strong></td></tr>
+<tr><td style="padding:5px 0">Interest + taxes</td><td style="text-align:right">($135,000)</td></tr>
+<tr style="border-top:2px solid #333"><td style="padding:5px 0"><strong>Net Income</strong></td><td style="text-align:right"><strong>$315,000</strong></td></tr>
+</table>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:15px;margin-top:20px;text-align:center">
+<div style="background:white;padding:10px;border-radius:6px"><p style="margin:0;font-size:12px;color:#666">GROSS</p><p style="margin:5px 0;font-size:1.5rem;font-weight:bold;color:#667eea">70%</p></div>
+<div style="background:white;padding:10px;border-radius:6px"><p style="margin:0;font-size:12px;color:#666">OPERATING</p><p style="margin:5px 0;font-size:1.5rem;font-weight:bold;color:#764ba2">25%</p></div>
+<div style="background:white;padding:10px;border-radius:6px"><p style="margin:0;font-size:12px;color:#666">NET</p><p style="margin:5px 0;font-size:1.5rem;font-weight:bold;color:#2d3436">17.5%</p></div>
+</div>
+</div>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Profit Margin Benchmarks by Industry</h2>
+<div style="overflow-x:auto">
+<table style="width:100%;border-collapse:collapse;margin:20px 0">
+<thead>
+<tr style="background:#f8f9ff">
+<th style="padding:12px;text-align:left;border-bottom:2px solid #ddd">Industry</th>
+<th style="padding:12px;text-align:right;border-bottom:2px solid #ddd">Gross</th>
+<th style="padding:12px;text-align:right;border-bottom:2px solid #ddd">Operating</th>
+<th style="padding:12px;text-align:right;border-bottom:2px solid #ddd">Net</th>
+</tr>
+</thead>
+<tbody>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">Software / SaaS</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">70-85%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">20-35%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">15-30%</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">Professional Services</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">50-70%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">15-25%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">10-20%</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">Dental / Medical Practice</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">60-75%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">20-30%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">12-22%</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">Manufacturing</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">25-45%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">8-18%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">5-12%</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">Construction</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">20-35%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">5-12%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">3-8%</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">Retail</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">25-50%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">5-10%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">2-6%</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">Restaurants</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">55-65%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">8-15%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">3-9%</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #eee">E-commerce</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">30-50%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">5-15%</td><td style="padding:10px;text-align:right;border-bottom:1px solid #eee">3-10%</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 style="color:#1a1a2e;margin-top:40px">How to Improve Profit Margins</h2>
+<h3>Quick Wins (Can Implement This Week)</h3>
+<ul style="padding-left:20px">
+<li><strong>Audit pricing</strong> — Most small businesses are undercharging. A 5% price increase with no volume loss goes straight to the bottom line</li>
+<li><strong>Review subscriptions and vendors</strong> — Cancel unused services, renegotiate contracts</li>
+<li><strong>Speed up collections</strong> — Invoice immediately, follow up on day 31. Cash in hand beats cash on paper</li>
+<li><strong>Cut low-margin products/services</strong> — Stop doing work that barely breaks even</li>
+</ul>
+<h3>Strategic Improvements (1-6 Months)</h3>
+<ul style="padding-left:20px">
+<li><strong>Automate manual processes</strong> — Reduce labor costs for repetitive tasks</li>
+<li><strong>Improve service mix</strong> — Shift toward higher-margin offerings</li>
+<li><strong>Negotiate bulk purchasing</strong> — Lower COGS through volume discounts</li>
+<li><strong>Reduce employee turnover</strong> — Hiring and training costs destroy margins</li>
+</ul>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Common Profit Margin Mistakes</h2>
+<ol style="padding-left:20px">
+<li><strong>Confusing markup with margin</strong> — A 50% markup is NOT a 50% margin. If you buy for $100 and sell for $150, your markup is 50% but your margin is 33%</li>
+<li><strong>Ignoring industry context</strong> — A 5% net margin is terrible for a software company but excellent for a grocery store</li>
+<li><strong>Only tracking one margin</strong> — You need all three. Gross shows pricing/cost efficiency. Operating shows overhead management. Net shows total profitability</li>
+<li><strong>Not tracking margin TRENDS</strong> — A single number means little. Track monthly to spot problems early</li>
+<li><strong>Mixing up profit with cash flow</strong> — You can have great margins but be cash-broke if customers pay slow and you pay vendors fast</li>
+</ol>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Markup vs. Margin (The Most Common Confusion)</h2>
+<div style="background:#f8f9ff;padding:20px;border-radius:8px;margin:20px 0">
+<p><strong>If cost = $60, selling price = $100:</strong></p>
+<ul style="padding-left:20px">
+<li><strong>Markup</strong> = (100 − 60) ÷ 60 = <strong>66.7%</strong> (profit as a % of COST)</li>
+<li><strong>Margin</strong> = (100 − 60) ÷ 100 = <strong>40%</strong> (profit as a % of REVENUE)</li>
+</ul>
+<p>Margin is always lower than markup for the same transaction. If someone says "I want a 50% margin" and you calculate a 50% markup, you'll underprice by a significant amount.</p>
+</div>
+
+<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
+<h3 style="margin:0 0 10px 0;color:white">Build an Advisory Practice Around Margin Analysis</h3>
+<p style="margin:0 0 15px 0">Help clients understand and improve their margins — it's one of the most valuable services a fractional CFO provides.</p>
+<a href="/course/module-1-preview/" style="display:inline-block;background:white;color:#667eea;padding:12px 30px;border-radius:8px;text-decoration:none;font-weight:bold">Start Free Module →</a>
+</div>
+
+<h2 style="color:#1a1a2e;margin-top:40px">Frequently Asked Questions</h2>
+<h3>How do you calculate profit margin?</h3>
+<p>Profit Margin = (Profit ÷ Revenue) × 100. The specific type depends on which "profit" you use: Gross Profit Margin uses (Revenue − COGS), Operating Margin uses Operating Income, and Net Profit Margin uses Net Income.</p>
+
+<h3>What is a good profit margin for a small business?</h3>
+<p>It depends on the industry. Generally, a net profit margin of 10-20% is good for most small businesses. Service businesses often achieve 15-25% net margins, while retail and restaurants operate on 3-9%.</p>
+
+<h3>What is the difference between markup and margin?</h3>
+<p>Markup is profit as a percentage of cost. Margin is profit as a percentage of selling price (revenue). For the same transaction, markup is always a higher percentage than margin.</p>
+
+<p style="margin-top:40px;padding-top:20px;border-top:1px solid #eee;color:#666;font-size:14px">
+<strong>Related:</strong> <a href="/blog/gross-profit-margin-guide/" style="color:#6c63ff">Gross Profit Margin Guide</a> · <a href="/blog/net-profit-margin-guide/" style="color:#6c63ff">Net Profit Margin Guide</a> · <a href="/blog/ebitda-guide/" style="color:#6c63ff">EBITDA Guide</a> · <a href="/blog/break-even-analysis-small-business/" style="color:#6c63ff">Break-Even Analysis</a>
+</p>
+<p style="color:#666;font-size:14px">
+<strong>About Vega Academy:</strong> We help bookkeepers and accountants transition into high-value fractional CFO and advisory roles. <a href="/" style="color:#6c63ff">Learn more →</a>
+</p>
+</article>
+<script src="/_vercel/insights/script.js" defer></script>
+</body>
+</html>

@@ -12,7 +12,10 @@ module.exports = async (req, res) => {
   }
 
   // Simple API key auth
-  const adminKey = process.env.ADMIN_API_KEY || 'vega-admin-2026';
+  const adminKey = process.env.ADMIN_API_KEY;
+  if (!adminKey) {
+    return res.status(500).json({ error: 'Admin key not configured' });
+  }
   if (req.query.key !== adminKey) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
