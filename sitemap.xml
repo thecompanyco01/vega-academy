@@ -217,6 +217,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://vega-academy.vercel.app/blog/balance-sheet-example-guide/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://vega-academy.vercel.app/blog/bank-reconciliation-guide/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -284,6 +290,12 @@
   </url>
   <url>
     <loc>https://vega-academy.vercel.app/blog/bookkeeper-marketing-guide/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vega-academy.vercel.app/blog/bookkeeper-salary-guide/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -482,6 +494,12 @@
   </url>
   <url>
     <loc>https://vega-academy.vercel.app/blog/cash-flow-statement-guide/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vega-academy.vercel.app/blog/cash-vs-accrual-accounting-guide/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -806,6 +824,12 @@
   </url>
   <url>
     <loc>https://vega-academy.vercel.app/blog/financial-kpis-every-business-needs/</loc>
+    <lastmod>2026-03-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vega-academy.vercel.app/blog/financial-modeling-guide/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -1339,13 +1363,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vega-academy.vercel.app/blog/profit-and-loss-statement-example/</loc>
+    <loc>https://vega-academy.vercel.app/blog/profit-and-loss-statement-guide/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vega-academy.vercel.app/blog/profit-and-loss-statement-guide/</loc>
+    <loc>https://vega-academy.vercel.app/blog/profit-and-loss-statement-example/</loc>
     <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

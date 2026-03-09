@@ -1,3 +1,4 @@
+// Batch 18 - already run, articles generated
 const fs = require('fs');
 const path = require('path');
 
