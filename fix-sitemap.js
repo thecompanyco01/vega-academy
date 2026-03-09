@@ -35,11 +35,27 @@ topics.forEach(topic => {
   }
 });
 
+// City pages (fractional-cfo-near-me)
+if (fs.existsSync('./fractional-cfo-near-me')) {
+  const cities = fs.readdirSync('./fractional-cfo-near-me').filter(f => 
+    fs.statSync(`./fractional-cfo-near-me/${f}`).isDirectory()
+  );
+  cities.forEach(d => urls.add(`/fractional-cfo-near-me/${d}/|0.7`));
+}
+
+// Course pages
+if (fs.existsSync('./course')) {
+  const courseDirs = fs.readdirSync('./course').filter(f => 
+    fs.statSync(`./course/${f}`).isDirectory()
+  );
+  courseDirs.forEach(d => urls.add(`/course/${d}/|0.8`));
+}
+
 // Generate sitemap
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 urls.forEach(entry => {
   const [path, priority] = entry.split('|');
-  xml += `  <url><loc>${baseUrl}${path}</loc><lastmod>2026-03-06</lastmod><priority>${priority}</priority></url>\n`;
+  xml += `  <url><loc>${baseUrl}${path}</loc><lastmod>2026-03-09</lastmod><priority>${priority}</priority></url>\n`;
 });
 xml += '</urlset>';
 fs.writeFileSync('./sitemap.xml', xml);
