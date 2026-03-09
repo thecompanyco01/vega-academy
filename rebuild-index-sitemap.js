@@ -123,7 +123,7 @@ console.log('✅ Blog index updated');
 
 // Generate sitemap
 const baseUrl = 'https://vega-academy.vercel.app';
-const today = '2026-03-06';
+const today = new Date().toISOString().split('T')[0];
 
 let sitemapUrls = [
   { loc: '/', priority: '1.0', freq: 'daily' },
@@ -146,6 +146,16 @@ sitemapUrls.push({ loc: '/fractional-cfo/', priority: '0.8', freq: 'weekly' });
 industries.forEach(ind => {
   sitemapUrls.push({ loc: `/fractional-cfo/${ind}/`, priority: '0.6', freq: 'monthly' });
 });
+
+// City pages (fractional-cfo-near-me)
+const cityDir = path.join(__dirname, 'fractional-cfo-near-me');
+if (fs.existsSync(cityDir)) {
+  sitemapUrls.push({ loc: '/fractional-cfo-near-me/', priority: '0.7', freq: 'weekly' });
+  const cities = fs.readdirSync(cityDir).filter(f => fs.statSync(path.join(cityDir, f)).isDirectory());
+  cities.forEach(city => {
+    sitemapUrls.push({ loc: `/fractional-cfo-near-me/${city}/`, priority: '0.6', freq: 'monthly' });
+  });
+}
 
 // Topic x industry pages
 const topicDirs = ['bookkeeping-to-advisory', 'budgeting', 'cash-flow-forecasting', 'financial-reporting', 'kpi-dashboard', 'pricing-strategy', 'profitability-analysis'];
