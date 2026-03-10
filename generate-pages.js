@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Programmatic SEO page generator for Vega Academy
+// Programmatic SEO page generator for Fractional CFO School
 // Generates hundreds of industry-specific and topic-specific pages
 
 const fs = require('fs');
@@ -123,11 +123,11 @@ function generateIndustryPage(industry, industryName) {
         footer a { color: var(--accent-light); text-decoration: none; }
     </style>
     <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "Article", "headline": "Fractional CFO for ${industryName}", "author": { "@type": "Organization", "name": "Vega Academy" }, "datePublished": "2026-03-06" }
+    { "@context": "https://schema.org", "@type": "Article", "headline": "Fractional CFO for ${industryName}", "author": { "@type": "Organization", "name": "Fractional CFO School" }, "datePublished": "2026-03-06" }
     </script>
 </head>
 <body>
-<nav><div class="nav-inner"><a href="/" class="logo">⭐ vega <span>academy</span></a><div class="nav-links"><a href="/blog/">Blog</a><a href="/starter-kit/">Free Starter Kit</a><a href="/" class="nav-cta">Join Waitlist</a></div></div></nav>
+<nav><div class="nav-inner"><a href="/" class="logo">📊 fractional cfo <span>school</span></a><div class="nav-links"><a href="/blog/">Blog</a><a href="/starter-kit/">Free Starter Kit</a><a href="/" class="nav-cta">Join Waitlist</a></div></div></nav>
 
 <article>
 <div class="container">
@@ -221,7 +221,7 @@ function generateIndustryPage(industry, industryName) {
 </div>
 </article>
 
-<footer><div class="container"><p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐</p></div></footer>
+<footer><div class="container"><p>© 2026 <a href="/">Fractional CFO School</a>. Built with ⭐</p></div></footer>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>`;
@@ -270,11 +270,11 @@ function generateTopicIndustryPage(topic, industry, industryName) {
         footer a { color: var(--accent-light); text-decoration: none; }
     </style>
     <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "Article", "headline": "${topic.title} for ${industryName}", "author": { "@type": "Organization", "name": "Vega Academy" }, "datePublished": "2026-03-06" }
+    { "@context": "https://schema.org", "@type": "Article", "headline": "${topic.title} for ${industryName}", "author": { "@type": "Organization", "name": "Fractional CFO School" }, "datePublished": "2026-03-06" }
     </script>
 </head>
 <body>
-<nav><div class="nav-inner"><a href="/" class="logo">⭐ vega <span>academy</span></a><div class="nav-links"><a href="/blog/">Blog</a><a href="/starter-kit/">Free Starter Kit</a><a href="/" class="nav-cta">Join Waitlist</a></div></div></nav>
+<nav><div class="nav-inner"><a href="/" class="logo">📊 fractional cfo <span>school</span></a><div class="nav-links"><a href="/blog/">Blog</a><a href="/starter-kit/">Free Starter Kit</a><a href="/" class="nav-cta">Join Waitlist</a></div></div></nav>
 
 <article>
 <div class="container">
@@ -331,7 +331,7 @@ function generateTopicIndustryPage(topic, industry, industryName) {
 </div>
 </article>
 
-<footer><div class="container"><p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐</p></div></footer>
+<footer><div class="container"><p>© 2026 <a href="/">Fractional CFO School</a>. Built with ⭐</p></div></footer>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>`;
@@ -349,7 +349,7 @@ function generateIndustryHub() {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fractional CFO Services by Industry — Vega Academy</title>
+    <title>Fractional CFO Services by Industry — Fractional CFO School</title>
     <meta name="description" content="Industry-specific fractional CFO guides for 50+ industries. KPIs, pricing, cash flow strategies, and advisory frameworks tailored to your vertical.">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
@@ -375,7 +375,7 @@ function generateIndustryHub() {
     </style>
 </head>
 <body>
-<nav><div class="nav-inner"><a href="/" class="logo">⭐ vega <span>academy</span></a><div class="nav-links"><a href="/blog/">Blog</a><a href="/starter-kit/">Free Starter Kit</a><a href="/" class="nav-cta">Join Waitlist</a></div></div></nav>
+<nav><div class="nav-inner"><a href="/" class="logo">📊 fractional cfo <span>school</span></a><div class="nav-links"><a href="/blog/">Blog</a><a href="/starter-kit/">Free Starter Kit</a><a href="/" class="nav-cta">Join Waitlist</a></div></div></nav>
 
 <section class="page-header">
     <div class="container">
@@ -392,7 +392,7 @@ ${links}
     </div>
 </section>
 
-<footer><div class="container"><p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐</p></div></footer>
+<footer><div class="container"><p>© 2026 <a href="/">Fractional CFO School</a>. Built with ⭐</p></div></footer>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>`;

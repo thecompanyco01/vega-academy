@@ -61,7 +61,7 @@ const blogIndexHtml = `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Vega Academy | Fractional CFO & Advisory Services</title>
+  <title>Blog — Fractional CFO School | Fractional CFO & Advisory Services</title>
   <meta name="description" content="Expert articles on fractional CFO services, advisory pricing, bookkeeper transitions, and financial leadership. ${blogPosts.length}+ in-depth guides.">
   <link rel="canonical" href="${baseUrl}/blog/">
   <style>
@@ -86,7 +86,7 @@ const blogIndexHtml = `<!DOCTYPE html>
 </head>
 <body>
   <nav>
-    <a href="/">⭐ Vega Academy</a>
+    <a href="/">⭐ Fractional CFO School</a>
     <div class="links">
       <a href="/blog/">Blog</a>
       <a href="/starter-kit/">Free Starter Kit</a>
@@ -95,7 +95,7 @@ const blogIndexHtml = `<!DOCTYPE html>
     </div>
   </nav>
   <div class="hero">
-    <h1>Vega Academy Blog</h1>
+    <h1>Fractional CFO School Blog</h1>
     <p>${blogPosts.length} expert articles on fractional CFO services, advisory, and financial leadership</p>
   </div>
   <div class="container">
@@ -105,7 +105,7 @@ const blogIndexHtml = `<!DOCTYPE html>
     </div>`).join('\n    ')}
   </div>
   <footer>
-    <p>© 2026 Vega Academy. All rights reserved.</p>
+    <p>© 2026 Fractional CFO School. All rights reserved.</p>
     <p style="margin-top:10px;"><a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a></p>
   </footer>
 </body>

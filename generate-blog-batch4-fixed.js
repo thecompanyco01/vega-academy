@@ -1099,15 +1099,15 @@ function generateArticle(article) {
       "headline": "${article.title.replace(/"/g, '\\"')}",
       "description": "${article.description.replace(/"/g, '\\"')}",
       "datePublished": "2026-03-06",
-      "author": { "@type": "Organization", "name": "Vega Academy" },
-      "publisher": { "@type": "Organization", "name": "Vega Academy" }
+      "author": { "@type": "Organization", "name": "Fractional CFO School" },
+      "publisher": { "@type": "Organization", "name": "Fractional CFO School" }
     }
     </script>
 </head>
 <body>
     <nav>
         <div class="nav-inner">
-            <a href="/" class="logo">⭐ Vega Academy</a>
+            <a href="/" class="logo">⭐ Fractional CFO School</a>
             <div class="nav-links">
                 <a href="/blog/">Blog</a>
                 <a href="/starter-kit/">Free Starter Kit</a>
@@ -1135,7 +1135,7 @@ function generateArticle(article) {
 
             <div class="cta-box">
                 <h2>Ready to Make the Transition?</h2>
-                <p>Vega Academy teaches bookkeepers to build profitable advisory and fractional CFO practices. Start with our free module.</p>
+                <p>Fractional CFO School teaches bookkeepers to build profitable advisory and fractional CFO practices. Start with our free module.</p>
                 <a href="/course/module-1/" class="btn">Start Free Module →</a>
                 <p style="margin-top: 16px; font-size: 14px;"><a href="/starter-kit/">Or grab the free Advisory Starter Kit →</a></p>
             </div>
@@ -1144,7 +1144,7 @@ function generateArticle(article) {
 
     <footer>
         <div class="container">
-            <p>© 2026 Vega Academy. Helping bookkeepers build advisory practices.</p>
+            <p>© 2026 Fractional CFO School. Helping bookkeepers build advisory practices.</p>
             <p style="margin-top: 8px;">
                 <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a> · <a href="/course/module-1/">Free Module</a>
             </p>

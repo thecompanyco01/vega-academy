@@ -103,7 +103,7 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
 <h3 style="margin:0 0 10px">Ready to Go From Bookkeeper to Fractional CFO?</h3>
-<p style="margin:0 0 20px;opacity:0.95">Vega Academy teaches bookkeepers how to add advisory services and earn $100K-$300K/year.</p>
+<p style="margin:0 0 20px;opacity:0.95">Fractional CFO School teaches bookkeepers how to add advisory services and earn $100K-$300K/year.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
 </div>
 
@@ -118,7 +118,7 @@ const articles = [
 <p>Traditional accountants earn more ($55K-$85K vs $38K-$52K). However, advisory bookkeepers and fractional CFOs can earn $100K-$300K+ — more than most accountants.</p>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Accountant vs Bookkeeper: Key Differences, Roles & When to Hire Each","description":"Understand the critical differences between accountants and bookkeepers. Salary comparisons, roles, and how bookkeepers can level up to advisory.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+{"@context":"https://schema.org","@type":"Article","headline":"Accountant vs Bookkeeper: Key Differences, Roles & When to Hire Each","description":"Understand the critical differences between accountants and bookkeepers. Salary comparisons, roles, and how bookkeepers can level up to advisory.","author":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
 </script>
 </article>`
   },
@@ -250,12 +250,12 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
 <h3 style="margin:0 0 10px">Level Up Your Advisory Skills</h3>
-<p style="margin:0 0 20px;opacity:0.95">Learn how to turn clean books into client-winning advisory services at Vega Academy.</p>
+<p style="margin:0 0 20px;opacity:0.95">Learn how to turn clean books into client-winning advisory services at Fractional CFO School.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
 </div>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Chart of Accounts: Complete Setup Guide for Small Business (2026)","description":"Learn how to set up and organize your chart of accounts with templates and industry examples.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+{"@context":"https://schema.org","@type":"Article","headline":"Chart of Accounts: Complete Setup Guide for Small Business (2026)","description":"Learn how to set up and organize your chart of accounts with templates and industry examples.","author":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
 </script>
 </article>`
   },
@@ -334,12 +334,12 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
 <h3 style="margin:0 0 10px">Become a Fractional CFO</h3>
-<p style="margin:0 0 20px;opacity:0.95">Vega Academy teaches bookkeepers the exact skills needed to deliver CFO-level advisory services.</p>
+<p style="margin:0 0 20px;opacity:0.95">Fractional CFO School teaches bookkeepers the exact skills needed to deliver CFO-level advisory services.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
 </div>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"CFO Responsibilities: What a Chief Financial Officer Actually Does","description":"Complete breakdown of CFO responsibilities and how fractional CFOs deliver the same value.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+{"@context":"https://schema.org","@type":"Article","headline":"CFO Responsibilities: What a Chief Financial Officer Actually Does","description":"Complete breakdown of CFO responsibilities and how fractional CFOs deliver the same value.","author":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
 </script>
 </article>`
   },
@@ -432,7 +432,7 @@ const articles = [
 </div>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Accounts Payable Process: Complete AP Guide for Small Business (2026)","description":"Master the accounts payable process with best practices, KPIs, and automation tips.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+{"@context":"https://schema.org","@type":"Article","headline":"Accounts Payable Process: Complete AP Guide for Small Business (2026)","description":"Master the accounts payable process with best practices, KPIs, and automation tips.","author":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
 </script>
 </article>`
   },
@@ -527,7 +527,7 @@ const articles = [
 </div>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Profit First Accounting: How to Implement the Profit First Method","description":"Complete guide to Profit First accounting with step-by-step implementation and advisory service opportunities.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+{"@context":"https://schema.org","@type":"Article","headline":"Profit First Accounting: How to Implement the Profit First Method","description":"Complete guide to Profit First accounting with step-by-step implementation and advisory service opportunities.","author":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
 </script>
 </article>`
   },
@@ -628,12 +628,12 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
 <h3 style="margin:0 0 10px">Fast-Track Your Advisory Skills</h3>
-<p style="margin:0 0 20px;opacity:0.95">Vega Academy compresses years of learning into weeks. Go from bookkeeper to fractional CFO faster.</p>
+<p style="margin:0 0 20px;opacity:0.95">Fractional CFO School compresses years of learning into weeks. Go from bookkeeper to fractional CFO faster.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
 </div>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"Bookkeeper Business Plan: Start Your Bookkeeping Business in 2026","description":"Complete bookkeeper business plan template covering pricing, services, marketing, and growth to advisory.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+{"@context":"https://schema.org","@type":"Article","headline":"Bookkeeper Business Plan: Start Your Bookkeeping Business in 2026","description":"Complete bookkeeper business plan template covering pricing, services, marketing, and growth to advisory.","author":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
 </script>
 </article>`
   },
@@ -718,12 +718,12 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
 <h3 style="margin:0 0 10px">Master the Financial Fundamentals</h3>
-<p style="margin:0 0 20px;opacity:0.95">Vega Academy builds your foundation from GL mastery to fractional CFO-level advisory.</p>
+<p style="margin:0 0 20px;opacity:0.95">Fractional CFO School builds your foundation from GL mastery to fractional CFO-level advisory.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
 </div>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"General Ledger: What It Is & How It Works (Complete Guide)","description":"Everything about the general ledger — how it works, GL account types, journal entries, and modern bookkeeping applications.","author":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
+{"@context":"https://schema.org","@type":"Article","headline":"General Ledger: What It Is & How It Works (Complete Guide)","description":"Everything about the general ledger — how it works, GL account types, journal entries, and modern bookkeeping applications.","author":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
 </script>
 </article>`
   }
@@ -735,7 +735,7 @@ articles.forEach(article => {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
   
   const tsx = `export const metadata = {
-  title: '${article.title.replace(/'/g, "\\'")} | Vega Academy',
+  title: '${article.title.replace(/'/g, "\\'")} | Fractional CFO School',
   description: '${article.description.replace(/'/g, "\\'")}',
   keywords: '${article.keywords}',
   openGraph: {
@@ -743,7 +743,7 @@ articles.forEach(article => {
     description: '${article.description.replace(/'/g, "\\'")}',
     type: 'article',
     publishedTime: '2026-03-07',
-    authors: ['Vega Academy'],
+    authors: ['Fractional CFO School'],
   },
 };
 

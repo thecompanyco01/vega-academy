@@ -109,7 +109,7 @@ const articles = [
 <tr><td>Freelance (Specialized)</td><td>$50-$85</td><td>$800-$2,000</td><td>$100,000-$170,000</td></tr>
 <tr><td>Advisory/Fractional CFO</td><td>$150-$500</td><td>$2,000-$10,000</td><td>$200,000-$500,000+</td></tr>
 </table>
-<p>Notice the gap between "freelance basic" and "advisory." That's the gap Vega Academy helps you close. Same clients, same industry knowledge — but with advisory skills, you earn 3-5x more.</p>
+<p>Notice the gap between "freelance basic" and "advisory." That's the gap Fractional CFO School helps you close. Same clients, same industry knowledge — but with advisory skills, you earn 3-5x more.</p>
 
 <h3>How to Set Up Your Remote Bookkeeping Business</h3>
 <ol>
@@ -131,7 +131,7 @@ const articles = [
 <li><strong>Year 2-3:</strong> Add advisory services — cash flow forecasting, KPI dashboards, budget vs. actual analysis (earn $80K-$150K)</li>
 <li><strong>Year 3-5:</strong> Position as a fractional CFO — strategic financial planning, board-ready reporting, growth advisory (earn $150K-$300K+)</li>
 </ol>
-<p>The skills gap between step 1 and step 3 isn't as large as you think. It's mostly about <strong>confidence, frameworks, and positioning</strong>. That's exactly what <a href="/">Vega Academy</a> teaches.</p>
+<p>The skills gap between step 1 and step 3 isn't as large as you think. It's mostly about <strong>confidence, frameworks, and positioning</strong>. That's exactly what <a href="/">Fractional CFO School</a> teaches.</p>
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center;">
 <h3 style="color: white; margin-top: 0;">Ready to Go Beyond Bookkeeping?</h3>
@@ -963,9 +963,9 @@ articles.forEach(article => {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${article.title} | Vega Academy</title>
+<title>${article.title} | Fractional CFO School</title>
 <meta name="description" content="${article.meta}">
-<meta name="keywords" content="${article.keyword}, bookkeeping, advisory services, fractional CFO, Vega Academy">
+<meta name="keywords" content="${article.keyword}, bookkeeping, advisory services, fractional CFO, Fractional CFO School">
 <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}">
 <meta property="og:title" content="${article.title}">
 <meta property="og:description" content="${article.meta}">
@@ -980,8 +980,8 @@ articles.forEach(article => {
   "@type": "Article",
   "headline": "${article.title}",
   "description": "${article.meta}",
-  "author": {"@type": "Organization", "name": "Vega Academy"},
-  "publisher": {"@type": "Organization", "name": "Vega Academy"},
+  "author": {"@type": "Organization", "name": "Fractional CFO School"},
+  "publisher": {"@type": "Organization", "name": "Fractional CFO School"},
   "datePublished": "2026-03-08",
   "dateModified": "2026-03-08"
 }
@@ -1017,16 +1017,16 @@ footer { text-align: center; padding: 40px 20px; color: #666; font-size: 0.9em; 
 </style>
 </head>
 <body>
-<nav><div class="container"><a href="/">⭐ Vega Academy</a><div class="nav-links"><a href="/blog">Blog</a><a href="/tools/calculator">Calculator</a><a href="/starter-kit">Starter Kit</a><a href="/course/module-1">Course</a></div></div></nav>
+<nav><div class="container"><a href="/">⭐ Fractional CFO School</a><div class="nav-links"><a href="/blog">Blog</a><a href="/tools/calculator">Calculator</a><a href="/starter-kit">Starter Kit</a><a href="/course/module-1">Course</a></div></div></nav>
 <div class="container">
 <div class="breadcrumb"><a href="/">Home</a> → <a href="/blog">Blog</a> → ${article.title}</div>
 <article>
 <h1>${article.title}</h1>
-<div class="meta-info">Vega Academy · March 8, 2026 · Target keyword: "${article.keyword}" (${article.volume}, KD ${article.kd})</div>
+<div class="meta-info">Fractional CFO School · March 8, 2026 · Target keyword: "${article.keyword}" (${article.volume}, KD ${article.kd})</div>
 ${article.content}
 </article>
 </div>
-<footer><p>© 2026 Vega Academy. Helping bookkeepers become fractional CFOs.</p></footer>
+<footer><p>© 2026 Fractional CFO School. Helping bookkeepers become fractional CFOs.</p></footer>
 </body>
 </html>`;
 

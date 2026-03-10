@@ -117,8 +117,8 @@ const articles = [
       <li><strong>AI-powered:</strong> Vic.ai, Blue Dot, Docyt</li>
     </ul>
 
-    <h2>Getting Started with Vega Academy</h2>
-    <p>If you're a bookkeeper or accountant looking to transition into advisory services, <a href="/">Vega Academy</a> provides the complete training program. Our curriculum covers:</p>
+    <h2>Getting Started with Fractional CFO School</h2>
+    <p>If you're a bookkeeper or accountant looking to transition into advisory services, <a href="/">Fractional CFO School</a> provides the complete training program. Our curriculum covers:</p>
     <ul>
       <li>Building your advisory service offerings</li>
       <li>Pricing and packaging advisory engagements</li>
@@ -190,7 +190,7 @@ const articles = [
       <li><strong>Get your first client</strong> — Offer a free financial health check to 3 startups in your network</li>
       <li><strong>Join startup ecosystems</strong> — Accelerators, incubators, and VC networks often refer fractional CFOs</li>
     </ol>
-    <p><a href="/">Vega Academy</a> teaches the complete fractional CFO skillset, with dedicated modules on serving startups.</p>
+    <p><a href="/">Fractional CFO School</a> teaches the complete fractional CFO skillset, with dedicated modules on serving startups.</p>
 
     <h2>Case Study: Fractional CFO Impact on a Series A Startup</h2>
     <p>Consider a typical SaaS startup at $1.2M ARR:</p>
@@ -267,7 +267,7 @@ const articles = [
       <li><strong>Year 2:</strong> Transition to majority advisory, 4-5 clients → $120K-$180K</li>
       <li><strong>Year 3:</strong> Full fractional CFO practice, 5-7 clients → $200K-$300K</li>
     </ol>
-    <p>That's a 4-5x income increase in 3 years. <a href="/">Vega Academy</a> provides the training and templates to accelerate this transition.</p>
+    <p>That's a 4-5x income increase in 3 years. <a href="/">Fractional CFO School</a> provides the training and templates to accelerate this transition.</p>
 
     <h2>Get Started</h2>
     <p>Download our <a href="/starter-kit/">free Advisory Starter Kit</a> with a pricing calculator that models your potential fractional CFO income based on your target clients and rates.</p>
@@ -363,7 +363,7 @@ const articles = [
     <p><strong>Result:</strong> Identified that one acquisition channel had negative ROI. Reallocated spend. Improved LTV/CAC from 1.8x to 3.2x. Raised Series A at $12M valuation.</p>
 
     <h2>Become a Fractional CFO</h2>
-    <p>If this role appeals to you, <a href="/">Vega Academy</a> teaches the complete fractional CFO skillset — from building deliverables to landing clients to scaling your practice. <a href="/starter-kit/">Start with our free toolkit</a>.</p>
+    <p>If this role appeals to you, <a href="/">Fractional CFO School</a> teaches the complete fractional CFO skillset — from building deliverables to landing clients to scaling your practice. <a href="/starter-kit/">Start with our free toolkit</a>.</p>
     `
   },
   {
@@ -430,7 +430,7 @@ const articles = [
     </ol>
 
     <h2>For Aspiring Fractional CFOs</h2>
-    <p>Want to be on the other side of this equation? <a href="/">Vega Academy</a> teaches you how to build, price, and sell fractional CFO services. Our <a href="/tools/advisory-revenue-calculator/">Advisory Revenue Calculator</a> shows you exactly how much you could earn.</p>
+    <p>Want to be on the other side of this equation? <a href="/">Fractional CFO School</a> teaches you how to build, price, and sell fractional CFO services. Our <a href="/tools/advisory-revenue-calculator/">Advisory Revenue Calculator</a> shows you exactly how much you could earn.</p>
     `
   },
   {
@@ -518,7 +518,7 @@ const articles = [
     </ul>
 
     <h2>Learn to Build Your CAS Practice</h2>
-    <p><a href="/">Vega Academy</a> provides the training, templates, and community to help you build a profitable CAS practice. Our curriculum covers every aspect — from service design to pricing to client acquisition. <a href="/starter-kit/">Get our free Advisory Starter Kit</a> to begin.</p>
+    <p><a href="/">Fractional CFO School</a> provides the training, templates, and community to help you build a profitable CAS practice. Our curriculum covers every aspect — from service design to pricing to client acquisition. <a href="/starter-kit/">Get our free Advisory Starter Kit</a> to begin.</p>
     `
   },
   {
@@ -632,7 +632,7 @@ const articles = [
     </ul>
 
     <h2>Build Your Dashboard Skills</h2>
-    <p>CFO dashboards are a core deliverable taught in <a href="/">Vega Academy</a>. Our <a href="/starter-kit/">free Advisory Starter Kit</a> includes a KPI dashboard template you can customize for your clients today.</p>
+    <p>CFO dashboards are a core deliverable taught in <a href="/">Fractional CFO School</a>. Our <a href="/starter-kit/">free Advisory Starter Kit</a> includes a KPI dashboard template you can customize for your clients today.</p>
     `
   },
   {
@@ -718,7 +718,7 @@ const articles = [
     </ul>
 
     <h2>Get Started</h2>
-    <p><a href="/">Vega Academy</a> teaches you how to build and position your fractional CFO practice. Our <a href="/starter-kit/">free Advisory Starter Kit</a> includes proposal templates, engagement letters, and pricing calculators.</p>
+    <p><a href="/">Fractional CFO School</a> teaches you how to build and position your fractional CFO practice. Our <a href="/starter-kit/">free Advisory Starter Kit</a> includes proposal templates, engagement letters, and pricing calculators.</p>
     `
   }
 ];
@@ -737,7 +737,7 @@ articles.forEach(article => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${article.title} | Vega Academy</title>
+  <title>${article.title} | Fractional CFO School</title>
   <meta name="description" content="${article.description}">
   <meta name="keywords" content="${article.keywords}">
   <meta property="og:title" content="${article.title}">
@@ -751,8 +751,8 @@ articles.forEach(article => {
     "headline": "${article.title}",
     "description": "${article.description}",
     "datePublished": "2026-03-07",
-    "author": { "@type": "Organization", "name": "Vega Academy" },
-    "publisher": { "@type": "Organization", "name": "Vega Academy" }
+    "author": { "@type": "Organization", "name": "Fractional CFO School" },
+    "publisher": { "@type": "Organization", "name": "Fractional CFO School" }
   }
   </script>
   <style>
@@ -786,7 +786,7 @@ articles.forEach(article => {
 </head>
 <body>
   <nav class="nav">
-    <a href="/" class="logo">⭐ Vega Academy</a>
+    <a href="/" class="logo">⭐ Fractional CFO School</a>
     <div>
       <a href="/blog/">Blog</a>
       <a href="/starter-kit/">Free Starter Kit</a>
@@ -802,12 +802,12 @@ articles.forEach(article => {
     ${article.content}
     <div class="cta-box">
       <h2>Ready to Build Your Advisory Practice?</h2>
-      <p>Vega Academy teaches bookkeepers and accountants to become high-earning fractional CFOs and advisory professionals.</p>
+      <p>Fractional CFO School teaches bookkeepers and accountants to become high-earning fractional CFOs and advisory professionals.</p>
       <p style="margin-top: 1rem;"><a href="/starter-kit/">Download the Free Advisory Starter Kit →</a></p>
     </div>
   </article>
   <footer class="footer">
-    <p>© 2026 Vega Academy. Built for ambitious bookkeepers.</p>
+    <p>© 2026 Fractional CFO School. Built for ambitious bookkeepers.</p>
   </footer>
   <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>

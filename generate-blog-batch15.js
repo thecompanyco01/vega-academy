@@ -688,7 +688,7 @@ const headerHTML = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://fractionalcfoschool.com/blog/SLUG/">
-<title>TITLE | Vega Academy</title>
+<title>TITLE | Fractional CFO School</title>
 <meta name="description" content="META">
 <meta name="robots" content="index, follow">
 <style>
@@ -727,13 +727,13 @@ footer a{color:#fbbf24;text-decoration:none}
 <main class="container">
 <div class="article-header">
 <h1>TITLE</h1>
-<div class="article-meta">Vega Academy · March 2026 · KEYWORD (VOLUME searches/month)</div>
+<div class="article-meta">Fractional CFO School · March 2026 · KEYWORD (VOLUME searches/month)</div>
 </div>
 <div class="article-body">
 CONTENT
 </div>
 </main>
-<footer><div class="container"><p><strong>Vega Academy</strong> — Helping bookkeepers become fractional CFOs</p><p style="margin-top:8px"><a href="/blog/">Blog</a> · <a href="/course/module-1/">Free Course</a> · <a href="/starter-kit/">Starter Kit</a></p><p style="margin-top:16px;opacity:0.6">© 2026 Vega Academy. All rights reserved.</p></div></footer>
+<footer><div class="container"><p><strong>Fractional CFO School</strong> — Helping bookkeepers become fractional CFOs</p><p style="margin-top:8px"><a href="/blog/">Blog</a> · <a href="/course/module-1/">Free Course</a> · <a href="/starter-kit/">Starter Kit</a></p><p style="margin-top:16px;opacity:0.6">© 2026 Fractional CFO School. All rights reserved.</p></div></footer>
 </body>
 </html>`;
 

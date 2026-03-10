@@ -1050,7 +1050,7 @@ function generateHTML(article) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>\${article.title} | Vega Academy</title>
+  <title>\${article.title} | Fractional CFO School</title>
   <meta name="description" content="\${article.description}">
   <meta name="keywords" content="\${article.keywords}">
   <link rel="canonical" href="https://fractionalcfoschool.com/blog/\${article.slug}/">
@@ -1066,8 +1066,8 @@ function generateHTML(article) {
     "description": "\${article.description}",
     "datePublished": "2026-03-06",
     "dateModified": "2026-03-06",
-    "author": { "@type": "Organization", "name": "Vega Academy" },
-    "publisher": { "@type": "Organization", "name": "Vega Academy" }
+    "author": { "@type": "Organization", "name": "Fractional CFO School" },
+    "publisher": { "@type": "Organization", "name": "Fractional CFO School" }
   }
   </script>
   <style>
@@ -1111,7 +1111,7 @@ function generateHTML(article) {
 </head>
 <body>
   <nav class="nav">
-    <a href="/" class="logo">⭐ Vega Academy</a>
+    <a href="/" class="logo">⭐ Fractional CFO School</a>
     <div>
       <a href="/blog/">Blog</a>
       <a href="/starter-kit/">Free Starter Kit</a>
@@ -1150,7 +1150,7 @@ function generateHTML(article) {
   </section>
 
   <footer>
-    <p>&copy; 2026 Vega Academy. Built for bookkeepers ready to level up.</p>
+    <p>&copy; 2026 Fractional CFO School. Built for bookkeepers ready to level up.</p>
     <p><a href="/blog/">All Articles</a> · <a href="/starter-kit/">Free Starter Kit</a> · <a href="/">Home</a></p>
   </footer>
 

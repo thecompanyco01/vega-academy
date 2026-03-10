@@ -12,7 +12,7 @@ const posts = fs.readdirSync(blogDir)
     const readTimeMatch = html.match(/⏱️\s*(.*?)</);
     return {
       slug,
-      title: titleMatch ? titleMatch[1].replace(' — Vega Academy', '').replace(' | Vega Academy', '') : slug,
+      title: titleMatch ? titleMatch[1].replace(' — Fractional CFO School', '').replace(' | Fractional CFO School', '') : slug,
       description: descMatch ? descMatch[1].substring(0, 150) + '...' : '',
       readTime: readTimeMatch ? readTimeMatch[1] : '8 min read'
     };
@@ -33,7 +33,7 @@ const indexHtml = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Vega Academy | Advisory & Fractional CFO Guides</title>
+    <title>Blog — Fractional CFO School | Advisory & Fractional CFO Guides</title>
     <meta name="description" content="Practical guides for bookkeepers and accountants transitioning to advisory and fractional CFO services. ${posts.length}+ in-depth articles with real data.">
     <link rel="canonical" href="https://fractionalcfoschool.com/blog/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -67,7 +67,7 @@ const indexHtml = `<!DOCTYPE html>
 <body>
 <nav>
     <div class="nav-inner">
-        <a href="/" class="logo">⭐ vega <span>academy</span></a>
+        <a href="/" class="logo">📊 fractional cfo <span>school</span></a>
         <div class="nav-links">
             <a href="/blog/">Blog</a>
             <a href="/starter-kit/">Free Starter Kit</a>
@@ -79,7 +79,7 @@ const indexHtml = `<!DOCTYPE html>
 
 <section class="page-header">
     <div class="container">
-        <h1>The Vega Academy Blog</h1>
+        <h1>The Fractional CFO School Blog</h1>
         <p><span class="count">${posts.length} articles</span> — Practical guides for bookkeepers building advisory practices and fractional CFO businesses. All backed by real data.</p>
     </div>
 </section>
@@ -92,7 +92,7 @@ ${postCards}
 
 <footer>
     <div class="container">
-        <p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐ for ambitious bookkeepers and advisory professionals.</p>
+        <p>© 2026 <a href="/">Fractional CFO School</a>. Built with ⭐ for ambitious bookkeepers and advisory professionals.</p>
     </div>
 </footer>
 <script defer src="/_vercel/insights/script.js"></script>

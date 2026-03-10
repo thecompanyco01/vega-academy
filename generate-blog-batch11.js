@@ -127,7 +127,7 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px;border-radius:12px;margin:30px 0;text-align:center">
 <h3 style="margin-top:0;color:white">Ready to Go Beyond Basic Bookkeeping?</h3>
-<p>Vega Academy teaches bookkeepers how to add advisory services and become fractional CFOs. Learn the skills that 3-5x your income.</p>
+<p>Fractional CFO School teaches bookkeepers how to add advisory services and become fractional CFOs. Learn the skills that 3-5x your income.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#6c63ff;padding:14px 36px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px">Explore the Course →</a>
 </div>
 
@@ -165,7 +165,7 @@ const articles = [
 <p><strong>Days 1-30:</strong> Get QuickBooks ProAdvisor certified. Set up LLC and business bank account. Tell everyone you know. Land first client.</p>
 <p><strong>Days 31-60:</strong> Refine your processes. Build templates for onboarding, monthly reporting, and client communication. Land clients 2-3.</p>
 <p><strong>Days 61-90:</strong> Start adding basic advisory services (monthly financial reviews). Raise prices for new clients. Build your online presence.</p>
-<p><strong>Beyond 90 days:</strong> <a href="/course/" style="color:#6c63ff">Learn advisory skills with Vega Academy</a> and transition to higher-value services.</p>
+<p><strong>Beyond 90 days:</strong> <a href="/course/" style="color:#6c63ff">Learn advisory skills with Fractional CFO School</a> and transition to higher-value services.</p>
 </div>
 </article>
 `
@@ -273,7 +273,7 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px;border-radius:12px;margin:30px 0;text-align:center">
 <h3 style="margin-top:0;color:white">Want to Add Advisory Services to Your Practice?</h3>
-<p>Vega Academy teaches freelance bookkeepers how to become fractional CFOs. Learn the frameworks, templates, and strategies that turn $500/month clients into $5,000/month relationships.</p>
+<p>Fractional CFO School teaches freelance bookkeepers how to become fractional CFOs. Learn the frameworks, templates, and strategies that turn $500/month clients into $5,000/month relationships.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#6c63ff;padding:14px 36px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px">Start Learning →</a>
 </div>
 </article>
@@ -363,7 +363,7 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px;border-radius:12px;margin:30px 0;text-align:center">
 <h3 style="margin-top:0;color:white">Want to Attract Premium Clients?</h3>
-<p>The best way to command higher rates isn't better marketing — it's offering higher-value services. Vega Academy teaches bookkeepers how to add advisory services that justify $2,000-5,000/month retainers.</p>
+<p>The best way to command higher rates isn't better marketing — it's offering higher-value services. Fractional CFO School teaches bookkeepers how to add advisory services that justify $2,000-5,000/month retainers.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#6c63ff;padding:14px 36px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px">Level Up Your Services →</a>
 </div>
 </article>
@@ -467,7 +467,7 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px;border-radius:12px;margin:30px 0;text-align:center">
 <h3 style="margin-top:0;color:white">Ready to Command Premium Rates?</h3>
-<p>The bookkeepers earning $200K+ aren't doing more work — they're doing higher-value work. Vega Academy teaches you the advisory skills that justify premium pricing.</p>
+<p>The bookkeepers earning $200K+ aren't doing more work — they're doing higher-value work. Fractional CFO School teaches you the advisory skills that justify premium pricing.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#6c63ff;padding:14px 36px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px">Learn Advisory Skills →</a>
 </div>
 </article>
@@ -547,8 +547,8 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px;border-radius:12px;margin:30px 0;text-align:center">
 <h3 style="margin-top:0;color:white">Ready to Level Up Your Side Hustle?</h3>
-<p>Vega Academy helps bookkeepers add advisory services that turn a side hustle into a six-figure business. Learn cash flow forecasting, KPI dashboards, and fractional CFO skills.</p>
-<a href="/course/" style="display:inline-block;background:white;color:#6c63ff;padding:14px 36px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px">Explore Vega Academy →</a>
+<p>Fractional CFO School helps bookkeepers add advisory services that turn a side hustle into a six-figure business. Learn cash flow forecasting, KPI dashboards, and fractional CFO skills.</p>
+<a href="/course/" style="display:inline-block;background:white;color:#6c63ff;padding:14px 36px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px">Explore Fractional CFO School →</a>
 </div>
 </article>
 `
@@ -628,7 +628,7 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px;border-radius:12px;margin:30px 0;text-align:center">
 <h3 style="margin-top:0;color:white">The Best Marketing? Offering More Value.</h3>
-<p>Bookkeepers who offer advisory services attract premium clients through word of mouth. Vega Academy teaches you how to add cash flow forecasting, KPI dashboards, and strategic advisory to your practice.</p>
+<p>Bookkeepers who offer advisory services attract premium clients through word of mouth. Fractional CFO School teaches you how to add cash flow forecasting, KPI dashboards, and strategic advisory to your practice.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#6c63ff;padding:14px 36px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px">Upgrade Your Services →</a>
 </div>
 </article>
@@ -714,7 +714,7 @@ const articles = [
 
 <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:30px;border-radius:12px;margin:30px 0;text-align:center">
 <h3 style="margin-top:0;color:white">Accelerate Your Advisory Career</h3>
-<p>Vega Academy is built specifically for bookkeepers who want to move up the advisory career ladder. Learn cash flow forecasting, KPI dashboards, financial modeling, and client advisory skills.</p>
+<p>Fractional CFO School is built specifically for bookkeepers who want to move up the advisory career ladder. Learn cash flow forecasting, KPI dashboards, financial modeling, and client advisory skills.</p>
 <a href="/course/" style="display:inline-block;background:white;color:#6c63ff;padding:14px 36px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:10px">Start Your Journey →</a>
 </div>
 </article>
@@ -736,7 +736,7 @@ articles.forEach(article => {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${article.title} | Vega Academy</title>
+<title>${article.title} | Fractional CFO School</title>
 <meta name="description" content="${article.description}">
 <meta name="keywords" content="${article.keywords}">
 <meta property="og:title" content="${article.title}">

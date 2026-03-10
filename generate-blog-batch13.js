@@ -107,7 +107,7 @@ const articles = [
 <p>That's why the most valuable addition to any bookkeeper job description today is <strong>advisory capability</strong>. Bookkeepers who can tell a business owner "your cash flow will be tight in 60 days — here's what to do about it" are worth 3-5x more than those who just categorize transactions.</p>
 
 <h3>Ready to Evolve Beyond the Traditional Bookkeeper Role?</h3>
-<p>If you're a bookkeeper looking to add advisory skills and increase your earning potential, <a href="/course">Vega Academy's Bookkeeper-to-Advisory program</a> can help you make the transition. Learn cash flow forecasting, KPI dashboards, client advisory frameworks, and how to price advisory services — all built specifically for bookkeepers ready to level up.</p>
+<p>If you're a bookkeeper looking to add advisory skills and increase your earning potential, <a href="/course">Fractional CFO School's Bookkeeper-to-Advisory program</a> can help you make the transition. Learn cash flow forecasting, KPI dashboards, client advisory frameworks, and how to price advisory services — all built specifically for bookkeepers ready to level up.</p>
 `
   },
   {
@@ -212,7 +212,7 @@ const articles = [
 <p>Bookkeepers who specialize in nonprofits can charge $500-$2,000/month for bookkeeping and add $1,000-$3,000/month for advisory services like board reporting, grant budgeting, and financial forecasting.</p>
 
 <h3>Take Your Nonprofit Bookkeeping to the Advisory Level</h3>
-<p>Nonprofit boards need more than clean books — they need financial insight. If you're a bookkeeper serving nonprofits, adding advisory skills like budget forecasting, financial dashboard creation, and strategic planning support can dramatically increase your value and income. <a href="/course">Learn how at Vega Academy</a>.</p>
+<p>Nonprofit boards need more than clean books — they need financial insight. If you're a bookkeeper serving nonprofits, adding advisory skills like budget forecasting, financial dashboard creation, and strategic planning support can dramatically increase your value and income. <a href="/course">Learn how at Fractional CFO School</a>.</p>
 `
   },
   {
@@ -314,7 +314,7 @@ const articles = [
 <p>Once you serve 2-3 law firms well, referrals within the legal community can grow your practice quickly.</p>
 
 <h3>Level Up: Advisory Services for Law Firms</h3>
-<p>Beyond bookkeeping, law firms need financial insight: partner compensation modeling, matter profitability analysis, cash flow forecasting (especially for contingency-fee firms), and growth planning. These advisory services can double your per-client revenue. <a href="/course">Vega Academy</a> teaches bookkeepers how to add advisory services to their practice.</p>
+<p>Beyond bookkeeping, law firms need financial insight: partner compensation modeling, matter profitability analysis, cash flow forecasting (especially for contingency-fee firms), and growth planning. These advisory services can double your per-client revenue. <a href="/course">Fractional CFO School</a> teaches bookkeepers how to add advisory services to their practice.</p>
 `
   },
   {
@@ -415,7 +415,7 @@ const articles = [
 <p>Construction bookkeeping commands premium pricing because few bookkeepers understand job costing, WIP, and retainage. The complexity creates opportunity.</p>
 
 <h3>Become a Construction Financial Expert</h3>
-<p>Construction companies are underserved by the accounting profession. Bookkeepers who master job costing, WIP reporting, and construction-specific advisory services can build highly profitable practices. <a href="/course">Vega Academy</a> teaches the advisory skills that transform construction bookkeepers into indispensable financial partners.</p>
+<p>Construction companies are underserved by the accounting profession. Bookkeepers who master job costing, WIP reporting, and construction-specific advisory services can build highly profitable practices. <a href="/course">Fractional CFO School</a> teaches the advisory skills that transform construction bookkeepers into indispensable financial partners.</p>
 `
   },
   {
@@ -540,7 +540,7 @@ const articles = [
 </ol>
 
 <h3>Beyond Software: The Advisory Advantage</h3>
-<p>The software you use is just a tool. What sets exceptional bookkeepers apart is what they do WITH the data — turning financial information into insights that help businesses grow. Cash flow forecasting, KPI dashboards, profitability analysis, and strategic planning are where the real value lies. <a href="/course">Vega Academy</a> teaches bookkeepers how to add these advisory skills to any software platform.</p>
+<p>The software you use is just a tool. What sets exceptional bookkeepers apart is what they do WITH the data — turning financial information into insights that help businesses grow. Cash flow forecasting, KPI dashboards, profitability analysis, and strategic planning are where the real value lies. <a href="/course">Fractional CFO School</a> teaches bookkeepers how to add these advisory skills to any software platform.</p>
 `
   },
   {
@@ -641,7 +641,7 @@ const articles = [
 <h3>The Real Win: Time for Advisory</h3>
 <p>If automation saves you 10 hours per month per client, that's 10 hours you can reinvest in advisory services — cash flow forecasting, KPI dashboards, financial planning conversations. These services command $1,000-$5,000/month on top of bookkeeping fees.</p>
 <p>The math is simple: automate $500/month of bookkeeping work in 5 hours instead of 15, then sell $2,000/month of advisory work with the 10 hours you freed up. Your revenue per client goes from $500 to $2,500.</p>
-<p><a href="/course">Vega Academy</a> teaches bookkeepers exactly how to make this transition — from compliance-focused bookkeeper to automation-powered advisory professional.</p>
+<p><a href="/course">Fractional CFO School</a> teaches bookkeepers exactly how to make this transition — from compliance-focused bookkeeper to automation-powered advisory professional.</p>
 `
   },
   {
@@ -729,7 +729,7 @@ const articles = [
 <p>Same person. Same hours. Nearly double the compensation. The difference is advisory capability.</p>
 
 <h3>Start Building Your Advisory Practice</h3>
-<p>If you're a bookkeeper or firm owner looking to add advisory services and increase your compensation, <a href="/course">Vega Academy's Bookkeeper-to-Advisory program</a> teaches you exactly how — from pricing strategy to service delivery to client conversations.</p>
+<p>If you're a bookkeeper or firm owner looking to add advisory services and increase your compensation, <a href="/course">Fractional CFO School's Bookkeeper-to-Advisory program</a> teaches you exactly how — from pricing strategy to service delivery to client conversations.</p>
 `
   }
 ];
@@ -744,9 +744,9 @@ articles.forEach(article => {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${article.title} | Vega Academy</title>
+<title>${article.title} | Fractional CFO School</title>
 <meta name="description" content="${article.meta}">
-<meta name="keywords" content="${article.keyword}, bookkeeper advisory, fractional CFO, vega academy">
+<meta name="keywords" content="${article.keyword}, bookkeeper advisory, fractional CFO, fractional cfo school">
 <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
 <meta property="og:title" content="${article.title}">
 <meta property="og:description" content="${article.meta}">
@@ -784,11 +784,11 @@ footer a{color:#667eea;text-decoration:none}
 @media(max-width:600px){main{padding:20px 16px}h1{font-size:1.5rem}h2{font-size:1.25rem}table{font-size:0.8rem}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"${article.title.replace(/"/g, '\\"')}","description":"${article.meta.replace(/"/g, '\\"')}","author":{"@type":"Organization","name":"Vega Academy"},"publisher":{"@type":"Organization","name":"Vega Academy"},"datePublished":"2026-03-08","dateModified":"2026-03-08"}
+{"@context":"https://schema.org","@type":"Article","headline":"${article.title.replace(/"/g, '\\"')}","description":"${article.meta.replace(/"/g, '\\"')}","author":{"@type":"Organization","name":"Fractional CFO School"},"publisher":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-08","dateModified":"2026-03-08"}
 </script>
 </head>
 <body>
-<header><a href="/">⭐ Vega Academy</a></header>
+<header><a href="/">⭐ Fractional CFO School</a></header>
 <nav><a href="/">Home</a> / <a href="/blog/">Blog</a> / <a href="/course/">Course</a> / <a href="/tools/">Tools</a></nav>
 <main>
 <article>
@@ -797,12 +797,12 @@ footer a{color:#667eea;text-decoration:none}
 ${article.content}
 <div class="cta">
 <h3>Transform Your Bookkeeping Career</h3>
-<p>Join Vega Academy and learn how to add advisory services that double or triple your income.</p>
+<p>Join Fractional CFO School and learn how to add advisory services that double or triple your income.</p>
 <a href="/course/">Start Learning Free →</a>
 </div>
 </article>
 </main>
-<footer><p>© 2026 <a href="/">Vega Academy</a> · <a href="/blog/">Blog</a> · <a href="/course/">Course</a> · <a href="/starter-kit/">Free Starter Kit</a></p></footer>
+<footer><p>© 2026 <a href="/">Fractional CFO School</a> · <a href="/blog/">Blog</a> · <a href="/course/">Course</a> · <a href="/starter-kit/">Free Starter Kit</a></p></footer>
 </body>
 </html>`;
 
