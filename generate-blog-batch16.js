@@ -730,7 +730,7 @@ const headerHTML = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="canonical" href="https://vega-academy.vercel.app/blog/SLUG/">
+<link rel="canonical" href="https://fractionalcfoschool.com/blog/SLUG/">
 <title>TITLE | Vega Academy</title>
 <meta name="description" content="META">
 <meta name="robots" content="index, follow">

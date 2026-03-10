@@ -966,11 +966,11 @@ articles.forEach(article => {
 <title>${article.title} | Vega Academy</title>
 <meta name="description" content="${article.meta}">
 <meta name="keywords" content="${article.keyword}, bookkeeping, advisory services, fractional CFO, Vega Academy">
-<link rel="canonical" href="https://vega-academy.vercel.app/blog/${article.slug}">
+<link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}">
 <meta property="og:title" content="${article.title}">
 <meta property="og:description" content="${article.meta}">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://vega-academy.vercel.app/blog/${article.slug}">
+<meta property="og:url" content="https://fractionalcfoschool.com/blog/${article.slug}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${article.title}">
 <meta name="twitter:description" content="${article.meta}">

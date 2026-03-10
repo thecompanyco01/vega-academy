@@ -1731,13 +1731,13 @@ function generateHTML(post) {
     <meta name="description" content="${post.description}">
     <meta name="keywords" content="${post.keywords}">
     <meta name="author" content="Vega Academy">
-    <link rel="canonical" href="https://vega-academy.vercel.app/blog/${post.slug}/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/blog/${post.slug}/">
     
     <!-- Open Graph -->
     <meta property="og:title" content="${post.title}">
     <meta property="og:description" content="${post.description}">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://vega-academy.vercel.app/blog/${post.slug}/">
+    <meta property="og:url" content="https://fractionalcfoschool.com/blog/${post.slug}/">
     
     <!-- Schema.org Article markup -->
     <script type="application/ld+json">

@@ -1470,7 +1470,7 @@ function generateArticle(article) {
     <title>${article.title}</title>
     <meta name="description" content="${article.description}">
     <meta name="keywords" content="${article.keywords}">
-    <link rel="canonical" href="https://vega-academy.vercel.app/blog/${article.slug}/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
     <meta property="og:title" content="${article.title}">
     <meta property="og:description" content="${article.description}">
     <meta property="og:type" content="article">

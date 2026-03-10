@@ -747,11 +747,11 @@ articles.forEach(article => {
 <title>${article.title} | Vega Academy</title>
 <meta name="description" content="${article.meta}">
 <meta name="keywords" content="${article.keyword}, bookkeeper advisory, fractional CFO, vega academy">
-<link rel="canonical" href="https://vega-academy.vercel.app/blog/${article.slug}/">
+<link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
 <meta property="og:title" content="${article.title}">
 <meta property="og:description" content="${article.meta}">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://vega-academy.vercel.app/blog/${article.slug}/">
+<meta property="og:url" content="https://fractionalcfoschool.com/blog/${article.slug}/">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.7;color:#1a1a2e;background:#fff}

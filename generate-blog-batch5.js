@@ -524,7 +524,7 @@ function createBlogPost(article) {
   <title>${article.title} | Vega Academy</title>
   <meta name="description" content="${article.description}">
   <meta name="keywords" content="${article.keywords}">
-  <link rel="canonical" href="https://vega-academy.vercel.app/blog/${article.slug}/">
+  <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",

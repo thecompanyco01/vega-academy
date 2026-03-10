@@ -35,7 +35,7 @@ const indexHtml = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog — Vega Academy | Advisory & Fractional CFO Guides</title>
     <meta name="description" content="Practical guides for bookkeepers and accountants transitioning to advisory and fractional CFO services. ${posts.length}+ in-depth articles with real data.">
-    <link rel="canonical" href="https://vega-academy.vercel.app/blog/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/blog/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

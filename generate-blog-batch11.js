@@ -742,7 +742,7 @@ articles.forEach(article => {
 <meta property="og:title" content="${article.title}">
 <meta property="og:description" content="${article.description}">
 <meta property="og:type" content="article">
-<link rel="canonical" href="https://vega-academy.vercel.app/blog/${article.slug}/">
+<link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
 </head>
 <body style="margin:0;padding:0;background:#fff">
 ${article.content}

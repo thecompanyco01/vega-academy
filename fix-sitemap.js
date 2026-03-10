@@ -2,7 +2,7 @@ const fs = require('fs');
 
 // Collect all unique URLs
 const urls = new Set();
-const baseUrl = 'https://vega-academy.vercel.app';
+const baseUrl = 'https://fractionalcfoschool.com';
 
 // Core pages
 const corePriority = [
