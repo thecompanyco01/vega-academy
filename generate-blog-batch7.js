@@ -85,7 +85,7 @@ const articles = [
       <li>Cash flow surprises keep happening</li>
       <li>You can't answer "What's my most profitable product/customer?"</li>
     </ul>
-    <p>At <a href="/">Vega Academy</a>, we train bookkeepers and accountants to provide exactly this level of strategic financial planning as <a href="/blog/fractional-cfo-services-guide/">fractional CFO service providers</a>.</p>
+    <p>At <a href="/">Fractional CFO School</a>, we train bookkeepers and accountants to provide exactly this level of strategic financial planning as <a href="/blog/fractional-cfo-services-guide/">fractional CFO service providers</a>.</p>
     
     <h2>Financial Planning Tools and Software</h2>
     <table>
@@ -195,7 +195,7 @@ const articles = [
       <li>You're growing revenue but feel tighter on cash</li>
       <li>You're considering taking on debt to fund operations</li>
     </ul>
-    <p>Learn how to provide cash flow analysis as an advisory service: <a href="/course/">Vega Academy's CFO training</a> teaches bookkeepers the exact frameworks covered in this guide.</p>
+    <p>Learn how to provide cash flow analysis as an advisory service: <a href="/course/">Fractional CFO School's CFO training</a> teaches bookkeepers the exact frameworks covered in this guide.</p>
     `
   },
   {
@@ -268,7 +268,7 @@ const articles = [
     
     <h2>Become a CFO Service Provider</h2>
     <p>If you're a bookkeeper or accountant looking to offer CFO services to small businesses, the opportunity is massive. Small businesses need this help, and most can't afford (or don't need) a full-time CFO.</p>
-    <p><a href="/">Vega Academy</a> trains bookkeepers to deliver fractional CFO services. Our curriculum covers everything in this article — plus client acquisition, pricing, and service delivery. <a href="/starter-kit/">Download the free Advisory Starter Kit</a> to get started.</p>
+    <p><a href="/">Fractional CFO School</a> trains bookkeepers to deliver fractional CFO services. Our curriculum covers everything in this article — plus client acquisition, pricing, and service delivery. <a href="/starter-kit/">Download the free Advisory Starter Kit</a> to get started.</p>
     `
   },
   {
@@ -327,7 +327,7 @@ const articles = [
     
     <h3>Phase 3: Develop Advisory Skills (Ongoing)</h3>
     <p>Advisory requires skills beyond technical accounting: business strategy, communication, presentation, industry knowledge, and relationship management. Invest in training — the ROI is immediate.</p>
-    <p><a href="/">Vega Academy</a> provides structured training specifically for this transition. Our curriculum covers financial modeling, advisory pricing, client conversations, and service delivery frameworks.</p>
+    <p><a href="/">Fractional CFO School</a> provides structured training specifically for this transition. Our curriculum covers financial modeling, advisory pricing, client conversations, and service delivery frameworks.</p>
     
     <h3>Phase 4: Market Your Advisory Practice (Month 3+)</h3>
     <p>Position yourself as a <a href="/blog/fractional-cfo-services-guide/">fractional CFO</a>, not a "bookkeeper who also does advisory." The framing matters: CFO positioning commands 2-3x the fees of "advisory bookkeeper" positioning.</p>
@@ -421,7 +421,7 @@ const articles = [
       <li><strong>Standard ($3,000-$5,000/mo):</strong> Basic + AP/AR management, variance analysis, compliance</li>
       <li><strong>Premium ($5,000-$8,000/mo):</strong> Standard + team supervision, system optimization, audit support</li>
     </ul>
-    <p>Learn how to package and sell controller services through <a href="/">Vega Academy's training program</a>. Our curriculum covers the technical skills, pricing strategies, and client acquisition techniques you need to build a profitable controller services practice.</p>
+    <p>Learn how to package and sell controller services through <a href="/">Fractional CFO School's training program</a>. Our curriculum covers the technical skills, pricing strategies, and client acquisition techniques you need to build a profitable controller services practice.</p>
     `
   },
   {
@@ -479,7 +479,7 @@ const articles = [
       <li>Strategic thinking</li>
       <li>Industry-specific knowledge</li>
     </ul>
-    <p>This is exactly why <a href="/">Vega Academy</a> exists: to train accounting professionals in the strategic, advisory, and technology skills needed for modern finance.</p>
+    <p>This is exactly why <a href="/">Fractional CFO School</a> exists: to train accounting professionals in the strategic, advisory, and technology skills needed for modern finance.</p>
     
     <h3>4. Data & Analytics</h3>
     <p>Build a single source of financial truth:</p>
@@ -603,7 +603,7 @@ const articles = [
     
     <h2>Start Offering Fractional Accounting Services</h2>
     <p>If you're an accounting professional, the fractional model is one of the best ways to build a profitable, flexible practice. You serve multiple clients, earn more per hour, and provide more meaningful work than commodity bookkeeping.</p>
-    <p><a href="/">Vega Academy</a> teaches you how to build and scale a fractional accounting and <a href="/blog/fractional-cfo-services-guide/">advisory practice</a> — from pricing and packaging to client acquisition and service delivery. <a href="/starter-kit/">Get started with our free Advisory Starter Kit</a>.</p>
+    <p><a href="/">Fractional CFO School</a> teaches you how to build and scale a fractional accounting and <a href="/blog/fractional-cfo-services-guide/">advisory practice</a> — from pricing and packaging to client acquisition and service delivery. <a href="/starter-kit/">Get started with our free Advisory Starter Kit</a>.</p>
     `
   },
   {
@@ -666,7 +666,7 @@ const articles = [
     
     <h2>Become an Interim CFO</h2>
     <p>Interim CFO work is among the most lucrative roles in finance. If you're an experienced accountant, controller, or financial professional, transitioning into interim and <a href="/blog/fractional-cfo-services-guide/">fractional CFO work</a> can double or triple your effective earnings.</p>
-    <p><a href="/">Vega Academy</a> provides the training, frameworks, and business development skills you need to build a successful interim/fractional CFO practice. <a href="/starter-kit/">Start with our free Advisory Starter Kit</a>.</p>
+    <p><a href="/">Fractional CFO School</a> provides the training, frameworks, and business development skills you need to build a successful interim/fractional CFO practice. <a href="/starter-kit/">Start with our free Advisory Starter Kit</a>.</p>
     `
   },
   {
@@ -726,7 +726,7 @@ const articles = [
     
     <h2>Offer Outsourced Controller Services</h2>
     <p>For bookkeepers and accountants, adding controller services to your practice is the logical next step in the advisory ladder. Controller services command $150-$200+/hour — 2-3x bookkeeping rates.</p>
-    <p><a href="/">Vega Academy</a> trains accounting professionals to deliver controller and <a href="/blog/fractional-cfo-services-guide/">fractional CFO services</a>. Our program covers month-end close best practices, financial reporting frameworks, internal controls design, and client management. <a href="/starter-kit/">Download our free Advisory Starter Kit</a> to get started.</p>
+    <p><a href="/">Fractional CFO School</a> trains accounting professionals to deliver controller and <a href="/blog/fractional-cfo-services-guide/">fractional CFO services</a>. Our program covers month-end close best practices, financial reporting frameworks, internal controls design, and client management. <a href="/starter-kit/">Download our free Advisory Starter Kit</a> to get started.</p>
     `
   },
   {
@@ -806,7 +806,7 @@ const articles = [
     
     <h2>Build a CFOaaS Practice</h2>
     <p>The CFOaaS market is growing 25%+ annually. For accounting professionals, building a CFOaaS practice is one of the highest-leverage career moves you can make.</p>
-    <p><a href="/">Vega Academy</a> teaches you everything: financial modeling, advisory delivery frameworks, technology stack, pricing strategies, and client acquisition. Whether you're a bookkeeper making the leap or a CPA adding advisory services, our training accelerates your path to a $200K+ practice. <a href="/starter-kit/">Start with our free Advisory Starter Kit</a>.</p>
+    <p><a href="/">Fractional CFO School</a> teaches you everything: financial modeling, advisory delivery frameworks, technology stack, pricing strategies, and client acquisition. Whether you're a bookkeeper making the leap or a CPA adding advisory services, our training accelerates your path to a $200K+ practice. <a href="/starter-kit/">Start with our free Advisory Starter Kit</a>.</p>
     `
   },
   {
@@ -871,7 +871,7 @@ const articles = [
       <li><strong>Practice strategy.</strong> Read widely, study business models, and develop opinions about competitive positioning.</li>
       <li><strong>Get cross-functional experience.</strong> Work on projects outside of finance to build empathy and understanding.</li>
     </ol>
-    <p><a href="/">Vega Academy</a> accelerates this journey with structured training in strategic advisory, financial modeling, and business leadership. Whether you're a bookkeeper starting your advisory career or an experienced accountant leveling up to CFO, we provide the frameworks and skills you need. <a href="/starter-kit/">Download the free Advisory Starter Kit</a> to begin.</p>
+    <p><a href="/">Fractional CFO School</a> accelerates this journey with structured training in strategic advisory, financial modeling, and business leadership. Whether you're a bookkeeper starting your advisory career or an experienced accountant leveling up to CFO, we provide the frameworks and skills you need. <a href="/starter-kit/">Download the free Advisory Starter Kit</a> to begin.</p>
     `
   },
   {
@@ -955,7 +955,7 @@ const articles = [
     </ol>
     
     <h2>Get Expert Help</h2>
-    <p>A <a href="/blog/what-is-fractional-cfo/">fractional CFO</a> with startup experience can build your financial model, pressure-test assumptions, and present to investors alongside you. At <a href="/">Vega Academy</a>, we train finance professionals to provide exactly this kind of high-value startup advisory. <a href="/starter-kit/">Download our free Advisory Starter Kit</a> for financial modeling templates.</p>
+    <p>A <a href="/blog/what-is-fractional-cfo/">fractional CFO</a> with startup experience can build your financial model, pressure-test assumptions, and present to investors alongside you. At <a href="/">Fractional CFO School</a>, we train finance professionals to provide exactly this kind of high-value startup advisory. <a href="/starter-kit/">Download our free Advisory Starter Kit</a> for financial modeling templates.</p>
     `
   },
   {
@@ -1027,7 +1027,7 @@ const articles = [
     
     <h2>Getting Professional Financial Reporting</h2>
     <p>If your current bookkeeper produces financial statements but can't explain what they mean or how to act on them, you need a higher level of service. A <a href="/blog/controller-services-guide/">controller</a> ensures reporting accuracy and timeliness. A <a href="/blog/what-is-fractional-cfo/">fractional CFO</a> interprets the reports and drives strategic decisions.</p>
-    <p>At <a href="/">Vega Academy</a>, we train bookkeepers and accountants to deliver this kind of insightful, actionable financial reporting. Not just producing numbers — but telling the story they reveal. <a href="/starter-kit/">Download our Advisory Starter Kit</a> for report templates and KPI frameworks.</p>
+    <p>At <a href="/">Fractional CFO School</a>, we train bookkeepers and accountants to deliver this kind of insightful, actionable financial reporting. Not just producing numbers — but telling the story they reveal. <a href="/starter-kit/">Download our Advisory Starter Kit</a> for report templates and KPI frameworks.</p>
     `
   }
 ];
@@ -1039,7 +1039,7 @@ function generateHTML(article) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${article.title} | Vega Academy</title>
+  <title>${article.title} | Fractional CFO School</title>
   <meta name="description" content="${article.description}">
   <meta name="keywords" content="${article.keywords}">
   <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
@@ -1053,8 +1053,8 @@ function generateHTML(article) {
     "@type": "Article",
     "headline": "${article.title}",
     "description": "${article.description}",
-    "author": {"@type": "Organization", "name": "Vega Academy"},
-    "publisher": {"@type": "Organization", "name": "Vega Academy"},
+    "author": {"@type": "Organization", "name": "Fractional CFO School"},
+    "publisher": {"@type": "Organization", "name": "Fractional CFO School"},
     "datePublished": "2026-03-07",
     "dateModified": "2026-03-07"
   }
@@ -1094,7 +1094,7 @@ function generateHTML(article) {
 </head>
 <body>
   <nav class="nav">
-    <a href="/" class="logo">⭐ Vega Academy</a>
+    <a href="/" class="logo">⭐ Fractional CFO School</a>
     <div>
       <a href="/blog/">Blog</a>
       <a href="/course/">Course</a>
@@ -1110,12 +1110,12 @@ function generateHTML(article) {
     ${article.content}
     <div class="cta-box">
       <h3>Ready to Level Up Your Finance Career?</h3>
-      <p>Join Vega Academy and learn how to deliver fractional CFO and advisory services. Our program covers everything from financial modeling to client acquisition.</p>
+      <p>Join Fractional CFO School and learn how to deliver fractional CFO and advisory services. Our program covers everything from financial modeling to client acquisition.</p>
       <a href="/starter-kit/">Download Free Advisory Starter Kit →</a>
     </div>
   </article>
   <footer class="footer">
-    <p>© 2026 <a href="/">Vega Academy</a> · <a href="/blog/">Blog</a> · <a href="/course/">Course</a></p>
+    <p>© 2026 <a href="/">Fractional CFO School</a> · <a href="/blog/">Blog</a> · <a href="/course/">Course</a></p>
   </footer>
   <script defer src="https://cdn.vercel-insights.com/v1/script.js"></script>
 </body>

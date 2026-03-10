@@ -30,7 +30,7 @@ const articles = [
       { h2: 'Growing Your Valuation Practice' },
       { p: 'Market your practice through content marketing, referral partnerships with M&A advisors and attorneys, speaking engagements at business owner groups, and webinars on business value. As your practice grows, train other fractional CFOs on your methodology, build standardized templates, create tiered service packages, and develop industry specializations.' },
       { h2: 'Getting Started Today' },
-      { p: 'If you are a bookkeeper or accountant looking to add valuation services, start by learning fundamentals through Vega Academy, building a valuation model template, offering free mini-valuations to existing clients, documenting your process, and getting certified once you have experience. Business valuation can transform your practice from hourly bookkeeping into high-value advisory commanding premium pricing.' },
+      { p: 'If you are a bookkeeper or accountant looking to add valuation services, start by learning fundamentals through Fractional CFO School, building a valuation model template, offering free mini-valuations to existing clients, documenting your process, and getting certified once you have experience. Business valuation can transform your practice from hourly bookkeeping into high-value advisory commanding premium pricing.' },
     ]
   },
   {
@@ -55,7 +55,7 @@ const articles = [
       { h2: 'Pricing FP&A Services' },
       { p: 'Basic FP&A with budget and monthly variance runs $2,000-$4,000/month. Full FP&A adding forecasts and models is $4,000-$8,000/month. Annual budget builds as projects cost $5,000-$15,000. One-time financial models run $3,000-$10,000. Board package setup is $2,500-$5,000.' },
       { h2: 'From Bookkeeper to FP&A Professional' },
-      { p: 'The transition from bookkeeping to FP&A is one of the most valuable career moves in finance. Master management accounting and cost allocation, learn financial modeling and scenario analysis, develop business acumen beyond the numbers, practice data storytelling, and get hands-on experience by offering FP&A to existing clients. Vega Academy covers all these skills to help bookkeepers transition into high-value FP&A roles commanding 3-5x their current rates.' },
+      { p: 'The transition from bookkeeping to FP&A is one of the most valuable career moves in finance. Master management accounting and cost allocation, learn financial modeling and scenario analysis, develop business acumen beyond the numbers, practice data storytelling, and get hands-on experience by offering FP&A to existing clients. Fractional CFO School covers all these skills to help bookkeepers transition into high-value FP&A roles commanding 3-5x their current rates.' },
     ]
   },
   {
@@ -125,7 +125,7 @@ const articles = [
       { h2: 'Burn Rate Red Flags' },
       { p: 'Watch for burn rate increasing faster than revenue, less than 6 months runway (emergency mode), wildly varying month-to-month burn indicating poor controls, declining gross margins masked by revenue growth, and hidden burn from accrued expenses not reflected in current figures.' },
       { h2: 'The Fractional CFO Role in Burn Rate Management' },
-      { p: 'Monthly burn rate review with gross and net calculations, comparison to plan, runway projection under scenarios. Runway scenario planning with base, bear, and bull cases. Board reporting showing burn rate trends, runway, path to profitability, and unit economics. Fundraising support with clean financial models and burn rate reduction plans. Vega Academy trains financial professionals to become the fractional CFOs that startups desperately need.' },
+      { p: 'Monthly burn rate review with gross and net calculations, comparison to plan, runway projection under scenarios. Runway scenario planning with base, bear, and bull cases. Board reporting showing burn rate trends, runway, path to profitability, and unit economics. Fundraising support with clean financial models and burn rate reduction plans. Fractional CFO School trains financial professionals to become the fractional CFOs that startups desperately need.' },
     ]
   },
   {
@@ -192,7 +192,7 @@ const articles = [
       { h2: 'Financial Model Best Practices' },
       { p: 'Keep it driver-based — build from drivers not hard-coded numbers. Use three scenarios with different assumptions. Separate assumptions from calculations. Use monthly granularity for years 1-2. Show your path to profitability with monthly breakeven point and cash flow breakeven. Common mistakes: hockey stick with no explanation, ignoring churn, underestimating hiring costs, no sensitivity analysis, overcomplicating.' },
       { h2: 'Fractional CFO Financial Modeling Services' },
-      { p: 'Model building from scratch: $5,000-$15,000. Monthly update and reforecast: $1,000-$3,000. Fundraising financial package: $7,500-$20,000. Model audit and optimization: $3,000-$7,500. Vega Academy teaches financial modeling as a core skill for aspiring fractional CFOs with templates and real-world exercises.' },
+      { p: 'Model building from scratch: $5,000-$15,000. Monthly update and reforecast: $1,000-$3,000. Fundraising financial package: $7,500-$20,000. Model audit and optimization: $3,000-$7,500. Fractional CFO School teaches financial modeling as a core skill for aspiring fractional CFOs with templates and real-world exercises.' },
     ]
   },
   {
@@ -212,7 +212,7 @@ const articles = [
       { h2: 'Setting Your Rates' },
       { p: 'Calculate your floor: target $200K income with 1,200 billable hours at 60% utilization equals $167/hr minimum, add 25% overhead for $208/hr floor. Research market rates through competitors and communities. Position yourself at entry, competitive, or premium level. Test with 2-3 clients — if everyone says yes immediately, your rate is too low. Raise 10-20% annually.' },
       { h2: 'Fractional vs Full-Time CFO Cost Comparison' },
-      { p: 'Full-time CFO total annual cost: $217,500-$542,500 including salary, benefits, bonus, and equity. Fractional CFO: $36,000-$180,000 annually for 10-40 hours/month. Revenue under $10M: fractional is almost always right. Revenue $10-50M: depends on daily presence needs. Revenue over $50M: likely full-time needed. The fractional CFO market is growing rapidly. Vega Academy helps position you for a practice earning $200K-$500K+ annually.' },
+      { p: 'Full-time CFO total annual cost: $217,500-$542,500 including salary, benefits, bonus, and equity. Fractional CFO: $36,000-$180,000 annually for 10-40 hours/month. Revenue under $10M: fractional is almost always right. Revenue $10-50M: depends on daily presence needs. Revenue over $50M: likely full-time needed. The fractional CFO market is growing rapidly. Fractional CFO School helps position you for a practice earning $200K-$500K+ annually.' },
     ]
   },
 ];
@@ -247,9 +247,9 @@ articles.forEach(article => {
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '${escapedTitle} | Vega Academy',
+  title: '${escapedTitle} | Fractional CFO School',
   description: '${escapedDesc}',
-  keywords: ['${article.keyword}', 'fractional CFO', 'advisory services', 'bookkeeper to CFO', 'Vega Academy'],
+  keywords: ['${article.keyword}', 'fractional CFO', 'advisory services', 'bookkeeper to CFO', 'Fractional CFO School'],
   openGraph: {
     title: '${escapedTitle}',
     description: '${escapedDesc}',
@@ -262,7 +262,7 @@ export default function Article() {
     <div className="min-h-screen bg-gray-50">
       <nav className="bg-white border-b border-gray-200">
         <div className="max-w-4xl mx-auto px-4 py-4">
-          <Link href="/" className="text-indigo-600 font-bold text-xl">⭐ Vega Academy</Link>
+          <Link href="/" className="text-indigo-600 font-bold text-xl">⭐ Fractional CFO School</Link>
           <span className="text-gray-400 mx-2">/</span>
           <Link href="/blog" className="text-gray-600 hover:text-indigo-600">Blog</Link>
         </div>
@@ -273,7 +273,7 @@ export default function Article() {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">${escapedTitle}</h1>
           <p className="text-xl text-gray-600">${escapedDesc}</p>
           <div className="mt-4 text-sm text-gray-500">
-            <span>Published by Vega Academy</span>
+            <span>Published by Fractional CFO School</span>
             <span className="mx-2">•</span>
             <span>${readTime} min read</span>
           </div>
@@ -285,7 +285,7 @@ ${bodyJsx}
         
         <div className="mt-16 bg-indigo-50 rounded-2xl p-8">
           <h2 className="text-2xl font-bold text-indigo-900 mb-4">Ready to Offer Advisory Services?</h2>
-          <p className="text-indigo-700 mb-6">Vega Academy teaches bookkeepers and accountants how to transition into high-value fractional CFO and advisory roles. Learn the skills that command premium rates.</p>
+          <p className="text-indigo-700 mb-6">Fractional CFO School teaches bookkeepers and accountants how to transition into high-value fractional CFO and advisory roles. Learn the skills that command premium rates.</p>
           <Link href="/course" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
             Start Your Advisory Journey →
           </Link>
@@ -294,7 +294,7 @@ ${bodyJsx}
       
       <footer className="bg-gray-900 text-gray-400 py-12 mt-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <p>© 2026 Vega Academy. Helping bookkeepers become fractional CFOs.</p>
+          <p>© 2026 Fractional CFO School. Helping bookkeepers become fractional CFOs.</p>
         </div>
       </footer>
     </div>

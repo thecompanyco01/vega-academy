@@ -79,7 +79,7 @@ const articles = [
 
 <div class="cta-box">
 <h3>⭐ Turn Cost Accounting Into Advisory Revenue</h3>
-<p>Vega Academy teaches bookkeepers how to use skills like cost accounting to build a $5K-15K/month advisory practice. Stop trading hours for pennies — start delivering strategic value.</p>
+<p>Fractional CFO School teaches bookkeepers how to use skills like cost accounting to build a $5K-15K/month advisory practice. Stop trading hours for pennies — start delivering strategic value.</p>
 <a href="/" class="cta-button">Learn More →</a>
 </div>`
   },
@@ -174,7 +174,7 @@ const articles = [
 
 <div class="cta-box">
 <h3>⭐ Add Tax Planning to Your Advisory Services</h3>
-<p>Vega Academy shows bookkeepers how to package tax planning and other advisory services into a $5K-15K/month practice. Learn the frameworks, get the templates, and start delivering real value.</p>
+<p>Fractional CFO School shows bookkeepers how to package tax planning and other advisory services into a $5K-15K/month practice. Learn the frameworks, get the templates, and start delivering real value.</p>
 <a href="/" class="cta-button">Start Learning →</a>
 </div>`
   },
@@ -244,7 +244,7 @@ const articles = [
 
 <div class="cta-box">
 <h3>⭐ From Bookkeeper to Management Accountant</h3>
-<p>Vega Academy teaches you how to deliver management accounting services as an advisory professional. Build dashboards, forecasts, and strategic insights that clients pay premium prices for.</p>
+<p>Fractional CFO School teaches you how to deliver management accounting services as an advisory professional. Build dashboards, forecasts, and strategic insights that clients pay premium prices for.</p>
 <a href="/" class="cta-button">Explore the Course →</a>
 </div>`
   },
@@ -322,7 +322,7 @@ const articles = [
 
 <div class="cta-box">
 <h3>⭐ Master Cash Flow Advisory</h3>
-<p>Vega Academy teaches bookkeepers how to deliver working capital and cash flow advisory services. Learn the frameworks that turn you from a transaction recorder into a cash flow strategist.</p>
+<p>Fractional CFO School teaches bookkeepers how to deliver working capital and cash flow advisory services. Learn the frameworks that turn you from a transaction recorder into a cash flow strategist.</p>
 <a href="/" class="cta-button">Get Started →</a>
 </div>`
   },
@@ -411,7 +411,7 @@ const articles = [
 
 <div class="cta-box">
 <h3>⭐ Turn AR Management Into Advisory Revenue</h3>
-<p>Vega Academy teaches bookkeepers how to package services like AR management into high-value advisory engagements. Help your clients get paid faster — and get paid more yourself.</p>
+<p>Fractional CFO School teaches bookkeepers how to package services like AR management into high-value advisory engagements. Help your clients get paid faster — and get paid more yourself.</p>
 <a href="/" class="cta-button">Learn How →</a>
 </div>`
   },
@@ -498,7 +498,7 @@ const articles = [
 
 <div class="cta-box">
 <h3>⭐ Accelerate Your Path to CFO</h3>
-<p>Vega Academy teaches bookkeepers the skills and frameworks to offer fractional Controller and CFO services — without spending years in corporate finance. Start delivering advisory value today.</p>
+<p>Fractional CFO School teaches bookkeepers the skills and frameworks to offer fractional Controller and CFO services — without spending years in corporate finance. Start delivering advisory value today.</p>
 <a href="/" class="cta-button">Start Your Journey →</a>
 </div>`
   },
@@ -580,7 +580,7 @@ const articles = [
 
 <div class="cta-box">
 <h3>⭐ Offer Budgeting Advisory to Your Clients</h3>
-<p>Vega Academy teaches bookkeepers how to build and deliver budgeting, forecasting, and financial planning services. Turn your bookkeeping knowledge into a premium advisory practice.</p>
+<p>Fractional CFO School teaches bookkeepers how to build and deliver budgeting, forecasting, and financial planning services. Turn your bookkeeping knowledge into a premium advisory practice.</p>
 <a href="/" class="cta-button">Learn More →</a>
 </div>`
   }
@@ -594,7 +594,7 @@ const template = (article) => `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${article.title} — Vega Academy</title>
+<title>${article.title} — Fractional CFO School</title>
 <meta name="description" content="${article.metaDescription}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -634,12 +634,12 @@ a { color: var(--accent-light); }
 <div class="breadcrumb"><a href="/">Home</a> → <a href="/blog/">Blog</a> → ${article.title}</div>
 <article>
 <h1>${article.title}</h1>
-<div class="meta">Published by Vega Academy · Target keyword: "${article.keyword}" (${article.volume}/mo searches, KD: ${article.kd})</div>
+<div class="meta">Published by Fractional CFO School · Target keyword: "${article.keyword}" (${article.volume}/mo searches, KD: ${article.kd})</div>
 ${article.content}
 </article>
 </div>
 <footer class="footer">
-<p>© 2026 Vega Academy. <a href="/blog/">Blog</a> · <a href="/">Home</a></p>
+<p>© 2026 Fractional CFO School. <a href="/blog/">Blog</a> · <a href="/">Home</a></p>
 </footer>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>

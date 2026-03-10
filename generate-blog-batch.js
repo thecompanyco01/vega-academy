@@ -145,7 +145,7 @@ function generateBlogPost(post) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${post.title} — Vega Academy</title>
+    <title>${post.title} — Fractional CFO School</title>
     <meta name="description" content="${post.description}">
     <meta name="keywords" content="${post.keywords}">
     <link rel="canonical" href="https://fractionalcfoschool.com/blog/${post.slug}/">
@@ -205,8 +205,8 @@ function generateBlogPost(post) {
       "@type": "Article",
       "headline": "${post.title.replace(/"/g, '\\"')}",
       "description": "${post.description.replace(/"/g, '\\"')}",
-      "author": { "@type": "Organization", "name": "Vega Academy" },
-      "publisher": { "@type": "Organization", "name": "Vega Academy" },
+      "author": { "@type": "Organization", "name": "Fractional CFO School" },
+      "publisher": { "@type": "Organization", "name": "Fractional CFO School" },
       "datePublished": "2026-03-06",
       "dateModified": "2026-03-06"
     }
@@ -215,7 +215,7 @@ function generateBlogPost(post) {
 <body>
 <nav>
     <div class="nav-inner">
-        <a href="/" class="logo">⭐ vega <span>academy</span></a>
+        <a href="/" class="logo">📊 fractional cfo <span>school</span></a>
         <div class="nav-links">
             <a href="/blog/">Blog</a>
             <a href="/starter-kit/">Free Starter Kit</a>
@@ -253,7 +253,7 @@ function generateBlogPost(post) {
 
 <footer>
     <div class="container">
-        <p>© 2026 <a href="/">Vega Academy</a>. Built with ⭐ for ambitious bookkeepers and advisory professionals.</p>
+        <p>© 2026 <a href="/">Fractional CFO School</a>. Built with ⭐ for ambitious bookkeepers and advisory professionals.</p>
     </div>
 </footer>
 <script defer src="/_vercel/insights/script.js"></script>

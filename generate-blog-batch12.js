@@ -102,7 +102,7 @@ const articles = [
                 <li><strong>Specialize in one industry</strong> — become the go-to financial advisor for restaurants, construction, SaaS, or whatever niche you know best.</li>
                 <li><strong>Build a track record</strong> — document case studies showing how your advice improved a client's financial outcomes.</li>
                 <li><strong>Raise rates systematically</strong> — new clients always get your current (higher) rate. Existing clients get increases annually.</li>
-                <li><strong>Get trained</strong> — formal advisory training (like Vega Academy) accelerates the transition and gives you confidence to charge CFO-level rates.</li>
+                <li><strong>Get trained</strong> — formal advisory training (like Fractional CFO School) accelerates the transition and gives you confidence to charge CFO-level rates.</li>
             </ol>
 
             <h2>Employed vs. Independent Fractional CFO</h2>
@@ -825,7 +825,7 @@ const template = (article) => `<!DOCTYPE html>
 
             <div class="cta-box">
                 <h3>Ready to Become a Fractional CFO?</h3>
-                <p>Vega Academy teaches bookkeepers and accountants how to launch profitable advisory practices. Get the skills, templates, and confidence to charge CFO-level rates.</p>
+                <p>Fractional CFO School teaches bookkeepers and accountants how to launch profitable advisory practices. Get the skills, templates, and confidence to charge CFO-level rates.</p>
                 <a href="/#waitlist">Join the Waitlist →</a>
             </div>
         </div>
@@ -833,7 +833,7 @@ const template = (article) => `<!DOCTYPE html>
 
     <footer>
         <div class="container">
-            <p>© 2026 Vega Academy. Built for ambitious bookkeepers.</p>
+            <p>© 2026 Fractional CFO School. Built for ambitious bookkeepers.</p>
             <p style="margin-top: 8px;"><a href="/blog/" style="color: var(--accent-light); text-decoration: none;">Blog</a> · <a href="/starter-kit/" style="color: var(--accent-light); text-decoration: none;">Free Starter Kit</a> · <a href="/course/" style="color: var(--accent-light); text-decoration: none;">Course</a></p>
         </div>
     </footer>

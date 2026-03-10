@@ -166,7 +166,7 @@ function generateCityPage(city) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fractional CFO Services in ${city.name}, ${city.state} | Vega Academy</title>
+  <title>Fractional CFO Services in ${city.name}, ${city.state} | Fractional CFO School</title>
   <meta name="description" content="Find expert fractional CFO services in ${city.name}, ${city.state}. Part-time CFO expertise for growing businesses in the ${city.metro} area. Cash flow management, financial planning & more.">
   <meta name="keywords" content="fractional CFO ${city.name}, fractional CFO ${city.state}, part-time CFO ${city.name}, outsourced CFO ${city.name}, CFO services ${city.name}">
   <link rel="canonical" href="https://fractionalcfoschool.com/fractional-cfo-near-me/${city.slug}/">
@@ -186,7 +186,7 @@ function generateCityPage(city) {
     },
     "provider": {
       "@type": "Organization",
-      "name": "Vega Academy",
+      "name": "Fractional CFO School",
       "url": "https://fractionalcfoschool.com"
     }
   }
@@ -240,7 +240,7 @@ function generateCityPage(city) {
 </head>
 <body>
   <nav>
-    <a href="/">⭐ Vega Academy</a>
+    <a href="/">⭐ Fractional CFO School</a>
     <div class="links">
       <a href="/blog/">Blog</a>
       <a href="/starter-kit/">Free Starter Kit</a>
@@ -335,7 +335,7 @@ function generateCityPage(city) {
       </div>
       <div class="faq-item">
         <h3>Can a bookkeeper become a fractional CFO?</h3>
-        <p>Yes! Many successful fractional CFOs started as bookkeepers. The transition requires developing skills in financial analysis, strategic planning, and advisory services. Vega Academy's course teaches bookkeepers exactly how to make this transition and command $3K-$8K/month per client.</p>
+        <p>Yes! Many successful fractional CFOs started as bookkeepers. The transition requires developing skills in financial analysis, strategic planning, and advisory services. Fractional CFO School's course teaches bookkeepers exactly how to make this transition and command $3K-$8K/month per client.</p>
       </div>
       <div class="faq-item">
         <h3>Do I need a fractional CFO who is local to ${city.name}?</h3>
@@ -346,14 +346,14 @@ function generateCityPage(city) {
 
   <div class="container" style="text-align:center;padding-bottom:30px;">
     <h2>Learn How to Become a Fractional CFO</h2>
-    <p style="max-width:600px;margin:0 auto 20px;">Whether you're a bookkeeper in ${city.name} looking to transition to advisory services or a business owner seeking CFO expertise, Vega Academy can help.</p>
+    <p style="max-width:600px;margin:0 auto 20px;">Whether you're a bookkeeper in ${city.name} looking to transition to advisory services or a business owner seeking CFO expertise, Fractional CFO School can help.</p>
     <p><a href="/blog/how-to-become-fractional-cfo/" style="color:#1a1a4e;font-weight:700;">📖 Read: How to Become a Fractional CFO in 2026 →</a></p>
     <p><a href="/blog/fractional-cfo-services-guide/" style="color:#1a1a4e;font-weight:700;">📖 Read: Complete Guide to Fractional CFO Services →</a></p>
     <p><a href="/tools/advisory-revenue-calculator/" style="color:#1a1a4e;font-weight:700;">🧮 Try: Advisory Revenue Calculator →</a></p>
   </div>
 
   <footer>
-    <p>© 2026 Vega Academy. All rights reserved.</p>
+    <p>© 2026 Fractional CFO School. All rights reserved.</p>
     <p style="margin-top:10px;"><a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a> · <a href="/fractional-cfo-near-me/">All Locations</a></p>
   </footer>
 </body>
@@ -381,7 +381,7 @@ function generateHubPage(cities) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fractional CFO Near Me — Find CFO Services in Your City | Vega Academy</title>
+  <title>Fractional CFO Near Me — Find CFO Services in Your City | Fractional CFO School</title>
   <meta name="description" content="Find fractional CFO services in your city. Expert part-time CFO services across ${cities.length}+ US cities. Strategic financial leadership for growing businesses.">
   <link rel="canonical" href="https://fractionalcfoschool.com/fractional-cfo-near-me/">
   <style>
@@ -408,7 +408,7 @@ function generateHubPage(cities) {
 </head>
 <body>
   <nav>
-    <a href="/">⭐ Vega Academy</a>
+    <a href="/">⭐ Fractional CFO School</a>
     <div class="links">
       <a href="/blog/">Blog</a>
       <a href="/starter-kit/">Free Starter Kit</a>
@@ -427,12 +427,12 @@ function generateHubPage(cities) {
   <div class="container" style="text-align:center;background:#f8f9ff;max-width:100%;margin:0;">
     <div style="max-width:700px;margin:0 auto;padding:40px 20px;">
       <h2>Want to Become a Fractional CFO?</h2>
-      <p>Vega Academy teaches bookkeepers and accountants how to transition to high-value advisory services. Learn to command $3K-$8K/month per client.</p>
+      <p>Fractional CFO School teaches bookkeepers and accountants how to transition to high-value advisory services. Learn to command $3K-$8K/month per client.</p>
       <p style="margin-top:20px;"><a href="/starter-kit/" style="display:inline-block;background:#f39c12;color:#1a1a2e;padding:15px 40px;border-radius:8px;text-decoration:none;font-weight:700;">Get Free Advisory Starter Kit →</a></p>
     </div>
   </div>
   <footer>
-    <p>© 2026 Vega Academy. All rights reserved.</p>
+    <p>© 2026 Fractional CFO School. All rights reserved.</p>
     <p style="margin-top:10px;"><a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a></p>
   </footer>
 </body>

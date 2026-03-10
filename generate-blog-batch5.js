@@ -213,7 +213,7 @@ const articles = [
       <p><a href="/fractional-cfo-near-me/">Browse all 99+ city guides →</a></p>
 
       <h2>Become a Fractional CFO</h2>
-      <p>If you're a bookkeeper or accountant looking to start offering fractional CFO services, Vega Academy can help you make the transition. Our <a href="/starter-kit/">free Advisory Starter Kit</a> includes everything you need to get started.</p>
+      <p>If you're a bookkeeper or accountant looking to start offering fractional CFO services, Fractional CFO School can help you make the transition. Our <a href="/starter-kit/">free Advisory Starter Kit</a> includes everything you need to get started.</p>
     `
   },
   {
@@ -437,7 +437,7 @@ const articles = [
         <li>Practice communicating financial insights to non-financial stakeholders</li>
         <li>Consider fractional CFO work to build diverse experience</li>
       </ol>
-      <p><strong>Ready to level up?</strong> Our <a href="/course/">Vega Academy course</a> teaches the strategic skills you need to transition from controller to CFO.</p>
+      <p><strong>Ready to level up?</strong> Our <a href="/course/">Fractional CFO School course</a> teaches the strategic skills you need to transition from controller to CFO.</p>
     `
   },
   {
@@ -521,7 +521,7 @@ function createBlogPost(article) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>${article.title} | Vega Academy</title>
+  <title>${article.title} | Fractional CFO School</title>
   <meta name="description" content="${article.description}">
   <meta name="keywords" content="${article.keywords}">
   <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
@@ -531,8 +531,8 @@ function createBlogPost(article) {
     "@type": "Article",
     "headline": "${article.title.replace(/"/g, '\\"')}",
     "description": "${article.description.replace(/"/g, '\\"')}",
-    "author": {"@type": "Organization", "name": "Vega Academy"},
-    "publisher": {"@type": "Organization", "name": "Vega Academy"},
+    "author": {"@type": "Organization", "name": "Fractional CFO School"},
+    "publisher": {"@type": "Organization", "name": "Fractional CFO School"},
     "datePublished": "2026-03-06",
     "dateModified": "2026-03-06"
   }
@@ -567,7 +567,7 @@ function createBlogPost(article) {
 </head>
 <body>
   <nav>
-    <a href="/">⭐ Vega Academy</a>
+    <a href="/">⭐ Fractional CFO School</a>
     <div class="links">
       <a href="/blog/">Blog</a>
       <a href="/starter-kit/">Free Starter Kit</a>
@@ -579,7 +579,7 @@ function createBlogPost(article) {
   </div>
   <article>
     <h1>${article.title}</h1>
-    <p class="meta">📅 March 6, 2026 · ⏱️ ${article.readTime} read · By Vega Academy</p>
+    <p class="meta">📅 March 6, 2026 · ⏱️ ${article.readTime} read · By Fractional CFO School</p>
     ${article.content}
     <div class="cta-box">
       <h3>Ready to Start Your Advisory Practice?</h3>
@@ -588,7 +588,7 @@ function createBlogPost(article) {
     </div>
   </article>
   <footer>
-    <p>© 2026 Vega Academy. All rights reserved.</p>
+    <p>© 2026 Fractional CFO School. All rights reserved.</p>
     <p style="margin-top:10px;"><a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a></p>
   </footer>
 </body>

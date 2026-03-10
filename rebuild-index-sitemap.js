@@ -37,7 +37,7 @@ const blogIndexHTML = `<!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog — Vega Academy | Fractional CFO & Advisory Resources</title>
+    <title>Blog — Fractional CFO School | Fractional CFO & Advisory Resources</title>
     <meta name="description" content="Expert articles on fractional CFO services, advisory pricing, cash flow forecasting, and transitioning from bookkeeping to advisory. ${articles.length}+ in-depth guides.">
     <link rel="canonical" href="https://fractionalcfoschool.com/blog/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -72,7 +72,7 @@ const blogIndexHTML = `<!DOCTYPE html>
 <body>
     <nav>
         <div class="nav-inner">
-            <a href="/" class="logo">⭐ Vega Academy</a>
+            <a href="/" class="logo">⭐ Fractional CFO School</a>
             <div class="nav-links">
                 <a href="/blog/">Blog</a>
                 <a href="/starter-kit/">Free Starter Kit</a>
@@ -84,7 +84,7 @@ const blogIndexHTML = `<!DOCTYPE html>
 
     <div class="hero">
         <div class="container">
-            <h1>Vega Academy Blog</h1>
+            <h1>Fractional CFO School Blog</h1>
             <p>In-depth guides on fractional CFO services, advisory pricing, cash flow management, and building a profitable advisory practice.</p>
             <div class="count">📚 ${articles.length} articles — all backed by real search data</div>
         </div>
@@ -108,7 +108,7 @@ const blogIndexHTML = `<!DOCTYPE html>
 
     <footer>
         <div class="container">
-            <p>© 2026 Vega Academy. Helping bookkeepers build advisory practices.</p>
+            <p>© 2026 Fractional CFO School. Helping bookkeepers build advisory practices.</p>
             <p style="margin-top: 8px;">
                 <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a> · <a href="/course/module-1/">Free Module</a>
             </p>

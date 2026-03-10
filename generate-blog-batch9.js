@@ -140,7 +140,7 @@ const articles = [
             <p>A solo financial consultant with 5-8 retainer clients billing $3,000-5,000/mo each can earn <strong>$180K-480K annually</strong> — working 20-30 hours per week. Compare that to the average bookkeeper salary of $45K-55K. <strong>The math speaks for itself.</strong></p>
 
             <div class="callout">
-                <h4>⭐ Real numbers from Vega Academy graduates</h4>
+                <h4>⭐ Real numbers from Fractional CFO School graduates</h4>
                 <p>Bookkeepers who complete our advisory transformation program typically see their effective hourly rate increase from $35-50/hr to $150-300/hr within 6 months. The difference? They stopped selling bookkeeping and started selling financial intelligence.</p>
             </div>
 
@@ -280,7 +280,7 @@ const articles = [
 
             <div class="callout">
                 <h4>⭐ Ready to build your financial consulting company?</h4>
-                <p>Vega Academy's advisory transformation program teaches bookkeepers and accountants exactly how to make this transition — including templates, frameworks, pricing strategies, and client acquisition systems. Start with our free Advisory Starter Kit.</p>
+                <p>Fractional CFO School's advisory transformation program teaches bookkeepers and accountants exactly how to make this transition — including templates, frameworks, pricing strategies, and client acquisition systems. Start with our free Advisory Starter Kit.</p>
             </div>
     `
   },
@@ -392,7 +392,7 @@ const articles = [
 
             <div class="callout">
                 <h4>⭐ Accelerate your transition</h4>
-                <p>Vega Academy's program is specifically designed for bookkeepers who want to move into advisory faster. Our students typically make the transition in 6-12 months instead of 3-4 years. Start with the free Advisory Starter Kit to see if it's right for you.</p>
+                <p>Fractional CFO School's program is specifically designed for bookkeepers who want to move into advisory faster. Our students typically make the transition in 6-12 months instead of 3-4 years. Start with the free Advisory Starter Kit to see if it's right for you.</p>
             </div>
 
             <h2>Common Mistakes Virtual Bookkeepers Make</h2>
@@ -516,7 +516,7 @@ const articles = [
 
             <div class="callout">
                 <h4>⭐ Ready to level up?</h4>
-                <p>If you're a virtual bookkeeper thinking about adding advisory services, Vega Academy can help you make the transition. Our program is built specifically for bookkeepers who want to earn more by doing more strategic work. Grab our free Advisory Starter Kit to get started.</p>
+                <p>If you're a virtual bookkeeper thinking about adding advisory services, Fractional CFO School can help you make the transition. Our program is built specifically for bookkeepers who want to earn more by doing more strategic work. Grab our free Advisory Starter Kit to get started.</p>
             </div>
     `
   },
@@ -560,7 +560,7 @@ const articles = [
             <h3>Where to learn (free and paid)</h3>
             <ul>
                 <li><strong>Free:</strong> Khan Academy accounting course, Intuit QuickBooks tutorials, AccountingCoach.com</li>
-                <li><strong>Paid:</strong> Bookkeeper Business Academy, Bookkeeper Launch, or Vega Academy's fundamentals module</li>
+                <li><strong>Paid:</strong> Bookkeeper Business Academy, Bookkeeper Launch, or Fractional CFO School's fundamentals module</li>
                 <li><strong>YouTube:</strong> Hector Garcia (QBO expert), The Bookkeeping Master</li>
             </ul>
 
@@ -672,7 +672,7 @@ const articles = [
 
             <div class="callout">
                 <h4>⭐ Fast-track your career</h4>
-                <p>Vega Academy is built for bookkeepers who want to earn more without working more. Our advisory transformation program takes you from bookkeeper to strategic financial advisor — with the frameworks, templates, and confidence to charge what you're worth. Start with our free Advisory Starter Kit.</p>
+                <p>Fractional CFO School is built for bookkeepers who want to earn more without working more. Our advisory transformation program takes you from bookkeeper to strategic financial advisor — with the frameworks, templates, and confidence to charge what you're worth. Start with our free Advisory Starter Kit.</p>
             </div>
     `
   },
@@ -775,7 +775,7 @@ const articles = [
 
             <div class="callout">
                 <h4>⭐ Build your consulting skills</h4>
-                <p>Whether you're targeting financial services or any other industry, the consulting skills are the same: strategic thinking, client management, pricing, and delivery. Vega Academy teaches these foundational skills to bookkeepers and accountants making the advisory transition. Start with our free Advisory Starter Kit.</p>
+                <p>Whether you're targeting financial services or any other industry, the consulting skills are the same: strategic thinking, client management, pricing, and delivery. Fractional CFO School teaches these foundational skills to bookkeepers and accountants making the advisory transition. Start with our free Advisory Starter Kit.</p>
             </div>
 
             <h2>Getting Started</h2>
@@ -800,7 +800,7 @@ function generateArticle(article) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${article.title} — Vega Academy</title>
+    <title>${article.title} — Fractional CFO School</title>
     <meta name="description" content="${article.description}">
     <meta name="keywords" content="${article.keywords}">
     <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
@@ -847,7 +847,7 @@ function generateArticle(article) {
 
 <nav>
     <div class="container">
-        <a href="/" class="logo"><span class="logo-star">⭐ vega</span> <span>academy</span></a>
+        <a href="/" class="logo">📊 fractional cfo <span>school</span></a>
         <a href="/starter-kit/" class="nav-cta">Free Starter Kit</a>
     </div>
 </nav>
@@ -878,7 +878,7 @@ function generateArticle(article) {
 
 <footer>
     <div class="container">
-        <p>© 2026 <a href="/">Vega Academy</a>. Built for bookkeepers who want more.</p>
+        <p>© 2026 <a href="/">Fractional CFO School</a>. Built for bookkeepers who want more.</p>
     </div>
 </footer>
 
