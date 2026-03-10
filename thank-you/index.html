@@ -10,13 +10,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        :root { --bg: #0a0a0f; --surface: #12121a; --border: #2a2a3a; --text: #e8e8f0; --muted: #8888a0; --accent: #6c5ce7; --green: #00b894; }
+        :root { --bg: #0a0a0f; --surface: #12121a; --border: #2a2a3a; --text: #e8e8f0; --muted: #8888a0; --accent: #6c5ce7; --green: #00b894; --gold: #f9c846; }
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
         .container { max-width: 640px; margin: 0 auto; padding: 60px 24px; text-align: center; }
         .check { width: 80px; height: 80px; border-radius: 50%; background: var(--green); display: flex; align-items: center; justify-content: center; margin: 0 auto 32px; }
         .check svg { width: 40px; height: 40px; color: white; }
         h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 16px; }
         .subtitle { font-size: 1.2rem; color: var(--muted); margin-bottom: 32px; line-height: 1.6; }
+
+        /* Download box */
+        .download-box { background: linear-gradient(135deg, #1a1a2e, #16213e); border: 2px solid var(--gold); border-radius: 16px; padding: 32px; text-align: center; margin-bottom: 32px; }
+        .download-box h2 { font-size: 1.4rem; margin-bottom: 8px; color: var(--gold); }
+        .download-box p { color: var(--muted); margin-bottom: 20px; font-size: 0.95rem; }
+        .download-btn { display: inline-block; background: var(--gold); color: #1a1a2e; padding: 16px 32px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: transform 0.2s, background 0.2s; }
+        .download-btn:hover { transform: translateY(-2px); background: #f0b800; }
+        .download-btn svg { width: 20px; height: 20px; vertical-align: middle; margin-right: 8px; }
+        .file-info { margin-top: 12px; font-size: 0.85rem; color: var(--muted); }
+
         .next-steps { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; text-align: left; margin-bottom: 32px; }
         .next-steps h2 { font-size: 1.3rem; margin-bottom: 20px; }
         .step { display: flex; gap: 16px; margin-bottom: 16px; }
@@ -25,6 +35,9 @@
         .step-text strong { color: var(--text); }
         .cta-btn { display: inline-block; background: var(--accent); color: white; padding: 16px 32px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: transform 0.2s; }
         .cta-btn:hover { transform: translateY(-2px); }
+        .email-note { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 24px; margin-bottom: 24px; font-size: 0.9rem; color: var(--muted); }
+        .email-note strong { color: var(--text); }
+        .hidden { display: none; }
     </style>
 </head>
 <body>
@@ -33,33 +46,121 @@
             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
         </div>
         <h1>You're In! 🎉</h1>
-        <p class="subtitle">Welcome to Fractional CFO School. Your purchase was successful and you're about to take a massive step in your career.</p>
-        
-        <div class="next-steps">
+        <p class="subtitle" id="subtitle">Welcome to Fractional CFO School. Your purchase was successful!</p>
+
+        <!-- Template download section (shown for template purchases) -->
+        <div class="download-box hidden" id="download-box">
+            <h2 id="download-title">Your Templates Are Ready</h2>
+            <p id="download-desc">Click below to download your template pack. You can download as many times as you need.</p>
+            <a href="#" class="download-btn" id="download-btn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                Download Now
+            </a>
+            <p class="file-info" id="file-info">Excel (.xlsx) format — works with Excel, Google Sheets, and Numbers</p>
+        </div>
+
+        <div class="email-note">
+            <strong>📧 Check your email</strong> — We've sent a confirmation with your download link as a backup. If you don't see it within 5 minutes, check your spam folder.
+        </div>
+
+        <!-- Course/membership next steps -->
+        <div class="next-steps" id="course-steps">
             <h2>What happens next:</h2>
-            <div class="step">
+            <div class="step" id="step-1">
                 <div class="step-num">1</div>
-                <div class="step-text"><strong>Check your email</strong> — You'll receive a receipt and access instructions within 5 minutes.</div>
+                <div class="step-text" id="step-1-text"><strong>Download your purchase</strong> — Your files are ready above. Click to download.</div>
             </div>
             <div class="step">
                 <div class="step-num">2</div>
-                <div class="step-text"><strong>Start Module 1</strong> — Begin with the Advisory Mindset Shift. It takes about 30 minutes and will change how you think about your career.</div>
+                <div class="step-text"><strong>Open and customize</strong> — Each template includes an Instructions tab. Start there to get oriented.</div>
             </div>
             <div class="step">
                 <div class="step-num">3</div>
-                <div class="step-text"><strong>Download your templates</strong> — Your template pack is ready. These are the same tools used by $200+/hr fractional CFOs.</div>
+                <div class="step-text"><strong>Deliver to clients</strong> — Customize with your client's logo and data. Present in your next financial review meeting.</div>
             </div>
         </div>
 
-        <a href="/course/" class="cta-btn">Start Learning →</a>
+        <div id="upsell-area"></div>
+
+        <a href="/blog/" class="cta-btn" style="margin-top: 16px; background: transparent; border: 1px solid var(--border); font-size: 0.95rem; padding: 12px 24px;">Browse Free Resources →</a>
     </div>
 
     <script>
-        // Track purchase conversion
         const params = new URLSearchParams(window.location.search);
         const product = params.get('product');
+
+        // Product configuration
+        const products = {
+            'cfo-dashboard': {
+                name: 'CFO Dashboard Template Pack',
+                file: '/downloads/d8f3a2c1e9b7/cfo-dashboard-template-pack.xlsx',
+                type: 'template',
+                desc: '5 industry-specific KPI dashboards (General, SaaS, Professional Services, Retail, Construction)',
+            },
+            'cash-flow-forecast': {
+                name: 'Cash Flow Forecasting Kit',
+                file: '/downloads/a4e7b9d2f1c6/cash-flow-forecasting-kit.xlsx',
+                type: 'template',
+                desc: '13-week rolling forecast, 12-month projection, and scenario modeling — all in one file',
+            },
+            'client-proposals': {
+                name: 'Client Proposal & Engagement Letter Pack',
+                file: '/downloads/c2f8e3a7d5b1/client-proposal-engagement-pack.xlsx',
+                type: 'template',
+                desc: '3 proposal templates (Essentials, Growth, Virtual CFO), engagement letter, and pricing framework',
+            },
+            'financial-reporting': {
+                name: 'Financial Reporting Template Pack',
+                file: '/downloads/e6d1b4f9a3c8/financial-reporting-template-pack.xlsx',
+                type: 'template',
+                desc: 'P&L analysis, balance sheet review, executive summary, and professional package cover sheet',
+            },
+            'foundations': {
+                name: 'Foundations Course',
+                type: 'course',
+            },
+            'pro-membership': {
+                name: 'CFO Pro Membership',
+                type: 'membership',
+            },
+            'certification': {
+                name: 'Certified Fractional CFO Program',
+                type: 'course',
+            },
+        };
+
+        const info = product && products[product];
+
+        if (info && info.type === 'template') {
+            // Show download box for template purchases
+            document.getElementById('subtitle').textContent = `Your ${info.name} purchase was successful!`;
+            const downloadBox = document.getElementById('download-box');
+            downloadBox.classList.remove('hidden');
+            document.getElementById('download-title').textContent = `📥 ${info.name}`;
+            document.getElementById('download-desc').textContent = info.desc;
+            document.getElementById('download-btn').href = info.file;
+            document.getElementById('download-btn').setAttribute('download', '');
+
+            // Template-specific next steps already shown
+            // Add upsell
+            document.getElementById('upsell-area').innerHTML = `
+                <div style="background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px; margin-bottom: 24px; text-align: left;">
+                    <h3 style="margin-bottom: 12px; font-size: 1.1rem;">📈 Ready for the full system?</h3>
+                    <p style="color: var(--muted); margin-bottom: 16px; font-size: 0.95rem;">Templates are powerful tools — but they're even more effective when combined with a complete advisory framework.</p>
+                    <a href="/foundations/" style="display: inline-block; background: var(--accent); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">Foundations Course — $297 →</a>
+                </div>`;
+        } else if (info && (info.type === 'course' || info.type === 'membership')) {
+            // Course/membership purchase
+            document.getElementById('subtitle').textContent = `Welcome to ${info.name}! Your enrollment is confirmed.`;
+            document.getElementById('download-box').classList.add('hidden');
+            document.getElementById('step-1-text').innerHTML = `<strong>Check your email</strong> — We're preparing your course materials and will send access within 24 hours.`;
+            document.querySelector('#course-steps .step:nth-child(2) .step-text').innerHTML = `<strong>Bookmark this page</strong> — We'll update you via email when your learning portal is ready.`;
+            document.querySelector('#course-steps .step:nth-child(3) .step-text').innerHTML = `<strong>Start exploring</strong> — While you wait, browse our <a href="/blog/" style="color: #6c5ce7;">free guides</a> and <a href="/templates/" style="color: #6c5ce7;">template library</a>.`;
+        }
+
+        // Track purchase conversion in GA4
         if (product && typeof gtag === 'function') {
-            gtag('event', 'purchase', { 
+            gtag('event', 'purchase', {
                 transaction_id: params.get('session_id'),
                 items: [{ item_name: product }]
             });

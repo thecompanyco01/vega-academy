@@ -88,6 +88,8 @@ module.exports = async (req, res) => {
       'line_items[0][quantity]': '1',
       'payment_method_types[0]': 'card',
       'allow_promotion_codes': 'true',
+      'customer_creation': isSubscription ? undefined : 'always',
+      'metadata[product]': product,
     };
 
     if (!isSubscription) {

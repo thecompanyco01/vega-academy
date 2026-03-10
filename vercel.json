@@ -3,7 +3,9 @@
   "name": "vega-academy",
 
   "routes": [
+    { "src": "/api/webhook", "dest": "/api/webhook" },
     { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/downloads/(.*)", "dest": "/downloads/$1" },
     { "src": "/blog/(.*)", "dest": "/blog/$1" },
     { "src": "/starter-kit/(.*)", "dest": "/starter-kit/$1" },
     { "src": "/course/(.*)", "dest": "/course/$1" },
