@@ -12,7 +12,7 @@ TEMPLATE_START='<!DOCTYPE html>
     <title>TITLE_HERE — Vega Academy</title>
     <meta name="description" content="DESC_HERE">
     <meta name="keywords" content="KEYWORDS_HERE">
-    <link rel="canonical" href="https://vega-academy.vercel.app/blog/SLUG_HERE/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/blog/SLUG_HERE/">
     <meta property="og:title" content="TITLE_HERE">
     <meta property="og:description" content="DESC_HERE">
     <meta property="og:type" content="article">

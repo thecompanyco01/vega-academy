@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBGK6MFYEY"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-ZBGK6MFYEY");</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Profit Margin Calculator — Gross, Operating & Net Margins | Fractional CFO School</title>
+    <meta name="description" content="Free profit margin calculator. Enter revenue and costs to instantly calculate gross profit margin, operating margin, and net profit margin. Includes benchmarks and explanations.">
+    <meta name="keywords" content="profit margin calculator, gross profit margin calculator, net profit margin calculator, operating margin calculator, business profit calculator">
+    <link rel="canonical" href="https://fractionalcfoschool.com/tools/profit-margin-calculator/">
+    <meta property="og:title" content="Free Profit Margin Calculator — Gross, Operating & Net Margins">
+    <meta property="og:description" content="Free profit margin calculator. Enter revenue and costs to instantly calculate gross, operating, and net profit margins with industry benchmarks.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fractionalcfoschool.com/tools/profit-margin-calculator/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Profit Margin Calculator",
+        "url": "https://fractionalcfoschool.com/tools/profit-margin-calculator/",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "All",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Organization", "name": "Fractional CFO School" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is profit margin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Profit margin is a percentage that shows how much of each dollar of revenue a business keeps as profit. There are three main types: Gross Profit Margin (revenue minus cost of goods sold, divided by revenue), Operating Margin (revenue minus all operating expenses, divided by revenue), and Net Profit Margin (total profit after all expenses, taxes, and interest, divided by revenue). Higher margins indicate a more profitable, efficient business."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a good profit margin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Good profit margins vary by industry. Gross margins: 50-70% for software/SaaS, 40-60% for professional services, 25-35% for retail, 30-40% for restaurants. Net margins: 20-40% for software, 15-25% for professional services, 2-5% for retail/grocery, 3-9% for restaurants. A net margin above 10% is generally considered healthy for most industries."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you calculate profit margin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gross Profit Margin = ((Revenue - Cost of Goods Sold) / Revenue) × 100. Operating Margin = ((Revenue - COGS - Operating Expenses) / Revenue) × 100. Net Profit Margin = ((Revenue - All Expenses) / Revenue) × 100. For example, if revenue is $500,000 and COGS is $200,000, gross profit margin is ($300,000 / $500,000) × 100 = 60%."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What's the difference between gross margin and net margin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gross margin only considers the direct costs of producing goods/services (COGS) — it shows production efficiency. Net margin includes ALL expenses: COGS, operating expenses (rent, salaries, marketing), interest, and taxes — it shows overall profitability. A business can have a high gross margin but low net margin if operating expenses are high."
+                }
+            }
+        ]
+    }
+    </script>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg: #0a0a0f; --surface: #12121a; --surface-2: #1a1a26;
+            --border: #2a2a3a; --text: #e8e8f0; --muted: #8888a0;
+            --accent: #6c5ce7; --accent-light: #a29bfe;
+            --green: #00d2a0; --gold: #f0c040; --red: #ff6b6b;
+        }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        body::before { content: ''; position: fixed; inset: 0; background-image: linear-gradient(rgba(108,92,231,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(108,92,231,0.03) 1px, transparent 1px); background-size: 60px 60px; z-index: -1; }
+
+        /* NAV */
+        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,15,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 100; padding: 16px 0; }
+        nav .inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; }
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-links a:hover { color: var(--text); }
+        .nav-cta { background: var(--accent); color: white !important; padding: 10px 24px; border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none; transition: all 0.2s; }
+        .nav-cta:hover { background: #7c6cf7; }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+        /* HERO */
+        .hero { padding: 120px 0 40px; text-align: center; }
+        .hero h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 16px; }
+        .hero h1 .highlight { background: linear-gradient(135deg, var(--gold), #f8d070); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { color: var(--muted); font-size: 17px; max-width: 600px; margin: 0 auto; }
+
+        /* CALCULATOR */
+        .calc-wrapper { padding: 40px 0 60px; }
+        .calc-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 40px; max-width: 700px; margin: 0 auto; }
+        .calc-card h2 { font-size: 20px; font-weight: 700; margin-bottom: 24px; text-align: center; }
+
+        .input-group { margin-bottom: 20px; }
+        .input-group label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+        .input-group .hint { font-size: 12px; color: var(--muted); margin-bottom: 6px; }
+        .input-row { display: flex; align-items: center; gap: 8px; }
+        .input-row .prefix { font-size: 18px; font-weight: 700; color: var(--muted); }
+        .input-group input {
+            width: 100%; padding: 14px 16px; border-radius: 10px;
+            border: 1px solid var(--border); background: var(--surface-2);
+            color: var(--text); font-size: 18px; font-family: inherit;
+            font-weight: 600; outline: none; transition: border-color 0.2s;
+        }
+        .input-group input:focus { border-color: var(--accent); }
+        .input-group input::placeholder { color: var(--muted); font-weight: 400; }
+
+        .calc-btn {
+            display: block; width: 100%; padding: 16px;
+            background: linear-gradient(135deg, var(--accent), #7c6cf7);
+            color: white; border: none; border-radius: 12px;
+            font-size: 17px; font-weight: 700; cursor: pointer;
+            font-family: inherit; transition: all 0.2s;
+            margin-top: 28px;
+        }
+        .calc-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(108,92,231,0.3); }
+
+        /* RESULTS */
+        .results { display: none; margin-top: 32px; }
+        .results.show { display: block; }
+        .results-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+        .result-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px; padding: 24px; text-align: center; transition: all 0.3s; }
+        .result-card.positive { border-color: rgba(0,210,160,0.3); }
+        .result-card.negative { border-color: rgba(255,107,107,0.3); }
+        .result-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 8px; }
+        .result-pct { font-size: 36px; font-weight: 800; letter-spacing: -1px; margin-bottom: 4px; }
+        .result-pct.green { color: var(--green); }
+        .result-pct.red { color: var(--red); }
+        .result-pct.gold { color: var(--gold); }
+        .result-amt { font-size: 14px; color: var(--muted); }
+
+        /* BREAKDOWN TABLE */
+        .breakdown { margin-top: 24px; }
+        .breakdown h3 { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+        .breakdown-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
+        .breakdown-row:last-child { border-bottom: none; }
+        .breakdown-row .label { color: var(--muted); }
+        .breakdown-row .value { font-weight: 600; }
+        .breakdown-row.total { border-top: 2px solid var(--border); font-weight: 700; padding-top: 16px; }
+
+        /* BENCHMARK */
+        .benchmark { margin-top: 32px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px; padding: 24px; }
+        .benchmark h3 { font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+        .bench-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+        .bench-row:last-child { border-bottom: none; }
+        .bench-industry { color: var(--text); }
+        .bench-range { color: var(--muted); font-weight: 500; }
+        .benchmark .source { font-size: 11px; color: var(--muted); opacity: 0.6; margin-top: 12px; }
+
+        /* CONTENT SECTIONS */
+        .content-section { padding: 60px 0; border-top: 1px solid var(--border); }
+        .content-section h2 { font-size: 28px; font-weight: 800; letter-spacing: -1px; margin-bottom: 24px; }
+        .content-section h3 { font-size: 18px; font-weight: 700; margin: 24px 0 12px; color: var(--accent-light); }
+        .content-section p { color: var(--muted); font-size: 15px; margin-bottom: 12px; line-height: 1.7; }
+        .content-section ul { list-style: none; margin: 12px 0 20px; }
+        .content-section li { padding: 6px 0; color: var(--muted); font-size: 15px; }
+        .content-section li::before { content: "→ "; color: var(--accent-light); }
+        .content-section a { color: var(--accent-light); text-decoration: none; }
+        .content-section a:hover { text-decoration: underline; }
+
+        /* FORMULA BOX */
+        .formula-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin: 16px 0; font-family: 'Courier New', monospace; font-size: 15px; color: var(--gold); }
+
+        /* CTA */
+        .cta-box { background: linear-gradient(135deg, var(--surface), var(--surface-2)); border: 1px solid var(--accent); border-radius: 16px; padding: 32px; text-align: center; margin: 40px 0; }
+        .cta-box h3 { font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+        .cta-box p { color: var(--muted); font-size: 15px; margin-bottom: 20px; }
+        .cta-box a { display: inline-block; background: linear-gradient(135deg, var(--accent), #7c6cf7); color: white; padding: 14px 32px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 16px; transition: all 0.2s; }
+        .cta-box a:hover { transform: translateY(-2px); }
+
+        /* FAQ */
+        .faq-section { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin: 40px 0; }
+        .faq-section h2 { font-size: 22px; margin-bottom: 20px; }
+        .faq-item { margin-bottom: 20px; }
+        .faq-item:last-child { margin-bottom: 0; }
+        .faq-item h3 { font-size: 16px; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+        .faq-item p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+
+        /* FOOTER */
+        .content-authority { text-align: center; padding: 24px; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+        .content-authority strong { color: var(--text); }
+        footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; }
+        footer a { color: var(--accent-light); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .results-grid { grid-template-columns: 1fr; }
+            .calc-card { padding: 24px; }
+            .nav-links a:not(.nav-cta) { display: none; }
+        }
+        @media (max-width: 600px) { .hero { padding: 100px 0 30px; } }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="inner">
+        <a href="/" class="logo">📊 Fractional CFO School</a>
+        <div class="nav-links">
+            <a href="/blog/">Blog</a>
+            <a href="/course/">Course</a>
+            <a href="/pricing/">Pricing</a>
+            <a href="/tools/advisory-revenue-calculator/">Revenue Calc</a>
+            <a href="/pricing/" class="nav-cta">Enroll Now</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container">
+        <h1>Free <span class="highlight">Profit Margin</span> Calculator</h1>
+        <p>Calculate your gross profit margin, operating margin, and net profit margin instantly. Compare to industry benchmarks and understand what your margins mean.</p>
+    </div>
+</section>
+
+<section class="calc-wrapper">
+    <div class="container">
+        <div class="calc-card">
+            <h2>Enter Your Numbers</h2>
+
+            <div class="input-group">
+                <label>Total Revenue</label>
+                <div class="hint">Annual or monthly — just be consistent across all fields</div>
+                <div class="input-row">
+                    <span class="prefix">$</span>
+                    <input type="text" id="revenue" placeholder="500,000" inputmode="decimal">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Cost of Goods Sold (COGS)</label>
+                <div class="hint">Direct costs: materials, labor directly tied to production, manufacturing</div>
+                <div class="input-row">
+                    <span class="prefix">$</span>
+                    <input type="text" id="cogs" placeholder="200,000" inputmode="decimal">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Operating Expenses</label>
+                <div class="hint">Rent, salaries, marketing, utilities, insurance, software — NOT including COGS</div>
+                <div class="input-row">
+                    <span class="prefix">$</span>
+                    <input type="text" id="opex" placeholder="150,000" inputmode="decimal">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Other Expenses (Interest, Taxes, etc.) <span style="color:var(--muted);font-weight:400">— optional</span></label>
+                <div class="hint">Interest payments, income taxes, one-time expenses</div>
+                <div class="input-row">
+                    <span class="prefix">$</span>
+                    <input type="text" id="other" placeholder="30,000" inputmode="decimal">
+                </div>
+            </div>
+
+            <button class="calc-btn" onclick="calculate()">Calculate Profit Margins →</button>
+
+            <div class="results" id="results">
+                <div class="results-grid">
+                    <div class="result-card" id="gross-card">
+                        <div class="result-label">Gross Margin</div>
+                        <div class="result-pct" id="gross-pct">—</div>
+                        <div class="result-amt" id="gross-amt">—</div>
+                    </div>
+                    <div class="result-card" id="op-card">
+                        <div class="result-label">Operating Margin</div>
+                        <div class="result-pct" id="op-pct">—</div>
+                        <div class="result-amt" id="op-amt">—</div>
+                    </div>
+                    <div class="result-card" id="net-card">
+                        <div class="result-label">Net Margin</div>
+                        <div class="result-pct" id="net-pct">—</div>
+                        <div class="result-amt" id="net-amt">—</div>
+                    </div>
+                </div>
+
+                <div class="breakdown">
+                    <h3>P&L Breakdown</h3>
+                    <div class="breakdown-row"><span class="label">Revenue</span><span class="value" id="b-revenue">—</span></div>
+                    <div class="breakdown-row"><span class="label">− Cost of Goods Sold</span><span class="value" id="b-cogs">—</span></div>
+                    <div class="breakdown-row total"><span class="label">= Gross Profit</span><span class="value" id="b-gross">—</span></div>
+                    <div class="breakdown-row"><span class="label">− Operating Expenses</span><span class="value" id="b-opex">—</span></div>
+                    <div class="breakdown-row total"><span class="label">= Operating Profit</span><span class="value" id="b-operating">—</span></div>
+                    <div class="breakdown-row"><span class="label">− Other Expenses</span><span class="value" id="b-other">—</span></div>
+                    <div class="breakdown-row total" style="border-top-color:var(--accent)"><span class="label">= Net Profit</span><span class="value" id="b-net">—</span></div>
+                </div>
+
+                <div class="benchmark">
+                    <h3>📊 How You Compare — Industry Benchmarks</h3>
+                    <div class="bench-row"><span class="bench-industry">Software / SaaS</span><span class="bench-range">Gross: 60-80% · Net: 20-40%</span></div>
+                    <div class="bench-row"><span class="bench-industry">Professional Services</span><span class="bench-range">Gross: 40-60% · Net: 15-25%</span></div>
+                    <div class="bench-row"><span class="bench-industry">E-commerce / Retail</span><span class="bench-range">Gross: 25-45% · Net: 2-10%</span></div>
+                    <div class="bench-row"><span class="bench-industry">Restaurants / Food</span><span class="bench-range">Gross: 55-65% · Net: 3-9%</span></div>
+                    <div class="bench-row"><span class="bench-industry">Construction</span><span class="bench-range">Gross: 20-35% · Net: 3-8%</span></div>
+                    <div class="bench-row"><span class="bench-industry">Healthcare</span><span class="bench-range">Gross: 40-60% · Net: 5-15%</span></div>
+                    <div class="bench-row"><span class="bench-industry">Manufacturing</span><span class="bench-range">Gross: 25-40% · Net: 5-12%</span></div>
+                    <p class="source">Sources: NYU Stern industry margins database, RMA Annual Statement Studies, industry reports</p>
+                </div>
+
+                <div class="cta-box">
+                    <h3>Want to Help Clients Improve Their Margins?</h3>
+                    <p>Profit margin analysis is a core advisory skill that fractional CFOs use to justify $150-350/hr rates. Learn the complete framework.</p>
+                    <a href="/course/">Explore the Foundations Course — $297 →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content-section">
+    <div class="container">
+        <h2>How to Calculate Profit Margin</h2>
+        <p>Profit margin measures how much of each dollar of revenue a business keeps as profit. There are three key margins, each telling a different story about business health:</p>
+
+        <h3>Gross Profit Margin</h3>
+        <p>Gross margin shows how efficiently a business produces its goods or delivers its services. It only considers direct costs (COGS).</p>
+        <div class="formula-box">Gross Profit Margin = ((Revenue − COGS) / Revenue) × 100</div>
+        <p>Example: $500,000 revenue − $200,000 COGS = $300,000 gross profit → <strong>60% gross margin</strong>.</p>
+        <p>A declining gross margin means your production costs are rising faster than your prices — a problem that needs immediate attention. This is one of the first things a <a href="/blog/profit-and-loss-analysis-guide/">P&L analysis</a> should flag.</p>
+
+        <h3>Operating Profit Margin</h3>
+        <p>Operating margin shows profitability from core business operations, including overhead costs like rent, salaries, and marketing.</p>
+        <div class="formula-box">Operating Margin = ((Revenue − COGS − Operating Expenses) / Revenue) × 100</div>
+        <p>Example: $500,000 revenue − $200,000 COGS − $150,000 opex = $150,000 operating profit → <strong>30% operating margin</strong>.</p>
+        <p>This is the best indicator of operational efficiency. If gross margins are healthy but operating margins are low, overhead is the problem.</p>
+
+        <h3>Net Profit Margin</h3>
+        <p>Net margin is the bottom line — what's left after ALL expenses, including interest, taxes, and one-time costs.</p>
+        <div class="formula-box">Net Profit Margin = ((Revenue − All Expenses) / Revenue) × 100</div>
+        <p>Example: $500,000 revenue − $380,000 total expenses = $120,000 net profit → <strong>24% net margin</strong>.</p>
+        <p>A healthy net margin means the business is truly profitable. But it's important to analyze alongside <a href="/blog/cash-flow-analysis-guide/">cash flow</a> — a profitable business can still run out of cash if margins aren't converting to actual cash receipts.</p>
+
+        <h3>Why Profit Margins Matter</h3>
+        <ul>
+            <li><strong>Pricing decisions</strong> — Are you charging enough? If gross margins are below industry average, your pricing may be too low.</li>
+            <li><strong>Cost control</strong> — Declining margins signal cost problems before they become cash crises.</li>
+            <li><strong>Benchmarking</strong> — How do you compare to competitors? A <a href="/blog/what-is-fractional-cfo/">fractional CFO</a> uses margin analysis to identify where clients are underperforming.</li>
+            <li><strong>Growth planning</strong> — Can the business afford to hire, invest, or expand? Margins determine capacity for investment.</li>
+            <li><strong>Investor & lender confidence</strong> — Banks and investors scrutinize margins as indicators of business health and management competence.</li>
+        </ul>
+
+        <h3>How Fractional CFOs Use Margin Analysis</h3>
+        <p>Margin analysis is one of the most valuable services in a <a href="/blog/advisory-services-vs-bookkeeping/">fractional CFO's toolkit</a>. Here's how advisory professionals use it:</p>
+        <ul>
+            <li>Monthly margin tracking in <a href="/blog/financial-reporting-template-guide/">financial reporting packages</a> with trend analysis</li>
+            <li>Industry benchmarking to show clients where they stand vs. competitors</li>
+            <li>Pricing strategy reviews when margins fall below targets</li>
+            <li>Cost reduction roadmaps when operating margins are compressed</li>
+            <li>Scenario modeling: "What happens to margins if we raise prices 5%?"</li>
+        </ul>
+
+        <div class="cta-box">
+            <h3>Build Your Advisory Toolkit</h3>
+            <p>Our course teaches the complete financial analysis framework — margins, cash flow, KPIs, forecasting — with 10+ downloadable templates.</p>
+            <a href="/pricing/">View Programs — Starting at $297 →</a>
+        </div>
+
+        <h3>Common Profit Margin Mistakes</h3>
+        <ul>
+            <li><strong>Comparing across industries</strong> — A 5% net margin is excellent for grocery but terrible for SaaS. Always benchmark within your industry.</li>
+            <li><strong>Ignoring COGS classification</strong> — Misclassifying expenses between COGS and operating expenses distorts both gross and operating margins. A <a href="/blog/fractional-controller-guide/">fractional controller</a> ensures proper classification.</li>
+            <li><strong>Looking at one period</strong> — A single month's margin is noise. Track 3-6-12 month trends to see the real pattern.</li>
+            <li><strong>Forgetting owner compensation</strong> — Many small business owners don't pay themselves a market salary, artificially inflating margins. Adjust for fair-market owner comp before benchmarking.</li>
+            <li><strong>Revenue ≠ cash</strong> — High margins mean nothing if customers don't pay. Pair margin analysis with <a href="/blog/cash-flow-analysis-guide/">cash flow analysis</a> and <a href="/blog/balance-sheet-analysis-guide/">balance sheet review</a>.</li>
+        </ul>
+
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is a good profit margin?</h3>
+                <p>It depends on the industry. Software/SaaS: 20-40% net margin is common. Professional services: 15-25%. Retail: 2-10%. Restaurants: 3-9%. A net margin above 10% is generally considered healthy. Compare to your specific industry for meaningful benchmarks.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What's the difference between gross margin and net margin?</h3>
+                <p>Gross margin only considers direct production costs (COGS) — it measures production efficiency. Net margin includes ALL expenses (COGS + operating + interest + taxes) — it measures overall profitability. You can have a high gross margin but low net margin if overhead is bloated.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How often should I calculate profit margins?</h3>
+                <p>Monthly, at minimum. Track margins as part of your regular financial review. Look at 3-month and 12-month trends, not just individual months. Quarterly deep-dives with industry benchmarking add the most strategic value.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How can I improve my profit margins?</h3>
+                <p>Three levers: (1) Increase prices — even a 2-3% increase can dramatically improve margins, (2) Reduce COGS — negotiate with suppliers, optimize production, reduce waste, (3) Cut operating expenses — eliminate underperforming marketing, renegotiate contracts, automate repetitive tasks. A <a href="/blog/what-is-fractional-cfo/" style="color:var(--accent-light)">fractional CFO</a> can help identify the highest-impact opportunities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="content-authority">
+    📚 <strong>800+ free pages</strong> · 290+ blog articles · 99 city guides · The internet's largest fractional CFO resource library — <a href="/blog/" style="color:var(--accent-light)">explore free resources →</a>
+</div>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Fractional CFO School. Built for bookkeepers who want more.</p>
+        <p style="margin-top:8px"><a href="/">Home</a> · <a href="/course/">Course</a> · <a href="/pricing/">Pricing</a> · <a href="/blog/">Blog</a> · <a href="/tools/advisory-revenue-calculator/">Revenue Calculator</a></p>
+    </div>
+</footer>
+
+<script>
+function parseNum(id) {
+    const v = document.getElementById(id).value.replace(/[^0-9.\-]/g, '');
+    return v === '' ? 0 : parseFloat(v);
+}
+function fmt(n) {
+    return n < 0
+        ? '−$' + Math.abs(n).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 })
+        : '$' + n.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+}
+function pct(n) { return n.toFixed(1) + '%'; }
+
+function calculate() {
+    const revenue = parseNum('revenue');
+    const cogs = parseNum('cogs');
+    const opex = parseNum('opex');
+    const other = parseNum('other');
+
+    if (revenue <= 0) { alert('Please enter a revenue amount greater than zero.'); return; }
+
+    const grossProfit = revenue - cogs;
+    const opProfit = grossProfit - opex;
+    const netProfit = opProfit - other;
+
+    const grossMargin = (grossProfit / revenue) * 100;
+    const opMargin = (opProfit / revenue) * 100;
+    const netMargin = (netProfit / revenue) * 100;
+
+    // Results cards
+    const gEl = document.getElementById('gross-pct');
+    gEl.textContent = pct(grossMargin);
+    gEl.className = 'result-pct ' + (grossMargin >= 0 ? 'green' : 'red');
+    document.getElementById('gross-amt').textContent = fmt(grossProfit) + ' gross profit';
+    document.getElementById('gross-card').className = 'result-card ' + (grossMargin >= 0 ? 'positive' : 'negative');
+
+    const oEl = document.getElementById('op-pct');
+    oEl.textContent = pct(opMargin);
+    oEl.className = 'result-pct ' + (opMargin >= 0 ? 'gold' : 'red');
+    document.getElementById('op-amt').textContent = fmt(opProfit) + ' operating profit';
+    document.getElementById('op-card').className = 'result-card ' + (opMargin >= 0 ? 'positive' : 'negative');
+
+    const nEl = document.getElementById('net-pct');
+    nEl.textContent = pct(netMargin);
+    nEl.className = 'result-pct ' + (netMargin >= 0 ? 'green' : 'red');
+    document.getElementById('net-amt').textContent = fmt(netProfit) + ' net profit';
+    document.getElementById('net-card').className = 'result-card ' + (netMargin >= 0 ? 'positive' : 'negative');
+
+    // Breakdown
+    document.getElementById('b-revenue').textContent = fmt(revenue);
+    document.getElementById('b-cogs').textContent = '(' + fmt(cogs) + ')';
+    document.getElementById('b-gross').textContent = fmt(grossProfit);
+    document.getElementById('b-opex').textContent = '(' + fmt(opex) + ')';
+    document.getElementById('b-operating').textContent = fmt(opProfit);
+    document.getElementById('b-other').textContent = '(' + fmt(other) + ')';
+    document.getElementById('b-net').textContent = fmt(netProfit);
+
+    document.getElementById('results').classList.add('show');
+    document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Format inputs with commas as user types
+document.querySelectorAll('.input-group input').forEach(input => {
+    input.addEventListener('blur', function() {
+        const num = parseFloat(this.value.replace(/[^0-9.\-]/g, ''));
+        if (!isNaN(num) && num !== 0) {
+            this.value = num.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+        }
+    });
+});
+
+// Allow Enter to calculate
+document.querySelectorAll('.input-group input').forEach(input => {
+    input.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') calculate();
+    });
+});
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

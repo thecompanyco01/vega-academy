@@ -520,7 +520,7 @@ const posts = [
 <li>Create group programs or courses to monetize your expertise at scale</li>
 </ol>
 
-<p>That last point is exactly what Fractional CFO School helps you do. <a href="/">Learn more about our programs →</a></p>
+<p>That last point is exactly what Vega Academy helps you do. <a href="/">Learn more about our programs →</a></p>
 
 <div class="cta-box">
 <h3>Start Building Your Practice Today</h3>
@@ -1727,10 +1727,10 @@ function generateHTML(post) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${post.title} | Fractional CFO School</title>
+    <title>${post.title} | Vega Academy</title>
     <meta name="description" content="${post.description}">
     <meta name="keywords" content="${post.keywords}">
-    <meta name="author" content="Fractional CFO School">
+    <meta name="author" content="Vega Academy">
     <link rel="canonical" href="https://fractionalcfoschool.com/blog/${post.slug}/">
     
     <!-- Open Graph -->
@@ -1746,8 +1746,8 @@ function generateHTML(post) {
         "@type": "Article",
         "headline": "${post.title.replace(/"/g, '\\"')}",
         "description": "${post.description.replace(/"/g, '\\"')}",
-        "author": {"@type": "Organization", "name": "Fractional CFO School"},
-        "publisher": {"@type": "Organization", "name": "Fractional CFO School"},
+        "author": {"@type": "Organization", "name": "Vega Academy"},
+        "publisher": {"@type": "Organization", "name": "Vega Academy"},
         "datePublished": "2026-03-06",
         "dateModified": "2026-03-06"
     }
@@ -1792,7 +1792,7 @@ function generateHTML(post) {
 </head>
 <body>
     <nav class="nav">
-        <a href="/" class="logo">⭐ Fractional CFO School</a>
+        <a href="/" class="logo">⭐ Vega Academy</a>
         <div>
             <a href="/blog/">Blog</a>
             <a href="/starter-kit/">Free Starter Kit</a>
@@ -1815,7 +1815,7 @@ function generateHTML(post) {
     </article>
     
     <footer class="footer">
-        <p>⭐ <a href="/">Fractional CFO School</a> — Helping bookkeepers become fractional CFOs</p>
+        <p>⭐ <a href="/">Vega Academy</a> — Helping bookkeepers become fractional CFOs</p>
         <p style="margin-top: 0.5rem; font-size: 0.85rem;">
             <a href="/blog/">Blog</a> · <a href="/starter-kit/">Starter Kit</a> · <a href="/tools/advisory-revenue-calculator/">Revenue Calculator</a>
         </p>

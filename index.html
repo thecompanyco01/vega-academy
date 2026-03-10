@@ -1,509 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBGK6MFYEY"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-ZBGK6MFYEY");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fractional CFO School — Stop Trading Hours for Pennies. Start Offering Advisory.</title>
-    <meta name="description" content="The practical course that teaches bookkeepers and small accounting firms how to add $5K-15K/month in advisory revenue — without working more hours.">
+    <title>Fractional CFO School — Become a Fractional CFO | From Bookkeeper to $150-350/hr</title>
+    <meta name="description" content="Go from bookkeeper to fractional CFO earning $150-350/hr. Online course ($297), Pro membership ($49/mo), and certification ($1,497). 30-day money-back guarantee.">
+    <link rel="canonical" href="https://fractionalcfoschool.com/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="canonical" href="https://fractionalcfoschool.com/" />
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg: #0a0a0f; --surface: #12121a; --surface-2: #1a1a26;
+            --border: #2a2a3a; --text: #e8e8f0; --muted: #8888a0;
+            --accent: #6c5ce7; --accent-light: #a29bfe;
+            --accent-glow: rgba(108, 92, 231, 0.3);
+            --green: #00d2a0; --gold: #f0c040;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+        body::before { content: ''; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-image: linear-gradient(rgba(108,92,231,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(108,92,231,0.03) 1px, transparent 1px); background-size: 60px 60px; z-index: -1; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+        /* NAV */
+        nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(10,10,15,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); z-index: 100; padding: 16px 0; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 800; color: var(--text); text-decoration: none; }
+        .nav-links { display: flex; gap: 24px; align-items: center; }
+        .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+        .nav-links a:hover { color: var(--text); }
+        .nav-cta { background: var(--accent); color: white !important; border: none; padding: 10px 24px; border-radius: 8px; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.2s; text-decoration: none; }
+        .nav-cta:hover { background: #7c6cf7; transform: translateY(-1px); }
+
+        /* HERO */
+        .hero { padding: 160px 0 100px; text-align: center; position: relative; }
+        .hero::after { content: ''; position: absolute; top: 80px; left: 50%; transform: translateX(-50%); width: 600px; height: 600px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); z-index: -1; }
+        .badge { display: inline-flex; align-items: center; gap: 8px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 100px; padding: 8px 20px; font-size: 13px; color: var(--accent-light); font-weight: 500; margin-bottom: 32px; }
+        .badge .dot { width: 8px; height: 8px; background: var(--green); border-radius: 50%; animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+        .hero h1 { font-size: clamp(36px, 6vw, 64px); font-weight: 800; line-height: 1.1; letter-spacing: -2px; margin-bottom: 24px; max-width: 850px; margin-left: auto; margin-right: auto; }
+        .hero h1 .highlight { background: linear-gradient(135deg, var(--gold), #f8d070); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 18px; color: var(--muted); max-width: 600px; margin: 0 auto 48px; line-height: 1.7; }
+        .hero-cta { display: inline-block; background: linear-gradient(135deg, var(--accent), #7c6cf7); color: white; padding: 18px 40px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 17px; transition: all 0.2s; border: none; cursor: pointer; }
+        .hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 30px var(--accent-glow); }
+        .hero-sub { font-size: 13px; color: var(--muted); margin-top: 16px; }
+
+        /* STATS BAR */
+        .stats-bar { padding: 60px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; text-align: center; }
+        .stat-num { font-size: 42px; font-weight: 800; letter-spacing: -2px; background: linear-gradient(135deg, var(--accent-light), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stat-label { font-size: 14px; color: var(--muted); margin-top: 4px; }
+        .stat-source { font-size: 11px; color: var(--muted); opacity: 0.6; margin-top: 2px; }
+
+        /* MARKET DEMAND */
+        .market-demand { padding: 80px 0; border-top: 1px solid var(--border); }
+        .market-demand .section-label { text-align: center; color: var(--green); }
+        .market-demand .section-title { text-align: center; margin-left: auto; margin-right: auto; max-width: 700px; }
+        .demand-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+        .demand-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; }
+        .demand-stat { font-size: 32px; font-weight: 800; color: var(--green); margin-bottom: 8px; }
+        .demand-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+        .demand-card p { color: var(--muted); font-size: 14px; line-height: 1.6; }
+        .demand-card .source { font-size: 11px; color: var(--muted); opacity: 0.6; margin-top: 8px; }
+
+        /* GUARANTEE INLINE */
+        .guarantee-inline { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,210,160,0.1); border: 1px solid rgba(0,210,160,0.2); border-radius: 8px; padding: 8px 16px; font-size: 13px; color: var(--green); font-weight: 600; margin-top: 12px; }
+
+        /* CONTENT AUTHORITY */
+        .content-authority { text-align: center; padding: 24px; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+        .content-authority strong { color: var(--text); }
+
+        /* PROBLEM */
+        .problem { padding: 80px 0; }
+        .section-label { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-light); margin-bottom: 16px; }
+        .section-title { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -1px; margin-bottom: 48px; max-width: 600px; }
+        .pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .pain-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; transition: all 0.2s; }
+        .pain-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .pain-icon { font-size: 28px; margin-bottom: 16px; }
+        .pain-card h4 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+        .pain-card p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+        /* PRICING */
+        .pricing { padding: 80px 0; border-top: 1px solid var(--border); }
+        .pricing .section-label { text-align: center; color: var(--gold); }
+        .pricing .section-title { text-align: center; margin-left: auto; margin-right: auto; max-width: 700px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 48px; }
+        .plan { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative; display: flex; flex-direction: column; }
+        .plan.featured { border-color: var(--accent); box-shadow: 0 0 40px rgba(108,92,231,0.2); }
+        .plan.featured::before { content: "MOST POPULAR"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--accent), var(--accent-light)); color: white; font-size: 11px; font-weight: 700; padding: 4px 16px; border-radius: 20px; letter-spacing: 0.5px; }
+        .plan-name { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .plan-desc { color: var(--muted); font-size: 14px; margin-bottom: 20px; min-height: 40px; }
+        .plan-price { margin-bottom: 24px; }
+        .plan-price .amount { font-size: 48px; font-weight: 800; }
+        .plan-price .period { color: var(--muted); font-size: 14px; }
+        .plan-price .note { color: var(--muted); font-size: 13px; display: block; margin-top: 4px; }
+        .plan-price .savings { color: var(--green); font-size: 13px; font-weight: 600; display: block; margin-top: 6px; }
+        .plan ul { list-style: none; margin-bottom: 32px; flex-grow: 1; }
+        .plan li { padding: 8px 0; font-size: 14px; color: var(--muted); display: flex; align-items: flex-start; gap: 10px; }
+        .plan li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+        .plan li.highlight { color: var(--text); font-weight: 500; }
+        .plan-cta { display: block; text-align: center; padding: 16px 24px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 16px; transition: all 0.2s; cursor: pointer; border: none; width: 100%; font-family: inherit; }
+        .plan-cta.primary { background: linear-gradient(135deg, var(--accent), var(--accent-light)); color: white; }
+        .plan-cta.secondary { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); }
+        .plan-cta:hover { transform: translateY(-2px); opacity: 0.9; }
+        .plan-cta:disabled { opacity: 0.5; cursor: wait; }
+
+        /* MODULES PREVIEW */
+        .modules-section { padding: 80px 0; border-top: 1px solid var(--border); }
+        .modules-section .section-label { text-align: center; }
+        .modules-section .section-title { text-align: center; margin-left: auto; margin-right: auto; max-width: 700px; }
+        .modules-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 48px; }
+        .module { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative; overflow: hidden; }
+        .module::before { content: attr(data-num); position: absolute; top: -10px; right: 16px; font-size: 80px; font-weight: 800; color: rgba(108,92,231,0.08); line-height: 1; }
+        .module h4 { font-size: 17px; font-weight: 700; margin-bottom: 12px; color: var(--accent-light); }
+        .module p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+
+        /* SOCIAL PROOF */
+        .social-proof { padding: 80px 0; border-top: 1px solid var(--border); text-align: center; }
+
+        /* AUDIENCE */
+        .audience { padding: 80px 0; border-top: 1px solid var(--border); }
+        .audience .section-label { text-align: center; }
+        .audience .section-title { text-align: center; margin-left: auto; margin-right: auto; }
+        .check-list { max-width: 600px; margin: 0 auto; list-style: none; }
+        .check-list li { display: flex; align-items: flex-start; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--border); font-size: 16px; }
+        .check-list li:last-child { border-bottom: none; }
+        .check-mark { flex-shrink: 0; width: 24px; height: 24px; background: rgba(0,210,160,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--green); font-size: 14px; margin-top: 2px; }
+
+        /* GUARANTEE */
+        .guarantee { text-align: center; padding: 60px 0; border-top: 1px solid var(--border); }
+        .guarantee h3 { font-size: 28px; margin-bottom: 16px; }
+        .guarantee p { color: var(--muted); font-size: 16px; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+
+        /* BOTTOM CTA */
+        .bottom-cta { padding: 100px 0; text-align: center; border-top: 1px solid var(--border); position: relative; }
+        .bottom-cta::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 600px; height: 400px; background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%); z-index: -1; }
+        .bottom-cta h3 { font-size: clamp(28px, 4vw, 44px); font-weight: 800; letter-spacing: -1px; margin-bottom: 16px; }
+        .bottom-cta p { color: var(--muted); font-size: 17px; margin-bottom: 40px; max-width: 500px; margin-left: auto; margin-right: auto; }
+
+        /* FOOTER */
+        footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; color: var(--muted); font-size: 13px; }
+        footer a { color: var(--accent-light); text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .nav-links a:not(.nav-cta) { display: none; }
+        }
+        @media (max-width: 600px) {
+            .hero { padding: 130px 0 60px; }
+            .pain-grid, .modules-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: 1fr; gap: 24px; }
+        }
+    </style>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
         "name": "Fractional CFO School",
         "url": "https://fractionalcfoschool.com",
-        "description": "The practical course that teaches bookkeepers and small accounting firms how to add $5K-15K/month in advisory revenue.",
-        "sameAs": [],
+        "description": "Online courses and certification that teach bookkeepers to become fractional CFOs earning $150-350/hr in advisory services.",
         "offers": [
-            {
-                "@type": "Offer",
-                "name": "Advisory Foundations Course",
-                "price": "297",
-                "priceCurrency": "USD",
-                "url": "https://fractionalcfoschool.com/pricing/"
-            },
-            {
-                "@type": "Offer",
-                "name": "CFO Pro Membership",
-                "price": "49",
-                "priceCurrency": "USD",
-                "url": "https://fractionalcfoschool.com/pricing/"
-            },
-            {
-                "@type": "Offer",
-                "name": "Certified Fractional CFO Program",
-                "price": "1497",
-                "priceCurrency": "USD",
-                "url": "https://fractionalcfoschool.com/pricing/"
-            }
+            { "@type": "Offer", "name": "Fractional CFO Foundations Course", "price": "297", "priceCurrency": "USD" },
+            { "@type": "Offer", "name": "CFO Pro Membership", "price": "49", "priceCurrency": "USD" },
+            { "@type": "Offer", "name": "Certified Fractional CFO Program", "price": "1497", "priceCurrency": "USD" }
         ]
     }
     </script>
-    <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-        :root {
-            --bg: #0a0a0f;
-            --surface: #12121a;
-            --surface-2: #1a1a26;
-            --border: #2a2a3a;
-            --text: #e8e8f0;
-            --text-muted: #8888a0;
-            --accent: #6c5ce7;
-            --accent-light: #a29bfe;
-            --accent-glow: rgba(108, 92, 231, 0.3);
-            --gold: #f0c040;
-            --gold-glow: rgba(240, 192, 64, 0.2);
-            --success: #00d2a0;
-        }
-
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* Subtle grid background */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image:
-                linear-gradient(rgba(108, 92, 231, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(108, 92, 231, 0.03) 1px, transparent 1px);
-            background-size: 60px 60px;
-            z-index: -1;
-        }
-
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-
-        /* NAV */
-        nav {
-            position: fixed; top: 0; left: 0; right: 0;
-            background: rgba(10, 10, 15, 0.85);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            z-index: 100;
-            padding: 16px 0;
-        }
-        nav .container {
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .logo {
-            font-size: 20px; font-weight: 800;
-            letter-spacing: -0.5px;
-            background: linear-gradient(135deg, var(--accent-light), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .logo span { font-weight: 400; opacity: 0.7; }
-        .nav-cta {
-            background: var(--accent);
-            color: white;
-            border: none;
-            padding: 10px 24px;
-            border-radius: 8px;
-            font-weight: 600;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.2s;
-            text-decoration: none;
-        }
-        .nav-cta:hover { background: #7c6cf7; transform: translateY(-1px); }
-
-        /* HERO */
-        .hero {
-            padding: 160px 0 100px;
-            text-align: center;
-            position: relative;
-        }
-        .hero::after {
-            content: '';
-            position: absolute;
-            top: 80px; left: 50%; transform: translateX(-50%);
-            width: 600px; height: 600px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            z-index: -1;
-        }
-        .badge {
-            display: inline-flex; align-items: center; gap: 8px;
-            background: var(--surface-2);
-            border: 1px solid var(--border);
-            border-radius: 100px;
-            padding: 8px 20px;
-            font-size: 13px;
-            color: var(--accent-light);
-            font-weight: 500;
-            margin-bottom: 32px;
-        }
-        .badge .dot {
-            width: 8px; height: 8px;
-            background: var(--success);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
-        }
-        .hero h1 {
-            font-size: clamp(36px, 6vw, 64px);
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -2px;
-            margin-bottom: 24px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .hero h1 .highlight {
-            background: linear-gradient(135deg, var(--gold), #f8d070);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .hero p {
-            font-size: 18px;
-            color: var(--text-muted);
-            max-width: 560px;
-            margin: 0 auto 48px;
-            line-height: 1.7;
-        }
-
-        /* EMAIL FORM */
-        .email-form {
-            display: flex;
-            gap: 12px;
-            max-width: 480px;
-            margin: 0 auto 16px;
-        }
-        .email-form input {
-            flex: 1;
-            padding: 16px 20px;
-            border-radius: 12px;
-            border: 1px solid var(--border);
-            background: var(--surface);
-            color: var(--text);
-            font-size: 15px;
-            font-family: inherit;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-        .email-form input:focus {
-            border-color: var(--accent);
-        }
-        .email-form input::placeholder { color: var(--text-muted); }
-        .email-form button {
-            padding: 16px 32px;
-            border-radius: 12px;
-            border: none;
-            background: linear-gradient(135deg, var(--accent), #7c6cf7);
-            color: white;
-            font-weight: 700;
-            font-size: 15px;
-            cursor: pointer;
-            transition: all 0.2s;
-            white-space: nowrap;
-            font-family: inherit;
-        }
-        .email-form button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px var(--accent-glow);
-        }
-        .form-note {
-            font-size: 13px;
-            color: var(--text-muted);
-            text-align: center;
-        }
-        .form-success {
-            display: none;
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 210, 160, 0.1);
-            border: 1px solid rgba(0, 210, 160, 0.3);
-            border-radius: 12px;
-            color: var(--success);
-            font-weight: 600;
-            max-width: 480px;
-            margin: 0 auto;
-        }
-
-        /* PROBLEM SECTION */
-        .problem {
-            padding: 80px 0;
-            border-top: 1px solid var(--border);
-        }
-        .problem h2 {
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--accent-light);
-            margin-bottom: 16px;
-        }
-        .problem h3 {
-            font-size: clamp(28px, 4vw, 40px);
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 48px;
-            max-width: 600px;
-        }
-        .pain-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .pain-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 32px;
-            transition: all 0.2s;
-        }
-        .pain-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-        }
-        .pain-icon {
-            font-size: 28px;
-            margin-bottom: 16px;
-        }
-        .pain-card h4 {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-        .pain-card p {
-            color: var(--text-muted);
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        /* WHAT YOU'LL LEARN */
-        .learn {
-            padding: 80px 0;
-            border-top: 1px solid var(--border);
-        }
-        .learn h2 {
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--gold);
-            margin-bottom: 16px;
-            text-align: center;
-        }
-        .learn h3 {
-            font-size: clamp(28px, 4vw, 40px);
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 56px;
-            text-align: center;
-        }
-        .modules {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .module {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 32px;
-            position: relative;
-            overflow: hidden;
-        }
-        .module::before {
-            content: attr(data-num);
-            position: absolute;
-            top: -10px; right: 16px;
-            font-size: 80px;
-            font-weight: 800;
-            color: rgba(108, 92, 231, 0.08);
-            line-height: 1;
-        }
-        .module h4 {
-            font-size: 17px;
-            font-weight: 700;
-            margin-bottom: 12px;
-            color: var(--accent-light);
-        }
-        .module p {
-            color: var(--text-muted);
-            font-size: 14px;
-            line-height: 1.7;
-        }
-
-        /* NUMBERS */
-        .numbers {
-            padding: 80px 0;
-            border-top: 1px solid var(--border);
-        }
-        .numbers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 32px;
-            text-align: center;
-        }
-        .stat-num {
-            font-size: 48px;
-            font-weight: 800;
-            letter-spacing: -2px;
-            background: linear-gradient(135deg, var(--accent-light), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .stat-label {
-            font-size: 14px;
-            color: var(--text-muted);
-            margin-top: 4px;
-        }
-
-        /* WHO THIS IS FOR */
-        .audience {
-            padding: 80px 0;
-            border-top: 1px solid var(--border);
-        }
-        .audience h2 {
-            font-size: 14px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--accent-light);
-            margin-bottom: 16px;
-            text-align: center;
-        }
-        .audience h3 {
-            font-size: clamp(28px, 4vw, 40px);
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 48px;
-            text-align: center;
-        }
-        .check-list {
-            max-width: 600px;
-            margin: 0 auto;
-            list-style: none;
-        }
-        .check-list li {
-            display: flex;
-            align-items: flex-start;
-            gap: 16px;
-            padding: 16px 0;
-            border-bottom: 1px solid var(--border);
-            font-size: 16px;
-        }
-        .check-list li:last-child { border-bottom: none; }
-        .check-mark {
-            flex-shrink: 0;
-            width: 24px; height: 24px;
-            background: rgba(0, 210, 160, 0.15);
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            color: var(--success);
-            font-size: 14px;
-            margin-top: 2px;
-        }
-
-        /* BOTTOM CTA */
-        .bottom-cta {
-            padding: 100px 0;
-            text-align: center;
-            border-top: 1px solid var(--border);
-            position: relative;
-        }
-        .bottom-cta::after {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 50%; transform: translateX(-50%);
-            width: 600px; height: 400px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            z-index: -1;
-        }
-        .bottom-cta h3 {
-            font-size: clamp(28px, 4vw, 44px);
-            font-weight: 800;
-            letter-spacing: -1px;
-            margin-bottom: 16px;
-        }
-        .bottom-cta p {
-            color: var(--text-muted);
-            font-size: 17px;
-            margin-bottom: 40px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* FOOTER */
-        footer {
-            padding: 32px 0;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 13px;
-        }
-        footer a {
-            color: var(--accent-light);
-            text-decoration: none;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 600px) {
-            .email-form { flex-direction: column; }
-            .email-form button { width: 100%; }
-            .hero { padding: 130px 0 60px; }
-            .pain-grid, .modules { grid-template-columns: 1fr; }
-        }
-    </style>
 </head>
 <body>
 
 <nav>
     <div class="container">
-        <div class="logo">📊 fractional cfo <span>school</span></div>
-        <div style="display:flex;gap:12px;align-items:center">
-            <a href="/blog/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-weight:500">Blog</a>
-            <a href="/pricing/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-weight:500">Pricing</a>
-            <a href="/course/module-1-preview/" style="color:var(--text-muted);text-decoration:none;font-size:14px;font-weight:500">Free Preview</a>
-            <a href="/starter-kit/" style="color:var(--accent-light);text-decoration:none;font-size:14px;font-weight:500">Free Starter Kit</a>
-            <a href="#waitlist" class="nav-cta">Join the Waitlist</a>
+        <a href="/" class="logo">📊 Fractional CFO School</a>
+        <div class="nav-links">
+            <a href="/blog/">Blog</a>
+            <a href="/course/">Course</a>
+            <a href="/pricing/">Pricing</a>
+            <a href="/course/module-1-preview/">Free Preview</a>
+            <a href="/pricing/" class="nav-cta">Enroll Now</a>
         </div>
     </div>
 </nav>
 
 <section class="hero">
     <div class="container">
-        <div class="badge">
-            <span class="dot"></span>
-            Launching Spring 2026
-        </div>
-        <h1>Stop Billing $40/hr.<br>Start Offering <span class="highlight">$3K/Month Advisory.</span></h1>
-        <p>The practical playbook that teaches bookkeepers and small firm owners how to package, price, and sell advisory & fractional CFO services — without needing an MBA or 20 years of experience.</p>
+        <div class="badge"><span class="dot"></span> Now Enrolling — Limited Spots</div>
+        <h1>Become a Fractional CFO.<br>Earn <span class="highlight">$150–350/hr.</span></h1>
+        <p>The practical, affordable program that takes bookkeepers and accountants from compliance work to high-value advisory services — without needing an MBA or 20 years of experience.</p>
+        <a href="/pricing/" class="hero-cta">Enroll Now — Starting at $297 →</a>
+        <div class="guarantee-inline">🛡️ 30-day money-back guarantee — we take the risk, not you</div>
+    </div>
+</section>
 
-        <div id="waitlist">
-            <form class="email-form" id="signup-form">
-                <input type="email" placeholder="Enter your email" required id="email-input">
-                <button type="submit">Join Waitlist →</button>
-            </form>
-            <p class="form-note">Free. No spam. Just early access + launch pricing.</p>
-            <div class="form-success" id="form-success">
-                ✓ You're on the list! We'll email you when doors open.
-            </div>
+<section class="stats-bar">
+    <div class="container">
+        <div class="stats-grid">
+            <div><div class="stat-num">800+</div><div class="stat-label">Free pages of CFO resources</div><div class="stat-source">Our resource library</div></div>
+            <div><div class="stat-num">12,100</div><div class="stat-label">Monthly searches for "fractional CFO"</div><div class="stat-source">DataForSEO, 2026</div></div>
+            <div><div class="stat-num">$150-350</div><div class="stat-label">Hourly rate for fractional CFOs</div><div class="stat-source">Industry surveys, BLS data</div></div>
+            <div><div class="stat-num">30 Days</div><div class="stat-label">Money-back guarantee on all plans</div><div class="stat-source">Our policy — no questions asked</div></div>
         </div>
     </div>
 </section>
 
 <section class="problem">
     <div class="container">
-        <h2>The Problem</h2>
-        <h3>AI is eating compliance work. If you're still billing for data entry, you're running out of time.</h3>
+        <div class="section-label">The Problem</div>
+        <h3 class="section-title">AI is eating compliance work. If you're still billing for data entry, you're running out of time.</h3>
         <div class="pain-grid">
             <div class="pain-card">
                 <div class="pain-icon">⏰</div>
@@ -513,7 +221,7 @@
             <div class="pain-card">
                 <div class="pain-icon">🤖</div>
                 <h4>AI Is Coming for Your Workflow</h4>
-                <p>Automated categorization, bank feeds, AI reconciliation — the tasks that fill your day are being automated. Compliance-only firms are a ticking clock.</p>
+                <p>Automated categorization, bank feeds, AI reconciliation — the tasks that fill your day are being automated. Compliance-only firms are on borrowed time.</p>
             </div>
             <div class="pain-card">
                 <div class="pain-icon">😰</div>
@@ -523,168 +231,183 @@
             <div class="pain-card">
                 <div class="pain-icon">💸</div>
                 <h4>Overpriced "Coaching" Everywhere</h4>
-                <p>The existing programs charge $5K-15K and are full of fluff. You need practical frameworks, templates, and step-by-step processes — not motivational speeches.</p>
+                <p>Existing programs charge $5K-15K and are full of fluff. You need practical frameworks, templates, and step-by-step processes — not motivational speeches.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="numbers">
+<section class="market-demand">
     <div class="container">
-        <div class="numbers-grid">
-            <div>
-                <div class="stat-num">1.5M+</div>
-                <div class="stat-label">Bookkeepers & accountants in the US</div>
+        <div class="section-label">Market Opportunity</div>
+        <h3 class="section-title">The Fractional CFO Market Is Exploding</h3>
+        <div class="demand-grid">
+            <div class="demand-card">
+                <div class="demand-stat">142%</div>
+                <h4>Search Growth in 2 Years</h4>
+                <p>"Fractional CFO" Google searches grew from ~5,000/mo to 12,100/mo between 2024-2026 — and the trend is accelerating.</p>
+                <div class="source">Source: DataForSEO keyword data</div>
             </div>
-            <div>
-                <div class="stat-num">73%</div>
-                <div class="stat-label">Want to add advisory services</div>
+            <div class="demand-card">
+                <div class="demand-stat">$150K-300K+</div>
+                <h4>Annual Earning Potential</h4>
+                <p>Fractional CFOs serving 3-6 clients at $3K-5K/month each earn $150K-300K+ annually. Top earners exceed $350K with premium engagements.</p>
+                <div class="source">Source: Industry surveys, practitioner data</div>
             </div>
-            <div>
-                <div class="stat-num">5-10×</div>
-                <div class="stat-label">Revenue increase per client with advisory</div>
+            <div class="demand-card">
+                <div class="demand-stat">6%</div>
+                <h4>Job Growth Through 2033</h4>
+                <p>The Bureau of Labor Statistics projects 6% growth for financial managers through 2033 — with fractional/advisory roles growing even faster as SMBs shift from full-time to fractional finance.</p>
+                <div class="source">Source: U.S. Bureau of Labor Statistics</div>
             </div>
-            <div>
-                <div class="stat-num">$0</div>
-                <div class="stat-label">Good affordable courses that teach it</div>
+            <div class="demand-card">
+                <div class="demand-stat">$297</div>
+                <h4>vs. $5K-$12K Competitors</h4>
+                <p>Comparable programs from The Expert CFO ($5,995), Harvard/Berkeley ($12,500+), and others charge 10-40× more. We believe this education should be accessible.</p>
+                <div class="source">Source: Published competitor pricing</div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="learn">
+<section class="pricing">
     <div class="container">
-        <h2>The Curriculum</h2>
-        <h3>Everything you need to launch advisory services in 30 days</h3>
-        <div class="modules">
-            <div class="module" data-num="01">
-                <h4>Module 1: The Advisory Mindset Shift</h4>
-                <p>Why compliance is a dead end, what clients actually value, and how to stop thinking like a bookkeeper and start thinking like a trusted advisor.</p>
+        <div class="section-label">Choose Your Path</div>
+        <h3 class="section-title">Three ways to become a fractional CFO — pick the one that fits you</h3>
+        <div class="pricing-grid">
+            <div class="plan">
+                <div class="plan-name">Foundations Course</div>
+                <div class="plan-desc">The complete self-paced course to launch your fractional CFO practice</div>
+                <div class="plan-price">
+                    <span class="amount">$297</span>
+                    <span class="note">one-time payment</span>
+                    <span class="savings">Save $5,700+ vs. competitors</span>
+                </div>
+                <ul>
+                    <li class="highlight">8 in-depth modules</li>
+                    <li>Cash flow forecasting & management</li>
+                    <li>Pricing at $150-350/hr</li>
+                    <li>Finding your first 5 clients</li>
+                    <li class="highlight">10+ downloadable templates</li>
+                    <li>Lifetime access + future updates</li>
+                </ul>
+                <button class="plan-cta secondary" onclick="checkout('foundations')">Enroll Now — $297 →</button>
             </div>
-            <div class="module" data-num="02">
-                <h4>Module 2: Packaging Your Services</h4>
-                <p>How to design 3-tier advisory packages (CFO Lite, Growth Advisory, Full Fractional CFO) with clear deliverables clients understand and will pay for.</p>
+            <div class="plan featured">
+                <div class="plan-name">CFO Pro Membership</div>
+                <div class="plan-desc">Course + growing library + monthly playbooks for ongoing growth</div>
+                <div class="plan-price">
+                    <span class="amount">$49</span><span class="period">/month</span>
+                    <span class="note">Cancel anytime. Full course included.</span>
+                </div>
+                <ul>
+                    <li class="highlight">Everything in Foundations Course</li>
+                    <li>Monthly "CFO Playbook" — new industry guide</li>
+                    <li>Growing template library (5+ new/month)</li>
+                    <li>Monthly live Q&A / office hours</li>
+                    <li>Peer community access</li>
+                    <li class="highlight">New content every month</li>
+                </ul>
+                <button class="plan-cta primary" onclick="checkout('pro-membership')">Join Pro — $49/mo →</button>
             </div>
-            <div class="module" data-num="03">
-                <h4>Module 3: Pricing That Commands Respect</h4>
-                <p>Value-based pricing frameworks. How to go from $40/hr to $2K-5K/month per client. Includes pricing calculators and proposal templates.</p>
+            <div class="plan">
+                <div class="plan-name">Certified Fractional CFO</div>
+                <div class="plan-desc">The complete certification for professionals serious about this career</div>
+                <div class="plan-price">
+                    <span class="amount">$1,497</span>
+                    <span class="note">one-time payment</span>
+                    <span class="savings">Save $3,500+ vs. competitors</span>
+                </div>
+                <ul>
+                    <li class="highlight">Everything in Foundations + Pro (1 year)</li>
+                    <li>12-week structured curriculum</li>
+                    <li>Professional certification credential</li>
+                    <li>LinkedIn badge for clients</li>
+                    <li>Priority listing in CFO directory</li>
+                    <li class="highlight">The credential that wins clients</li>
+                </ul>
+                <button class="plan-cta secondary" onclick="checkout('certification')">Get Certified — $1,497 →</button>
             </div>
-            <div class="module" data-num="04">
-                <h4>Module 4: The Advisory Delivery System</h4>
-                <p>Monthly reporting templates, KPI dashboards, cash flow forecasting frameworks, and meeting agendas that make you indispensable.</p>
-            </div>
-            <div class="module" data-num="05">
-                <h4>Module 5: Selling Without Being Salesy</h4>
-                <p>Conversation scripts to upsell existing clients. How to run a "financial health check" that naturally leads to advisory engagements.</p>
-            </div>
-            <div class="module" data-num="06">
-                <h4>Module 6: Scale & Systemize</h4>
-                <p>Automating your advisory workflows, hiring your first team member, and building a practice that runs without you doing everything.</p>
-            </div>
+        </div>
+    </div>
+</section>
+
+<section class="modules-section">
+    <div class="container">
+        <div class="section-label">The Curriculum</div>
+        <h3 class="section-title">Everything you need to launch advisory services in 30 days</h3>
+        <div class="modules-grid">
+            <div class="module" data-num="01"><h4>Module 1: The Advisory Mindset Shift</h4><p>Why compliance is a dead end, what clients actually value, and how to think like a trusted advisor.</p></div>
+            <div class="module" data-num="02"><h4>Module 2: Packaging Your Services</h4><p>Design 3-tier advisory packages with clear deliverables clients understand and pay for.</p></div>
+            <div class="module" data-num="03"><h4>Module 3: Pricing That Commands Respect</h4><p>Value-based pricing frameworks. Go from $40/hr to $2K-5K/month per client.</p></div>
+            <div class="module" data-num="04"><h4>Module 4: The Advisory Delivery System</h4><p>Monthly reporting templates, KPI dashboards, cash flow forecasting, and meeting agendas.</p></div>
+            <div class="module" data-num="05"><h4>Module 5: Selling Without Being Salesy</h4><p>Scripts to upsell existing clients. Run "financial health checks" that lead to advisory engagements.</p></div>
+            <div class="module" data-num="06"><h4>Module 6: Cash Flow Mastery</h4><p>13-week cash flow models, forecasting frameworks, and the deliverables that make you indispensable.</p></div>
+            <div class="module" data-num="07"><h4>Module 7: KPI Dashboards & Reporting</h4><p>Build executive dashboards clients love. Industry benchmarks, metrics that matter, presentation frameworks.</p></div>
+            <div class="module" data-num="08"><h4>Module 8: Scale & Systemize</h4><p>Automate advisory workflows, hire your first team member, build a practice that runs without you.</p></div>
         </div>
     </div>
 </section>
 
 <section class="audience">
     <div class="container">
-        <h2>Is This For You?</h2>
-        <h3>This course is built for</h3>
+        <div class="section-label">Is This For You?</div>
+        <h3 class="section-title">This program is built for</h3>
         <ul class="check-list">
             <li><span class="check-mark">✓</span> Solo bookkeepers doing $50K-150K/year who want to break through the ceiling</li>
             <li><span class="check-mark">✓</span> Small accounting firm owners (1-5 staff) who know they need to evolve</li>
-            <li><span class="check-mark">✓</span> Bookkeepers who've heard "offer advisory" a hundred times but don't know HOW</li>
+            <li><span class="check-mark">✓</span> Bookkeepers who've heard "offer advisory" but don't know HOW</li>
             <li><span class="check-mark">✓</span> Accountants tired of racing to the bottom on price for compliance work</li>
             <li><span class="check-mark">✓</span> Anyone in accounting who wants to 3-5× their revenue per client</li>
         </ul>
     </div>
 </section>
 
-<section style="padding:80px 0;border-top:1px solid var(--border);text-align:center">
+<section class="guarantee">
     <div class="container">
-        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(0,210,160,0.1);border:1px solid rgba(0,210,160,0.3);border-radius:100px;padding:8px 20px;font-size:13px;color:var(--success);font-weight:600;margin-bottom:24px">🎁 Free Download</div>
-        <h3 style="font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-1px;margin-bottom:16px">Get the Advisory Starter Kit</h3>
-        <p style="color:var(--text-muted);font-size:17px;margin-bottom:12px;max-width:560px;margin-left:auto;margin-right:auto">5 battle-tested templates: pricing calculator, proposal template, KPI dashboard, conversation scripts, and monthly report template.</p>
-        <p style="margin-bottom:32px"><a href="/starter-kit/" style="display:inline-block;background:linear-gradient(135deg,var(--success),#00e6b0);color:#0a0a0f;padding:16px 36px;border-radius:12px;text-decoration:none;font-weight:700;font-size:16px;transition:all 0.2s">Download Free Starter Kit →</a></p>
+        <h3>🛡️ 30-Day Money-Back Guarantee</h3>
+        <p>Try any plan risk-free for 30 days. If you don't feel more confident about launching advisory services, we'll refund every penny — no questions asked.</p>
     </div>
 </section>
 
 <section class="bottom-cta">
     <div class="container">
         <h3>Ready to stop billing by the hour?</h3>
-        <p>Join the waitlist for early access and exclusive launch pricing. Spots are limited.</p>
-        <form class="email-form" id="signup-form-bottom">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Join Waitlist →</button>
-        </form>
-        <p class="form-note">We'll only email you about the launch. Unsubscribe anytime.</p>
-        <div class="form-success" id="form-success-bottom">
-            ✓ You're on the list! We'll email you when doors open.
-        </div>
+        <p>Start your transition to high-value advisory work today. 800+ free resources to explore before you spend a dollar.</p>
+        <a href="/pricing/" class="hero-cta">View Pricing & Enroll →</a>
+        <div class="guarantee-inline" style="margin-top:16px">🛡️ 30-day money-back guarantee · Starts at $297 · Cancel anytime</div>
     </div>
 </section>
 
+<div class="content-authority">
+    📚 <strong>800+ free pages</strong> · 290+ blog articles · 99 city guides · The internet's largest fractional CFO resource library — <a href="/blog/" style="color:var(--accent-light)">explore free resources →</a>
+</div>
+
 <footer>
     <div class="container">
-        <p>© 2026 Fractional CFO School. Built with ⭐ by an AI that means business.</p>
+        <p>© 2026 Fractional CFO School. Built for bookkeepers who want more.</p>
+        <p style="margin-top:8px"><a href="/">Home</a> · <a href="/course/">Course</a> · <a href="/membership/">Membership</a> · <a href="/certification/">Certification</a> · <a href="/pricing/">Pricing</a> · <a href="/blog/">Blog</a> · <a href="/starter-kit/">Free Starter Kit</a></p>
     </div>
 </footer>
 
 <script>
-    // Waitlist signup with real API
-    function handleSignup(formId, successId) {
-        const form = document.getElementById(formId);
-        const success = document.getElementById(successId);
-
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const emailInput = form.querySelector('input[type="email"]');
-            const btn = form.querySelector('button');
-            const email = emailInput.value;
-            
-            btn.textContent = 'Joining...';
-            btn.disabled = true;
-
-            try {
-                const res = await fetch('/api/subscribe', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email, source: formId })
-                });
-                const data = await res.json();
-                
-                if (data.success) {
-                    form.style.display = 'none';
-                    form.nextElementSibling.style.display = 'none';
-                    success.style.display = 'block';
-                } else {
-                    btn.textContent = 'Join Waitlist →';
-                    btn.disabled = false;
-                    alert(data.error || 'Something went wrong. Please try again.');
-                }
-            } catch (err) {
-                // Fallback to localStorage if API fails
-                const waitlist = JSON.parse(localStorage.getItem('vega_waitlist') || '[]');
-                if (!waitlist.includes(email)) {
-                    waitlist.push(email);
-                    localStorage.setItem('vega_waitlist', JSON.stringify(waitlist));
-                }
-                form.style.display = 'none';
-                form.nextElementSibling.style.display = 'none';
-                success.style.display = 'block';
-            }
+async function checkout(product) {
+    const btn = event.target;
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Loading...';
+    try {
+        const res = await fetch('/api/checkout', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ product })
         });
-    }
-
-    handleSignup('signup-form', 'form-success');
-    handleSignup('signup-form-bottom', 'form-success-bottom');
-
-    // Smooth scroll for nav CTA
-    document.querySelector('.nav-cta').addEventListener('click', (e) => {
-        e.preventDefault();
-        document.getElementById('waitlist').scrollIntoView({ behavior: 'smooth' });
-    });
+        const data = await res.json();
+        if (data.url) { window.location.href = data.url; }
+        else { alert('Something went wrong. Please try again.'); btn.disabled = false; btn.textContent = originalText; }
+    } catch (err) { alert('Connection error. Please try again.'); btn.disabled = false; btn.textContent = originalText; }
+}
 </script>
-
 <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

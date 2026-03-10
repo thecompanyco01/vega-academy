@@ -1,267 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBGK6MFYEY"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-ZBGK6MFYEY");</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing — Fractional CFO School | From Bookkeeper to Fractional CFO</title>
-    <meta name="description" content="Choose your path to advisory revenue. Course, membership, and certification options for bookkeepers ready to add $5K-15K/month in advisory services.">
+    <title>Pricing — Fractional CFO School | Become a Fractional CFO</title>
+    <meta name="description" content="Choose your path from bookkeeper to fractional CFO. Self-paced course $297, Pro membership $49/mo, or full Certification $1,497. 30-day money-back guarantee.">
     <link rel="canonical" href="https://fractionalcfoschool.com/pricing/">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script defer src="/_vercel/insights/script.js"></script>
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         :root {
-            --bg: #0a0a0f;
-            --surface: #12121a;
-            --surface-2: #1a1a26;
-            --border: #2a2a3a;
-            --text: #e8e8f0;
-            --text-muted: #8888a0;
-            --accent: #6c5ce7;
-            --accent-light: #a29bfe;
-            --success: #00cec9;
-            --warning: #fdcb6e;
-            --gold: #f0c040;
+            --bg: #0a0a0f; --surface: #12121a; --surface-2: #1a1a26;
+            --border: #2a2a3a; --text: #e8e8f0; --muted: #8888a0;
+            --accent: #6c5ce7; --accent-light: #a29bfe;
+            --green: #00b894; --gold: #f0c040;
         }
-        body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            min-height: 100vh;
-        }
-        nav {
-            padding: 16px 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        nav a { color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; }
-        nav .logo { color: var(--text); font-weight: 800; font-size: 18px; }
-        .hero {
-            text-align: center;
-            padding: 60px 24px 40px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .hero h1 {
-            font-size: clamp(28px, 5vw, 44px);
-            font-weight: 800;
-            line-height: 1.15;
-            margin-bottom: 16px;
-            background: linear-gradient(135deg, var(--text), var(--accent-light));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .hero p { color: var(--text-muted); font-size: 18px; max-width: 600px; margin: 0 auto; }
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 24px;
-            max-width: 1100px;
-            margin: 40px auto 60px;
-            padding: 0 24px;
-        }
-        .plan {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 32px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-        }
-        .plan.featured {
-            border-color: var(--accent);
-            box-shadow: 0 0 30px rgba(108,92,231,0.15);
-        }
-        .plan.featured::before {
-            content: "MOST POPULAR";
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            color: white;
-            font-size: 11px;
-            font-weight: 700;
-            padding: 4px 16px;
-            border-radius: 20px;
-            letter-spacing: 0.5px;
-        }
-        .plan-name { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
-        .plan-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; min-height: 40px; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+        nav { padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: 0 auto; }
+        nav a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+        nav .logo { color: var(--text); font-weight: 800; font-size: 18px; text-decoration: none; }
+        .hero { text-align: center; padding: 60px 24px 20px; max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; line-height: 1.15; margin-bottom: 16px; background: linear-gradient(135deg, var(--text), var(--accent-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { color: var(--muted); font-size: 18px; max-width: 650px; margin: 0 auto; }
+        .competitors { text-align: center; padding: 20px 24px 40px; }
+        .competitors p { color: var(--muted); font-size: 14px; }
+        .competitors span { text-decoration: line-through; color: #ff6b6b; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; max-width: 1100px; margin: 0 auto 60px; padding: 0 24px; }
+        .plan { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 32px; position: relative; display: flex; flex-direction: column; }
+        .plan.featured { border-color: var(--accent); box-shadow: 0 0 40px rgba(108,92,231,0.2); }
+        .plan.featured::before { content: "MOST POPULAR"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: linear-gradient(135deg, var(--accent), var(--accent-light)); color: white; font-size: 11px; font-weight: 700; padding: 4px 16px; border-radius: 20px; letter-spacing: 0.5px; }
+        .plan-name { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .plan-desc { color: var(--muted); font-size: 14px; margin-bottom: 20px; min-height: 40px; }
         .plan-price { margin-bottom: 24px; }
-        .plan-price .amount { font-size: 42px; font-weight: 800; }
-        .plan-price .period { color: var(--text-muted); font-size: 14px; }
-        .plan-price .one-time { color: var(--text-muted); font-size: 13px; display: block; margin-top: 4px; }
-        .plan ul {
-            list-style: none;
-            margin-bottom: 32px;
-            flex-grow: 1;
-        }
-        .plan li {
-            padding: 8px 0;
-            font-size: 14px;
-            color: var(--text-muted);
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-        .plan li::before {
-            content: "✓";
-            color: var(--success);
-            font-weight: 700;
-            flex-shrink: 0;
-        }
-        .plan-cta {
-            display: block;
-            text-align: center;
-            padding: 14px 24px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 15px;
-            transition: all 0.2s;
-            cursor: pointer;
-        }
-        .plan-cta.primary {
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            color: white;
-        }
-        .plan-cta.secondary {
-            background: var(--surface-2);
-            color: var(--text);
-            border: 1px solid var(--border);
-        }
+        .plan-price .amount { font-size: 48px; font-weight: 800; }
+        .plan-price .period { color: var(--muted); font-size: 14px; }
+        .plan-price .note { color: var(--muted); font-size: 13px; display: block; margin-top: 4px; }
+        .plan-price .savings { color: var(--green); font-size: 13px; font-weight: 600; display: block; margin-top: 6px; }
+        .plan ul { list-style: none; margin-bottom: 32px; flex-grow: 1; }
+        .plan li { padding: 8px 0; font-size: 14px; color: var(--muted); display: flex; align-items: flex-start; gap: 10px; }
+        .plan li::before { content: "✓"; color: var(--green); font-weight: 700; flex-shrink: 0; }
+        .plan li.highlight { color: var(--text); font-weight: 500; }
+        .plan-cta { display: block; text-align: center; padding: 16px 24px; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 16px; transition: all 0.2s; cursor: pointer; border: none; width: 100%; }
+        .plan-cta.primary { background: linear-gradient(135deg, var(--accent), var(--accent-light)); color: white; }
+        .plan-cta.secondary { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); }
         .plan-cta:hover { transform: translateY(-2px); opacity: 0.9; }
-        .guarantee {
-            text-align: center;
-            padding: 40px 24px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .guarantee h3 { font-size: 20px; margin-bottom: 12px; }
-        .guarantee p { color: var(--text-muted); font-size: 15px; }
-        .faq {
-            max-width: 700px;
-            margin: 40px auto 80px;
-            padding: 0 24px;
-        }
+        .plan-cta:disabled { opacity: 0.5; cursor: wait; }
+        .guarantee { text-align: center; padding: 40px 24px; max-width: 600px; margin: 0 auto; }
+        .guarantee h3 { font-size: 22px; margin-bottom: 12px; }
+        .guarantee p { color: var(--muted); font-size: 15px; }
+        /* COMPETITOR TABLE */
+        .competitor-section { max-width: 700px; margin: 0 auto; padding: 60px 24px 40px; }
+        .competitor-section h2 { text-align: center; font-size: 28px; margin-bottom: 12px; }
+        .competitor-section .subtitle { text-align: center; color: var(--muted); font-size: 15px; margin-bottom: 32px; }
+        .competitor-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+        .competitor-table th { text-align: left; padding: 12px 16px; border-bottom: 2px solid var(--border); color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .competitor-table td { padding: 14px 16px; border-bottom: 1px solid var(--border); }
+        .competitor-table tr:last-child td { border-bottom: none; }
+        .competitor-table .price { text-align: right; font-weight: 600; color: var(--muted); }
+        .competitor-table .our-row { background: rgba(108,92,231,0.1); border-radius: 8px; }
+        .competitor-table .our-row td { color: var(--accent-light); font-weight: 700; }
+        .competitor-table .our-row .price { color: var(--accent-light); }
+        .competitor-table .source { font-size: 11px; color: var(--muted); opacity: 0.6; text-align: center; margin-top: 16px; }
+        .content-authority { text-align: center; padding: 24px; background: var(--surface-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 14px; color: var(--muted); }
+        .content-authority strong { color: var(--text); }
+        .social-proof { text-align: center; padding: 40px 24px; max-width: 800px; margin: 0 auto; }
+        .social-proof .stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; margin-top: 20px; }
+        .stat { text-align: center; }
+        .stat .num { font-size: 32px; font-weight: 800; color: var(--accent-light); }
+        .stat .label { font-size: 13px; color: var(--muted); margin-top: 4px; }
+        .faq { max-width: 700px; margin: 40px auto 80px; padding: 0 24px; }
         .faq h2 { text-align: center; font-size: 28px; margin-bottom: 32px; }
         .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
         .faq-q { font-weight: 600; font-size: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-a { color: var(--text-muted); font-size: 14px; margin-top: 12px; display: none; }
+        .faq-a { color: var(--muted); font-size: 14px; margin-top: 12px; display: none; line-height: 1.7; }
         .faq-item.open .faq-a { display: block; }
         .faq-q::after { content: "+"; font-size: 20px; color: var(--accent-light); }
         .faq-item.open .faq-q::after { content: "−"; }
-        footer {
-            text-align: center;
-            padding: 40px 24px;
-            border-top: 1px solid var(--border);
-            color: var(--text-muted);
-            font-size: 13px;
-        }
-        @media (max-width: 768px) {
-            .pricing-grid { grid-template-columns: 1fr; max-width: 400px; }
-        }
-
-        /* Waitlist modal */
-        .modal-overlay {
-            display: none;
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(0,0,0,0.7);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-        }
-        .modal-overlay.active { display: flex; }
-        .modal {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 40px;
-            max-width: 440px;
-            width: 90%;
-            text-align: center;
-        }
-        .modal h3 { font-size: 22px; margin-bottom: 8px; }
-        .modal p { color: var(--text-muted); font-size: 14px; margin-bottom: 24px; }
-        .modal input {
-            width: 100%;
-            padding: 14px;
-            border-radius: 10px;
-            border: 1px solid var(--border);
-            background: var(--surface-2);
-            color: var(--text);
-            font-size: 15px;
-            margin-bottom: 12px;
-            outline: none;
-        }
-        .modal input:focus { border-color: var(--accent); }
-        .modal button {
-            width: 100%;
-            padding: 14px;
-            border-radius: 10px;
-            border: none;
-            background: linear-gradient(135deg, var(--accent), var(--accent-light));
-            color: white;
-            font-weight: 700;
-            font-size: 15px;
-            cursor: pointer;
-        }
-        .modal .close {
-            position: absolute;
-            top: 12px;
-            right: 16px;
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-size: 24px;
-            cursor: pointer;
-            width: auto;
-            padding: 4px;
-        }
-        .modal { position: relative; }
-        .modal .success-msg { color: var(--success); font-weight: 600; display: none; }
+        footer { text-align: center; padding: 40px 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+        @media (max-width: 768px) { .pricing-grid { grid-template-columns: 1fr; max-width: 400px; } .social-proof .stats { gap: 24px; } }
     </style>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": "Fractional CFO School — Bookkeeper to Fractional CFO",
-        "description": "Online course and membership that teaches bookkeepers to add $5K-15K/month in advisory and fractional CFO services.",
+        "name": "Fractional CFO School — Become a Fractional CFO",
+        "description": "Online courses and certification that teach bookkeepers to become fractional CFOs earning $150-300K+/year in advisory services.",
         "brand": {"@type": "Brand", "name": "Fractional CFO School"},
         "offers": [
-            {
-                "@type": "Offer",
-                "name": "Advisory Foundations Course",
-                "price": "297",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": "https://fractionalcfoschool.com/pricing/"
-            },
-            {
-                "@type": "Offer",
-                "name": "CFO Pro Membership",
-                "price": "49",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": "https://fractionalcfoschool.com/pricing/"
-            },
-            {
-                "@type": "Offer",
-                "name": "Certified Fractional CFO Program",
-                "price": "1497",
-                "priceCurrency": "USD",
-                "availability": "https://schema.org/InStock",
-                "url": "https://fractionalcfoschool.com/pricing/"
-            }
+            { "@type": "Offer", "name": "Fractional CFO Foundations Course", "price": "297", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+            { "@type": "Offer", "name": "CFO Pro Membership", "price": "49", "priceCurrency": "USD", "availability": "https://schema.org/InStock" },
+            { "@type": "Offer", "name": "Certified Fractional CFO Program", "price": "1497", "priceCurrency": "USD", "availability": "https://schema.org/InStock" }
         ]
     }
     </script>
@@ -269,184 +100,209 @@
 <body>
 
 <nav>
-    <a href="/" class="logo">⭐ Fractional CFO School</a>
+    <a href="/" class="logo">📊 Fractional CFO School</a>
     <div style="display:flex;gap:24px;align-items:center;">
+        <a href="/course/">Course</a>
+        <a href="/membership/">Membership</a>
+        <a href="/certification/">Certification</a>
         <a href="/blog/">Blog</a>
-        <a href="/course/module-1-preview/">Free Preview</a>
-        <a href="/starter-kit/">Free Starter Kit</a>
     </div>
 </nav>
 
 <section class="hero">
-    <h1>Invest in Your Advisory Future</h1>
-    <p>Every plan includes the frameworks, templates, and community that have helped bookkeepers add $5K–15K/month in advisory revenue.</p>
+    <h1>Invest in Your Fractional CFO Career</h1>
+    <p>Stop trading hours for pennies doing compliance work. Start commanding $150–350/hour as a fractional CFO. Every plan includes battle-tested frameworks, templates, and the skills to get there.</p>
 </section>
+
+<div class="competitors">
+    <p>Competitors charge <span>$4,000–$12,500</span> for similar programs. We believe this education should be accessible.</p>
+</div>
 
 <div class="pricing-grid">
 
-    <!-- Plan 1: Course Only -->
+    <!-- Plan 1: Foundations Course - $297 -->
     <div class="plan">
-        <div class="plan-name">Advisory Foundations</div>
-        <div class="plan-desc">The complete self-paced course to launch advisory services</div>
+        <div class="plan-name">Foundations Course</div>
+        <div class="plan-desc">The complete self-paced course to launch your fractional CFO practice</div>
         <div class="plan-price">
-            <span class="amount">$197</span>
-            <span class="one-time">one-time payment</span>
+            <span class="amount">$297</span>
+            <span class="note">one-time payment</span>
+            <span class="savings">Save $5,700+ vs. competitors</span>
         </div>
         <ul>
-            <li>8-module video course (12+ hours)</li>
-            <li>Advisory service packaging frameworks</li>
-            <li>Value-based pricing calculator</li>
-            <li>Client proposal templates</li>
-            <li>KPI dashboard templates</li>
-            <li>Cash flow forecasting models</li>
-            <li>Lifetime access + updates</li>
+            <li class="highlight">8 in-depth modules covering everything</li>
+            <li>Cash flow forecasting & management</li>
+            <li>Financial analysis & KPI dashboards</li>
+            <li>Pricing your services at $150-350/hr</li>
+            <li>Finding your first 5 clients</li>
+            <li>Engagement letters & legal basics</li>
+            <li>Building recurring retainer revenue</li>
+            <li>Scaling from solo to firm</li>
+            <li class="highlight">10+ downloadable templates</li>
+            <li>Certificate of completion</li>
+            <li>Lifetime access + all future updates</li>
         </ul>
-        <a href="#" class="plan-cta secondary" onclick="openWaitlist('Advisory Foundations — $197')">Join the Waitlist →</a>
+        <button class="plan-cta secondary" onclick="checkout('foundations')">Enroll Now — $297 →</button>
     </div>
 
-    <!-- Plan 2: Membership (featured) -->
+    <!-- Plan 2: Pro Membership - $49/mo (featured) -->
     <div class="plan featured">
-        <div class="plan-name">Growth Membership</div>
-        <div class="plan-desc">Course + live community + monthly coaching for ongoing growth</div>
+        <div class="plan-name">CFO Pro Membership</div>
+        <div class="plan-desc">Course + growing library + monthly playbooks for ongoing growth</div>
         <div class="plan-price">
             <span class="amount">$49</span>
             <span class="period">/month</span>
-            <span class="one-time">Cancel anytime. Course included.</span>
+            <span class="note">Cancel anytime. Full course included.</span>
         </div>
         <ul>
-            <li>Everything in Advisory Foundations</li>
-            <li>Monthly live group coaching calls</li>
-            <li>Private community of advisory professionals</li>
-            <li>Monthly case study breakdowns</li>
-            <li>Client engagement templates (updated monthly)</li>
-            <li>Pricing & proposal reviews</li>
-            <li>Direct Q&A with experienced fractional CFOs</li>
+            <li class="highlight">Everything in Foundations Course</li>
+            <li>Monthly "CFO Playbook" — new industry guide each month</li>
+            <li>Growing template library (5+ new templates/month)</li>
+            <li>Monthly live Q&A / office hours (recorded)</li>
+            <li>Quarterly industry benchmark reports</li>
+            <li>Peer community of advisory professionals</li>
+            <li class="highlight">New content every month — always learning</li>
         </ul>
-        <a href="#" class="plan-cta primary" onclick="openWaitlist('Growth Membership — $49/mo')">Join the Waitlist →</a>
+        <button class="plan-cta primary" onclick="checkout('pro-membership')">Join Pro — $49/mo →</button>
     </div>
 
-    <!-- Plan 3: CFO Accelerator -->
+    <!-- Plan 3: Certification - $1,497 -->
     <div class="plan">
-        <div class="plan-name">CFO Accelerator</div>
-        <div class="plan-desc">For serious professionals ready to build a $200K+ advisory practice</div>
+        <div class="plan-name">Certified Fractional CFO</div>
+        <div class="plan-desc">The complete certification for professionals serious about this career</div>
         <div class="plan-price">
-            <span class="amount">$197</span>
-            <span class="period">/month</span>
-            <span class="one-time">6-month minimum. Course included.</span>
+            <span class="amount">$1,497</span>
+            <span class="note">one-time payment</span>
+            <span class="savings">Save $3,500+ vs. competitors</span>
         </div>
         <ul>
-            <li>Everything in Growth Membership</li>
-            <li>1-on-1 monthly strategy session</li>
-            <li>Done-for-you client acquisition playbook</li>
-            <li>Fractional CFO certification prep</li>
-            <li>White-label financial report templates</li>
-            <li>Priority support & accountability partner</li>
-            <li>Revenue milestone bonuses</li>
-            <li>Referral network access</li>
+            <li class="highlight">Everything in Foundations + Pro (1 year)</li>
+            <li>12-week structured curriculum with assignments</li>
+            <li>Real-world case studies & practice scenarios</li>
+            <li>Professional certification credential</li>
+            <li>LinkedIn badge — show clients you're certified</li>
+            <li>Priority listing in our CFO directory</li>
+            <li>Resume & profile review</li>
+            <li>1 full year of Pro membership included</li>
+            <li class="highlight">The credential that wins clients</li>
         </ul>
-        <a href="#" class="plan-cta secondary" onclick="openWaitlist('CFO Accelerator — $197/mo')">Join the Waitlist →</a>
+        <button class="plan-cta secondary" onclick="checkout('certification')">Get Certified — $1,497 →</button>
     </div>
 
 </div>
 
+<section class="social-proof">
+    <div class="stats">
+        <div class="stat"><div class="num">$150-350</div><div class="label">Hourly rate as a fractional CFO</div></div>
+        <div class="stat"><div class="num">$5K-15K</div><div class="label">Monthly advisory revenue potential</div></div>
+        <div class="stat"><div class="num">12,100</div><div class="label">Monthly Google searches for "fractional CFO"</div></div>
+    </div>
+</section>
+
+<section class="competitor-section">
+    <h2>How We Compare</h2>
+    <p class="subtitle">Same caliber education. Fraction of the cost.</p>
+    <table class="competitor-table">
+        <thead><tr><th>Program</th><th class="price">Price</th></tr></thead>
+        <tbody>
+            <tr><td>Harvard Business School — CFO Program</td><td class="price">$12,500</td></tr>
+            <tr><td>Berkeley Executive Education — Finance</td><td class="price">$12,500</td></tr>
+            <tr><td>The Expert CFO — Certification</td><td class="price">$5,995</td></tr>
+            <tr><td>CFO Accelerator Programs</td><td class="price">$3,000–$5,000</td></tr>
+            <tr><td>Fractional Executive Institute</td><td class="price">$4,000+</td></tr>
+            <tr class="our-row"><td>📊 Fractional CFO School</td><td class="price">$297–$1,497</td></tr>
+        </tbody>
+    </table>
+    <p class="source">Prices based on publicly available information as of March 2026. Competitor prices may vary.</p>
+</section>
+
 <section class="guarantee">
     <h3>🛡️ 30-Day Money-Back Guarantee</h3>
-    <p>Try Fractional CFO School risk-free. If you don't feel confident about offering advisory services within 30 days, we'll refund every penny. No questions asked.</p>
+    <p>Try any plan risk-free for 30 days. If you don't feel more confident about launching advisory services, we'll refund every penny — no questions asked. We take the risk so you don't have to.</p>
 </section>
 
 <section class="faq">
     <h2>Frequently Asked Questions</h2>
 
     <div class="faq-item">
-        <div class="faq-q">Do I need accounting certifications to offer advisory services?</div>
-        <div class="faq-a">No. Advisory services focus on business strategy, cash flow management, and financial planning — areas where your bookkeeping experience is your biggest asset. You don't need a CPA to help business owners understand their numbers and make better decisions.</div>
+        <div class="faq-q">Do I need a CPA or accounting certifications?</div>
+        <div class="faq-a">No. Fractional CFO work focuses on strategic financial guidance — cash flow management, KPI tracking, forecasting, and business advice. Your bookkeeping experience is your biggest asset. Many successful fractional CFOs started as bookkeepers without a CPA.</div>
     </div>
 
     <div class="faq-item">
-        <div class="faq-q">How quickly can I start offering advisory services?</div>
-        <div class="faq-a">Most students launch their first advisory service within 2-4 weeks. Module 3 covers exactly how to package and price your first offering, and Module 4 gives you the conversation scripts to pitch it to existing clients.</div>
+        <div class="faq-q">How quickly can I start earning advisory revenue?</div>
+        <div class="faq-a">Most students are ready to pitch their first advisory package within 2-4 weeks. The Foundations Course walks you through exactly how to package, price, and sell advisory services — including scripts for the actual conversation with clients.</div>
     </div>
 
     <div class="faq-item">
-        <div class="faq-q">What if I only have a few bookkeeping clients?</div>
-        <div class="faq-a">That's actually an advantage — you can give each client personal attention as you develop your advisory skills. Even converting 2-3 clients to advisory packages at $2K-5K/month each can add $4K-15K/month to your revenue.</div>
+        <div class="faq-q">What's the difference between the Course and the Certification?</div>
+        <div class="faq-a">The Foundations Course teaches you the skills. The Certification gives you a structured 12-week program with assignments, case studies, a professional credential, and a LinkedIn badge. If you want to stand out to clients, the certification is your edge — but the course alone is enough to start earning.</div>
     </div>
 
     <div class="faq-item">
-        <div class="faq-q">Is this different from getting a CFO certification?</div>
-        <div class="faq-a">Yes. CFO certifications focus on theory and credentials. Fractional CFO School focuses on practical skills: how to package advisory services, how to price them, how to have the sales conversation, and how to deliver results. Many of our frameworks complement certifications, but you don't need one to start earning advisory revenue.</div>
+        <div class="faq-q">Can I really charge $150-350/hour?</div>
+        <div class="faq-a">Yes. Fractional CFOs typically charge $150-350/hour, or $3,000-10,000/month on retainer. Businesses pay this because strategic financial guidance directly impacts their bottom line. You're not just doing data entry — you're helping them make decisions worth 10x your fee.</div>
     </div>
 
     <div class="faq-item">
-        <div class="faq-q">Can I cancel the membership anytime?</div>
-        <div class="faq-a">The Growth Membership can be cancelled anytime — no contracts, no hassle. The CFO Accelerator has a 6-month minimum commitment because meaningful transformation takes time, but comes with our 30-day guarantee.</div>
+        <div class="faq-q">Why is this so much cheaper than other programs?</div>
+        <div class="faq-a">We believe this education should be accessible to every bookkeeper who wants to level up. Other programs charge $4K-12K+ because they can. We've built an efficient platform that lets us deliver the same caliber of education at a fraction of the cost. Quality doesn't have to mean expensive.</div>
     </div>
 
     <div class="faq-item">
-        <div class="faq-q">What's included in the free preview?</div>
-        <div class="faq-a">Module 1 (3 lessons) is completely free. It covers the advisory opportunity, your income potential, and the mindset shift from compliance to advisory. <a href="/course/module-1-preview/" style="color:var(--accent-light)">Start the free preview →</a></div>
+        <div class="faq-q">Can I cancel the Pro membership anytime?</div>
+        <div class="faq-a">Yes — cancel with one click, no questions asked. You keep access to the Foundations Course forever; the membership just adds the monthly playbooks, templates, and community.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">Is there a free preview?</div>
+        <div class="faq-a">Yes! Module 1 (3 lessons) is completely free. It covers the advisory opportunity, income potential, and the mindset shift from compliance to advisory. <a href="/course/module-1-preview/" style="color:var(--accent-light)">Start the free preview →</a></div>
     </div>
 </section>
 
-<!-- Waitlist Modal -->
-<div class="modal-overlay" id="waitlistModal">
-    <div class="modal">
-        <button class="close" onclick="closeWaitlist()">×</button>
-        <h3>🔒 Join the Waitlist</h3>
-        <p id="modalPlan">Get early access and exclusive launch pricing</p>
-        <form id="waitlistForm" onsubmit="submitWaitlist(event)">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <input type="hidden" name="source" id="waitlistSource" value="pricing-page">
-            <button type="submit">Reserve My Spot →</button>
-        </form>
-        <p class="success-msg" id="successMsg">🎉 You're on the list! We'll email you when enrollment opens.</p>
-    </div>
+<div class="content-authority">
+    📚 <strong>800+ free pages</strong> · 290+ blog articles · 99 city guides · The internet's largest fractional CFO resource library — <a href="/blog/" style="color:var(--accent-light)">explore free resources →</a>
 </div>
 
 <footer>
     <p>© 2026 Fractional CFO School. Built for bookkeepers who want more.</p>
-    <p style="margin-top:8px"><a href="/" style="color:var(--accent-light);text-decoration:none">Home</a> · <a href="/blog/" style="color:var(--accent-light);text-decoration:none">Blog</a> · <a href="/starter-kit/" style="color:var(--accent-light);text-decoration:none">Free Starter Kit</a></p>
+    <p style="margin-top:8px"><a href="/" style="color:var(--accent-light);text-decoration:none">Home</a> · <a href="/course/" style="color:var(--accent-light);text-decoration:none">Course</a> · <a href="/membership/" style="color:var(--accent-light);text-decoration:none">Membership</a> · <a href="/certification/" style="color:var(--accent-light);text-decoration:none">Certification</a> · <a href="/blog/" style="color:var(--accent-light);text-decoration:none">Blog</a></p>
 </footer>
 
 <script>
-function openWaitlist(plan) {
-    document.getElementById('waitlistModal').classList.add('active');
-    document.getElementById('modalPlan').textContent = plan + ' — Get early access and exclusive launch pricing';
-    document.getElementById('waitlistSource').value = 'pricing-' + plan.toLowerCase().replace(/[^a-z]/g, '-');
-}
-function closeWaitlist() {
-    document.getElementById('waitlistModal').classList.remove('active');
-}
-async function submitWaitlist(e) {
-    e.preventDefault();
-    const form = e.target;
-    const data = {
-        email: form.email.value,
-        name: form.name.value,
-        source: form.source.value
-    };
+async function checkout(product) {
+    const btn = event.target;
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Loading...';
+
     try {
-        const res = await fetch('/api/subscribe', {
+        const res = await fetch('/api/checkout', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
+            body: JSON.stringify({ product })
         });
-        if (res.ok) {
-            form.style.display = 'none';
-            document.getElementById('successMsg').style.display = 'block';
+        const data = await res.json();
+
+        if (data.url) {
+            window.location.href = data.url;
+        } else {
+            alert('Something went wrong. Please try again.');
+            btn.disabled = false;
+            btn.textContent = originalText;
         }
     } catch (err) {
-        alert('Something went wrong. Please try again.');
+        alert('Connection error. Please try again.');
+        btn.disabled = false;
+        btn.textContent = originalText;
     }
 }
-document.getElementById('waitlistModal').addEventListener('click', function(e) {
-    if (e.target === this) closeWaitlist();
-});
+
 document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
 });
 </script>
 
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
