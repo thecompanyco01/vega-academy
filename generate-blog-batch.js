@@ -148,7 +148,7 @@ function generateBlogPost(post) {
     <title>${post.title} — Vega Academy</title>
     <meta name="description" content="${post.description}">
     <meta name="keywords" content="${post.keywords}">
-    <link rel="canonical" href="https://vega-academy.vercel.app/blog/${post.slug}/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/blog/${post.slug}/">
     <meta property="og:title" content="${post.title}">
     <meta property="og:description" content="${post.description}">
     <meta property="og:type" content="article">

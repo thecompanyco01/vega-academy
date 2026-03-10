@@ -169,7 +169,7 @@ function generateCityPage(city) {
   <title>Fractional CFO Services in ${city.name}, ${city.state} | Vega Academy</title>
   <meta name="description" content="Find expert fractional CFO services in ${city.name}, ${city.state}. Part-time CFO expertise for growing businesses in the ${city.metro} area. Cash flow management, financial planning & more.">
   <meta name="keywords" content="fractional CFO ${city.name}, fractional CFO ${city.state}, part-time CFO ${city.name}, outsourced CFO ${city.name}, CFO services ${city.name}">
-  <link rel="canonical" href="https://vega-academy.vercel.app/fractional-cfo-near-me/${city.slug}/">
+  <link rel="canonical" href="https://fractionalcfoschool.com/fractional-cfo-near-me/${city.slug}/">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -187,7 +187,7 @@ function generateCityPage(city) {
     "provider": {
       "@type": "Organization",
       "name": "Vega Academy",
-      "url": "https://vega-academy.vercel.app"
+      "url": "https://fractionalcfoschool.com"
     }
   }
   </script>
@@ -383,7 +383,7 @@ function generateHubPage(cities) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fractional CFO Near Me — Find CFO Services in Your City | Vega Academy</title>
   <meta name="description" content="Find fractional CFO services in your city. Expert part-time CFO services across ${cities.length}+ US cities. Strategic financial leadership for growing businesses.">
-  <link rel="canonical" href="https://vega-academy.vercel.app/fractional-cfo-near-me/">
+  <link rel="canonical" href="https://fractionalcfoschool.com/fractional-cfo-near-me/">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a2e; line-height: 1.7; }

@@ -81,7 +81,7 @@ function generateIndustryPage(industry, industryName) {
     <title>Fractional CFO for ${industryName}: Financial Leadership Guide</title>
     <meta name="description" content="How fractional CFO services help ${industryName.toLowerCase()}. Industry-specific KPIs, pricing, cash flow strategies, and advisory frameworks for ${industryName.toLowerCase()}.">
     <meta name="keywords" content="fractional CFO ${industryName.toLowerCase()}, CFO services ${industryName.toLowerCase()}, financial management ${industryName.toLowerCase()}">
-    <link rel="canonical" href="https://vega-academy.vercel.app/fractional-cfo/${industry}/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/fractional-cfo/${industry}/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -236,7 +236,7 @@ function generateTopicIndustryPage(topic, industry, industryName) {
     <title>${topic.title} for ${industryName}: Complete Guide</title>
     <meta name="description" content="${topic.title} guide specifically for ${industryName.toLowerCase()}. Learn how to implement ${topic.desc} tailored to the ${industry.replace(/-/g, ' ')} industry.">
     <meta name="keywords" content="${topic.slug.replace(/-/g, ' ')} ${industryName.toLowerCase()}, ${topic.title.toLowerCase()} ${industryName.toLowerCase()}">
-    <link rel="canonical" href="https://vega-academy.vercel.app/${topic.slug}/${industry}/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/${topic.slug}/${industry}/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -407,7 +407,7 @@ let sitemapUrls = [];
 const hubDir = path.join(__dirname, 'fractional-cfo');
 fs.mkdirSync(hubDir, { recursive: true });
 fs.writeFileSync(path.join(hubDir, 'index.html'), generateIndustryHub());
-sitemapUrls.push('https://vega-academy.vercel.app/fractional-cfo/');
+sitemapUrls.push('https://fractionalcfoschool.com/fractional-cfo/');
 pageCount++;
 console.log(`✅ Industry hub page`);
 
@@ -416,7 +416,7 @@ for (const industry of INDUSTRIES) {
   const dir = path.join(__dirname, 'fractional-cfo', industry);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'index.html'), generateIndustryPage(industry, INDUSTRY_NAMES[industry]));
-  sitemapUrls.push(`https://vega-academy.vercel.app/fractional-cfo/${industry}/`);
+  sitemapUrls.push(`https://fractionalcfoschool.com/fractional-cfo/${industry}/`);
   pageCount++;
 }
 console.log(`✅ ${INDUSTRIES.length} industry pages`);
@@ -431,7 +431,7 @@ for (const topic of TOPICS) {
     const dir = path.join(__dirname, topic.slug, industry);
     fs.mkdirSync(dir, { recursive: true });
     fs.writeFileSync(path.join(dir, 'index.html'), generateTopicIndustryPage(topic, industry, INDUSTRY_NAMES[industry]));
-    sitemapUrls.push(`https://vega-academy.vercel.app/${topic.slug}/${industry}/`);
+    sitemapUrls.push(`https://fractionalcfoschool.com/${topic.slug}/${industry}/`);
     pageCount++;
   }
 }

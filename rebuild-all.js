@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl = 'https://vega-academy.vercel.app';
+const baseUrl = 'https://fractionalcfoschool.com';
 const rootDir = __dirname;
 
 // Collect all index.html files

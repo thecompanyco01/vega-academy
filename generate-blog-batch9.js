@@ -803,7 +803,7 @@ function generateArticle(article) {
     <title>${article.title} — Vega Academy</title>
     <meta name="description" content="${article.description}">
     <meta name="keywords" content="${article.keywords}">
-    <link rel="canonical" href="https://vega-academy.vercel.app/blog/${article.slug}/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">

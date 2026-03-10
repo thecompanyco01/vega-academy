@@ -758,7 +758,7 @@ const template = (article) => `<!DOCTYPE html>
     <title>${article.title}</title>
     <meta name="description" content="${article.description}">
     <meta name="keywords" content="${article.keywords}">
-    <link rel="canonical" href="https://vega-academy.vercel.app/blog/${article.slug}/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/blog/${article.slug}/">
     <meta property="og:type" content="article">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>

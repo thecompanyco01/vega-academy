@@ -39,7 +39,7 @@ const blogIndexHTML = `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog — Vega Academy | Fractional CFO & Advisory Resources</title>
     <meta name="description" content="Expert articles on fractional CFO services, advisory pricing, cash flow forecasting, and transitioning from bookkeeping to advisory. ${articles.length}+ in-depth guides.">
-    <link rel="canonical" href="https://vega-academy.vercel.app/blog/">
+    <link rel="canonical" href="https://fractionalcfoschool.com/blog/">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -122,7 +122,7 @@ fs.writeFileSync(path.join(blogDir, 'index.html'), blogIndexHTML);
 console.log('✅ Blog index updated');
 
 // Generate sitemap
-const baseUrl = 'https://vega-academy.vercel.app';
+const baseUrl = 'https://fractionalcfoschool.com';
 const today = new Date().toISOString().split('T')[0];
 
 let sitemapUrls = [
