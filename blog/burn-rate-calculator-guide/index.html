@@ -1,70 +1,100 @@
-import { Metadata } from 'next'
-import Link from 'next/link'
-
-export const metadata: Metadata = {
-  title: 'Burn Rate Calculator: How to Calculate and Manage Your Startup Burn Rate | Fractional CFO School',
-  description: 'Calculate your startup burn rate and runway. Gross vs net burn rate, formulas, benchmarks, and strategies to extend runway.',
-  keywords: ['burn rate calculator', 'fractional CFO', 'advisory services', 'bookkeeper to CFO', 'Fractional CFO School'],
-  openGraph: {
-    title: 'Burn Rate Calculator: How to Calculate and Manage Your Startup Burn Rate',
-    description: 'Calculate your startup burn rate and runway. Gross vs net burn rate, formulas, benchmarks, and strategies to extend runway.',
-    type: 'article',
-  },
-}
-
-export default function Article() {
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-4xl mx-auto px-4 py-4">
-          <Link href="/" className="text-indigo-600 font-bold text-xl">📊 Fractional CFO School</Link>
-          <span className="text-gray-400 mx-2">/</span>
-          <Link href="/blog" className="text-gray-600 hover:text-indigo-600">Blog</Link>
-        </div>
-      </nav>
-      
-      <article className="max-w-4xl mx-auto px-4 py-12">
-        <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Burn Rate Calculator: How to Calculate and Manage Your Startup Burn Rate</h1>
-          <p className="text-xl text-gray-600">Calculate your startup burn rate and runway. Gross vs net burn rate, formulas, benchmarks, and strategies to extend runway.</p>
-          <div className="mt-4 text-sm text-gray-500">
-            <span>Published by Fractional CFO School</span>
-            <span className="mx-2">•</span>
-            <span>2 min read</span>
-          </div>
-        </header>
-        
-        <div className="prose prose-lg max-w-none">
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">What Is Burn Rate?</h2>
-          <p className="text-gray-700 leading-relaxed my-4">Burn rate is the rate at which a company spends its cash reserves before generating positive cash flow. Gross Burn Rate equals total monthly operating expenses. Net Burn Rate equals total monthly expenses minus total monthly revenue. Runway in months equals cash on hand divided by net burn rate.</p>
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">How to Calculate Burn Rate</h2>
-          <p className="text-gray-700 leading-relaxed my-4">Pull the last 3-6 months of financial data including total cash spent and total revenue each month. Calculate monthly averages to smooth out one-time expenses. Example: if average expenses are $88,333 and average revenue is $18,333, net burn rate is $70,000/month. With $500,000 cash on hand, runway is 7.1 months.</p>
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Burn Rate Benchmarks by Stage</h2>
-          <p className="text-gray-700 leading-relaxed my-4">Pre-seed: $10K-$30K monthly burn, 18+ months runway. Seed: $30K-$100K burn, 18-24 months. Series A: $100K-$300K burn, 18-24 months. Series B: $300K-$800K burn, 18-24 months. Growth: $500K-$2M+ burn, 12-18 months. Rule of thumb: always maintain at least 12 months of runway. Start fundraising with 6-9 months remaining.</p>
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Managing and Reducing Burn Rate</h2>
-          <p className="text-gray-700 leading-relaxed my-4">Quick wins: audit subscriptions and cancel unused software, renegotiate contracts, defer non-essential spending 90 days, review headcount ROI. Strategic reductions: optimize compensation mix with more equity and less cash, go remote, automate before hiring, focus marketing on proven channels.</p>
-          <p className="text-gray-700 leading-relaxed my-4">Revenue acceleration to reduce NET burn: test price increases of 20%, offer annual contracts for prepayment, reduce churn, upsell existing customers, offer consulting revenue as bridge income.</p>
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">Burn Rate Red Flags</h2>
-          <p className="text-gray-700 leading-relaxed my-4">Watch for burn rate increasing faster than revenue, less than 6 months runway (emergency mode), wildly varying month-to-month burn indicating poor controls, declining gross margins masked by revenue growth, and hidden burn from accrued expenses not reflected in current figures.</p>
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">The Fractional CFO Role in Burn Rate Management</h2>
-          <p className="text-gray-700 leading-relaxed my-4">Monthly burn rate review with gross and net calculations, comparison to plan, runway projection under scenarios. Runway scenario planning with base, bear, and bull cases. Board reporting showing burn rate trends, runway, path to profitability, and unit economics. Fundraising support with clean financial models and burn rate reduction plans. Fractional CFO School trains financial professionals to become the fractional CFOs that startups desperately need.</p>
-
-        </div>
-        
-        <div className="mt-16 bg-indigo-50 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-indigo-900 mb-4">Ready to Offer Advisory Services?</h2>
-          <p className="text-indigo-700 mb-6">Fractional CFO School teaches bookkeepers and accountants how to transition into high-value fractional CFO and advisory roles. Learn the skills that command premium rates.</p>
-          <Link href="/course" className="inline-block bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
-            Start Your Advisory Journey →
-          </Link>
-        </div>
-      </article>
-      
-      <footer className="bg-gray-900 text-gray-400 py-12 mt-16">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <p>© 2026 Fractional CFO School. Helping bookkeepers become fractional CFOs.</p>
-        </div>
-      </footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBGK6MFYEY"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-ZBGK6MFYEY");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burn Rate Calculator: How to Calculate and Manage Your Startup Burn Rate | Fractional CFO School</title>
+  <meta name="description" content="Calculate your startup burn rate and runway. Gross vs net burn rate, formulas, benchmarks, and strategies to extend runway.">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="https://fractionalcfoschool.com/blog/burn-rate-calculator-guide/">
+  <meta property="og:title" content="Burn Rate Calculator: How to Calculate and Manage Your Startup Burn Rate">
+  <meta property="og:description" content="Calculate your startup burn rate and runway. Gross vs net burn rate, formulas, benchmarks, and strategies to extend runway.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://fractionalcfoschool.com/blog/burn-rate-calculator-guide/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Burn Rate Calculator: How to Calculate and Manage Your Startup Burn Rate","author":{"@type":"Organization","name":"Fractional CFO School"},"publisher":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-11","dateModified":"2026-03-11"}</script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1a1a2e; background: #fafafa; }
+    .nav { background: #1a1a2e; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav a { color: #e0e0e0; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
+    .nav a:hover { color: #f9c846; }
+    .nav .logo { color: #f9c846; font-weight: 700; font-size: 1.3rem; margin-left: 0; }
+    .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 4rem 2rem; text-align: center; }
+    .hero h1 { font-size: 2.2rem; max-width: 800px; margin: 0 auto 1rem; line-height: 1.3; }
+    .hero .meta { color: #a0a0b0; font-size: 0.95rem; }
+    .content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    .content h2 { font-size: 1.6rem; color: #1a1a2e; margin: 2.5rem 0 1rem; border-bottom: 2px solid #f9c846; padding-bottom: 0.5rem; }
+    .content h3 { font-size: 1.2rem; color: #16213e; margin: 2rem 0 0.75rem; }
+    .content p { margin-bottom: 1rem; font-size: 1.05rem; color: #333; }
+    .content ul, .content ol { margin: 1rem 0 1.5rem 1.5rem; }
+    .content li { margin-bottom: 0.5rem; font-size: 1.05rem; color: #333; }
+    .content a { color: #2563eb; text-decoration: none; border-bottom: 1px solid #2563eb33; }
+    .content a:hover { border-bottom-color: #2563eb; }
+    .content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+    .content th { background: #1a1a2e; color: white; padding: 0.75rem; text-align: left; }
+    .content td { padding: 0.75rem; border-bottom: 1px solid #e0e0e0; }
+    .content tr:nth-child(even) { background: #f5f5f5; }
+    .content strong { color: #1a1a2e; }
+    .cta-box { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 2.5rem; border-radius: 12px; text-align: center; margin: 3rem 0; }
+    .cta-box h3 { color: #f9c846; font-size: 1.4rem; margin-bottom: 1rem; }
+    .cta-box p { color: #d0d0e0; margin-bottom: 1.5rem; }
+    .cta-box a { display: inline-block; background: #f9c846; color: #1a1a2e; padding: 0.875rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none; border: none; }
+    .cta-box a:hover { background: #f0b800; }
+    .faq-section { background: #f0f0f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+    .faq-section h2 { border: none; margin-top: 0; }
+    .faq-item { margin-bottom: 1.5rem; }
+    .faq-item h3 { color: #1a1a2e; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .faq-item p { color: #555; margin-bottom: 0; }
+    .footer { background: #1a1a2e; color: #a0a0b0; padding: 2rem; text-align: center; font-size: 0.9rem; }
+    .footer a { color: #f9c846; text-decoration: none; }
+    @media (max-width: 768px) { .hero h1 { font-size: 1.6rem; } .content { padding: 2rem 1rem; } }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="logo">📊 Fractional CFO School</a>
+    <div>
+      <a href="/blog/">Blog</a>
+      <a href="/foundations/">Course</a>
+      <a href="/templates/">Templates</a>
+      <a href="/pricing/">Pricing</a>
     </div>
-  )
-}
+  </nav>
+  <div class="hero">
+    <h1>Burn Rate Calculator: How to Calculate and Manage Your Startup Burn Rate</h1>
+    <p class="meta">Updated March 2026 · Comprehensive Guide</p>
+  </div>
+  <div class="content">
+    <h2>What Is Burn Rate?</h2>
+    <h2>How to Calculate Burn Rate</h2>
+    <h2>Burn Rate Benchmarks by Stage</h2>
+    <h2>Managing and Reducing Burn Rate</h2>
+    <h2>Burn Rate Red Flags</h2>
+    <h2>The Fractional CFO Role in Burn Rate Management</h2>
+    <h2>Ready to Offer Advisory Services?</h2>
+    <p>Calculate your startup burn rate and runway. Gross vs net burn rate, formulas, benchmarks, and strategies to extend runway.</p>
+    <p>Burn rate is the rate at which a company spends its cash reserves before generating positive cash flow. Gross Burn Rate equals total monthly operating expenses. Net Burn Rate equals total monthly expenses minus total monthly revenue. Runway in months equals cash on hand divided by net burn rate.</p>
+    <p>Pull the last 3-6 months of financial data including total cash spent and total revenue each month. Calculate monthly averages to smooth out one-time expenses. Example: if average expenses are $88,333 and average revenue is $18,333, net burn rate is $70,000/month. With $500,000 cash on hand, runway is 7.1 months.</p>
+    <p>Pre-seed: $10K-$30K monthly burn, 18+ months runway. Seed: $30K-$100K burn, 18-24 months. Series A: $100K-$300K burn, 18-24 months. Series B: $300K-$800K burn, 18-24 months. Growth: $500K-$2M+ burn, 12-18 months. Rule of thumb: always maintain at least 12 months of runway. Start fundraising with 6-9 months remaining.</p>
+    <p>Quick wins: audit subscriptions and cancel unused software, renegotiate contracts, defer non-essential spending 90 days, review headcount ROI. Strategic reductions: optimize compensation mix with more equity and less cash, go remote, automate before hiring, focus marketing on proven channels.</p>
+    <p>Revenue acceleration to reduce NET burn: test price increases of 20%, offer annual contracts for prepayment, reduce churn, upsell existing customers, offer consulting revenue as bridge income.</p>
+    <p>Watch for burn rate increasing faster than revenue, less than 6 months runway (emergency mode), wildly varying month-to-month burn indicating poor controls, declining gross margins masked by revenue growth, and hidden burn from accrued expenses not reflected in current figures.</p>
+    <p>Monthly burn rate review with gross and net calculations, comparison to plan, runway projection under scenarios. Runway scenario planning with base, bear, and bull cases. Board reporting showing burn rate trends, runway, path to profitability, and unit economics. Fundraising support with clean financial models and burn rate reduction plans. Fractional CFO School trains financial professionals to become the fractional CFOs that startups desperately need.</p>
+    <p>Fractional CFO School teaches bookkeepers and accountants how to transition into high-value fractional CFO and advisory roles. Learn the skills that command premium rates.</p>
+    <p>© 2026 Fractional CFO School. Helping bookkeepers become fractional CFOs.</p>
+
+    <div class="cta-box">
+      <h3>Build Your Advisory Practice</h3>
+      <p>Learn how to package financial expertise into advisory services that clients pay $3K-$10K/month for.</p>
+      <a href="/foundations/">Foundations Course — $297</a>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2026 <a href="/">Fractional CFO School</a>. Built for bookkeepers who want more.</p>
+    <p style="margin-top:0.5rem"><a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/foundations/">Course</a> · <a href="/templates/">Templates</a> · <a href="/pricing/">Pricing</a></p>
+  </div>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

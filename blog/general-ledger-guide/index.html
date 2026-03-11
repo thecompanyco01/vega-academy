@@ -1,99 +1,121 @@
-export const metadata = {
-  title: 'General Ledger: What It Is &amp; How It Works (Complete 2026 Guide) | Fractional CFO School',
-  description: 'Everything you need to know about the general ledger — what it is, how it works, GL account types, journal entries, and how modern bookkeepers use it for advisory insights.',
-  keywords: 'general ledger, general ledger accounting, GL accounts',
-  openGraph: {
-    title: 'General Ledger: What It Is &amp; How It Works (Complete 2026 Guide)',
-    description: 'Everything you need to know about the general ledger — what it is, how it works, GL account types, journal entries, and how modern bookkeepers use it for advisory insights.',
-    type: 'article',
-    publishedTime: '2026-03-07',
-    authors: ['Fractional CFO School'],
-  },
-};
-
-export default function Page() {
-  return (
-    <div dangerouslySetInnerHTML={{ __html: `
-<article style="max-width:800px;margin:0 auto;padding:40px 20px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;line-height:1.8">
-<nav style="margin-bottom:20px;font-size:14px"><a href="/" style="color:#6c63ff;text-decoration:none">Home</a> → <a href="/blog/" style="color:#6c63ff;text-decoration:none">Blog</a> → General Ledger</nav>
-<h1 style="font-size:2.5rem;line-height:1.2;margin-bottom:10px">General Ledger: What It Is &amp; How It Works (Complete Guide)</h1>
-<p style="color:#666;font-size:14px">Updated March 2026 · 12 min read · <strong>12,100 monthly searches</strong></p>
-
-<div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:25px 30px;border-radius:12px;margin:30px 0">
-<strong>Definition:</strong> The general ledger (GL) is the master record of all financial transactions in a business. Every debit and credit, every dollar in and out, passes through the GL. It's the single source of truth for your entire financial picture.
-</div>
-
-<h2 style="color:#1a1a2e;margin-top:40px">How the General Ledger Works</h2>
-<p>Think of the general ledger as a comprehensive database of every financial event in your business. Here's the flow:</p>
-<ol style="padding-left:20px">
-<li><strong>A transaction occurs</strong> — You make a sale, pay a bill, receive inventory</li>
-<li><strong>It's recorded as a journal entry</strong> — Every entry has at least one debit and one credit (double-entry accounting)</li>
-<li><strong>The entry posts to GL accounts</strong> — Each side of the entry goes to the appropriate account in the <a href="/blog/chart-of-accounts-guide/" style="color:#6c63ff">chart of accounts</a></li>
-<li><strong>Accounts update</strong> — Account balances change to reflect the transaction</li>
-<li><strong>Reports generated</strong> — Financial statements (P&amp;L, Balance Sheet, Cash Flow) pull directly from GL data</li>
-</ol>
-
-<h2 style="color:#1a1a2e;margin-top:40px">Journal Entry Example</h2>
-<p>You sell $5,000 of consulting services and the client pays by check:</p>
-<table style="width:100%;border-collapse:collapse;margin:20px 0;font-size:15px">
-<tr style="background:#f0f0ff"><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Account</th><th style="padding:12px;text-align:right;border-bottom:2px solid #6c63ff">Debit</th><th style="padding:12px;text-align:right;border-bottom:2px solid #6c63ff">Credit</th></tr>
-<tr><td style="padding:12px;border-bottom:1px solid #eee">1000 - Cash</td><td style="padding:12px;text-align:right;border-bottom:1px solid #eee">$5,000</td><td style="padding:12px;text-align:right;border-bottom:1px solid #eee">—</td></tr>
-<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee">4000 - Service Revenue</td><td style="padding:12px;text-align:right;border-bottom:1px solid #eee">—</td><td style="padding:12px;text-align:right;border-bottom:1px solid #eee">$5,000</td></tr>
-</table>
-<p><strong>Result:</strong> Cash (asset) increases by $5,000. Revenue increases by $5,000. Debits = Credits. The GL stays balanced.</p>
-
-<h2 style="color:#1a1a2e;margin-top:40px">The 5 Types of GL Accounts</h2>
-<table style="width:100%;border-collapse:collapse;margin:30px 0;font-size:15px">
-<tr style="background:#f0f0ff"><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Account Type</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Goes On</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Normal Balance</th><th style="padding:12px;text-align:left;border-bottom:2px solid #6c63ff">Increases With</th></tr>
-<tr><td style="padding:12px;border-bottom:1px solid #eee"><strong>Assets</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Balance Sheet</td><td style="padding:12px;border-bottom:1px solid #eee">Debit</td><td style="padding:12px;border-bottom:1px solid #eee">Debit</td></tr>
-<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee"><strong>Liabilities</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Balance Sheet</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td></tr>
-<tr><td style="padding:12px;border-bottom:1px solid #eee"><strong>Equity</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Balance Sheet</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td></tr>
-<tr style="background:#fafafe"><td style="padding:12px;border-bottom:1px solid #eee"><strong>Revenue</strong></td><td style="padding:12px;border-bottom:1px solid #eee">Income Statement</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td><td style="padding:12px;border-bottom:1px solid #eee">Credit</td></tr>
-<tr><td style="padding:12px"><strong>Expenses</strong></td><td style="padding:12px">Income Statement</td><td style="padding:12px">Debit</td><td style="padding:12px">Debit</td></tr>
-</table>
-
-<h2 style="color:#1a1a2e;margin-top:40px">General Ledger in Modern Cloud Accounting</h2>
-<p>In QuickBooks Online, Xero, and other cloud platforms, you rarely interact with the GL directly. Instead:</p>
-<ul style="padding-left:20px">
-<li>You categorize bank transactions → the software creates GL entries automatically</li>
-<li>You create invoices → the software debits AR and credits Revenue</li>
-<li>You record bills → the software debits Expense and credits AP</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBGK6MFYEY"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-ZBGK6MFYEY");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>General Ledger: What It Is &amp; How It Works (Complete 2026 Guide) | Fractional CFO School</title>
+  <meta name="description" content="Everything you need to know about the general ledger — what it is, how it works, GL account types, journal entries, and how modern bookkeepers use it for advisory insights.">
+  <meta name="keywords" content="general ledger, general ledger accounting, GL accounts">
+  <link rel="canonical" href="https://fractionalcfoschool.com/blog/general-ledger-guide/">
+  <meta property="og:title" content="General Ledger: What It Is &amp; How It Works (Complete 2026 Guide)">
+  <meta property="og:description" content="Everything you need to know about the general ledger — what it is, how it works, GL account types, journal entries, and how modern bookkeepers use it for advisory insights.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://fractionalcfoschool.com/blog/general-ledger-guide/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"General Ledger: What It Is &amp; How It Works (Complete 2026 Guide)","author":{"@type":"Organization","name":"Fractional CFO School"},"publisher":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-11","dateModified":"2026-03-11"}</script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1a1a2e; background: #fafafa; }
+    .nav { background: #1a1a2e; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav a { color: #e0e0e0; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
+    .nav a:hover { color: #f9c846; }
+    .nav .logo { color: #f9c846; font-weight: 700; font-size: 1.3rem; margin-left: 0; }
+    .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 4rem 2rem; text-align: center; }
+    .hero h1 { font-size: 2.2rem; max-width: 800px; margin: 0 auto 1rem; line-height: 1.3; }
+    .hero .meta { color: #a0a0b0; font-size: 0.95rem; }
+    .content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    .content h2 { font-size: 1.6rem; color: #1a1a2e; margin: 2.5rem 0 1rem; border-bottom: 2px solid #f9c846; padding-bottom: 0.5rem; }
+    .content h3 { font-size: 1.2rem; color: #16213e; margin: 2rem 0 0.75rem; }
+    .content p { margin-bottom: 1rem; font-size: 1.05rem; color: #333; }
+    .content ul, .content ol { margin: 1rem 0 1.5rem 1.5rem; }
+    .content li { margin-bottom: 0.5rem; font-size: 1.05rem; color: #333; }
+    .content a { color: #2563eb; text-decoration: none; border-bottom: 1px solid #2563eb33; }
+    .content a:hover { border-bottom-color: #2563eb; }
+    .content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+    .content th { background: #1a1a2e; color: white; padding: 0.75rem; text-align: left; }
+    .content td { padding: 0.75rem; border-bottom: 1px solid #e0e0e0; }
+    .content tr:nth-child(even) { background: #f5f5f5; }
+    .content strong { color: #1a1a2e; }
+    .cta-box { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 2.5rem; border-radius: 12px; text-align: center; margin: 3rem 0; }
+    .cta-box h3 { color: #f9c846; font-size: 1.4rem; margin-bottom: 1rem; }
+    .cta-box p { color: #d0d0e0; margin-bottom: 1.5rem; }
+    .cta-box a { display: inline-block; background: #f9c846; color: #1a1a2e; padding: 0.875rem 2rem; border-radius: 8px; font-weight: 700; text-decoration: none; border: none; }
+    .cta-box a:hover { background: #f0b800; }
+    .faq-section { background: #f0f0f5; padding: 2rem; border-radius: 12px; margin: 2rem 0; }
+    .faq-section h2 { border: none; margin-top: 0; }
+    .faq-item { margin-bottom: 1.5rem; }
+    .faq-item h3 { color: #1a1a2e; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .faq-item p { color: #555; margin-bottom: 0; }
+    .footer { background: #1a1a2e; color: #a0a0b0; padding: 2rem; text-align: center; font-size: 0.9rem; }
+    .footer a { color: #f9c846; text-decoration: none; }
+    @media (max-width: 768px) { .hero h1 { font-size: 1.6rem; } .content { padding: 2rem 1rem; } }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="logo">📊 Fractional CFO School</a>
+    <div>
+      <a href="/blog/">Blog</a>
+      <a href="/foundations/">Course</a>
+      <a href="/templates/">Templates</a>
+      <a href="/pricing/">Pricing</a>
+    </div>
+  </nav>
+  <div class="hero">
+    <h1>General Ledger: What It Is &amp; How It Works (Complete 2026 Guide)</h1>
+    <p class="meta">Updated March 2026 · Comprehensive Guide</p>
+  </div>
+  <div class="content">
+    <h2>How the General Ledger Works</h2>
+    <h2>Journal Entry Example</h2>
+    <h2>The 5 Types of GL Accounts</h2>
+    <h2>General Ledger in Modern Cloud Accounting</h2>
+    <h2>GL Reconciliation Process</h2>
+    <h2>From GL Knowledge to Advisory Value</h2>
+    <h3>Master the Financial Fundamentals</h3>
+    <p>Updated March 2026 · 12 min read · <strong>12,100 monthly searches</strong></p>
+    <p>Think of the general ledger as a comprehensive database of every financial event in your business. Here's the flow:</p>
+    <p>You sell $5,000 of consulting services and the client pays by check:</p>
+    <p><strong>Result:</strong> Cash (asset) increases by $5,000. Revenue increases by $5,000. Debits = Credits. The GL stays balanced.</p>
+    <p>In QuickBooks Online, Xero, and other cloud platforms, you rarely interact with the GL directly. Instead:</p>
+    <p>But understanding the GL is still essential for:</p>
+    <p>Mastering the general ledger isn't just about being a better bookkeeper — it's about unlocking advisory opportunities. When you truly understand the GL, you can:</p>
+    <p>Fractional CFO School builds your foundation from GL mastery to fractional CFO-level advisory.</p>
+    <ul>
+      <li><strong>A transaction occurs</strong> — You make a sale, pay a bill, receive inventory</li>
+      <li><strong>It's recorded as a journal entry</strong> — Every entry has at least one debit and one credit (double-entry accounting)</li>
+      <li><strong>The entry posts to GL accounts</strong> — Each side of the entry goes to the appropriate account in the <a href="/blog/chart-of-accounts-guide/" style="color:#6c63ff">chart of accounts</a></li>
+      <li><strong>Accounts update</strong> — Account balances change to reflect the transaction</li>
+      <li><strong>Reports generated</strong> — Financial statements (P&amp;L, Balance Sheet, Cash Flow) pull directly from GL data</li>
+      <li>You categorize bank transactions → the software creates GL entries automatically</li>
+      <li>You create invoices → the software debits AR and credits Revenue</li>
+      <li>You record bills → the software debits Expense and credits AP</li>
+      <li><strong>Troubleshooting</strong> — When numbers don't look right, the GL tells you exactly what happened</li>
+      <li><strong>Journal entries</strong> — Adjustments, accruals, and corrections still require manual GL entries</li>
+      <li><strong>Advisory work</strong> — You can't advise on finances if you don't understand how the ledger works</li>
+      <li><strong>Month-end close</strong> — A proper <a href="/blog/month-end-close-process-guide/" style="color:#6c63ff">month-end close</a> involves reviewing GL activity</li>
+      <li><strong>Pull GL reports</strong> — Run a trial balance and detailed GL transaction report</li>
+      <li><strong>Match to source documents</strong> — Every GL entry should tie to a bank statement, invoice, or receipt</li>
+      <li><strong>Identify discrepancies</strong> — Unmatched entries, unusual amounts, missing transactions</li>
+      <li><strong>Make adjusting entries</strong> — Correct errors, record accruals, adjust prepaid expenses</li>
+      <li><strong>Verify balance</strong> — Total debits must equal total credits. If not, there's an error to find.</li>
+      <li>Spot financial trends before they become problems</li>
+      <li>Build custom <a href="/blog/financial-kpis-every-business-needs/" style="color:#6c63ff">KPI dashboards</a> from GL data</li>
+      <li>Create <a href="/blog/cash-flow-forecasting-guide/" style="color:#6c63ff">cash flow forecasts</a> based on historical GL patterns</li>
+      <li>Provide <a href="/blog/profit-margin-analysis-guide/" style="color:#6c63ff">profitability analysis</a> by department, product, or service line</li>
 </ul>
-<p>But understanding the GL is still essential for:</p>
-<ul style="padding-left:20px">
-<li><strong>Troubleshooting</strong> — When numbers don't look right, the GL tells you exactly what happened</li>
-<li><strong>Journal entries</strong> — Adjustments, accruals, and corrections still require manual GL entries</li>
-<li><strong>Advisory work</strong> — You can't advise on finances if you don't understand how the ledger works</li>
-<li><strong>Month-end close</strong> — A proper <a href="/blog/month-end-close-process-guide/" style="color:#6c63ff">month-end close</a> involves reviewing GL activity</li>
-</ul>
 
-<h2 style="color:#1a1a2e;margin-top:40px">GL Reconciliation Process</h2>
-<ol style="padding-left:20px">
-<li><strong>Pull GL reports</strong> — Run a trial balance and detailed GL transaction report</li>
-<li><strong>Match to source documents</strong> — Every GL entry should tie to a bank statement, invoice, or receipt</li>
-<li><strong>Identify discrepancies</strong> — Unmatched entries, unusual amounts, missing transactions</li>
-<li><strong>Make adjusting entries</strong> — Correct errors, record accruals, adjust prepaid expenses</li>
-<li><strong>Verify balance</strong> — Total debits must equal total credits. If not, there's an error to find.</li>
-</ol>
-
-<h2 style="color:#1a1a2e;margin-top:40px">From GL Knowledge to Advisory Value</h2>
-<p>Mastering the general ledger isn't just about being a better bookkeeper — it's about unlocking advisory opportunities. When you truly understand the GL, you can:</p>
-<ul style="padding-left:20px">
-<li>Spot financial trends before they become problems</li>
-<li>Build custom <a href="/blog/financial-kpis-every-business-needs/" style="color:#6c63ff">KPI dashboards</a> from GL data</li>
-<li>Create <a href="/blog/cash-flow-forecasting-guide/" style="color:#6c63ff">cash flow forecasts</a> based on historical GL patterns</li>
-<li>Provide <a href="/blog/profit-margin-analysis-guide/" style="color:#6c63ff">profitability analysis</a> by department, product, or service line</li>
-</ul>
-
-<div style="background:linear-gradient(135deg,#f093fb 0%,#f5576c 100%);color:white;padding:30px;border-radius:12px;margin:40px 0;text-align:center">
-<h3 style="margin:0 0 10px">Master the Financial Fundamentals</h3>
-<p style="margin:0 0 20px;opacity:0.95">Fractional CFO School builds your foundation from GL mastery to fractional CFO-level advisory.</p>
-<a href="/course/" style="display:inline-block;background:white;color:#f5576c;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:bold">Start Learning Free →</a>
-</div>
-
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"General Ledger: What It Is & How It Works (Complete Guide)","description":"Everything about the general ledger — how it works, GL account types, journal entries, and modern bookkeeping applications.","author":{"@type":"Organization","name":"Fractional CFO School"},"datePublished":"2026-03-07","dateModified":"2026-03-07"}
-</script>
-</article>` }} />
-  );
-}
+    <div class="cta-box">
+      <h3>Build Your Advisory Practice</h3>
+      <p>Learn how to package financial expertise into advisory services that clients pay $3K-$10K/month for.</p>
+      <a href="/foundations/">Foundations Course — $297</a>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2026 <a href="/">Fractional CFO School</a>. Built for bookkeepers who want more.</p>
+    <p style="margin-top:0.5rem"><a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="/foundations/">Course</a> · <a href="/templates/">Templates</a> · <a href="/pricing/">Pricing</a></p>
+  </div>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
