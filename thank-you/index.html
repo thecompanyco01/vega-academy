@@ -149,13 +149,31 @@
                     <p style="color: var(--muted); margin-bottom: 16px; font-size: 0.95rem;">Templates are powerful tools — but they're even more effective when combined with a complete advisory framework.</p>
                     <a href="/foundations/" style="display: inline-block; background: var(--accent); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600;">Foundations Course — $297 →</a>
                 </div>`;
-        } else if (info && (info.type === 'course' || info.type === 'membership')) {
-            // Course/membership purchase
-            document.getElementById('subtitle').textContent = `Welcome to ${info.name}! Your enrollment is confirmed.`;
-            document.getElementById('download-box').classList.add('hidden');
-            document.getElementById('step-1-text').innerHTML = `<strong>Check your email</strong> — We're preparing your course materials and will send access within 24 hours.`;
-            document.querySelector('#course-steps .step:nth-child(2) .step-text').innerHTML = `<strong>Bookmark this page</strong> — We'll update you via email when your learning portal is ready.`;
-            document.querySelector('#course-steps .step:nth-child(3) .step-text').innerHTML = `<strong>Start exploring</strong> — While you wait, browse our <a href="/blog/" style="color: #6c5ce7;">free guides</a> and <a href="/templates/" style="color: #6c5ce7;">template library</a>.`;
+        } else if (info && info.type === 'course') {
+            // Course purchase — redirect to course dashboard
+            if (product === 'foundations') {
+                document.getElementById('subtitle').textContent = `Welcome to the Foundations Course! Your enrollment is confirmed.`;
+                document.getElementById('download-box').classList.remove('hidden');
+                document.getElementById('download-title').textContent = '🎓 Your Course Is Ready';
+                document.getElementById('download-desc').textContent = '6 modules + 4 professional template packs are waiting for you. Start Module 1 now.';
+                document.getElementById('download-btn').href = '/course/';
+                document.getElementById('download-btn').removeAttribute('download');
+                document.getElementById('download-btn').textContent = 'Start the Foundations Course →';
+                document.getElementById('file-info').textContent = 'Includes: 6 modules + Cash Flow Kit + Dashboard Pack + Proposal Pack + Reporting Pack';
+                document.getElementById('step-1-text').innerHTML = `<strong>Start Module 1</strong> — "The Fractional CFO Opportunity" takes about 30 minutes and will change how you think about your career.`;
+                document.querySelector('#course-steps .step:nth-child(2) .step-text').innerHTML = `<strong>Download your templates</strong> — 4 professional template packs are included. Access them from the course dashboard.`;
+                document.querySelector('#course-steps .step:nth-child(3) .step-text').innerHTML = `<strong>Follow the 90-day plan</strong> — Module 6 includes a step-by-step action plan. Your first advisory client is 30-60 days away.`;
+            } else {
+                document.getElementById('subtitle').textContent = `Welcome to ${info.name}! Your enrollment is confirmed.`;
+                document.getElementById('step-1-text').innerHTML = `<strong>Check your email</strong> — We're preparing your course materials and will send access within 24 hours.`;
+                document.querySelector('#course-steps .step:nth-child(2) .step-text').innerHTML = `<strong>Bookmark this page</strong> — We'll update you via email when your learning portal is ready.`;
+                document.querySelector('#course-steps .step:nth-child(3) .step-text').innerHTML = `<strong>Start exploring</strong> — While you wait, browse our <a href="/blog/" style="color: #6c5ce7;">free guides</a> and <a href="/templates/" style="color: #6c5ce7;">template library</a>.`;
+            }
+        } else if (info && info.type === 'membership') {
+            document.getElementById('subtitle').textContent = `Welcome to ${info.name}! Your membership is active.`;
+            document.getElementById('step-1-text').innerHTML = `<strong>Check your email</strong> — We're setting up your membership access and will send details within 24 hours.`;
+            document.querySelector('#course-steps .step:nth-child(2) .step-text').innerHTML = `<strong>Bookmark this page</strong> — We'll update you via email when your member area is ready.`;
+            document.querySelector('#course-steps .step:nth-child(3) .step-text').innerHTML = `<strong>Start exploring</strong> — Browse our <a href="/blog/" style="color: #6c5ce7;">free guides</a> and <a href="/templates/" style="color: #6c5ce7;">template library</a>.`;
         }
 
         // Track purchase conversion in GA4

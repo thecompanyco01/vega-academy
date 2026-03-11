@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBGK6MFYEY"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-ZBGK6MFYEY");</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Module 3: Building Your Service Packages — Foundations Course | Fractional CFO School</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1a1a2e; background: #fafafa; }
+    .nav { background: #1a1a2e; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .nav a { color: #e0e0e0; text-decoration: none; margin-left: 1.5rem; font-size: 0.95rem; }
+    .nav a:hover { color: #f9c846; }
+    .nav .logo { color: #f9c846; font-weight: 700; font-size: 1.3rem; margin-left: 0; }
+    .course-header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 3rem 2rem; }
+    .course-header .inner { max-width: 900px; margin: 0 auto; }
+    .course-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .course-header .breadcrumb { color: #a0a0b0; font-size: 0.9rem; margin-bottom: 1rem; }
+    .course-header .breadcrumb a { color: #f9c846; text-decoration: none; }
+    .course-header .progress-bar { background: #2a2a4a; border-radius: 8px; height: 8px; margin-top: 1rem; overflow: hidden; }
+    .course-header .progress-fill { background: #f9c846; height: 100%; border-radius: 8px; transition: width 0.3s; }
+    .course-header .progress-text { color: #a0a0b0; font-size: 0.85rem; margin-top: 0.5rem; }
+    .module-content { max-width: 800px; margin: 0 auto; padding: 3rem 2rem; }
+    .module-content h2 { font-size: 1.5rem; color: #1a1a2e; margin: 2.5rem 0 1rem; border-bottom: 2px solid #f9c846; padding-bottom: 0.5rem; }
+    .module-content h3 { font-size: 1.15rem; color: #16213e; margin: 2rem 0 0.75rem; }
+    .module-content p { margin-bottom: 1rem; font-size: 1.05rem; color: #333; }
+    .module-content ul, .module-content ol { margin: 1rem 0 1.5rem 1.5rem; }
+    .module-content li { margin-bottom: 0.5rem; font-size: 1.05rem; color: #333; }
+    .module-content a { color: #2563eb; text-decoration: none; border-bottom: 1px solid #2563eb33; }
+    .module-content a:hover { border-bottom-color: #2563eb; }
+    .module-content strong { color: #1a1a2e; }
+    .module-content table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+    .module-content th { background: #1a1a2e; color: white; padding: 0.75rem; text-align: left; }
+    .module-content td { padding: 0.75rem; border-bottom: 1px solid #e0e0e0; }
+    .module-content tr:nth-child(even) { background: #f5f5f5; }
+    .module-content blockquote { border-left: 4px solid #f9c846; padding: 1rem 1.5rem; margin: 1.5rem 0; background: #fff8e1; font-style: italic; color: #555; }
+    .template-box { background: #f0f4ff; border: 2px solid #2563eb; border-radius: 12px; padding: 20px 24px; margin: 2rem 0; }
+    .template-box h4 { color: #2563eb; margin-bottom: 8px; font-size: 1rem; }
+    .template-box p { margin-bottom: 8px; font-size: 0.95rem; color: #555; }
+    .template-box a { display: inline-block; background: #2563eb; color: white; padding: 8px 20px; border-radius: 6px; font-weight: 600; text-decoration: none; border: none; font-size: 0.9rem; }
+    .template-box a:hover { background: #1d4ed8; }
+    .exercise-box { background: #f0fdf4; border: 2px solid #22c55e; border-radius: 12px; padding: 20px 24px; margin: 2rem 0; }
+    .exercise-box h4 { color: #16a34a; margin-bottom: 8px; font-size: 1rem; }
+    .exercise-box p, .exercise-box li { font-size: 0.95rem; color: #555; }
+    .exercise-box ol { margin-left: 1.2rem; }
+    .key-insight { background: #fef3c7; border: 1px solid #f9c846; border-radius: 8px; padding: 16px 20px; margin: 1.5rem 0; }
+    .key-insight strong { color: #92400e; }
+    .module-nav { max-width: 800px; margin: 0 auto; padding: 2rem; display: flex; justify-content: space-between; gap: 1rem; }
+    .module-nav a { display: inline-block; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    .module-nav .prev { background: #e0e0e0; color: #1a1a2e; }
+    .module-nav .next { background: #f9c846; color: #1a1a2e; }
+    .module-nav a:hover { opacity: 0.9; }
+    .footer { background: #1a1a2e; color: #a0a0b0; padding: 2rem; text-align: center; font-size: 0.9rem; }
+    .footer a { color: #f9c846; text-decoration: none; }
+    /* Dashboard specific */
+    .dashboard { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
+    .module-card { background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 24px; margin-bottom: 16px; display: flex; gap: 20px; align-items: center; text-decoration: none; color: inherit; transition: border-color 0.2s, box-shadow 0.2s; }
+    .module-card:hover { border-color: #f9c846; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .module-num { width: 48px; height: 48px; border-radius: 50%; background: #1a1a2e; color: #f9c846; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; flex-shrink: 0; }
+    .module-info { flex: 1; }
+    .module-info h3 { font-size: 1.1rem; color: #1a1a2e; margin-bottom: 4px; }
+    .module-info p { font-size: 0.9rem; color: #888; margin: 0; }
+    .module-arrow { color: #ccc; font-size: 1.5rem; }
+    .welcome-box { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; border-radius: 16px; padding: 32px; margin-bottom: 32px; }
+    .welcome-box h2 { color: #f9c846; margin-bottom: 12px; }
+    .welcome-box p { color: #d0d0e0; }
+    .template-section { background: white; border: 1px solid #e0e0e0; border-radius: 12px; padding: 24px; margin-top: 32px; }
+    .template-section h3 { margin-bottom: 16px; }
+    .template-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .template-item { background: #f8f8fc; border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; }
+    .template-item h4 { font-size: 0.95rem; margin-bottom: 4px; }
+    .template-item p { font-size: 0.85rem; color: #888; margin-bottom: 8px; }
+    .template-item a { font-size: 0.85rem; color: #2563eb; text-decoration: none; font-weight: 600; }
+    @media (max-width: 768px) { .course-header h1 { font-size: 1.5rem; } .module-content { padding: 2rem 1rem; } .template-grid { grid-template-columns: 1fr; } .module-nav { flex-direction: column; } }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="logo">📊 Fractional CFO School</a>
+    <div>
+      <a href="/course/">My Course</a>
+      <a href="/templates/">Templates</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </nav>
+  <div class="course-header">
+    <div class="inner">
+      <p class="breadcrumb"><a href="/course/">Foundations Course</a> → Module 3 of 6</p>
+      <h1>Module 3: Building Your Service Packages</h1>
+      <div class="progress-bar"><div class="progress-fill" style="width: 50%"></div></div>
+      <p class="progress-text">50% complete</p>
+    </div>
+  </div>
+  <div class="module-content">
+
+    <h2>Why Packaging Matters More Than Skills</h2>
+
+    <p>Here's an uncomfortable truth: <strong>many bookkeepers already have the skills to deliver advisory services but are charging $600/month because they haven't packaged those skills properly</strong>. Packaging is what transforms "I do bookkeeping and can also help with forecasting" into "I offer three tiers of fractional CFO services starting at $1,500/month."</p>
+
+    <p>This module teaches you how to create service packages that are clear, compelling, and priced to reflect the value you deliver — not the hours you spend.</p>
+
+    <h2>The Three-Tier Pricing Model</h2>
+
+    <p>Every fractional CFO practice should offer <strong>three tiers of service</strong>. This isn't arbitrary — it's based on pricing psychology (the "Goldilocks effect") and decades of professional services pricing research.</p>
+
+    <table>
+      <tr><th>Tier</th><th>Name</th><th>Monthly Fee</th><th>Target Client</th></tr>
+      <tr><td>Tier 1</td><td><strong>Essentials</strong></td><td>$1,500-$3,000</td><td>Small businesses wanting basic financial visibility beyond bookkeeping</td></tr>
+      <tr><td>Tier 2</td><td><strong>Growth</strong></td><td>$3,000-$5,000</td><td>Growing businesses needing active financial management and strategy</td></tr>
+      <tr><td>Tier 3</td><td><strong>Virtual CFO</strong></td><td>$5,000-$10,000</td><td>Established businesses needing full strategic financial leadership</td></tr>
+    </table>
+
+    <h3>Tier 1: Essentials ($1,500-$3,000/month)</h3>
+    <p><strong>What's included:</strong></p>
+    <ul>
+      <li>Monthly financial package: P&L analysis, balance sheet review, executive summary</li>
+      <li>Cash flow monitoring: weekly cash position tracking, 4-week forward look</li>
+      <li>KPI dashboard: 8-12 metrics updated monthly</li>
+      <li>Quarterly planning session: 90-minute strategic review</li>
+      <li>Email access for financial questions (24-hour response)</li>
+    </ul>
+    <p><strong>Time investment:</strong> 8-12 hours/month</p>
+    <p><strong>Best for:</strong> Current bookkeeping clients you want to upsell. This is often the first advisory engagement — prove value here and upgrade to Growth.</p>
+
+    <h3>Tier 2: Growth ($3,000-$5,000/month)</h3>
+    <p><strong>What's included (everything in Essentials, plus):</strong></p>
+    <ul>
+      <li>Weekly cash flow forecast: 13-week rolling forecast updated weekly with variance analysis</li>
+      <li>Budget management: annual budget creation, monthly variance reports, quarterly reforecast</li>
+      <li>Monthly strategy session: 60-minute meeting focused on financial performance and strategic decisions</li>
+      <li>Scenario modeling: what-if analysis for major business decisions</li>
+      <li>Vendor/contract review: quarterly review of major contracts for savings opportunities</li>
+    </ul>
+    <p><strong>Time investment:</strong> 15-25 hours/month</p>
+    <p><strong>Best for:</strong> Businesses doing $2M-$15M in revenue with growth goals, seasonal complexity, or upcoming strategic decisions.</p>
+
+    <h3>Tier 3: Virtual CFO ($5,000-$10,000/month)</h3>
+    <p><strong>What's included (everything in Growth, plus):</strong></p>
+    <ul>
+      <li>Board/investor reporting: professional deck preparation and presentation support</li>
+      <li>Strategic financial planning: annual strategic plan with financial models</li>
+      <li>Fundraising support: financial model preparation, investor materials, due diligence</li>
+      <li>Team leadership: oversee bookkeeper/controller, build the finance function</li>
+      <li>Weekly CEO check-in: 30-minute weekly sync</li>
+    </ul>
+    <p><strong>Time investment:</strong> 25-45 hours/month</p>
+    <p><strong>Best for:</strong> Businesses $5M-$30M preparing for fundraising, acquisition, rapid scaling, or exit.</p>
+
+    <h2>Value-Based Pricing vs. Hourly Billing</h2>
+
+    <p><strong>Never quote hourly rates for advisory work.</strong> Here's why:</p>
+
+    <table>
+      <tr><th></th><th>Hourly Billing</th><th>Value-Based (Monthly Retainer)</th></tr>
+      <tr><td><strong>Client perception</strong></td><td>"I'm buying your time"</td><td>"I'm buying your expertise and outcomes"</td></tr>
+      <tr><td><strong>Revenue ceiling</strong></td><td>Limited by hours in the day</td><td>Limited by value delivered</td></tr>
+      <tr><td><strong>Efficiency incentive</strong></td><td>Slower = more revenue (perverse)</td><td>Faster = more profitable (aligned)</td></tr>
+      <tr><td><strong>Client budgeting</strong></td><td>Unpredictable monthly costs</td><td>Predictable fixed fee</td></tr>
+      <tr><td><strong>Scope discussions</strong></td><td>"How many hours will this take?"</td><td>"Is this within our agreed scope?"</td></tr>
+    </table>
+
+    <div class="key-insight">
+      <strong>Key Insight:</strong> When you charge $150/hour, the client counts hours. When you charge $4,000/month, the client counts results. Fixed monthly retainers align your incentives (get efficient, serve more clients) with the client's interests (predictable costs, focus on outcomes).
+    </div>
+
+    <h2>How to Set Your Prices</h2>
+
+    <p>Your pricing should be based on three inputs:</p>
+    <ol>
+      <li><strong>The value you deliver</strong> — If your forecasting prevents a $50K cash crunch, $4K/month is cheap insurance</li>
+      <li><strong>The client's ability to pay</strong> — A $1M business can justify $1,500/month; a $10M business can justify $5,000+</li>
+      <li><strong>Your market</strong> — What are other fractional CFOs in your area/niche charging? (Use this as a reference, not a ceiling)</li>
+    </ol>
+
+    <h3>Quick Pricing Formula</h3>
+    <p>A common rule of thumb: <strong>fractional CFO fees should be 0.5-1% of the client's annual revenue</strong>.</p>
+    <ul>
+      <li>$2M revenue → $833-$1,667/month</li>
+      <li>$5M revenue → $2,083-$4,167/month</li>
+      <li>$10M revenue → $4,167-$8,333/month</li>
+    </ul>
+    <p>This is a starting point, not a formula. Adjust based on complexity, industry, and the specific value you're delivering.</p>
+
+    <h2>The Engagement Letter: Protecting Your Practice</h2>
+
+    <p>Every advisory engagement must have a written agreement. No exceptions. The engagement letter defines scope (preventing scope creep), secures your fees, and limits your liability.</p>
+
+    <div class="template-box">
+      <h4>📥 Your Template: Client Proposal & Engagement Letter Pack</h4>
+      <p>Three tiered proposal templates, a professional engagement letter, and a pricing framework worksheet.</p>
+      <a href="/downloads/c2f8e3a7d5b1/client-proposal-engagement-pack.xlsx" download>Download Proposal Pack →</a>
+    </div>
+
+    <h3>Critical Engagement Letter Clauses</h3>
+    <ul>
+      <li><strong>Scope of services</strong> — List specific deliverables for the chosen tier. Be explicit about what's NOT included</li>
+      <li><strong>Fees and payment terms</strong> — Monthly retainer, due on the 1st, late payment penalty</li>
+      <li><strong>Client responsibilities</strong> — Provide access to accounting system, respond within 3 business days, provide records on time</li>
+      <li><strong>Limitations</strong> — You are NOT providing audit, tax, or legal services</li>
+      <li><strong>Termination</strong> — 30 days written notice after initial 3-month commitment</li>
+    </ul>
+
+    <div class="exercise-box">
+      <h4>✏️ Module 3 Exercises</h4>
+      <ol>
+        <li><strong>Create your 3-tier service menu.</strong> Using the framework above, write out what you'll include in each tier — customized for your specific skills and target clients. Don't copy the examples verbatim; adapt them to what you can actually deliver today.</li>
+        <li><strong>Price your tiers.</strong> Using the 0.5-1% formula, calculate the right price for 3 different client sizes. Check these against the market ranges above. Are you pricing too low?</li>
+        <li><strong>Customize the engagement letter template.</strong> Download the Proposal Pack and fill in the engagement letter with your firm's information. Have this ready before you pitch any client.</li>
+        <li><strong>Practice the value conversation.</strong> Write a 2-minute pitch for your Growth tier that focuses on outcomes (what the client gets) rather than activities (what you do). Read it out loud. Does it sound like a $4,000/month service?</li>
+      </ol>
+    </div>
+  </div>
+  <div class="module-nav">
+    <a href="/course/module-2/" class="prev">← Module 2</a>
+    <a href="/course/module-4/" class="next">Module 4 →</a>
+  </div>
+  <div class="footer">
+    <p>© 2026 <a href="/">Fractional CFO School</a> — Foundations Course</p>
+    <p style="margin-top:0.5rem">This is paid course content. Please do not share or distribute.</p>
+  </div>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
